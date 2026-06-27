@@ -1,0 +1,31 @@
+# === Obsidian作業ファイル（個人環境依存） ===
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/.obsidian-git-data
+
+# === Claude関連（ローカル専用） ===
+.claude/
+.claudian/
+
+# === Smart Connections等のキャッシュ ===
+.smart-env/
+
+# === OS固有ファイル ===
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# === エディタ作業ファイル ===
+*.tmp
+*~
+*.swp
+.vscode/
+
+# === Pythonキャッシュ（もし使う場合） ===
+__pycache__/
+*.pyc
+.venv/
+venv/
