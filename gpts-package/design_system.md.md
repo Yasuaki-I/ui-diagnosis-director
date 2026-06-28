@@ -147,9 +147,9 @@ def validate_length(text, max_len, field_name):
 |---|---|---|
 | 最重要数値（スコア・ランク） | **Bold** | `NAVY` または `RED` |
 | 見出し | **Bold** | `NAVY` |
-| 強調本文 | **Bold** | `TEXT`(#404040) |
-| 通常本文 | Regular | `TEXT`(#404040) |
-| 補足・注記 | Regular | `SUB_TEXT`(#606060) |
+| 強調本文 | **Bold** | `TEXT`（#404040） |
+| 通常本文 | Regular | `TEXT`（#404040） |
+| 補足・注記 | Regular | `SUB_TEXT`（#606060） |
 
 ---
 
@@ -203,8 +203,8 @@ def validate_length(text, max_len, field_name):
 |---|---|
 | **基本グリッド** | 8px |
 | **要素間ギャップ（小）** | 8px |
-| **要素間ギャップ(中)** | 16px |
-| **要素間ギャップ(大)** | 24px |
+| **要素間ギャップ（中）** | 16px |
+| **要素間ギャップ（大）** | 24px |
 | **セクション間** | 32px |
 
 ### 4.3 カード規定

@@ -2474,7 +2474,7 @@ def add_visual_board(prs, visual_data, page_num=1, total=3, slide_no='3',
         page_num: 開始ページ番号（個別出力時=1、統合版では既存ページ数+1）
         total: 全体ページ数（個別=3、統合版では C-1+C-2+3 を渡す）
         slide_no: 章番号（既定 '3'）
-       Returns:
+    Returns:
         (slide1, slide2, slide3) tuple
     """
     # ==============================================
