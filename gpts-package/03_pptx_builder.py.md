@@ -105,6 +105,100 @@ def _force_all_script_fonts(run, font_name):
 _force_east_asian_font = _force_all_script_fonts
 
 
+# =====================================================================
+# 文字数バリデーション（design_system.md §1 準拠・絶対遵守）
+# =====================================================================
+# UI診断ディレクター用の文字数規定。
+# スライドはコンテナサイズ固定のため、テキスト量を物理的に制御しないと
+# 必ずレイアウトが崩壊する。規定文字数を超えた場合は ValueError で停止し、
+# GPTs 側で「末尾…省略ではなく、規定文字内で要約し直す」運用とする。
+# 詳細は gpts-package/design_system.md §1 を参照。
+
+LIMITS = {
+    # ─── C-1 スコアカード ─────────────────────
+    'service_name':       30,
+    'c1_comment':         40,   # 一言所見（10項目×1コメント）
+    'c1_strength':        60,   # 強み（3項目）
+    'c1_issue':           60,   # 最優先課題（3項目）
+    'c1_conclusion':     120,   # 結論・総評
+    # ─── C-2 改善提案リスト ──────────────────
+    'c2_title':           30,   # 提案タイトル
+    'c2_point':          150,   # POINT本文
+    'c2_priority':         6,   # 優先度バッジ
+    'c2_category':        12,   # カテゴリ
+    # ─── C-3 ビジュアル診断ボード ────────────
+    'c3_summary':         80,   # 総評（スライド1中央）
+    'c3_top_issue':       40,   # 最優先課題タイトル
+    'c3_direction':       50,   # 改善方向帯
+    'c3_section_label':   20,   # LP構造マップ各セクション
+    'c3_flow_step':       25,   # 行動フローステップ
+    'c3_highlight_title': 30,   # Before/Afterタイトル
+    'c3_before':          40,   # Before本文
+    'c3_after':           40,   # After本文
+}
+
+
+def validate_length(text, limit_key, field_label=None, *, allow_none=True):
+    """規定文字数を超えた場合 ValueError で停止する。
+
+    Parameters
+    ----------
+    text : str or None
+        検査対象テキスト。None / 空文字は許容（allow_none=False で禁止）。
+    limit_key : str
+        LIMITS 辞書のキー。例: 'c1_comment', 'c2_point', 'c3_summary'。
+    field_label : str, optional
+        エラーメッセージに表示する人間向けの項目名。
+        未指定なら limit_key をそのまま使う。
+    allow_none : bool
+        True なら None / 空文字を素通り。False なら必須扱いで ValueError。
+
+    Returns
+    -------
+    str
+        検査済みテキスト（None なら空文字に正規化）。
+
+    Raises
+    ------
+    KeyError
+        limit_key が LIMITS に存在しない場合（開発者ミス）。
+    ValueError
+        文字数超過、または allow_none=False で空入力の場合。
+    """
+    if limit_key not in LIMITS:
+        raise KeyError(
+            f"validate_length: 未定義の limit_key '{limit_key}'。"
+            f" LIMITS 辞書に追加してください。"
+        )
+    max_len = LIMITS[limit_key]
+    label = field_label or limit_key
+
+    if text is None or text == '':
+        if allow_none:
+            return ''
+        raise ValueError(
+            f"\n[文字数バリデーションエラー]\n"
+            f"  項目: {label}\n"
+            f"  問題: 必須項目が空欄です。\n"
+            f"→ GPTs側でテキストを生成してください。"
+        )
+
+    text_str = str(text)
+    n = len(text_str)
+    if n > max_len:
+        over = n - max_len
+        preview = text_str[:30] + ('...' if n > 30 else '')
+        raise ValueError(
+            f"\n[文字数バリデーションエラー]\n"
+            f"  項目: {label}\n"
+            f"  上限: {max_len}文字（design_system.md §1 準拠）\n"
+            f"  実際: {n}文字（{over}文字オーバー）\n"
+            f"  内容: 「{preview}」\n"
+            f"→ GPTs側で規定文字数内に要約し直してください。\n"
+            f"  ※末尾「…」での省略は禁止です。要点を絞り込んでください。"
+        )
+    return text_str
+
 
 def add_text(slide, left_px, top_px, width_px, text, size_pt, *,
              bold=False, color=TEXT, align=PP_ALIGN.LEFT,
@@ -1817,6 +1911,24 @@ def add_scorecard_onepager(prs, diagnosis, page_num=1, total=2,
     Returns: (slide_summary, slide_detail) tuple
     """
     # ==============================================
+    # 文字数バリデーション（design_system.md §1.3 準拠）
+    # ==============================================
+    validate_length(diagnosis.get('service_name'), 'service_name',
+                    'C-1 サービス名 (diagnosis.service_name)')
+    for i, sc in enumerate(diagnosis.get('scores', [])[:10], start=1):
+        if isinstance(sc, dict):
+            validate_length(sc.get('comment'), 'c1_comment',
+                            f'C-1 一言所見 #{i} (scores[{i-1}].comment / 項目: {sc.get("name","?")})')
+    for i, st in enumerate(diagnosis.get('strengths', [])[:3], start=1):
+        validate_length(st, 'c1_strength',
+                        f'C-1 強み #{i} (strengths[{i-1}])')
+    for i, iss in enumerate(diagnosis.get('priority_issues', [])[:3], start=1):
+        validate_length(iss, 'c1_issue',
+                        f'C-1 最優先課題 #{i} (priority_issues[{i-1}])')
+    validate_length(diagnosis.get('conclusion'), 'c1_conclusion',
+                    'C-1 結論 (diagnosis.conclusion)')
+
+    # ==============================================
     # スライド 1/2 : サマリ
     # ==============================================
     slide = _blank_slide(prs)
@@ -2154,6 +2266,27 @@ def add_proposal_onepager(prs, proposals_data, page_num=1, total=None,
     prio_label_map = {'S': '高', 'A': '高', 'B': '中', 'C': '低',
                       '高': '高', '中': '中', '低': '低'}
 
+    # ==============================================
+    # 文字数バリデーション（design_system.md §1.4 準拠）
+    # ==============================================
+    validate_length(proposals_data.get('service_name'), 'service_name',
+                    'C-2 サービス名 (proposals_data.service_name)')
+    for i, p in enumerate(proposals_data.get('proposals', [])[:5], start=1):
+        if isinstance(p, dict):
+            validate_length(p.get('title'), 'c2_title',
+                            f'C-2 提案#{i} タイトル (proposals[{i-1}].title)')
+            # POINT本文：issue / before / after / target_area などを連結したもの。
+            # 各フィールド単体ではなく point があれば優先、なければ issue を上限内に。
+            point_text = p.get('point') or p.get('issue') or ''
+            validate_length(point_text, 'c2_point',
+                            f'C-2 提案#{i} POINT (proposals[{i-1}].point|issue)')
+            if p.get('priority') is not None:
+                validate_length(str(p.get('priority')), 'c2_priority',
+                                f'C-2 提案#{i} 優先度 (proposals[{i-1}].priority)')
+            if p.get('category') is not None:
+                validate_length(p.get('category'), 'c2_category',
+                                f'C-2 提案#{i} カテゴリ (proposals[{i-1}].category)')
+
     proposals = proposals_data.get('proposals', [])[:5]
     n = len(proposals)
     summary = proposals_data.get('summary', '')
@@ -2341,9 +2474,39 @@ def add_visual_board(prs, visual_data, page_num=1, total=3, slide_no='3',
         page_num: 開始ページ番号（個別出力時=1、統合版では既存ページ数+1）
         total: 全体ページ数（個別=3、統合版では C-1+C-2+3 を渡す）
         slide_no: 章番号（既定 '3'）
-    Returns:
+       Returns:
         (slide1, slide2, slide3) tuple
     """
+    # ==============================================
+    # 文字数バリデーション（design_system.md §1.5 準拠）
+    # ==============================================
+    validate_length(visual_data.get('service_name'), 'service_name',
+                    'C-3 サービス名 (visual_data.service_name)')
+    validate_length(visual_data.get('summary'), 'c3_summary',
+                    'C-3 総評 (visual_data.summary)')
+    validate_length(visual_data.get('top_issue'), 'c3_top_issue',
+                    'C-3 最優先課題 (visual_data.top_issue)')
+    validate_length(visual_data.get('direction'), 'c3_direction',
+                    'C-3 改善方向 (visual_data.direction)')
+    for i, sec in enumerate(visual_data.get('sections', []), start=1):
+        if isinstance(sec, dict):
+            validate_length(sec.get('label'), 'c3_section_label',
+                            f'C-3 LP構造マップ#{i} (sections[{i-1}].label)')
+    for i, step in enumerate(visual_data.get('flow_steps', [])[:6], start=1):
+        if isinstance(step, dict):
+            # ステップ全体（label + note）は1ステップ枠（25文字以内）
+            combined = (step.get('label', '') + ' ' + step.get('note', '')).strip()
+            validate_length(combined, 'c3_flow_step',
+                            f'C-3 行動フロー#{i} (flow_steps[{i-1}].label+note)')
+    for i, hl in enumerate(visual_data.get('highlights', [])[:3], start=1):
+        if isinstance(hl, dict):
+            validate_length(hl.get('title'), 'c3_highlight_title',
+                            f'C-3 ハイライト#{i} タイトル (highlights[{i-1}].title)')
+            validate_length(hl.get('before'), 'c3_before',
+                            f'C-3 ハイライト#{i} Before (highlights[{i-1}].before)')
+            validate_length(hl.get('after'), 'c3_after',
+                            f'C-3 ハイライト#{i} After (highlights[{i-1}].after)')
+
     # ==============================================================
     # スライド 1/3 : LP構造マップ + 総評・最重要課題 + 行動フロー
     # ==============================================================
