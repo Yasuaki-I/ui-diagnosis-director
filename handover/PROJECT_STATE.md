@@ -3,7 +3,7 @@
 > このドキュメントは「プロジェクトの正典」として常に最新の状態を保つ。
 > 大きな決定があったら更新。日次の進捗は `handover/HANDOVER_YYYYMMDD.md` を参照。
 
-**最終更新**：2026年6月27日（土）
+**最終更新**：2026年6月28日(日)
 
 ---
 
@@ -85,14 +85,15 @@ Webディレクター 25年経験者の視座を継承：
 ### gpts-package（GPTsアップロード用）
 | ファイル | 役割 | 状態 |
 |---|---|---|
-| `01_Instructions_WebDiagnosis_lite.md` | GPTs Instructions（**7,817文字**、8000字制限内） | ✅ C-3対応済 |
+| `01_Instructions_WebDiagnosis_lite.md` | GPTs Instructions（**7,956文字**、8000字制限内） | ✅ 文字数規定追記済（6/28） |
 | `01_Instructions_WebDiagnosis.md` | Instructions フル版（参考） | ✅ 既存 |
 | `01_Instructions.md` | 業務資料用 Instructions（参考） | ✅ 既存 |
 | `02_design_spec.md` | デザイン仕様書 | ✅ 既存 |
-| `03_pptx_builder.py` | **PPTX生成エンジン** | ✅ C-3+統合版実装済 |
+| `03_pptx_builder.py` | **PPTX生成エンジン** | ✅ 文字数バリデーション実装済（6/28） |
 | `04_layout_catalog.pptx` | レイアウトカタログ | ✅ 既存 |
 | `05_README_setup.md` | セットアップ手順 | ✅ 既存 |
-| `visual_data_schema.md` | **C-3用 visual_data 仕様書** | ✅ 新規 |
+| `visual_data_schema.md` | **C-3用 visual_data 仕様書** | ✅ 既存 |
+| `design_system.md` | **デザインシステム正典**（文字数規定・タイポ・配色・レイアウト） | ✅ 新規（6/28） |
 
 ### samples（動作確認用）
 - sample_1〜5：既存サンプル（業務資料系）
@@ -105,9 +106,11 @@ Webディレクター 25年経験者の視座を継承：
 | 関数 | 役割 |
 |---|---|
 | `create_presentation()` | 1280×720 PPTX初期化 |
-| `add_scorecard_onepager()` | C-1（2スライド出力） |
-| `add_proposal_onepager()` | C-2（件数で1or2スライド自動分岐） |
-| `add_visual_board()` | C-3（3スライド出力） |
+| `validate_length()` | **文字数バリデーション**（規定超過でValueError停止） |
+| `LIMITS` 辞書 | **文字数上限定義**（C-1/C-2/C-3 全項目、design_system.md §1 準拠） |
+| `add_scorecard_onepager()` | C-1（2スライド出力、冒頭で文字数チェック） |
+| `add_proposal_onepager()` | C-2（件数で1or2スライド自動分岐、冒頭で文字数チェック） |
+| `add_visual_board()` | C-3（3スライド出力、冒頭で文字数チェック） |
 | `build_full_report()` | 統合版（C-1+C-2+C-3を1ファイル） |
 
 ---
@@ -118,6 +121,7 @@ Webディレクター 25年経験者の視座を継承：
 |---|---|---|
 | **フェーズ1** | ✅ 完了 | MVP（C-1+C-2の2ファイル4スライド） |
 | **フェーズ1+** | ✅ 完了 | C-3追加（3ファイル合計6〜7スライド）+統合版 |
+| **フェーズ1.5β** | ✅ 完了 | **文字数バリデーション実装**（design_system.md / validate_length / 3関数組込） |
 | **フェーズ1.5** | 🔄 着手前 | **ビジュアル強化**（タイポ・配色・余白・グリッド・強調の5項目） |
 | **フェーズ2** | ⏳ 検討中 | 「奇跡の1枚」PNG出力（matplotlib + Pillow） |
 | **フェーズ3** | ⏳ 未着手 | C-3スライド2のレーダーチャート差し替え（matplotlib） |
@@ -156,6 +160,10 @@ Webディレクター 25年経験者の視座を継承：
 - ❌ タイトル帯に英語サブタイトルを追加しない
 - ❌ 戻り値Presentationに後からスライド/図形を追加しない
 
+### 文字数規定（design_system.md §1 準拠・絶対遵守）
+- 超過時は ValueError でPPTX生成停止
+- 末尾「…」省略は禁止、規定文字数内で要約し直す
+
 ### 開発フロー
 1. ユーザー：意思決定（複数選択肢から[A]/[B]/[C]選択）
 2. 私：実装着手
@@ -168,9 +176,10 @@ Webディレクター 25年経験者の視座を継承：
 ## 8. 関連ドキュメント
 
 - `handover/HANDOVER_YYYYMMDD.md`：日次進捗ログ（最新版を参照）
+- `gpts-package/design_system.md`：デザインシステム正典（文字数・タイポ・配色・レイアウト）
 - `gpts-package/visual_data_schema.md`：C-3用データスキーマ正典
 - `gpts-package/01_Instructions_WebDiagnosis_lite.md`：GPTs用Instructions
-- `gpts-package/03_pptx_builder.py`：PPTX生成エンジン
+- `gpts-package/03_pptx_builder.py`：PPTX生成エンジン（バリデーション実装済）
 
 ---
 
@@ -191,8 +200,6 @@ UI診断ディレクタープロジェクトを再開します。
 GitHub Publicリポジトリにある場合：
 ```
 以下のURLから直接読み込んでください：
-https://github.com/{username}/{repo}/blob/main/PROJECT_STATE.md
-https://github.com/{username}/{repo}/blob/main/handover/HANDOVER_最新.md
+https://github.com/Yasuaki-I/ui-diagnosis-director/blob/main/handover/PROJECT_STATE.md
+https://github.com/Yasuaki-I/ui-diagnosis-director/blob/main/handover/HANDOVER_最新.md
 ```
-
-## 2026-06-27 GitHub連携完了
