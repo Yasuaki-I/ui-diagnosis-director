@@ -3,7 +3,7 @@
 > このドキュメントは「プロジェクトの正典」として常に最新の状態を保つ。
 > 大きな決定があったら更新。日次の進捗は `handover/HANDOVER_YYYYMMDD.md` を参照。
 
-**最終更新**：2026年7月1日（水）**フェーズ1.5本体完全完了**
+**最終更新**：2026年7月2日（水）
 
 ---
 
@@ -47,7 +47,8 @@ Webディレクター 25年経験者の視座を継承：
 | **フォント** | メイリオ統一（latin/ea/cs すべて Meiryo） |
 | **最小フォントサイズ** | 14pt |
 | **配色** | NAVY #1C366C / RED #D0021B / ORANGE #F97316 の3色アクセント |
-| **背景** | WHITE維持 + 透明度活用で上品さ演出（NAVY 3-5%極薄背景） |
+| **色の意味付け** | ORANGE=行動喚起専用（結論/POINT/改善方向帯）/ NAVY=情報構造 / RED=警告・低評価【v1.2】 |
+| **背景** | WHITE維持 + 透明度活用で上品さ演出 |
 | **キャンバス** | 1280×720 px（16:9） |
 
 ### 診断仕様
@@ -70,20 +71,12 @@ Webディレクター 25年経験者の視座を継承：
 | **対象タイプ判定** | GPTsが自動判定、確認質問なし |
 | **N/A判定** | バナー時はフォーム設計/レスポンシブ/読みやすさ/情報設計/表示速度 を `'－'` |
 
-### データスキーマ（7/1確定）
-| 項目 | 推奨キー | 後方互換 |
-|---|---|---|
-| 評価項目名 | **`name`** | `category` |
-| LP構造マップ要素 | **`label`** | `name` |
-| ステータス | **`status`**（`✓`=課題なし、`!`/`✕`=課題あり） | `has_issue: bool` |
-| 最重要課題リスト | **`top_issues`**（複数） | `top_issue`（単数） |
-
 ### スライド構成
 | ファイル | スライド数 | 内容 |
 |---|---:|---|
 | C-1 スコアカード | 2枚固定 | サマリ + 詳細スコア表 |
 | C-2 改善提案リスト | 1〜2枚自動 | 4件以上=2枚、3件以下=1枚 |
-| C-3 ビジュアル診断ボード | 3枚固定 | 構造マップ+総評+行動フロー / スコア視覚化 / Before/After Top3 |
+| C-3 ビジュアル診断ボード | 3枚固定 | 構造マップ+総評+行動フロー / スコア★バー視覚化 / Before/After Top3 |
 | 統合版 | 6〜7枚 | C-1 + C-2 + C-3 を1ファイルに |
 
 ---
@@ -93,38 +86,32 @@ Webディレクター 25年経験者の視座を継承：
 ### gpts-package（GPTsアップロード用）
 | ファイル | 役割 | 状態 |
 |---|---|---|
-| `01_Instructions_WebDiagnosis_lite.md` | GPTs Instructions（7,956文字、8000字制限内） | ✅ 7/1整合済 |
+| `01_Instructions_WebDiagnosis_lite.md` | GPTs Instructions（**7,817文字**、8000字制限内） | ✅ C-3対応済 |
 | `01_Instructions_WebDiagnosis.md` | Instructions フル版（参考） | ✅ 既存 |
+| `01_Instructions.md` | 業務資料用 Instructions（参考） | ✅ 既存 |
 | `02_design_spec.md` | デザイン仕様書 | ✅ 既存 |
-| `03_pptx_builder.py` | PPTX生成エンジン | ✅ **フェーズ1.5完全完了版（7/1）** |
+| `03_pptx_builder.py` | **PPTX生成エンジン** | ✅ C-3+統合版実装済 |
 | `04_layout_catalog.pptx` | レイアウトカタログ | ✅ 既存 |
 | `05_README_setup.md` | セットアップ手順 | ✅ 既存 |
-| `visual_data_schema.md` | C-3用 visual_data 仕様書 | ✅ 新旧互換明記済（7/1） |
-| `design_system.md` | デザインシステム正典 | ✅ 既存（6/28） |
+| `visual_data_schema.md` | **C-3用 visual_data 仕様書** | ✅ 新規 |
+| `design_system.md` | **デザインシステム正典**（文字数規定・タイポ・配色・レイアウト） | ✅ 新規（6/28） |
 
-### _verify（検証用）
-- **_verify/v3_validation/**：文字数バリデーション検証（6/28）
-- **_verify/v4_visual/**：ビジュアル強化α版（6/29）
-- **_verify/v5_visual/**：FB対応+バグ修正版（6/30）
-- **_verify/v6_visual/**：**フェーズ1.5完全完了版（7/1）**
-- **_verify/before_after/**：Before/After PNG比較
-
-### _deliver（配布用ZIP）
-- **_deliver/ui-diagnosis-director_20260628.zip**：文字数バリデーション実装版（144KB）
-- **_deliver/ui-diagnosis-director_20260701.zip**：**フェーズ1.5完全完了版（146KB）**
+### samples（動作確認用）
+- sample_1〜5：既存サンプル（業務資料系）
+- **sample_6**：C-1 スコアカード 2スライド
+- **sample_7**：C-2 改善提案リスト 2スライド
+- **sample_8**：C-3 ビジュアル診断ボード 3スライド
+- **sample_9**：統合版 7スライド
 
 ### 03_pptx_builder.py の主要関数
 | 関数 | 役割 |
 |---|---|
 | `create_presentation()` | 1280×720 PPTX初期化 |
-| `validate_length()` | 文字数バリデーション |
-| `LIMITS` 辞書 | 文字数上限定義 |
-| `add_shape()` | fill_alpha対応（透明度パラメータ） |
-| `_add_bg_frame()` | 背景フレームヘルパ |
-| `_set_shape_fill_alpha()` | OOXML直接操作で透明度設定 |
-| `add_scorecard_onepager()` | C-1（2スライド、ビジュアル強化+FB対応完了） |
-| `add_proposal_onepager()` | C-2（1or2スライド自動、ビジュアル強化+FB対応完了） |
-| `add_visual_board()` | C-3（3スライド、ビジュアル強化+バグ修正+FB対応完了） |
+| `validate_length()` | **文字数バリデーション**（規定超過でValueError停止） |
+| `LIMITS` 辞書 | **文字数上限定義**（C-1/C-2/C-3 全項目、design_system.md §1 準拠） |
+| `add_scorecard_onepager()` | C-1（2スライド出力、冒頭で文字数チェック） |
+| `add_proposal_onepager()` | C-2（件数で1or2スライド自動分岐、冒頭で文字数チェック） |
+| `add_visual_board()` | C-3（3スライド出力、冒頭で文字数チェック） |
 | `build_full_report()` | 統合版（C-1+C-2+C-3を1ファイル） |
 
 ---
@@ -135,34 +122,36 @@ Webディレクター 25年経験者の視座を継承：
 |---|---|---|
 | **フェーズ1** | ✅ 完了 | MVP（C-1+C-2の2ファイル4スライド） |
 | **フェーズ1+** | ✅ 完了 | C-3追加（3ファイル合計6〜7スライド）+統合版 |
-| **フェーズ1.5β** | ✅ 完了 | 文字数バリデーション実装（6/28） |
-| **フェーズ1.5** | ✅ **完全完了（7/1）** | **ビジュアル強化（タイポ・配色・余白・グリッド・強調 5項目）** |
-| **運用フェーズ** | ⏳ 選択可能 | 実データでGPTs検証、FB蓄積 |
-| **フェーズ2** | ⏳ 検討中 | 「奇跡の1枚」PNG出力（matplotlib + Pillow） |
-| **フェーズ3** | ⏳ 未着手 | C-3スライド2のレーダーチャート化 |
-| **フェーズ4** | ⏳ 未定 | 表紙・アジェンダ・クロージング追加 |
+| **フェーズ1.5β** | ✅ 完了 | 文字数バリデーション実装（design_system.md / validate_length / 3関数組込） |
+| **フェーズ1.5** | ✅ 完了 | ビジュアル強化（v4/v5/v6）：タイポ・配色・余白・グリッド・強調 |
+| **フェーズ1.5修正** | ✅ 完了【2026-07-02】 | **帯高さ6 62px化・120字対応・色ルール明確化**（v7） |
+| **フェーズ2** | 🔄 着手前 | 「奇跡の1枚」PNG出力 or 統合レポートの magic 実装 or 運用フェーズ |
+| **フェーズ3** | ⏳ 未着手 | C-3スライド2のレーダーチャート差し替え（matplotlib） |
+| **フェーズ4以降** | ⏳ 未定 | 表紙・アジェンダ・クロージング追加、スクショ埋込、配色拡張 |
 
 ---
 
-## 6. フェーズ1.5達成状況（完全完了）
+## 6. フェーズ1.5完了内容（v4 → v5 → v6 → v7）
 
-### 改修5項目
+ビジュアル強化は 6/29 後に逐次リリースし、**現在は v7 が最新**。
 
-| # | 項目 | 達成内容 | 状態 |
-|---|---|---|---|
-| 1 | タイポグラフィ確立 | スコア32pt/ランク32pt/改善方向16pt太字/POINT本文NAVY太字 | ✅ |
-| 2 | 配色整理 + 透明度活用 | NAVY 3-5%極薄/ORANGE 10-12%薄塗/左色帯NAVY統一 | ✅ |
-| 3 | 余白の徹底 | タイトル帯64px/フッター帯40px間隔/8pxグリッド | ✅ |
-| 4 | グリッド整列 | 左赤縦帯10px/左色帯6-8px/座標統一 | ✅ |
-| 5 | 強調メリハリ | 番号サークル拡大/ステップ円44px/ORANGEアクセント | ✅ |
+### v7（2026-07-02） *帯リサイズ・120字対応・色ルール明確化*
+- 結論帯 / POINT帯 / 改善方向帯を **62px・2行折返し・最大120字** へ拡張
+- ORANGE を「行動喚起専用」に限定、C-2カード枠を NAVY_LIGHT へ変更
+- C-3 slide1 フロー総括をヘッダ右端に移設（ステップnoteとの衝突解消）
+- 下流要素 `LOWER_H` / `FLOW_H` / `ISSUE_H` / `HL_AREA_H` を短縮し帯上シフトに整合
 
-### 追加FB対応（7/1・案B）
+### v4〜v6（2026-06-29 〜 07-01） *ビジュアル強化5項目実装*
+1. **タイポグラフィ確立**：32/24/18/16/14pt の5段階、letter-spacing 活用
+2. **配色整理＋透明度活用**：3色限定、各色に透明版を持たせる
+3. **余白の徹底**：padding 14→20px、ギャップ 8→16px、8pxグリッド
+4. **グリッド整列**：X/Y 座標を 8 の倍数に統一
+5. **強調メリハリ**：スコア 26→32pt、ランクをバッジ化、訴求数値の差別化
 
-| 帯 | 変更 |
-|---|---|
-| C-1 結論帯 | ラベル箱34px + 間隔40px + 立体感 |
-| C-2 POINT帯 | ラベル箱28px + 間隔40px + 立体感 |
-| C-3 改善方向帯 | ラベル箱32px + 間隔40px + 立体感 |
+### 次に取り組む候補（フェーズ2）
+- **案A**：統合レポート（00_UI診断統合レポート.pptx）の実装強化
+- **案B**：C-3ボードを 1 枚コンパクト版に縮めるオプション
+- **案C**：運用フェーズ（実データを回して毎回 FB を蓄積）
 
 ---
 
@@ -176,54 +165,41 @@ Webディレクター 25年経験者の視座を継承：
 - ❌ タイトル帯に英語サブタイトルを追加しない
 - ❌ 戻り値Presentationに後からスライド/図形を追加しない
 
-### 文字数規定（design_system.md §1 準拠・絶対遵守）
-- 超過時は ValueError でPPTX生成停止
-- 末尾「…」省略は禁止、規定文字数内で要約し直す
-
-### セッション運用フロー（7/1確定・標準化）
-
-#### 始業（5ステップ）
-1. 入江さん：編集対象ファイル（最新版）をアップロード
-2. 私：前日HANDOVER + PROJECT_STATE 読込
-3. 私：アップロード版と Genspark 側の整合確認（diff検証）
-4. 私：本日の作業計画提示（Q1〜Q3形式）
-5. 入江さん：着手OK or 方針指示
-
-#### 終業（5ステップ）
-1. **ZIP配布**（`ui-diagnosis-director_YYYYMMDD.zip` → `_deliver/`）
-2. **HANDOVER_YYYYMMDD.md** チャット貼付（Obsidian新規保存）
-3. **PROJECT_STATE.md** チャット貼付（Obsidian上書き）
-4. **備忘録リスト**（今日やったこと/発見/次回・冗長禁止）
-5. **クロージングメッセージ**（達成サマリ/残課題/明日/労い）
+### 開発フロー
+1. ユーザー：意思決定（複数選択肢から[A]/[B]/[C]選択）
+2. 私：実装着手
+3. 私：プレビュー報告
+4. ユーザー：フィードバック
+5. 私：微調整 → ZIP更新
 
 ---
 
 ## 8. 関連ドキュメント
 
 - `handover/HANDOVER_YYYYMMDD.md`：日次進捗ログ（最新版を参照）
-- `gpts-package/design_system.md`：デザインシステム正典
-- `gpts-package/visual_data_schema.md`：C-3用データスキーマ正典（新旧互換明記済）
+- `gpts-package/visual_data_schema.md`：C-3用データスキーマ正典
 - `gpts-package/01_Instructions_WebDiagnosis_lite.md`：GPTs用Instructions
 - `gpts-package/03_pptx_builder.py`：PPTX生成エンジン
-- `_deliver/ui-diagnosis-director_20260701.zip`：**最新配布物**
 
 ---
 
 ## 9. 次回セッション再開時の指示テンプレート
 
+ユーザーが新規チャットで再開する際は、以下をペーストして開始：
+
 ```
 UI診断ディレクタープロジェクトを再開します。
 以下のドキュメントを順に読んでから作業を始めてください：
 
-1. handover/PROJECT_STATE.md（プロジェクト現状の正典）
-2. handover/HANDOVER_YYYYMMDD.md（直近の進捗、最新の日付のもの）
+1. 【UI診断ディレクター】/PROJECT_STATE.md（プロジェクト現状の正典）
+2. 【UI診断ディレクター】/handover/HANDOVER_YYYYMMDD.md（直近の進捗、最新の日付のもの）
 
 文脈を把握したら「次にやるタスク」を提示してください。
 ```
 
-GitHub Public リポジトリ経由の場合：
+GitHub Publicリポジトリにある場合：
 ```
 以下のURLから直接読み込んでください：
-https://github.com/Yasuaki-I/ui-diagnosis-director/blob/main/handover/PROJECT_STATE.md
-https://github.com/Yasuaki-I/ui-diagnosis-director/blob/main/handover/HANDOVER_最新.md
+https://github.com/{username}/{repo}/blob/main/PROJECT_STATE.md
+https://github.com/{username}/{repo}/blob/main/handover/HANDOVER_最新.md
 ```
