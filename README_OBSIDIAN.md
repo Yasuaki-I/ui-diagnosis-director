@@ -1,44 +1,43 @@
-# Obsidian 保存パッケージ（2026-07-02 最終版 v2）
+# Obsidian 保存パッケージ（2026-07-03 v6 最終版）
 
 このZIPを Obsidian Vault の「**【UI診断ディレクター】**」フォルダに展開してください。
 
-## 更新履歴
+## v6 更新点（前回 v5 からの差分）
 
-- **v1**（初版）：Tier 1-3 の12ドキュメント同梱
-- **v2**（本版・最終版）：`DYNAMIC_LAUNCH_DECISION.md` と `IMAGE_PRODUCTION_PLAN.md` を追加。ai_liaison 配下の申し送りを本日1日の総まとめ版に更新
+- **handover/DAILY_SUMMARY_20260703.md**：新規追加（本日1日分の全成果・全申し送り統合版）
 
 ## 同梱ファイル一覧（14本）
 
-### 🔴 Tier 1（正典）─ 6本
-- PROJECT_STATE.md
+### 🔴 Tier 1（正典）
+- PROJECT_STATE.md（v8まで反映）
 - INTEGRATED_BRAND_STRATEGY.md
 - SALES_PLAN.md
-- DYNAMIC_LAUNCH_DECISION.md（NEW）
-- IMAGE_PRODUCTION_PLAN.md（NEW）
+- DYNAMIC_LAUNCH_DECISION.md
+- IMAGE_PRODUCTION_PLAN.md
 - gpts-package/design_system.md
 
-### 🟡 Tier 2（日次記録）─ 5本
+### 🟡 Tier 2（日次記録・毎日参照）
 - CLOSING_FLOW.md
 - RESUME_TEMPLATE.md
 - GMB_NOTE_SCHEDULE.md
-- handover/HANDOVER_20260702.md
-- handover/BACKLOG_v8_20260703.md
+- handover/HANDOVER_20260703.md
+- handover/BACKLOG_v9_20260704.md
+- handover/DAILY_SUMMARY_20260703.md（NEW・本日1日統合レポート）
 
-### 🟢 Tier 3（AI連携用）─ 2本
-- ai_liaison/CLAUDE_CHAT_20260702.md（本日1日の総まとめ版）
-- ai_liaison/VIOLET_20260702.md（本日1日の総まとめ版）
+### 🟢 Tier 3（成果物・保存推奨）
+- sales/gmb_note_final_v3.md（GMB note第3弾 磨き上げ完成版・本文3,798字）
 
 ### 📖 その他
-- README_OBSIDIAN.md：本ファイル
+- README_OBSIDIAN.md
 
-## 使い方のヒント
+## 明日以降の主要タスク（BACKLOG_v9_20260704.md 参照）
 
-- **毎日の終業時**：CLOSING_FLOW.md 手順どおり
-- **セッション再開時**：RESUME_TEMPLATE.md から該当ケースをコピペ
-- **週次レビュー時**：INTEGRATED_BRAND_STRATEGY.md のKPI目標と照合
-- **発売日判断時（8/15）**：DYNAMIC_LAUNCH_DECISION.md の判断マトリクスを開く
-- **画像制作依頼時**：IMAGE_PRODUCTION_PLAN.md のマスターリストで対象確認
+1. v9 レイアウト修正2件（メタヘッダNAVY統一＋Top3崩れ根本解消）
+2. GMB改良内容の note原稿への反映（入江さん共有待ち）
+3. GMB note用の画像7点制作＋挿入位置明記
+4. 7/5 GMB技術ヒアリング
 
----
+## 本日1日分の統合サマリを素早く読むなら
 
-（作成：2026-07-02 / v2 最終版）
+**`handover/DAILY_SUMMARY_20260703.md`** を最初に開いてください。
+「今日やったこと」「発見したこと」「明日やること」「Claude-Chatへの申し送り」「ヴァイオレットちゃんへの申し送り」がすべて1ファイルにまとまっています。
