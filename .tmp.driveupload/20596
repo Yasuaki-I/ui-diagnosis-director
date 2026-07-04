@@ -165,4 +165,3 @@ https://chromewebstore.google.com/detail/genspark-memory-bridge/kfdjnaonpdjoelpn
 - 「自分ルール」パートに具体例3つ（「業務委託でEC運用支援」「結論から」「概念で説明」）を追加
 - 「長期プロジェクト」パートに「重すぎて動作が遅くなる」「前提が全部消える」の**Before状態**を追加し価値を明確化
 - ハッシュタグを既存記事群と揃えて統一
-あ
