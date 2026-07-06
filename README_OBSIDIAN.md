@@ -1,50 +1,58 @@
-# Obsidian 保存パッケージ（2026-07-03 v7 最終版）
+# UI診断ディレクター Obsidian保存パック（2026-07-05）
 
-このZIPを Obsidian Vault の「**【UI診断ディレクター】**」フォルダに展開してください。
+このZIPは Obsidian の **【UI診断ディレクター】/** フォルダへそのまま展開してください。
 
-## v7 更新点（前回 v6 からの差分）
+## 📂 構成
 
-- **handover/LP_STRATEGY.md**：新規追加（LP戦略・terminator.jp運用プラン確定）
-- DAILY_SUMMARY_20260703.md：LP戦略確定分を追記
+### Tier1: 正典（常に最新）
+- `handover/PROJECT_STATE.md` — プロジェクト正典
+- `handover/RESUME_TEMPLATE.md` — 再開テンプレ
+- `handover/CLOSING_FLOW.md` — 終業フロー
+- `handover/SALES_PLAN.md` — 販売プラン（3段階価格）
+- `handover/INTEGRATED_BRAND_STRATEGY.md` — GMB×UI診断ブランド統合
+- `handover/LP_STRATEGY.md` — LP戦略（terminator.jp/ui-diagnosis/）
+- `handover/DYNAMIC_LAUNCH_DECISION.md` — 8/15動的発売判定
+- `handover/GMB_NOTE_SCHEDULE.md` — GMB note公開スケジュール
+- `handover/IMAGE_PRODUCTION_PLAN.md` — 画像制作計画
 
-## 同梱ファイル一覧（15本）
+### Tier2: 日次（本日=7/5含む直近）
+- `handover/HANDOVER_20260705.md` ★本日
+- `handover/DAILY_SUMMARY_20260705.md` ★本日
+- `handover/HANDOVER_20260704.md`
+- `handover/HANDOVER_20260703.md`
+- `handover/HANDOVER_20260702.md`
+- `handover/BACKLOG_v9_20260704.md`（本日v10で解消済）
+- `handover/BACKLOG_v8_20260703.md`
 
-### 🔴 Tier 1（正典）
-- PROJECT_STATE.md（v8まで反映）
-- INTEGRATED_BRAND_STRATEGY.md
-- SALES_PLAN.md
-- DYNAMIC_LAUNCH_DECISION.md
-- IMAGE_PRODUCTION_PLAN.md
-- **LP_STRATEGY.md（NEW）**
-- gpts-package/design_system.md
+### Tier3: AI連携（申し送り）
+- `ai_liaison/CLAUDE_CHAT_20260705.md` ★本日
+- `ai_liaison/VIOLET_20260705.md` ★本日
+- `ai_liaison/CLAUDE_CHAT_20260702.md`
+- `ai_liaison/VIOLET_20260702.md`
 
-### 🟡 Tier 2（日次記録・毎日参照）
-- CLOSING_FLOW.md
-- RESUME_TEMPLATE.md
-- GMB_NOTE_SCHEDULE.md
-- handover/HANDOVER_20260703.md
-- handover/BACKLOG_v9_20260704.md
-- handover/DAILY_SUMMARY_20260703.md（本日1日統合レポート）
+### 販売・原稿
+- `sales/gmb_note_final_v6.md` ★本日FIX（GMB note第6稿）
+- `sales/brain_ui_diagnosis_draft_v1.md` ★本日新規（Brain原稿ドラフト第1稿）
+- `sales/gmb_hearing_record_20260704.md`
 
-### 🟢 Tier 3（成果物・保存推奨）
-- sales/gmb_note_final_v3.md（GMB note第3弾 磨き上げ完成版・3,798字）
+### 仕様（ガイドライン）
+- `gpts-package/design_system.md`
+- `gpts-package/visual_data_schema.md`
+- `gpts-package/01_Instructions_WebDiagnosis_lite.md`
 
-### 📖 その他
-- README_OBSIDIAN.md
+---
 
-## 本日追加された重要な戦略確定事項
+## ⭐ 本日（7/5）のハイライト
 
-### LP戦略確定
-- **公開スペース**：STUDIO（月980円）
-- **ドメイン**：terminator.jp（既取得・Web公開設定は未実施）
-- **運用方針**：候補A（トップを個人ポータル化 + /ui-diagnosis/ にLP）
-- **STUDIO導入**：7中旬
-- **LP Phase 1公開**：7末
-- **年間コスト**：13,000円前後
+1. **v10リリース**：ビジュアル診断ボード slide1 総評⇄Top3レイアウト崩れを根治
+2. **GMB note第6稿FIX**：Claude-Chat/GMBチャットの2レビュー反映完了
+3. **Brain原稿ドラフト第1稿**：CTA画像7構成メモを含む
+4. **稼働工数確定**：1日3h上限で作業スタイル調整
 
-詳細は `handover/LP_STRATEGY.md` を参照。
+## 🎯 明日以降
 
-## 本日1日分の統合サマリを素早く読むなら
+- 入江さん：Brain原稿キャッチコピー案選定、CTA画像7制作、GMB note入稿判断
+- 僕：FB反映してBrain原稿第2稿、v10サンプル画像整形
 
-**`handover/DAILY_SUMMARY_20260703.md`** を最初に開いてください。
-本日の全成果・全確定事項・全申し送りが1ファイルにまとまっています。
+## 📦 別途配布物
+- `_deliver/ui-diagnosis-director_20260705.zip`（成果物本体・4.0MB）
