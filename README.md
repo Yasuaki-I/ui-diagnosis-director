@@ -1,42 +1,32 @@
-# UI診断ディレクター 配布パッケージ — 2026-07-04（金）
+# UI診断ディレクター 2026-07-18（土）パッケージ FINAL版
 
-## 変更概要（v9）
+**作成日**: 2026-07-18（土）終業時（13往復目・Claude-Chatレビュー戻し反映済）
+**主タスク**: UI診断ディレクター GPTs Instructions v3.4 改修＋Claude-Chatレビュー反映
 
-7/3 いただいた FB 2件への完全対応。
+## 📋 パッケージ内容
 
-### ハイライト
+### gpts-package/
+- `01_Instructions_v3.4_lite_20260721.md` — GPTs Configure貼付用（**7,767字・余裕233字**）
+- `01_Instructions_v3.4_PLAIN_20260721.md` — 参照用フル版
 
-- **C-3 slide1・slide2 メタヘッダの左縦バーを NAVY 統一**（診断日・総合スコアが ORANGE/RED から NAVY へ変更）
-- **C-3 slide1 Top3 レイアウト崩れ根本解消**（3件×2行折返しでも枠内に完全表示）
-  - SUMMARY_H 94→66 / ISSUE_H 172→200 に再配分
+### handover/
+- `HANDOVER_20260718.md` — AIチャット申し送り（13往復目追記済）
+- `CLAUDE_CHAT_20260718.md` — Claude-Chat向け相談事項
+- `VIOLET_20260718.md` — ヴァイオレット向けスケジュール（観察⑧追記済）
+- `AIDRIVE_UPLOAD_20260718.md` — AI-Driveアップロード指針
+- `BACKLOG_v3.5_20260718.md` — v3.5候補管理（**合計5件**）
+- `NEXT_SESSION_PROMPT_20260718.md` — 次回セッション起動用プロンプト
 
-詳細は `HANDOVER_20260704.md` を参照。
+## 🎯 本日の到達点（FINAL）
 
----
+- v3.4 lite版：Claude-Chatレビュー戻し完全反映（中優先2件＋J-6新設）
+- v3.4-dev環境貼付完了・警告なし
+- 全件レビュー承認済 → 7/20ドッグフーディングへ進行可
+- v3.5候補5件（大枠2件＋低優先3件）としてバックログ管理
 
-## パッケージ内容
+## 📅 明日以降
 
-```
-ui-diagnosis-director_20260704/
-├── README.md                              ← 本ファイル
-├── HANDOVER_20260704.md                   ← 本日の詳細進捗
-├── PROJECT_STATE.md                       ← プロジェクト現状
-├── gpts-package/                          ← GPTs アップロード用ファイル一式
-│   ├── 01_Instructions_WebDiagnosis_lite.md
-│   ├── 03_pptx_builder.py                 ← v9（メタヘッダNAVY統一＋Top3根本解消）
-│   ├── design_system.md
-│   └── visual_data_schema.md
-└── _verify/
-    ├── v9/                                ← 通常データ生成PPTX（3種）
-    └── v9_stress/                         ← 120字ストレステスト用PPTX（3種）
-```
-
-## GPTs 側の反映手順
-
-1. OpenAI GPTs 編集画面を開く（**UI診断ディレクター**）。
-2. **Knowledge** タブで `gpts-package/03_pptx_builder.py` を差し替えアップロード（他ファイルは v8 と同一なので上書き不要）。
-3. **保存** して簡易動作テスト（URL 診断 1 件 → PPTX 3 種納品確認）。
-
----
-
-（配布日：2026-07-04 / パッケージバージョン：v9）
+- 7/19（日）：v3.4-dev通読レビュー
+- 7/20（月）：ドッグフーディング（観察⑧含む）
+- 7/21（火）夜：文言微調整・最終確認
+- 7/22（水）12:05：X軸β募集メイン投稿
