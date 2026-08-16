@@ -345,3 +345,19 @@ Claude-Chatレビュー（7/28）で「意図と乖離なし・そのまま採�
 ### 初動獲得プラン（7/30確定）
 1. note連続実話シリーズ（04・05）で読者基盤を先に作る
 2. β二次募集（9月上旬）を"販売開始と同時期"にぶつける
+
+**最終更新**：2026年8月16日（日）EOD — 
+**Brain販売原稿6章完成（70%到達）＋ヴァイオレット全チャネル復旧完了（EACCES修復）＋GMB T5-1設計フェーズ完了＋OpenAI GPT仕様変更確認（商品設計転換検討開始）**
+
+### 【8/16確定】ヴァイオレット復旧完了
+- 原因：openclaw.json 所有者 root:root 600 → nodeユーザーEACCES
+- 修復：chown -R node:node /data（診断モード起動ルート経由）
+- 完了：8/16 14:06 全3チャネル（Telegram/LINE/Discord）応答確認
+- 会話データ：完全保持（Discord「1ヶ月ぶりの再会」応答で実証）
+
+### 【8/16確定】OpenAI GPT仕様変更
+- 個人向け（Free/Go/Plus/Pro）：新規GPT作成・公開不可
+- 既存GPT：利用・編集可能
+- Business/Enterprise/Edu：対象外
+- Brain原稿影響：8章・終章で商品設計転換（Skill Kit型へ）
+- 参照：https://help.openai.com/en/articles/8554397 等
