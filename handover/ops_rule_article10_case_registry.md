@@ -715,7 +715,7 @@ AIスライドは初回照合時、**実装記録`v35_core_extended_pattern_defi
 ## 📌 事例014｜v17 P1実装｜集約表と実装記録の数値相違2件の採用判断
 
 - 適用日：**2026-08-23（日）**
-- 対象：`v17_p1_draw_patterns_20260823.py`｜`breakdown` の要素数上限・`comparison` の最大要素数
+- 対象：⭐ `/handover/v17/v17_p1_draw_patterns_20260823.py`｜`breakdown` の要素数上限・`comparison` の最大要素数
 - 分類：**同一事項に複数の記録が存在する場合の優越順位の判断**
 
 ### ① 状況
