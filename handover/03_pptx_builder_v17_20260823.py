@@ -17,19 +17,6 @@ ChatGPT の Code Interpreter から exec() で読み込み、関数を呼び出�
 必達13条項（Instructions参照）を厳格に遵守。
 
 バージョン履歴:
-    v17.1.0 (2026-08-24): v17 P2 図解パターン描画3種を統合。
-        - draw_pyramid / draw_sequence / draw_framework。
-        - draw_pattern を6種対応に拡張（P1 3種＋P2 3種）。
-        - 要素数・軸要否は集約表（8/15）を正とする（8/24 統括指示）。
-        - pyramid の台形は add_freeform を使わず幅可変の矩形段で近似（原則④）。
-        - フォールバック理由を戻り値の notes に記録するよう修正（P1にも遡及）。
-    v17.0.1 (2026-08-24): 実機検証（入江さん）で検出した2件を修正。
-        - カード高さ上限を 230→186px（V17_CARD_H_MAX）。充填率47%→60%。
-        - add_diagram_slide() を追加。ヘッダ帯とスライド内見出しの
-          タイトル二重表示を構造的に防止（ヘッダは原本 `ja` を表示）。
-    v17.0.0 (2026-08-23): v17 P1 図解パターン描画3種を統合。
-        - draw_category / draw_breakdown / draw_comparison。
-        - DIAGRAM_PATTERNS（原本）は無改変。拡張層は DIAGRAM_PATTERN_SPEC に分離。
     v15 (2026-07-12): リスト表示の「折返し行間」と「項目間余白」を分離制御。
         - _add_multi_run_box / add_paragraph_box に space_after_pt /
           space_before_pt / vertical_anchor パラメータを追加。
@@ -45,8 +32,8 @@ ChatGPT の Code Interpreter から exec() で読み込み、関数を呼び出�
     v11 (2026-07-06): 総評⇄Top3レイアウト崩れ根治（文字数上限厳格化）。
     v10 (2026-07-05): C-1/C-2/C-3 の120字統一・word_wrap=True で文字切れ根絶。
 """
-__version__ = '17.1.0'
-__version_date__ = '2026-08-24'
+__version__ = '17.0.0'
+__version_date__ = '2026-08-23'
 
 from pptx import Presentation
 from pptx.util import Inches, Pt, Emu
@@ -3873,7 +3860,6 @@ if __name__ == '__main__':
     prs5.save('test_onepager_proposals.pptx')
     print('Generated: test_onepager_proposals.pptx')
 
-
 # =====================================================================
 # ▼▼▼ v17 追加ブロック（P1｜category / breakdown / comparison） ▼▼▼
 # 既存の C-1〜C-3 描画ロジックには一切触れない（後方互換完全維持）
@@ -3909,12 +3895,6 @@ V17_AREA = {
 
 # 警告オーバーライドの閾値（原則②｜B-6 4.4節）
 V17_WARNING_SCORE = 40
-
-# カード高さの上限（px）
-# v17-fix1（8/24 実機検証）: 上限230pxではラベル+スコア+説明1行=108pxに対し
-# 充填率47%となり「カード内が空白だらけ」に見える事象を検出。
-# 説明文2行（44px）を収容しつつ充填率60%以上を確保する値として186pxを採用。
-V17_CARD_H_MAX = 186
 
 
 # ---------------------------------------------------------------------
@@ -4075,7 +4055,7 @@ def draw_category(slide, palette, data, _fallback_from=None):
     gap = V17_AREA['gap']
     avail_h = V17_AREA['body_bottom'] - V17_AREA['body_top']
     cell_w = (V17_AREA['width'] - gap * (cols - 1)) / float(cols)
-    cell_h = min((avail_h - gap * (rows - 1)) / float(rows), V17_CARD_H_MAX)
+    cell_h = min((avail_h - gap * (rows - 1)) / float(rows), 230)
     block_h = cell_h * rows + gap * (rows - 1)
     y0 = V17_AREA['body_top'] + (avail_h - block_h) / 2.0
 
@@ -4154,15 +4134,14 @@ def draw_breakdown(slide, palette, data):
 
     if (not (spec['min_elements'] <= len(comps) <= spec['max_elements'])
             or bad or total_in <= 0):
-        rep = draw_category(slide, palette, {
+        notes.append('breakdown 前提不成立（要素数=%d／数値不正=%s／合計=%s）｜'
+                     'category へフォールバック' % (len(comps), bad, total_in))
+        return draw_category(slide, palette, {
             'title': data.get('title', ''),
             'categories': [{'label': c.get('label', ''),
                             'score': c.get('score'),
                             'description': str(c.get('note', ''))} for c in comps],
         }, _fallback_from='breakdown')
-        rep['notes'].insert(0, 'breakdown 前提不成立（要素数=%d／数値不正=%s／合計=%s）｜'
-                            'category へフォールバック' % (len(comps), bad, total_in))
-        return rep
 
     _v17_title(slide, data.get('title', ''), palette)
 
@@ -4262,16 +4241,14 @@ def draw_comparison(slide, palette, data):
     items = _v17_normalize(data.get('items', []))
 
     if not (spec['min_elements'] <= len(items) <= spec['max_elements']):
-        rep = draw_category(slide, palette, {
+        notes.append('comparison 要素数 %d が %d〜%d の範囲外｜category へフォールバック'
+                     % (len(items), spec['min_elements'], spec['max_elements']))
+        return draw_category(slide, palette, {
             'title': data.get('title', ''),
             'categories': [{'label': it.get('label', ''),
                             'score': it.get('score'),
                             'description': ''} for it in items],
         }, _fallback_from='comparison')
-        rep['notes'].insert(0, 'comparison 要素数 %d が %d〜%d の範囲外｜'
-                            'category へフォールバック'
-                            % (len(items), spec['min_elements'], spec['max_elements']))
-        return rep
 
     _v17_title(slide, data.get('title', ''), palette)
     axis = data.get('comparison_axis')
@@ -4373,39 +4350,6 @@ def _est_text_w(text, size_pt):
     return w
 
 
-def add_diagram_slide(prs, pattern_key, palette, data, page_num=1, total=1,
-                      header_label=None, author='紺＆クリーン スライド作成'):
-    """図解パターン1枚を「ヘッダ帯＋フッター＋パターン描画」で1スライド出力する。
-
-    既存の add_* 関数群と同じ呼び出し規約（prs を受け取り slide を返す）に揃えた
-    ラッパ。v17-fix2（8/24 実機検証）で検出した「_add_header と draw_* の
-    両方がタイトルを描き、同一文言が2箇所に出る」事象を構造的に防ぐ。
-
-    ヘッダ帯には data['title'] を出さず、原本 DIAGRAM_PATTERNS の `ja`
-    （例: 'category' → '分類'）を既定ラベルとして表示する。
-    スライド内見出しは draw_* 側が data['title'] を1箇所だけ描く。
-
-    Args:
-        prs         : python-pptx Presentation
-        pattern_key : 'category' / 'breakdown' / 'comparison' 等
-        palette     : get_theme_palette の戻り値
-        data        : 各 draw_* のデータ辞書
-        page_num    : ページ番号
-        total       : 総ページ数
-        header_label: ヘッダ帯の左側文言（None なら原本 `ja` を使用）
-    Returns:
-        (slide, report)
-    """
-    slide = _blank_slide(prs)
-    if header_label is None:
-        meta = DIAGRAM_PATTERNS.get(pattern_key) or {}
-        header_label = meta.get('ja', '図解')
-    _add_header(slide, header_label, str(pattern_key).upper())
-    _add_footer(slide, page_num, total, author=author)
-    report = draw_pattern(slide, pattern_key, palette, data)
-    return slide, report
-
-
 def _fmt_num(v):
     """数値の表示整形（整数はそのまま、小数は1桁）"""
     try:
@@ -4421,388 +4365,4 @@ def _pp_right():
 
 # =====================================================================
 # ▲▲▲ v17 追加ブロック ここまで ▲▲▲
-# =====================================================================
-
-
-# =====================================================================
-# ▼▼▼ v17 P2 追加ブロック（pyramid / sequence / framework） ▼▼▼
-# P1ブロックのヘルパーを再利用する。既存 C-1〜C-3 には一切触れない。
-# =====================================================================
-
-# ---------------------------------------------------------------------
-# v17-P2-0｜拡張パターン仕様（集約表 P2-1／P2-2／P2-3 行を正とする）
-# ---------------------------------------------------------------------
-DIAGRAM_PATTERN_SPEC.update({
-    'pyramid': {
-        'min_elements': 3, 'max_elements': 5, 'requires_axes': False,
-        'direction': 'vertical', 'color_gradation': 'hierarchical',
-        # 頂点30%→基層90%（原本 use「階層・優先順位を上下で表現」）
-        'width_ratio_top': 0.30, 'width_ratio_bottom': 0.90,
-    },
-    'sequence': {
-        'min_elements': 3, 'max_elements': 6, 'requires_axes': False,
-        'direction': 'horizontal', 'color_gradation': 'progressive',
-        'arrow_gap_px': 44,
-    },
-    'framework': {
-        'min_elements': 4, 'max_elements': 9, 'requires_axes': True,
-        'direction': 'grid', 'color_gradation': 'positional_quadrant',
-        # 要素数→グリッド形状（決定論的｜原則③）
-        'grid_map': {4: (2, 2), 5: (3, 2), 6: (3, 2),
-                     7: (3, 3), 8: (3, 3), 9: (3, 3)},
-        'axis_y_w': 72, 'axis_x_h': 46,
-    },
-})
-
-# 階層色（hierarchical）｜段数別の色キー列（決定論的）
-V17_PYRAMID_TIERS = {
-    3: ['primary', 'midtone', 'light'],
-    4: ['primary', 'secondary', 'midtone', 'light'],
-    5: ['primary', 'secondary', 'midtone', 'light', 'lightest'],
-}
-
-# 進行色（progressive）｜段数別の色キー列
-V17_SEQUENCE_TIERS = {
-    3: ['primary', 'secondary', 'midtone'],
-    4: ['primary', 'secondary', 'midtone', 'light'],
-    5: ['primary', 'secondary', 'midtone', 'light', 'lightest'],
-    6: ['primary', 'primary', 'secondary', 'midtone', 'light', 'lightest'],
-}
-
-
-# ---------------------------------------------------------------------
-# v17-P2-1｜pyramid（ピラミッド）｜vertical / hierarchical / 3〜5段
-# ---------------------------------------------------------------------
-def draw_pyramid(slide, palette, data):
-    """階層・優先順位を上下で表現する（頂点＝最重要）。
-
-    Args:
-        data : {'title': str,
-                'levels': [{'label': str, 'score': int|None,
-                            'description': str}, ...]}   # 3〜5・index0が頂点
-    Returns:
-        dict : 描画レポート
-
-    仕様: 集約表 P2-1 行（min3／max5／vertical／hierarchical／原本shape=triangle）
-    ⚠️ 台形は `add_freeform` を使わず、幅可変の矩形段で近似する（原則④）。
-       `add_freeform` は python-pptx のバージョン依存があり、PowerPoint実機での
-       再現性を担保できないため。段ごとの幅差で三角形の輪郭を表現する。
-    範囲外は draw_category へフォールバック（原則①｜例外を投げない）。
-    """
-    spec = DIAGRAM_PATTERN_SPEC['pyramid']
-    notes = []
-    levels = _v17_normalize(data.get('levels', []))
-
-    if not (spec['min_elements'] <= len(levels) <= spec['max_elements']):
-        rep = draw_category(slide, palette, {
-            'title': data.get('title', ''),
-            'categories': [{'label': lv.get('label', ''), 'score': lv.get('score'),
-                            'description': str(lv.get('description', ''))}
-                           for lv in levels],
-        }, _fallback_from='pyramid')
-        rep['notes'].insert(0, 'pyramid 段数 %d が %d〜%d の範囲外｜category へフォールバック'
-                            % (len(levels), spec['min_elements'], spec['max_elements']))
-        return rep
-
-    _v17_title(slide, data.get('title', ''), palette)
-
-    n = len(levels)
-    tiers = V17_PYRAMID_TIERS[n]
-    gap = 8
-    avail = V17_AREA['body_bottom'] - V17_AREA['body_top']
-    band_h = min((avail - gap * (n - 1)) / float(n), 104)
-    block_h = band_h * n + gap * (n - 1)
-    y0 = V17_AREA['body_top'] + (avail - block_h) / 2.0
-    cx = V17_AREA['left'] + V17_AREA['width'] / 2.0
-
-    r_top, r_bot = spec['width_ratio_top'], spec['width_ratio_bottom']
-    for i, lv in enumerate(levels):
-        # 段の幅：頂点 r_top → 基層 r_bot を線形に配分
-        ratio = r_top + (r_bot - r_top) * (i / float(n - 1))
-        w = V17_AREA['width'] * ratio
-        x = cx - w / 2.0
-        y = y0 + i * (band_h + gap)
-
-        score = lv.get('score')
-        fill_hex = _tier_fill(palette, score, tiers[i])
-        fg = _text_color_on(fill_hex)
-        _v17_card(slide, x, y, w, band_h, fill_hex, palette, radius_px=6)
-
-        # 段ラベル｜頂点ほど大きく（優先度の視覚的強調）
-        label_size = 20 if i == 0 else (18 if i == 1 else 16)
-        pad = 20
-        add_text(slide, x + pad, y + 8, w - pad * 2, str(lv.get('label', '')),
-                 label_size, bold=True, color=fg, height_px=int(label_size * 1.5),
-                 align=_pp_center())
-        sub = []
-        if score is not None:
-            sub.append('%s%%' % score)
-        desc = str(lv.get('description', ''))
-        if desc:
-            sub.append(desc)
-        if sub:
-            add_text(slide, x + pad, y + 8 + int(label_size * 1.5), w - pad * 2,
-                     '　'.join(sub), 14, color=fg,
-                     height_px=max(int(band_h - int(label_size * 1.5) - 16), 22),
-                     align=_pp_center())
-
-        # 優先度の序列を左外に添える（1が最上位）
-        add_text(slide, V17_AREA['left'], y + band_h / 2.0 - 13, 40,
-                 str(i + 1), 16, bold=True,
-                 color=hex_to_rgb(palette['secondary']), height_px=26,
-                 align=_pp_center())
-
-    return _v17_report('pyramid', n, None, notes)
-
-
-# ---------------------------------------------------------------------
-# v17-P2-2｜sequence（順序）｜horizontal / progressive / 3〜6ステップ
-# ---------------------------------------------------------------------
-def draw_sequence(slide, palette, data):
-    """ステップ・時系列を左→右で表現する。
-
-    Args:
-        data : {'title': str,
-                'steps': [{'label': str, 'score': int|None,
-                           'description': str}, ...]}    # 3〜6
-    仕様: 集約表 P2-2 行（min3／max6／horizontal 固定／progressive）
-    ⚠️ 原本 use「ステップ・時系列を**左→右**」により direction は horizontal 固定。
-       集約表も direction=horizontal と規定するため、縦方向は実装しない。
-    範囲外は draw_category へフォールバック（原則①）。
-    """
-    spec = DIAGRAM_PATTERN_SPEC['sequence']
-    notes = []
-    steps = _v17_normalize(data.get('steps', []))
-
-    if not (spec['min_elements'] <= len(steps) <= spec['max_elements']):
-        rep = draw_category(slide, palette, {
-            'title': data.get('title', ''),
-            'categories': [{'label': st.get('label', ''), 'score': st.get('score'),
-                            'description': str(st.get('description', ''))}
-                           for st in steps],
-        }, _fallback_from='sequence')
-        rep['notes'].insert(0, 'sequence ステップ数 %d が %d〜%d の範囲外｜'
-                            'category へフォールバック'
-                            % (len(steps), spec['min_elements'], spec['max_elements']))
-        return rep
-
-    _v17_title(slide, data.get('title', ''), palette)
-
-    n = len(steps)
-    tiers = V17_SEQUENCE_TIERS[n]
-    agap = spec['arrow_gap_px']
-    card_w = (V17_AREA['width'] - agap * (n - 1)) / float(n)
-    card_h = min(V17_AREA['body_bottom'] - V17_AREA['body_top'], 232)
-    y = V17_AREA['body_top'] + \
-        (V17_AREA['body_bottom'] - V17_AREA['body_top'] - card_h) / 2.0
-
-    for i, st in enumerate(steps):
-        x = V17_AREA['left'] + i * (card_w + agap)
-        score = st.get('score')
-        fill_hex = _tier_fill(palette, score, tiers[i])
-        fg = _text_color_on(fill_hex)
-        _v17_card(slide, x, y, card_w, card_h, fill_hex, palette)
-
-        pad = 14
-        add_text(slide, x + pad, y + 12, card_w - pad * 2, 'STEP %d' % (i + 1),
-                 14, bold=True, color=fg, height_px=22)
-        add_text(slide, x + pad, y + 40, card_w - pad * 2,
-                 str(st.get('label', '')), 16, bold=True, color=fg,
-                 height_px=52, line_height=1.3)
-        if score is not None:
-            add_text(slide, x + pad, y + 98, card_w - pad * 2, '%s%%' % score,
-                     24, bold=True, color=fg, height_px=38)
-        desc = str(st.get('description', ''))
-        if desc:
-            dtop = y + (142 if score is not None else 98)
-            add_text(slide, x + pad, dtop, card_w - pad * 2, desc, 14, color=fg,
-                     height_px=max(int(y + card_h - dtop - 10), 22),
-                     line_height=1.4)
-
-        # ステップ間の矢印（原則④｜python-pptx標準図形・adjustments 未使用）
-        if i < n - 1:
-            ax = x + card_w + 6
-            aw = agap - 12
-            ah = 26
-            add_shape(slide, _mso_right_arrow(), ax, y + card_h / 2.0 - ah / 2.0,
-                      aw, ah, fill=hex_to_rgb(palette['accent']))
-
-    return _v17_report('sequence', n, None, notes)
-
-
-# ---------------------------------------------------------------------
-# v17-P2-3｜framework（フレームワーク）｜grid / positional_quadrant / 4〜9セル
-#   ⚠️ 実装済11パターン中で唯一 requires_axes=True
-# ---------------------------------------------------------------------
-def _framework_tier(row, col, rows, cols):
-    """セル位置から色キーを決定（positional_quadrant｜決定論的）。
-
-    2x2 は原本 use「4象限マトリクス等」に従い象限別の意味付けを行う
-    （右上＝最重要／左下＝最軽微）。それ以外は行位置ベース。
-    """
-    if (rows, cols) == (2, 2):
-        return {(0, 1): 'primary', (0, 0): 'secondary',
-                (1, 1): 'midtone', (1, 0): 'light'}.get((row, col), 'midtone')
-    if row == 0:
-        return 'primary'
-    if row == rows - 1:
-        return 'light'
-    return 'secondary'
-
-
-def draw_framework(slide, palette, data):
-    """2軸マトリクス（4象限等）で構造を提示する。
-
-    Args:
-        data : {'title': str,
-                'axis_x_label': str, 'axis_y_label': str,     # ⚠️ 必須
-                'axis_x_low': str, 'axis_x_high': str,
-                'axis_y_low': str, 'axis_y_high': str,
-                'cells': [{'row': int, 'col': int, 'label': str,
-                           'score': int|None, 'items': [str]}, ...]}  # 4〜9
-    仕様: 集約表 P2-3 行（min4／max9／requires_axes=True／grid／positional_quadrant）
-    ⚠️ 集約表は「4〜9の範囲」を規定するため、5・7・8セルも受け付け、
-       要素数からグリッド形状を決定論的に自動選定する（実装記録の固定値縛りは採らない）。
-    ⚠️ 軸ラベル欠落時も例外を投げず draw_category へフォールバックする（原則①）。
-    """
-    spec = DIAGRAM_PATTERN_SPEC['framework']
-    notes = []
-    cells = _v17_normalize(data.get('cells', []))
-    n = len(cells)
-
-    def _fallback(reason):
-        rep = draw_category(slide, palette, {
-            'title': data.get('title', ''),
-            'categories': [{'label': c.get('label', ''), 'score': c.get('score'),
-                            'description': ''} for c in cells],
-        }, _fallback_from='framework')
-        # ⚠️ v17.1.0 修正：ローカル notes ではなく戻り値の notes に記録する。
-        # 旧実装はローカル notes に append した後 draw_category の新しい report を
-        # 返していたため、フォールバック理由が呼び出し側に届かなかった。
-        rep['notes'].insert(0, reason)
-        return rep
-
-    if not (spec['min_elements'] <= n <= spec['max_elements']):
-        return _fallback('framework セル数 %d が %d〜%d の範囲外｜category へフォールバック'
-                         % (n, spec['min_elements'], spec['max_elements']))
-
-    ax_label = str(data.get('axis_x_label') or '').strip()
-    ay_label = str(data.get('axis_y_label') or '').strip()
-    if not ax_label or not ay_label:
-        return _fallback('framework は requires_axes=True｜軸ラベル欠落のため '
-                         'category へフォールバック（例外は送出しない）')
-
-    _v17_title(slide, data.get('title', ''), palette)
-
-    cols, rows = spec['grid_map'][n]
-    notes.append('セル数 %d → グリッド %dx%d を自動選定' % (n, cols, rows))
-
-    ay_w, ax_h = spec['axis_y_w'], spec['axis_x_h']
-    gx = V17_AREA['left'] + ay_w
-    gy = V17_AREA['body_top']
-    gw = V17_AREA['width'] - ay_w
-    gh = V17_AREA['body_bottom'] - gy - ax_h
-    gap = 10
-    cw = (gw - gap * (cols - 1)) / float(cols)
-    ch = (gh - gap * (rows - 1)) / float(rows)
-
-    # 軸ラベル（framework固有｜requires_axes=True）
-    add_text(slide, gx, V17_AREA['body_bottom'] - ax_h + 10, gw,
-             '%s ← %s → %s' % (data.get('axis_x_low', '低'), ax_label,
-                               data.get('axis_x_high', '高')),
-             14, bold=True, color=hex_to_rgb(palette['secondary']),
-             height_px=24, align=_pp_center())
-    add_paragraph_box(slide, V17_AREA['left'], gy + gh / 2.0 - 56, ay_w,
-                      [{'text': str(data.get('axis_y_high', '高')), 'size': 14,
-                        'bold': True, 'align': _pp_center()},
-                       {'text': '↑', 'size': 14, 'align': _pp_center()},
-                       {'text': ay_label, 'size': 14, 'bold': True,
-                        'align': _pp_center()},
-                       {'text': '↓', 'size': 14, 'align': _pp_center()},
-                       {'text': str(data.get('axis_y_low', '低')), 'size': 14,
-                        'bold': True, 'align': _pp_center()}],
-                      height_px=112, default_color=hex_to_rgb(palette['secondary']),
-                      line_height=1.15)
-
-    # セル（row/col 指定がなければ左上から順に充填）
-    used = set()
-    for idx, c in enumerate(cells):
-        r = c.get('row')
-        col = c.get('col')
-        if not isinstance(r, int) or not isinstance(col, int) \
-                or not (0 <= r < rows and 0 <= col < cols) or (r, col) in used:
-            r, col = idx // cols, idx % cols
-        used.add((r, col))
-
-        x = gx + col * (cw + gap)
-        y = gy + r * (ch + gap)
-        score = c.get('score')
-        fill_hex = _tier_fill(palette, score, _framework_tier(r, col, rows, cols))
-        fg = _text_color_on(fill_hex)
-        _v17_card(slide, x, y, cw, ch, fill_hex, palette)
-
-        pad = 14
-        add_text(slide, x + pad, y + 10, cw - pad * 2, str(c.get('label', '')),
-                 16, bold=True, color=fg, height_px=26)
-        top = y + 38
-        if score is not None:
-            add_text(slide, x + pad, top, cw - pad * 2, '%s%%' % score,
-                     20, bold=True, color=fg, height_px=32)
-            top += 34
-        items = [str(i) for i in (c.get('items') or [])][:3]
-        if items and top + 22 <= y + ch - 8:
-            add_paragraph_box(slide, x + pad, top, cw - pad * 2,
-                              [{'text': '・' + t, 'size': 14} for t in items],
-                              height_px=max(int(y + ch - top - 8), 22),
-                              default_color=fg, line_height=1.35,
-                              space_after_pt=2)
-
-    return _v17_report('framework', n, None, notes)
-
-
-# ---------------------------------------------------------------------
-# v17-P2-4｜ディスパッチ表への登録（P1の draw_pattern を置き換える）
-# ---------------------------------------------------------------------
-def draw_pattern(slide, pattern_key, palette, data):
-    """パターンキーで描画関数を振り分ける（P1 3種＋P2 3種＝6種に対応）。
-
-    未実装キー（funnel / timeline / contrast / cycle / network / integration）は
-    category に退避し、notes に理由を記録する（例外は送出しない）。
-    """
-    table = {
-        'category':   draw_category,
-        'breakdown':  draw_breakdown,
-        'comparison': draw_comparison,
-        'pyramid':    draw_pyramid,
-        'sequence':   draw_sequence,
-        'framework':  draw_framework,
-    }
-    fn = table.get(pattern_key)
-    if fn is None:
-        src = (data.get('categories') or data.get('items')
-               or data.get('components') or data.get('levels')
-               or data.get('steps') or data.get('cells') or [])
-        rep = draw_category(slide, palette, {
-            'title': data.get('title', ''),
-            'categories': [{'label': str(x.get('label', '')) if isinstance(x, dict) else str(x),
-                            'score': x.get('score') if isinstance(x, dict) else None,
-                            'description': ''} for x in src],
-        }, _fallback_from=pattern_key)
-        rep['notes'].append('パターン "%s" は v17 P3 で実装予定（P1/P2 の対象外）'
-                            % pattern_key)
-        return rep
-    return fn(slide, palette, data)
-
-
-def _pp_center():
-    from pptx.enum.text import PP_ALIGN
-    return PP_ALIGN.CENTER
-
-
-def _mso_right_arrow():
-    from pptx.enum.shapes import MSO_SHAPE
-    return MSO_SHAPE.RIGHT_ARROW
-
-# =====================================================================
-# ▲▲▲ v17 P2 追加ブロック ここまで ▲▲▲
 # =====================================================================
