@@ -1,0 +1,333 @@
+{
+ "rows": [
+  {
+   "slide": 1,
+   "kind": "funnel",
+   "n": 3,
+   "dense": false,
+   "stage": 1,
+   "card_w": 1080,
+   "card_h": 118,
+   "card_bottom": 256.0,
+   "ink_bottom": 192.0,
+   "slack": 64.0
+  },
+  {
+   "slide": 1,
+   "kind": "funnel",
+   "n": 3,
+   "dense": false,
+   "stage": 2,
+   "card_w": 780,
+   "card_h": 118,
+   "card_bottom": 384.0,
+   "ink_bottom": 320.0,
+   "slack": 64.0
+  },
+  {
+   "slide": 1,
+   "kind": "funnel",
+   "n": 3,
+   "dense": false,
+   "stage": 3,
+   "card_w": 480,
+   "card_h": 118,
+   "card_bottom": 512.0,
+   "ink_bottom": 470.0,
+   "slack": 42.0
+  },
+  {
+   "slide": 2,
+   "kind": "funnel",
+   "n": 6,
+   "dense": false,
+   "stage": 1,
+   "card_w": 1080,
+   "card_h": 76,
+   "card_bottom": 214.0,
+   "ink_bottom": 192.0,
+   "slack": 22.0
+  },
+  {
+   "slide": 2,
+   "kind": "funnel",
+   "n": 6,
+   "dense": false,
+   "stage": 2,
+   "card_w": 960,
+   "card_h": 76,
+   "card_bottom": 300.0,
+   "ink_bottom": 278.0,
+   "slack": 22.0
+  },
+  {
+   "slide": 2,
+   "kind": "funnel",
+   "n": 6,
+   "dense": false,
+   "stage": 3,
+   "card_w": 840,
+   "card_h": 76,
+   "card_bottom": 386.0,
+   "ink_bottom": 364.0,
+   "slack": 22.0
+  },
+  {
+   "slide": 2,
+   "kind": "funnel",
+   "n": 6,
+   "dense": false,
+   "stage": 4,
+   "card_w": 720,
+   "card_h": 76,
+   "card_bottom": 472.0,
+   "ink_bottom": 450.0,
+   "slack": 22.0
+  },
+  {
+   "slide": 2,
+   "kind": "funnel",
+   "n": 6,
+   "dense": false,
+   "stage": 5,
+   "card_w": 600,
+   "card_h": 76,
+   "card_bottom": 558.0,
+   "ink_bottom": 555.0,
+   "slack": 3.0
+  },
+  {
+   "slide": 2,
+   "kind": "funnel",
+   "n": 6,
+   "dense": false,
+   "stage": 6,
+   "card_w": 480,
+   "card_h": 76,
+   "card_bottom": 644.0,
+   "ink_bottom": 641.0,
+   "slack": 3.0
+  },
+  {
+   "slide": 3,
+   "kind": "funnel",
+   "n": 3,
+   "dense": true,
+   "stage": 1,
+   "card_w": 1080,
+   "card_h": 118,
+   "card_bottom": 256.0,
+   "ink_bottom": 192.0,
+   "slack": 64.0
+  },
+  {
+   "slide": 3,
+   "kind": "funnel",
+   "n": 3,
+   "dense": true,
+   "stage": 2,
+   "card_w": 780,
+   "card_h": 118,
+   "card_bottom": 384.0,
+   "ink_bottom": 320.0,
+   "slack": 64.0
+  },
+  {
+   "slide": 3,
+   "kind": "funnel",
+   "n": 3,
+   "dense": true,
+   "stage": 3,
+   "card_w": 480,
+   "card_h": 118,
+   "card_bottom": 512.0,
+   "ink_bottom": 470.0,
+   "slack": 42.0
+  },
+  {
+   "slide": 4,
+   "kind": "funnel",
+   "n": 6,
+   "dense": true,
+   "stage": 1,
+   "card_w": 1080,
+   "card_h": 76,
+   "card_bottom": 214.0,
+   "ink_bottom": 192.0,
+   "slack": 22.0
+  },
+  {
+   "slide": 4,
+   "kind": "funnel",
+   "n": 6,
+   "dense": true,
+   "stage": 2,
+   "card_w": 960,
+   "card_h": 76,
+   "card_bottom": 300.0,
+   "ink_bottom": 278.0,
+   "slack": 22.0
+  },
+  {
+   "slide": 4,
+   "kind": "funnel",
+   "n": 6,
+   "dense": true,
+   "stage": 3,
+   "card_w": 840,
+   "card_h": 76,
+   "card_bottom": 386.0,
+   "ink_bottom": 364.0,
+   "slack": 22.0
+  },
+  {
+   "slide": 4,
+   "kind": "funnel",
+   "n": 6,
+   "dense": true,
+   "stage": 4,
+   "card_w": 720,
+   "card_h": 76,
+   "card_bottom": 472.0,
+   "ink_bottom": 450.0,
+   "slack": 22.0
+  },
+  {
+   "slide": 4,
+   "kind": "funnel",
+   "n": 6,
+   "dense": true,
+   "stage": 5,
+   "card_w": 600,
+   "card_h": 76,
+   "card_bottom": 558.0,
+   "ink_bottom": 555.0,
+   "slack": 3.0
+  },
+  {
+   "slide": 4,
+   "kind": "funnel",
+   "n": 6,
+   "dense": true,
+   "stage": 6,
+   "card_w": 480,
+   "card_h": 76,
+   "card_bottom": 644.0,
+   "ink_bottom": 641.0,
+   "slack": 3.0
+  },
+  {
+   "slide": 5,
+   "kind": "pyramid",
+   "n": 5,
+   "dense": false,
+   "stage": 1,
+   "card_w": 360,
+   "card_h": 95,
+   "card_bottom": 233.2,
+   "ink_bottom": 230.0,
+   "slack": 3.2
+  },
+  {
+   "slide": 5,
+   "kind": "pyramid",
+   "n": 5,
+   "dense": false,
+   "stage": 2,
+   "card_w": 540,
+   "card_h": 95,
+   "card_bottom": 336.4,
+   "ink_bottom": 319.0,
+   "slack": 17.4
+  },
+  {
+   "slide": 5,
+   "kind": "pyramid",
+   "n": 5,
+   "dense": false,
+   "stage": 3,
+   "card_w": 720,
+   "card_h": 95,
+   "card_bottom": 439.6,
+   "ink_bottom": 397.0,
+   "slack": 42.6
+  },
+  {
+   "slide": 5,
+   "kind": "pyramid",
+   "n": 5,
+   "dense": false,
+   "stage": 4,
+   "card_w": 900,
+   "card_h": 95,
+   "card_bottom": 542.8,
+   "ink_bottom": 500.0,
+   "slack": 42.8
+  },
+  {
+   "slide": 5,
+   "kind": "pyramid",
+   "n": 5,
+   "dense": false,
+   "stage": 5,
+   "card_w": 1080,
+   "card_h": 95,
+   "card_bottom": 646.0,
+   "ink_bottom": 603.0,
+   "slack": 43.0
+  }
+ ],
+ "info": [
+  {
+   "kind": "funnel",
+   "n": 3,
+   "dense": false,
+   "notes": [
+    "段数 3｜幅比 0.90→0.40 で絞り込みを表現"
+   ],
+   "drawn": 3,
+   "fb": null
+  },
+  {
+   "kind": "funnel",
+   "n": 6,
+   "dense": false,
+   "notes": [
+    "段数 6｜幅比 0.90→0.40 で絞り込みを表現"
+   ],
+   "drawn": 6,
+   "fb": null
+  },
+  {
+   "kind": "funnel",
+   "n": 3,
+   "dense": true,
+   "notes": [
+    "最大離脱段（段2）へ打ち手を併記",
+    "段数 3｜幅比 0.90→0.40 で絞り込みを表現",
+    "密度強化を適用（v17.2.4｜転換率・離脱量・打ち手・実数換算）"
+   ],
+   "drawn": 10,
+   "fb": null
+  },
+  {
+   "kind": "funnel",
+   "n": 6,
+   "dense": true,
+   "notes": [
+    "段数 6｜幅比 0.90→0.40 で絞り込みを表現",
+    "密度強化を適用（v17.2.4｜転換率・離脱量・打ち手・実数換算）"
+   ],
+   "drawn": 17,
+   "fb": null
+  },
+  {
+   "kind": "pyramid",
+   "n": 5,
+   "dense": false,
+   "notes": [],
+   "drawn": 5,
+   "fb": null
+  }
+ ]
+}
