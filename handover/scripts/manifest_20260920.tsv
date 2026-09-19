@@ -1,0 +1,17 @@
+# 2026-09-20 終業時 成果物マニフェスト
+gpts-package/03_pptx_builder.py	6ee23f4bf3a1	271155
+handover/03_pptx_builder_v17_29_20260920.py	6ee23f4bf3a1	271155
+handover/claude_chat_consult_20260920_2items.md	d5a8e2f58474	11325
+handover/claude_chat_message_20260920_1800_eod.md	5081661b5917	7602
+handover/scripts/verify_md5.py	6b0eff1c2761	3297
+handover/scripts/verify_frozen.py	a59c8c37c978	2810
+handover/scripts/write5.py	641d37c63b99	2992
+handover/scripts/find_prefix.py	b93b2a6fa72d	2205
+handover/scripts/SCRIPTS_REGISTRY_20260920.md	4ac1d9398dfe	3063
+# --- 前日以前（無変更確認）---
+gpts-package/01_Instructions_v3.5_PLAIN_20260919.md	2585c0ad19a2	52968
+gpts-package/01_Instructions_v3.5.2_lite_20260902.md	61b5f4e7b928	16223
+handover/OPERATIONAL_RULES_MASTER_20260918.md	9722e94e734b	103423
+handover/03_pptx_builder_v17_28_20260917.py	d466ef702fe7	271150
+handover/ops_rule_article10_case_registry.md	7159534def90	168715
+# ※ manifest 自身は自己参照のため登録しない（引継書 §9 と同じ扱い）
