@@ -2982,6 +2982,51 @@ def _normalize_flow_status(s):
     return '？'
 
 
+def _c3_resolve_issue_no(highlight, index, top_issues):
+    """v17.2.10｜順5 第1段｜C-3 の論点番号を最終ページへ連動させる。
+
+    9/21 統括判定（案B'）に基づく。1/3 の「最重要課題」は
+    ``1. 2. 3. …`` の連番で描画されるが、3/3 の Before/After
+    ハイライトの番号サークルは ``highlights[].no`` 任せであり、
+    同一論点を指す保証がなかった（＝「同番号による回収」が不成立）。
+
+    優先順位:
+      1. ``no`` が明示されていればそれを使う（GPTs 側の指定を尊重）
+      2. 未指定なら 1/3 の論点文と照合し、一致した論点の連番を継承
+      3. 照合できなければ従来どおり出現順（index + 1）
+
+    Args:
+        highlight : dict｜3/3 のハイライト1件
+        index     : int ｜highlights 内の 0 起点の位置
+        top_issues: list｜1/3 で描画した最重要課題の原文リスト
+
+    Returns:
+        str: 番号サークルへ描画する文字列
+
+    ⚠️ 描画位置・寸法には一切関与しない（返すのは文字列のみ）。
+    """
+    explicit = highlight.get('no')
+    if explicit not in (None, ''):
+        return str(explicit)
+
+    def _norm(v):
+        """全角記号・空白を除いた照合用キーへ正規化する。"""
+        return ''.join(
+            ch for ch in str(v)
+            if not ch.isspace() and ch not in '。、．，,.:：;；・/／-ー―（）()「」【】'
+        )
+
+    key = _norm(highlight.get('issue_ref') or highlight.get('title') or '')
+    if key:
+        for n, issue in enumerate(top_issues or [], start=1):
+            ikey = _norm(issue)
+            if not ikey:
+                continue
+            if key == ikey or key in ikey or ikey in key:
+                return str(n)
+    return str(index + 1)
+
+
 def add_visual_board(prs, visual_data, page_num=1, total=3, slide_no='3',
                      author='UI/UX診断 by GPTs'):
     """
@@ -3496,6 +3541,10 @@ def add_visual_board(prs, visual_data, page_num=1, total=3, slide_no='3',
 
     highlights = visual_data.get('highlights', [])[:3]
     n_h = len(highlights)
+    # v17.2.10｜順5 第1段（9/21 統括判定 案B'）
+    # 1/3 で描画した論点の連番を、番号サークルの既定値として継承する。
+    # top_issues は本関数の 1/3 ブロックで確定済（同一スコープ）。
+    _c3_top_issues = list(top_issues)
 
     HL_TOP = 92
     HL_GAP = 12
@@ -3523,7 +3572,8 @@ def add_visual_board(prs, visual_data, page_num=1, total=3, slide_no='3',
         # ヘッダ：番号 + タイトル + 優先度バッジ + 工数
         head_top = y + 10
         add_shape(slide, MSO_SHAPE.OVAL, 60, head_top, 32, 32, fill=prio_col)
-        add_text(slide, 60, head_top + 4, 32, str(h.get('no', i + 1)),
+        add_text(slide, 60, head_top + 4, 32,
+                 _c3_resolve_issue_no(h, i, _c3_top_issues),
                  16, bold=True, color=WHITE, align=PP_ALIGN.CENTER,
                  height_px=24, vertical_anchor=MSO_ANCHOR.MIDDLE)
         title = _truncate_full(h.get('title', ''), 30)
@@ -3583,6 +3633,31 @@ def add_visual_board(prs, visual_data, page_num=1, total=3, slide_no='3',
         add_text(slide, 742, body_top, col_w - 106, after_text, 14,
                  color=TEXT, height_px=28,
                  vertical_anchor=MSO_ANCHOR.MIDDLE)
+
+        # v17.2.11｜順5 第2段（9/21 統括判定 案A）｜次アクション行
+        # 9/10 §4-5 が指摘した「決めさせる」の欠落を埋める。
+        # Before/After は「何を改善するか」までしか示さず、
+        # 「次に何をするか」が最終ページに存在しなかった。
+        #
+        # 配置はカード枠の内側（Before/After 帯の 10px 下）に限る。
+        # ページ全体の下辺余裕は 11px しかなく（9/21 実測）、
+        # 新規の帯・カードを足す余地はないが、カード内は
+        # hl_h=156 のうち 68px が未使用であるため、そこへ収める。
+        #
+        # next_action は任意キー。未指定時は何も描画せず、
+        # 現行出力とバイト単位で同一になる（後方互換）。
+        na_txt = str(h.get('next_action', '') or '').strip()
+        if na_txt and hl_h >= 126:
+            na_top = body_top + 38
+            add_shape(slide, MSO_SHAPE.RECTANGLE, 60, na_top, 90, 28,
+                      fill=NAVY)
+            add_text(slide, 60, na_top, 90, '次アクション', 14, bold=True,
+                     color=WHITE, align=PP_ALIGN.CENTER,
+                     height_px=28,
+                     vertical_anchor=MSO_ANCHOR.MIDDLE)
+            add_text(slide, 158, na_top, 1072, _truncate_full(na_txt, 38),
+                     14, color=TEXT, height_px=28,
+                     vertical_anchor=MSO_ANCHOR.MIDDLE)
 
     # 改善方向フッター帯
     _visual_direction_footer(slide, visual_data.get('direction', ''))
