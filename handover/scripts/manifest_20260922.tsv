@@ -1,0 +1,36 @@
+# 2026-09-22 成果物マニフェスト（23往復目｜第3便 判定①案B・判定② 実施後）
+# --- 採用版3点セット（第16条 細則14）---
+gpts-package/03_pptx_builder.py	c11ab9642b8e	278135
+gpts-package/01_Instructions_v3.5_PLAIN_20260922.md	2f9a1a364fca	67538
+gpts-package/01_Instructions_v3.5.2_lite_20260902.md	61b5f4e7b928	16223
+# --- 本日の成果物 ---
+handover/03_pptx_builder_v17_212_20260922.py	d067710ce19e	274827
+handover/03_pptx_builder_v17_213_20260922.py	c11ab9642b8e	278135
+handover/01_Instructions_v3.5_PLAIN_20260922.md	2f9a1a364fca	67538
+handover/01_Instructions_v3.5_PLAIN_20260922_1st.md	f822f95223f4	57662
+handover/OPERATIONAL_RULES_MASTER_20260922.md	252a44586e2d	112604
+handover/claude_chat_consult_20260922_2items.md	dbdf22627793	10208
+handover/claude_chat_consult_20260922_2nd_render.md	6d5f06137ef0	10754
+handover/claude_chat_consult_20260922_3rd_ngb.md	7f82368a4804	9861
+handover/verify_label_fix_20260922.pptx	41847ca8d700	39518
+handover/verify_truncate_px_20260922.pptx	ad860215a512	39467
+# --- 前版（無変更で保存されていることを確認）---
+handover/03_pptx_builder_v17_211_20260921.py	3a6cb5992aee	274833
+handover/01_Instructions_v3.5_PLAIN_20260921.md	7c5dc013b34c	55525
+handover/OPERATIONAL_RULES_MASTER_20260921.md	c73af5a9fc72	108578
+# --- 常設スクリプト（SCRIPTS_REGISTRY_20260922.md）---
+handover/scripts/verify_md5.py	f9607ba39692	3949
+handover/scripts/verify_frozen.py	a59c8c37c978	2810
+handover/scripts/write5.py	641d37c63b99	2992
+handover/scripts/find_prefix.py	b93b2a6fa72d	2205
+handover/scripts/verify_render.py	8948d4667600	8218
+handover/scripts/verify_labels.py	47683179818c	1828
+handover/scripts/SCRIPTS_REGISTRY_20260922.md	9a39005c99a6	7230
+# --- 継続資料 ---
+handover/bottom_margin_watchlist_20260921.md	db7452ea5392	17883
+handover/NEXT_ENV_HANDOVER_20260921_director.md	272d44920ea8	8997
+handover/NEXT_ENV_HANDOVER_20260921_aislide.md	412fe8daf68a	12350
+handover/claude_chat_message_20260922_1800_eod.md	012df9d54249	14477
+# --- 環境移行引継書（24往復目 発行）---
+handover/NEXT_ENV_HANDOVER_20260922_aislide.md	b60745fea2e4	15454
+handover/NEXT_ENV_HANDOVER_20260922_director.md	7a65cf624f2f	11128
