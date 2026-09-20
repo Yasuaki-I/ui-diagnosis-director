@@ -1643,6 +1643,42 @@ def _truncate_full(s, max_w):
     return s
 
 
+def _truncate_px(s, limit_px):
+    """文字列を実描画幅 limit_px（px｜実座標1280×720）で切り、超えたら '…' を付す。
+
+    v17.2.13｜9/22 統括判定 第3便 諮問① 案B。
+
+    `_truncate_full` は「全角換算の字数」で切るため、実描画幅と乖離する。
+      ・全角/半角が混在すると同じ字数でも実幅が大きく異なる
+        （例：'CTA設計' 76.3px と '視覚的階層' 93.3px はいずれも全角5字相当）
+      ・省略記号 '…'（全角1字＝18.67px）は max_w に **含まれず加算** されるため、
+        max_w の値と実際の表示幅の対応が直感に反する
+    切詰の目的は「枠に収まらない折返しを防ぐ」ことであり、その判定基準は
+    字数ではなく実描画幅であるべきなので、本関数は幅で直接判定する。
+
+    安全係数（`_V17_W14_SAFE`）は適用しない。
+    PLAIN J-7-6 のとおり、安全係数は「枠を広く確保する」ための安全側バイアスであり、
+    折返しの判定に用いると1行に収まる文字列を切詰・折返しと誤判定する
+    （9/17 実機24点で検証：安全係数あり 22/24 → 素の推定幅 24/24）。
+    切詰は折返しを防ぐための判定であり、折返し判定と同系統である。
+    素の推定幅と実測フォント幅の乖離は最大 1.75px（17語で実測｜9/22）。
+
+    Args:
+        s: 対象文字列
+        limit_px: 許容する実描画幅（px）。枠幅そのものではなく、
+                  枠幅から余裕（6px 以上）を引いた値を渡すこと。
+    """
+    if not s:
+        return s
+    if _v17_text_w14(s) / _V17_W14_SAFE <= limit_px:
+        return s
+    for i in range(len(s), 0, -1):
+        cand = s[:i].rstrip() + '…'
+        if _v17_text_w14(cand) / _V17_W14_SAFE <= limit_px:
+            return cand
+    return '…'
+
+
 def _add_multi_run_box(slide, left_px, top_px, width_px, height_px,
                         paragraphs, *, line_height=None,
                         space_after_pt=None, space_before_pt=None,
@@ -3444,8 +3480,17 @@ def add_visual_board(prs, visual_data, page_num=1, total=3, slide_no='3',
             # [FB対応 2026-06-30] スキーマ不整合バグ修正
             # scores 配列は C-1 と同じ `name` キーを使う（schema 統一）
             # `category` は後方互換のため最終フォールバック
-            cat_disp = _truncate_full(
-                item.get('name') or item.get('category', ''), 10)
+            # v17.2.13｜9/22 統括判定 第3便 諮問① 案B（幅基準へ切替）
+            # 旧：_truncate_full(name, 10) → 'ファーストビュー訴求' が 186.7px となり
+            #     枠 180px を超過して2行に折返していた。
+            #     項目名 x=56 + 枠180 = 236 に対しバー開始が x=240 のため枠拡張は不可（実測）。
+            # 字数基準（_truncate_full）は採らない。max_w=8 とすれば当該項目は是正できるが、
+            # 枠内に収まる 'ナビゲーション設計'・'フォーム使いやすさ'（いずれも 168.0px）まで
+            # 不要に切詰める副作用が出る（9/22 実測）。
+            # 幅基準なら切詰は真に超過する語のみに発生し、副作用 0 件（全12項目で実測確認）。
+            # 限界値 174.0px ＝ 枠 180px − 余裕 6px（J-7-6-2 B の OK 規準）。
+            cat_disp = _truncate_px(
+                item.get('name') or item.get('category', ''), 174.0)
             add_text(slide, 56, y + 8, 180, cat_disp, 14, bold=True,
                      color=TEXT, height_px=22)
             # ★バー視覚化（max=5、塗りつぶし数=sv）
@@ -3458,7 +3503,12 @@ def add_visual_board(prs, visual_data, page_num=1, total=3, slide_no='3',
                           bar_w, 16, fill=star_color)
             # スコア数値
             score_text = '－/5' if is_na else f'{sv}/5'
-            add_text(slide, bar_x + 5 * (bar_w + 4) + 8, y + 8, 50, score_text,
+            # v17.2.13｜9/22 統括判定① NG-A（案A）
+            # 枠 50px は太字（高評価・低評価）を想定していなかった。
+            #   標準 49.7px（余裕 0.3px）／太字 55.5px（5.5px 超過→2行折返し）
+            # 右カラム（強み枠 x=640）まで 170px の余裕があるため 62px へ拡張。
+            # 拡張後：太字 余裕 6.5px／標準 余裕 12.3px。
+            add_text(slide, bar_x + 5 * (bar_w + 4) + 8, y + 8, 62, score_text,
                      14, bold=score_bold, color=score_color, height_px=22)
     else:
         # [FB対応 2026-07-20 v15.6] scoresが空の時のフォールバック描画
@@ -3651,7 +3701,7 @@ def add_visual_board(prs, visual_data, page_num=1, total=3, slide_no='3',
             na_top = body_top + 38
             add_shape(slide, MSO_SHAPE.RECTANGLE, 60, na_top, 90, 28,
                       fill=NAVY)
-            add_text(slide, 60, na_top, 90, '次アクション', 14, bold=True,
+            add_text(slide, 60, na_top, 90, '次の一手', 14, bold=True,
                      color=WHITE, align=PP_ALIGN.CENTER,
                      height_px=28,
                      vertical_anchor=MSO_ANCHOR.MIDDLE)
