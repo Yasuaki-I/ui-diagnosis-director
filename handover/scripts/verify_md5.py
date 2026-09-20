@@ -37,6 +37,16 @@ def resolve(path):
     return path if os.path.isabs(path) else os.path.join(ROOT, path)
 
 
+def _blank(v):
+    """期待値が未指定（None・空文字・'-'）かを判定する。
+
+    2026-09-21 修正：--check で期待値を空文字で渡した場合に
+    int('') で ValueError を送出していた（照合そのものが落ちる）。
+    期待値の省略は「その項目を照合しない」意図であり、異常ではない。
+    """
+    return v is None or str(v).strip() in ('', '-')
+
+
 def check_one(path, exp_md5, exp_size):
     """1件を照合し (状態, 実測md5, 実測B, メッセージ) を返す。"""
     full = resolve(path)
@@ -45,11 +55,19 @@ def check_one(path, exp_md5, exp_size):
     actual = md5_of(full)
     size = os.path.getsize(full)
     ng = []
-    if exp_md5 and not actual.startswith(exp_md5.strip().lower()):
+    skipped = []
+    if _blank(exp_md5):
+        skipped.append('md5')
+    elif not actual.startswith(str(exp_md5).strip().lower()):
         ng.append('md5 不一致（期待 %s）' % exp_md5)
-    if exp_size is not None and size != int(exp_size):
+    if _blank(exp_size):
+        skipped.append('バイト数')
+    elif size != int(str(exp_size).strip()):
         ng.append('バイト数 不一致（期待 %s）' % exp_size)
-    return ('NG' if ng else 'OK'), actual[:12], size, ' / '.join(ng)
+    msg = ' / '.join(ng)
+    if not ng and skipped:
+        msg = '実測のみ（%s の期待値なし）' % '・'.join(skipped)
+    return ('NG' if ng else 'OK'), actual[:12], size, msg
 
 
 def load_manifest(path):
@@ -61,8 +79,8 @@ def load_manifest(path):
                 continue
             parts = line.split('\t')
             p = parts[0]
-            m = parts[1] if len(parts) > 1 and parts[1] not in ('-', '') else None
-            s = parts[2] if len(parts) > 2 and parts[2] not in ('-', '') else None
+            m = parts[1] if len(parts) > 1 and not _blank(parts[1]) else None
+            s = parts[2] if len(parts) > 2 and not _blank(parts[2]) else None
             rows.append((p, m, s))
     return rows
 

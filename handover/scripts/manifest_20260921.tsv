@@ -1,0 +1,30 @@
+# 2026-09-21 終業時 成果物マニフェスト
+gpts-package/03_pptx_builder.py	3a6cb5992aee	274833
+gpts-package/01_Instructions_v3.5_PLAIN_20260921.md	7c5dc013b34c	55525
+gpts-package/01_Instructions_v3.5.2_lite_20260902.md	61b5f4e7b928	16223
+handover/03_pptx_builder_v17_210_20260921.py	e89506a961b3	273346
+handover/03_pptx_builder_v17_211_20260921.py	3a6cb5992aee	274833
+handover/01_Instructions_v3.5_PLAIN_20260921.md	7c5dc013b34c	55525
+handover/OPERATIONAL_RULES_MASTER_20260921.md	c73af5a9fc72	108578
+handover/claude_chat_consult_20260921_4items.md	19c86c30c24c	13982
+handover/claude_chat_consult_20260921_2nd_junjo5s2.md	644a80c7d8a1	8106
+handover/verify_junjo5_s2_with_na_20260921.pptx	9545c09510d4	39522
+handover/verify_junjo5_s2_no_na_20260921.pptx	4af8b3c99b77	39210
+# --- 前版（無変更で保存されていることを確認）---
+handover/03_pptx_builder_v17_29_20260920.py	6ee23f4bf3a1	271155
+gpts-package/01_Instructions_v3.5_PLAIN_20260919.md	2585c0ad19a2	52968
+handover/OPERATIONAL_RULES_MASTER_20260918.md	9722e94e734b	103423
+# --- 常設スクリプト ---
+handover/scripts/verify_md5.py	f9607ba39692	3949
+handover/scripts/verify_frozen.py	a59c8c37c978	2810
+handover/scripts/write5.py	641d37c63b99	2992
+handover/scripts/find_prefix.py	b93b2a6fa72d	2205
+handover/scripts/SCRIPTS_REGISTRY_20260921.md	648ef76362a0	4231
+handover/claude_chat_message_20260921_1800_eod.md	c216139be364	8640
+handover/NEXT_SESSION_PROMPT_20260922_aislide.md	993a3f25b28b	10174
+handover/NEXT_ENV_HANDOVER_20260921_director.md	272d44920ea8	8997
+handover/NEXT_ENV_HANDOVER_20260921_aislide.md	412fe8daf68a	12350
+handover/bottom_margin_watchlist_20260921.md	db7452ea5392	17883
+handover/bottom_margin_watchlist_20260914.md	6e9ca79e42b6	13328
+handover/claude_chat_consult_20260921_3rd_v36c2.md	c65aaafd9f99	8587
+handover/claude_chat_message_20260921_2000_eod_addendum.md	c14090911fd0	7126
