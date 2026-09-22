@@ -40,12 +40,34 @@ builder 内の推定器 `_v17_text_w14` はこの実測から導出した近似�
     OVER1 … 1文字が枠幅超過（折返せないため横にはみ出すのみ）
     OK    … 1行で余裕 >= 6px
 
+■ フォント取得（2026-09-23 統括判定② 案A で追加｜N-4）
+
+2026-09-23 の起動時、フォント取得が HTTP 403 Forbidden で停止し検査を
+実行できなかった。原因は `urllib.request.urlretrieve` が User-Agent を
+送らないため CDN 側で拒否されること（同一URLへ UA 付与で成功することを
+実測して切り分けた）。環境差ではなく実装側の欠落である。
+
+`_fetch()` で3経路を順に試行する。
+
+    ① User-Agent を付与して取得（403 の直接原因への対処）
+    ② 素の urlretrieve（UA 不要な環境への後方互換）
+    ③ ドライブ内 scripts/fonts/ の退避コピー（CDN 停止時の最終手段）
+
+全経路が失敗した場合は「本検査は未実施である（NG 0件を意味しない）」を
+明示して停止する。例外で落ちるだけでは「検査を飛ばして実機目視へ進む」
+誘因になり、2026-09-22 に3日連続で発生した「測定していないものを測定した
+と報告する」構造へ再接近するためである（第16条 細則15 の趣旨の機械化）。
+
+経路③の退避コピーの作成自体は本スクリプトの責務に含めない。フォントの
+常設化はライセンス判断を伴うため別途諮問事項として保留されている
+（2026-09-23 統括判定②）。既定では不在であり、経路①②のみで動作する。
+
 ■ 使い方
 
     python3 verify_render.py foo.pptx
     python3 verify_render.py --check '次の一手' 90 14 --bold   # 単発（旧 verify_labels.py 相当）
 
-終了コード: NG が1件でもあれば 1
+終了コード: NG が1件でもあれば 1／フォント取得不能なら 3（検査未実施）
 """
 import os
 import re
@@ -58,6 +80,9 @@ FONT_URL_B = ('https://cdn1.genspark.ai/user-upload-image/fonts/'
               'ms-japanese/meiryo-bold.woff2')
 FONT_URL_R = ('https://cdn1.genspark.ai/user-upload-image/fonts/'
               'ms-japanese/meiryo.woff2')
+FONT_CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                              'fonts')
+UNVERIFIED_MARK = '検査未実施'   # 機械可読な明示文字列
 WARN_PX = 6.0
 EMU = 9525.0          # 1px（実座標 1280x720 基準）
 
@@ -65,9 +90,55 @@ EMU = 9525.0          # 1px（実座標 1280x720 基準）
 def _font(path, url):
     from fontTools.ttLib import TTFont
     if not os.path.isfile(path):
-        import urllib.request
-        urllib.request.urlretrieve(url, path)
+        _fetch(url, path)
     return TTFont(path)
+
+
+def _fetch(url, path):
+    """フォントを3経路で取得する。全失敗なら検査未実施を明示して停止する。"""
+    import urllib.request
+    errs = []
+
+    # ① User-Agent 付与（403 の直接原因への対処）
+    try:
+        req = urllib.request.Request(
+            url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            data = r.read()
+        if len(data) < 100000:
+            raise OSError('取得サイズが小さすぎる: %dB' % len(data))
+        with open(path, 'wb') as f:
+            f.write(data)
+        return
+    except Exception as e:
+        errs.append('① User-Agent 付与: %s' % e)
+
+    # ② 素の urlretrieve（後方互換）
+    try:
+        urllib.request.urlretrieve(url, path)
+        return
+    except Exception as e:
+        errs.append('② urlretrieve: %s' % e)
+
+    # ③ ドライブ内の退避コピー（作成は本スクリプトの責務外）
+    cache = os.path.join(FONT_CACHE_DIR, os.path.basename(path))
+    try:
+        if os.path.isfile(cache):
+            import shutil
+            shutil.copyfile(cache, path)
+            return
+        errs.append('③ 退避コピー: 不在 (%s)' % cache)
+    except Exception as e:
+        errs.append('③ 退避コピー: %s' % e)
+
+    sys.stderr.write(
+        '\n🚨 フォントを取得できないため実測を実行できない。\n'
+        + '\n'.join('  ' + e for e in errs)
+        + '\n\n⚠️ 本検査は %s である（NG 0件を意味しない）。\n'
+          '🚨 「実測で確認した」と報告してはならない（第16条 細則15）。\n'
+          '⭐ 対処: 下記2点を手動配置してから再実行する。\n'
+          '  %s\n  %s\n' % (UNVERIFIED_MARK, FONT_B, FONT_R))
+    raise SystemExit(3)
 
 
 def _mk(f):
