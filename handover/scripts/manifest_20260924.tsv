@@ -1,0 +1,44 @@
+# 2026-09-24 成果物マニフェスト（9往復目｜統括判定 諮問①②③ 反映後）
+# --- 採用版3点セット（第16条 細則14）---
+gpts-package/03_pptx_builder.py	c11ab9642b8e	278135
+gpts-package/01_Instructions_v3.5_PLAIN_20260924.md	987b66d80c12	71391
+gpts-package/01_Instructions_v3.5.2_lite_20260902.md	61b5f4e7b928	16223
+# --- 本日の成果物（9/24）---
+handover/claude_chat_consult_20260924_3items.md	d3e265a49cf4	15213
+handover/OPERATIONAL_RULES_MASTER_20260924.md	e026367ca0f3	116146
+handover/01_Instructions_v3.5_PLAIN_20260924.md	987b66d80c12	71391
+handover/scripts/find_prefix.py	a243bef30733	3513
+handover/scripts/SCRIPTS_REGISTRY_20260924.md	51f53fe81d51	8671
+# --- 前版（無変更で保存されていることを確認｜第18条 細則2）---
+handover/OPERATIONAL_RULES_MASTER_20260922.md	252a44586e2d	112604
+handover/01_Instructions_v3.5_PLAIN_20260922.md	2f9a1a364fca	67538
+gpts-package/01_Instructions_v3.5_PLAIN_20260922.md	2f9a1a364fca	67538
+handover/scripts/SCRIPTS_REGISTRY_20260923.md	af3a29f45c22	9497
+handover/scripts/SCRIPTS_REGISTRY_20260922.md	9a39005c99a6	7230
+handover/03_pptx_builder_v17_213_20260922.py	c11ab9642b8e	278135
+handover/OPERATIONAL_RULES_MASTER_20260921.md	c73af5a9fc72	108578
+handover/01_Instructions_v3.5_PLAIN_20260921.md	7c5dc013b34c	55525
+# --- 常設スクリプト（SCRIPTS_REGISTRY_20260924.md）---
+handover/scripts/verify_md5.py	f9607ba39692	3949
+handover/scripts/verify_frozen.py	a59c8c37c978	2810
+handover/scripts/write5.py	641d37c63b99	2992
+handover/scripts/verify_render.py	1cdcdc1f84db	11688
+handover/scripts/verify_labels.py	47683179818c	1828
+# --- 9/23 成果物（継続）---
+handover/claude_chat_verdict_20260919_20260922_restored_by_aislide.md	5dbe68d89b0e	11321
+handover/claude_chat_consult_20260923_n1_n4.md	499c58a27608	14126
+handover/claude_chat_message_20260923_1800_eod.md	0c2aff2716a6	19545
+handover/NEXT_ENV_HANDOVER_20260923_aislide.md	6c50d7569c2c	17964
+handover/NEXT_ENV_HANDOVER_20260923_director.md	b31739f3236b	14471
+# --- 継続資料 ---
+handover/verify_truncate_px_20260922.pptx	ad860215a512	39467
+handover/verify_label_fix_20260922.pptx	41847ca8d700	39518
+handover/claude_chat_message_20260922_1800_eod.md	012df9d54249	14477
+handover/bottom_margin_watchlist_20260921.md	db7452ea5392	17883
+handover/NEXT_ENV_HANDOVER_20260922_aislide.md	b60745fea2e4	15454
+handover/NEXT_ENV_HANDOVER_20260922_director.md	7a65cf624f2f	11128
+# --- 終業時発行（9/24）---
+handover/claude_chat_message_20260924_1800_eod.md	0f8d970da84d	16542
+handover/NEXT_ENV_HANDOVER_20260924_aislide.md	cd9d3fdfc483	17773
+handover/NEXT_ENV_HANDOVER_20260924_director.md	627c29e334f3	15160
+handover/claude_chat_verdict_20260923_20260924_restored_by_aislide.md	d05e38b18b6b	14177

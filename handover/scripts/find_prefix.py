@@ -10,6 +10,20 @@
     ファイルを検出できない（9/17 に実際に見落とした）。
     受領確認は必ず「同一 prefix での一覧」で行う。
 
+表示について（2026-09-24 統括判定 諮問③ 案A で是正）:
+    従来は長いファイル名を n[-58:] で「左から」切り詰めていた。この形式は
+    先頭が欠落するため、目視・二次集計で誤読を招く。2026-09-24 に実際に
+    「claude」で始まらない行が grep から漏れ、35件を29件と誤集計した。
+    以後は「右側を省略し末尾に … を付す」形式とする。
+
+    なお総数は冒頭の「該当 N 件」を正とする。表示行から数え直さないこと
+    （PLAIN J-7-6-5 規準2）。
+
+検出ロジックについて:
+    N-2（正規表現の検出漏れリスク）は 2026-09-24 に 5 パターンへの直接適用で
+    検証し、検出漏れが存在しないことを確認してクローズした（統括判定 諮問③）。
+    DOTALL は本件に無関係（単一行のファイル名に対する re.search のため）。
+
 使い方:
     python3 find_prefix.py claude_chat_verdict_
     python3 find_prefix.py claude_chat_verdict_ --dir handover
@@ -20,6 +34,17 @@ import sys
 import hashlib
 
 ROOT = '/mnt/aidrive/ui-diagnosis-director'
+
+
+def _ellip(name, width):
+    """右側を省略して末尾に … を付す（左は必ず残す）。
+
+    2026-09-24 統括判定 諮問③ 案A。従来の n[-width:] は先頭が欠落し、
+    目視・grep による二次集計で誤読を招いた。
+    """
+    if len(name) <= width:
+        return name
+    return name[:width - 1] + '…'
 
 
 def md5_of(path):
@@ -55,7 +80,7 @@ def main(argv):
         if m:
             suffixed.append(n)
         print('%-58s %10d  %-12s %s'
-              % (n[-58:], os.path.getsize(p), md5_of(p), tag))
+              % (_ellip(n, 58), os.path.getsize(p), md5_of(p), tag))
     print()
     if suffixed:
         print('🚨 サフィックス付き %d 件を検出 → 第18条（別名で並立させない）'
