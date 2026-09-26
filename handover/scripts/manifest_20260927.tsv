@@ -1,0 +1,46 @@
+# 2026-09-27 成果物マニフェスト（18往復目｜N-6 クローズ反映）
+# --- 採用版3点セット（第16条 細則14）---
+gpts-package/03_pptx_builder.py	c11ab9642b8e	278135
+gpts-package/01_Instructions_v3.5_PLAIN_20260925.md	93095a862614	73043
+gpts-package/01_Instructions_v3.5.2_lite_20260902.md	61b5f4e7b928	16223
+# --- 本日の成果物（9/25）---
+handover/claude_chat_consult_20260925_2items.md	90c8a12e38c4	15160
+handover/OPERATIONAL_RULES_MASTER_20260925.md	1818516da60b	119457
+handover/01_Instructions_v3.5_PLAIN_20260925.md	93095a862614	73043
+handover/claude_chat_verdict_20260925_restored_by_aislide.md	c6b257467995	5148
+handover/claude_chat_message_20260925_1800_eod.md	0d9fd34023aa	7234
+handover/NEXT_ENV_HANDOVER_20260925_aislide.md	b69c96255d58	16637
+handover/NEXT_ENV_HANDOVER_20260925_director.md	56389c6534e1	17010
+# --- 前版（無変更で保存されていることを確認｜第18条 細則2）---
+handover/OPERATIONAL_RULES_MASTER_20260924.md	e026367ca0f3	116146
+handover/01_Instructions_v3.5_PLAIN_20260924.md	987b66d80c12	71391
+gpts-package/01_Instructions_v3.5_PLAIN_20260924.md	987b66d80c12	71391
+handover/NEXT_ENV_HANDOVER_20260924_aislide.md	cd9d3fdfc483	17773
+handover/NEXT_ENV_HANDOVER_20260924_director.md	627c29e334f3	15160
+handover/v37_candidates_20260914.md	72caad078558	7827
+handover/bottom_margin_watchlist_20260921.md	db7452ea5392	17883
+# --- 常設スクリプト・台帳 ---
+handover/scripts/verify_md5.py	f9607ba39692	3949
+handover/scripts/verify_frozen.py	a59c8c37c978	2810
+handover/scripts/write5.py	641d37c63b99	2992
+handover/scripts/find_prefix.py	a243bef30733	3513
+handover/scripts/verify_render.py	1cdcdc1f84db	11688
+handover/scripts/verify_labels.py	47683179818c	1828
+handover/scripts/SCRIPTS_REGISTRY_20260924.md	51f53fe81d51	8671
+# --- 判定書の復元記録 ---
+handover/claude_chat_verdict_20260919_20260922_restored_by_aislide.md	5dbe68d89b0e	11321
+handover/claude_chat_verdict_20260923_20260924_restored_by_aislide.md	d05e38b18b6b	14177
+# --- 継続資料 ---
+handover/claude_chat_message_20260924_1800_eod.md	0f8d970da84d	16542
+handover/claude_chat_consult_20260924_3items.md	d3e265a49cf4	15213
+handover/03_pptx_builder_v17_213_20260922.py	c11ab9642b8e	278135
+# --- 本日の成果物（9/26）---
+handover/claude_chat_message_20260926_1800_eod.md	8dfc50ffb40a	2268
+handover/NEXT_ENV_HANDOVER_20260926_aislide.md	791dc3fa76d0	17325
+handover/NEXT_ENV_HANDOVER_20260926_director.md	f334c669e8ad	17450
+# --- 本日の成果物（9/27）---
+handover/claude_chat_verdict_20260926_restored_by_aislide.md	474a67c0f294	3515
+handover/claude_chat_message_20260927_1800_eod.md	d9630fed9aa8	3754
+handover/NEXT_ENV_HANDOVER_20260927_aislide.md	74a428726904	18345
+handover/NEXT_ENV_HANDOVER_20260927_director.md	67967f51664c	18778
+handover/claude_chat_verdict_20260927_restored_by_aislide.md	1cd519ba2b64	2549
