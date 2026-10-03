@@ -5103,9 +5103,7 @@ def draw_funnel(slide, palette, data):
                             'value': int|float|None,   # v17.2.4 任意：実数
                             'unit': str|None,          # v17.2.4 任意：単位
                             'action': str|None}, ...], # v17.2.4 任意：打ち手
-                'total_note': str|None,                # v17.2.4 任意：実数換算
-                'cumulative': None|'auto'|str,         # v17.2.15 任意：③通算指標
-                'footnote': None|str}                  # v17.2.16 任意：⑥注記・出所
+                'total_note': str|None}                # v17.2.4 任意：実数換算
                                                        # 3〜6・index0が最上段
     Returns:
         dict : 描画レポート
@@ -5138,41 +5136,6 @@ def draw_funnel(slide, palette, data):
       判定は描画と同じ推定器 _v17_fits_one_line で行う。
       非該当（n=3〜5・n=6 で全段1行）は v17.2.13 と同一出力。
       ⚠️ 例外適用は V37-3 に限る（10/4 判定 条件①）。
-
-    [v17.2.15／2026-10-04｜V37-1 ③通算指標｜10/4 統括判定＝案P 承認]
-      data['cumulative'] 指定時のみ、スライド内タイトル行（y 90〜124）の
-      右端へ「→ 通算 X%（先頭値→最終値＋単位）」を1行・右揃えで描画する。
-      body_top（138）以降には触れない（V37-3 の _tight 分岐とも独立）。
-      台帳原案「上部の矢印付き帯」から「タイトル行右端の1行表記」へ形状を
-      変更した（10/4 判定で承認）。
-        None・未指定 … 描画しない（v17.2.14 r1 と同一出力）
-        'auto'       … value が全段に揃う場合（dense 成立時）のみ自動算出。
-                       不成立なら描画せず notes に理由を記録する。
-        文字列       … その文字列を表示する（先頭に「→ 」を付す）。
-      有効数字ルール（'auto'）：X = 最終段 value ÷ 先頭段 value × 100。
-        X < 10 のとき小数第1位まで、X ≧ 10 のとき整数で表記する。
-        丸めは四捨五入（ROUND_HALF_UP｜例 10.5 → 11、1.65 → 1.7）。
-        先頭値・最終値は既存の桁区切り表記（_fmt）に従う。
-      衝突回避：タイトル推定右端＋24px ＞ 通算表記の左端 の場合は描画せず
-        notes に「省略（タイトルと衝突）」を記録する（退避先は設けない）。
-
-    [v17.2.16／2026-10-04｜V37-2 ⑥注記・出所｜10/4 統括判定＝案L 承認]
-      data['footnote'] 指定時のみ、最下段カードの左の空き（x 40〜358｜
-      最下段は n によらず x=400・幅480px のため領域は固定）へ、
-      最下段上端＋28px を起点に 14pt・標準ウェイト・本文色・左揃えで描画する。
-      ①転換率（最下段上端＋2〜＋24）の下に置き、段の座標には触れない
-      （V37-3 の _tight 分岐・V37-1 の cumulative 分岐とも独立）。
-      台帳原案「body_bottom 下の注記」から「最下段の左の空き」へ形状を
-      変更した（10/4 判定で承認｜body_bottom〜フッター境界は 14px で
-      14pt 1行が入らないため）。
-        None・空文字 … 描画しない（v17.2.15 と同一出力）
-        文字列       … 先頭が「※」でなければ「※」を付して描画する。
-      収容行数：縦の空き（最下段 band_h − 28px）÷ 行高（14pt×1.2＝22.4px）の
-        切り捨て。必要行数は _v17_text_w14（⚠️ 14pt **太字**用の推定器）で
-        求める。注記は標準ウェイトで描くため、この見積もりは実際より行数を
-        多めに見る**安全側の見積もり**である（10/4 判定の指示により明記）。
-        必要行数が収容行数を超える場合は描画せず notes に記録する
-        （退避先は設けない）。
     """
     spec = DIAGRAM_PATTERN_SPEC['funnel']
     notes = []
@@ -5254,44 +5217,6 @@ def draw_funnel(slide, palette, data):
         return '{:,.1f}'.format(x)
 
     drawn = 0
-
-    # ----- v17.2.15｜V37-1 ③通算指標（タイトル行の右端｜案P） ----------
-    cum = data.get('cumulative')
-    if cum is not None:
-        ctext = None
-        if cum == 'auto':
-            if dense:
-                from decimal import Decimal, ROUND_HALF_UP
-                pct = Decimal(repr(vals[-1] / vals[0] * 100.0))
-                q = Decimal('0.1') if pct < 10 else Decimal('1')
-                pct_s = str(pct.quantize(q, rounding=ROUND_HALF_UP))
-                ctext = '\u2192 通算 %s%%（%s\u2192%s%s）' % (
-                    pct_s, _fmt(vals[0]), _fmt(vals[-1]), unit)
-            else:
-                notes.append('通算指標を省略（cumulative=auto だが value が'
-                             '全段に揃わない）')
-        else:
-            _c = str(cum).strip()
-            if _c:
-                ctext = '\u2192 ' + _c
-        if ctext:
-            c_need = _v17_text_w14(ctext)
-            c_left = V17_AREA['right'] - int(c_need) - 12
-            t_right = V17_AREA['left'] + _est_text_w(
-                str(data.get('title', '')), 22)
-            if t_right + 24 <= c_left:
-                _b = add_text(slide, c_left, V17_AREA['title_top'] + 6,
-                              int(c_need) + 12, ctext, 14, bold=True,
-                              color=hex_to_rgb(palette['accent']),
-                              height_px=22, align=_pp_right())
-                _b.text_frame.word_wrap = False
-                drawn += 1
-                notes.append('通算指標を描画（v17.2.15｜%s）' % ctext)
-            else:
-                notes.append('通算指標を省略（タイトルと衝突｜タイトル推定右端 '
-                             '%dpx＋24px＞表記左端 %dpx）'
-                             % (int(t_right), c_left))
-
     y = top
     for i, st in enumerate(stages):
         ratio = r_top + (r_bot - r_top) * (i / float(max(n - 1, 1)))
@@ -5448,31 +5373,6 @@ def draw_funnel(slide, palette, data):
         else:
             notes.append('実数換算を省略（空き %dpx＜必要 %dpx）'
                          % (right_usable, int(need)))
-
-    # ----- v17.2.16｜V37-2 ⑥注記・出所（最下段の左の空き｜案L） --------
-    fn_txt = str(data.get('footnote', '') or '').strip()
-    if fn_txt:
-        if not fn_txt.startswith('\u203b'):
-            fn_txt = '\u203b' + fn_txt
-        import math
-        w_b = int(V17_AREA['width'] * r_bot)
-        x_b = cx - w_b // 2
-        y_b = top + (band_h + gap) * (n - 1)
-        fn_left = V17_AREA['left']
-        fn_w = (x_b - 34) - 8 - fn_left          # 段番号（x_b−34）の左 8px まで
-        fn_top = y_b + 28                        # ①転換率（y_b+2〜+24）の下
-        line_px = 14 * 1.2 / 72.0 * 96.0         # 22.4px
-        cap = int((band_h - 28) // line_px)
-        need_lines = max(1, int(math.ceil(_v17_text_w14(fn_txt) / float(fn_w))))
-        if fn_w > 0 and need_lines <= cap:
-            add_text(slide, fn_left, fn_top, fn_w, fn_txt, 14,
-                     color=TEXT, height_px=int(math.ceil(need_lines * line_px)))
-            drawn += 1
-            notes.append('注記を描画（v17.2.16｜%d行／収容 %d行）'
-                         % (need_lines, cap))
-        else:
-            notes.append('注記を省略（必要 %d行＞収容 %d行｜幅 %dpx・縦 %dpx）'
-                         % (need_lines, cap, fn_w, band_h - 28))
 
     notes.append('段数 %d｜幅比 %.2f→%.2f で絞り込みを表現' % (n, r_top, r_bot))
     if _tight:

@@ -5104,8 +5104,7 @@ def draw_funnel(slide, palette, data):
                             'unit': str|None,          # v17.2.4 任意：単位
                             'action': str|None}, ...], # v17.2.4 任意：打ち手
                 'total_note': str|None,                # v17.2.4 任意：実数換算
-                'cumulative': None|'auto'|str,         # v17.2.15 任意：③通算指標
-                'footnote': None|str}                  # v17.2.16 任意：⑥注記・出所
+                'cumulative': None|'auto'|str}         # v17.2.15 任意：③通算指標
                                                        # 3〜6・index0が最上段
     Returns:
         dict : 描画レポート
@@ -5155,24 +5154,6 @@ def draw_funnel(slide, palette, data):
         先頭値・最終値は既存の桁区切り表記（_fmt）に従う。
       衝突回避：タイトル推定右端＋24px ＞ 通算表記の左端 の場合は描画せず
         notes に「省略（タイトルと衝突）」を記録する（退避先は設けない）。
-
-    [v17.2.16／2026-10-04｜V37-2 ⑥注記・出所｜10/4 統括判定＝案L 承認]
-      data['footnote'] 指定時のみ、最下段カードの左の空き（x 40〜358｜
-      最下段は n によらず x=400・幅480px のため領域は固定）へ、
-      最下段上端＋28px を起点に 14pt・標準ウェイト・本文色・左揃えで描画する。
-      ①転換率（最下段上端＋2〜＋24）の下に置き、段の座標には触れない
-      （V37-3 の _tight 分岐・V37-1 の cumulative 分岐とも独立）。
-      台帳原案「body_bottom 下の注記」から「最下段の左の空き」へ形状を
-      変更した（10/4 判定で承認｜body_bottom〜フッター境界は 14px で
-      14pt 1行が入らないため）。
-        None・空文字 … 描画しない（v17.2.15 と同一出力）
-        文字列       … 先頭が「※」でなければ「※」を付して描画する。
-      収容行数：縦の空き（最下段 band_h − 28px）÷ 行高（14pt×1.2＝22.4px）の
-        切り捨て。必要行数は _v17_text_w14（⚠️ 14pt **太字**用の推定器）で
-        求める。注記は標準ウェイトで描くため、この見積もりは実際より行数を
-        多めに見る**安全側の見積もり**である（10/4 判定の指示により明記）。
-        必要行数が収容行数を超える場合は描画せず notes に記録する
-        （退避先は設けない）。
     """
     spec = DIAGRAM_PATTERN_SPEC['funnel']
     notes = []
@@ -5448,31 +5429,6 @@ def draw_funnel(slide, palette, data):
         else:
             notes.append('実数換算を省略（空き %dpx＜必要 %dpx）'
                          % (right_usable, int(need)))
-
-    # ----- v17.2.16｜V37-2 ⑥注記・出所（最下段の左の空き｜案L） --------
-    fn_txt = str(data.get('footnote', '') or '').strip()
-    if fn_txt:
-        if not fn_txt.startswith('\u203b'):
-            fn_txt = '\u203b' + fn_txt
-        import math
-        w_b = int(V17_AREA['width'] * r_bot)
-        x_b = cx - w_b // 2
-        y_b = top + (band_h + gap) * (n - 1)
-        fn_left = V17_AREA['left']
-        fn_w = (x_b - 34) - 8 - fn_left          # 段番号（x_b−34）の左 8px まで
-        fn_top = y_b + 28                        # ①転換率（y_b+2〜+24）の下
-        line_px = 14 * 1.2 / 72.0 * 96.0         # 22.4px
-        cap = int((band_h - 28) // line_px)
-        need_lines = max(1, int(math.ceil(_v17_text_w14(fn_txt) / float(fn_w))))
-        if fn_w > 0 and need_lines <= cap:
-            add_text(slide, fn_left, fn_top, fn_w, fn_txt, 14,
-                     color=TEXT, height_px=int(math.ceil(need_lines * line_px)))
-            drawn += 1
-            notes.append('注記を描画（v17.2.16｜%d行／収容 %d行）'
-                         % (need_lines, cap))
-        else:
-            notes.append('注記を省略（必要 %d行＞収容 %d行｜幅 %dpx・縦 %dpx）'
-                         % (need_lines, cap, fn_w, band_h - 28))
 
     notes.append('段数 %d｜幅比 %.2f→%.2f で絞り込みを表現' % (n, r_top, r_bot))
     if _tight:
