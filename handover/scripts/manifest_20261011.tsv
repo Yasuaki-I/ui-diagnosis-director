@@ -1,0 +1,212 @@
+# 2026-10-11 成果物マニフェスト（AIスライド側 正規版の出し直し 11往復目｜第18便 判定3｜41日目＝初版 f35c75b6bd06 で計上済み・本版の照合は暫定）
+# --- 採用版3点セット（第16条 細則14）---
+gpts-package/03_pptx_builder.py	332199ad7dc2	286637
+gpts-package/01_Instructions_v3.5_PLAIN_20261007.md	59ebb0757fde	77248
+gpts-package/01_Instructions_v3.5.2_lite_20260902.md	61b5f4e7b928	16223
+# --- 前版（無変更で保存｜10/9 に見出しの PLAIN 行を 20261007 版へ差し替え｜第8便 §5-9）---
+gpts-package/01_Instructions_v3.5_PLAIN_20260925.md	93095a862614	73043
+# --- 本日の成果物（9/25）---
+handover/claude_chat_consult_20260925_2items.md	90c8a12e38c4	15160
+handover/OPERATIONAL_RULES_MASTER_20260925.md	1818516da60b	119457
+handover/01_Instructions_v3.5_PLAIN_20260925.md	93095a862614	73043
+handover/claude_chat_verdict_20260925_restored_by_aislide.md	c6b257467995	5148
+handover/claude_chat_message_20260925_1800_eod.md	0d9fd34023aa	7234
+handover/NEXT_ENV_HANDOVER_20260925_aislide.md	b69c96255d58	16637
+handover/NEXT_ENV_HANDOVER_20260925_director.md	56389c6534e1	17010
+# --- 前版（無変更で保存されていることを確認｜第18条 細則2）---
+handover/OPERATIONAL_RULES_MASTER_20260924.md	e026367ca0f3	116146
+handover/01_Instructions_v3.5_PLAIN_20260924.md	987b66d80c12	71391
+gpts-package/01_Instructions_v3.5_PLAIN_20260924.md	987b66d80c12	71391
+handover/NEXT_ENV_HANDOVER_20260924_aislide.md	cd9d3fdfc483	17773
+handover/NEXT_ENV_HANDOVER_20260924_director.md	627c29e334f3	15160
+handover/v37_candidates_20260914.md	72caad078558	7827
+handover/bottom_margin_watchlist_20260921.md	db7452ea5392	17883
+# --- 常設スクリプト・台帳 ---
+handover/scripts/verify_md5.py	f9607ba39692	3949
+handover/scripts/verify_frozen.py	a59c8c37c978	2810
+handover/scripts/write5.py	641d37c63b99	2992
+handover/scripts/find_prefix.py	a243bef30733	3513
+handover/scripts/verify_render.py	1cdcdc1f84db	11688
+handover/scripts/verify_labels.py	47683179818c	1828
+handover/scripts/SCRIPTS_REGISTRY_20260924.md	51f53fe81d51	8671
+# --- 判定書の復元記録 ---
+handover/claude_chat_verdict_20260919_20260922_restored_by_aislide.md	5dbe68d89b0e	11321
+handover/claude_chat_verdict_20260923_20260924_restored_by_aislide.md	d05e38b18b6b	14177
+# --- 継続資料 ---
+handover/claude_chat_message_20260924_1800_eod.md	0f8d970da84d	16542
+handover/claude_chat_consult_20260924_3items.md	d3e265a49cf4	15213
+handover/03_pptx_builder_v17_213_20260922.py	c11ab9642b8e	278135
+# --- 本日の成果物（9/26）---
+handover/claude_chat_message_20260926_1800_eod.md	8dfc50ffb40a	2268
+handover/NEXT_ENV_HANDOVER_20260926_aislide.md	791dc3fa76d0	17325
+handover/NEXT_ENV_HANDOVER_20260926_director.md	f334c669e8ad	17450
+# --- 本日の成果物（9/27）---
+handover/claude_chat_verdict_20260926_restored_by_aislide.md	474a67c0f294	3515
+handover/claude_chat_message_20260927_1800_eod.md	d9630fed9aa8	3754
+handover/NEXT_ENV_HANDOVER_20260927_aislide.md	74a428726904	18345
+handover/NEXT_ENV_HANDOVER_20260927_director.md	67967f51664c	18778
+handover/claude_chat_verdict_20260927_restored_by_aislide.md	1cd519ba2b64	2549
+# --- 本日の成果物（9/28）---
+handover/claude_chat_message_20260928_1800_eod.md	67d5c5762356	2200
+handover/NEXT_ENV_HANDOVER_20260928_aislide.md	d5903721b1c7	19686
+handover/NEXT_ENV_HANDOVER_20260928_director.md	52ba631ebc94	19692
+# --- 本日の成果物（9/29）---
+handover/claude_chat_message_20260929_1800_eod.md	477290987810	3367
+# --- 本日の成果物（9/30）---
+handover/claude_chat_message_20260930_1800_eod.md	0ecd628c2402	4096
+# --- 本日の成果物（10/1）---
+handover/claude_chat_message_20261001_1800_eod.md	d8a92a9cd3f2	2542
+handover/claude_chat_verdict_20261001_restored_by_aislide.md	5491807584b0	4182
+# --- 本日の成果物（10/2）---
+handover/claude_chat_message_20261002_1800_eod.md	720c03f3cc83	2683
+# --- 本日の成果物（10/3）---
+handover/claude_chat_message_20261003_1800_eod.md	31594139b7f2	8411
+handover/claude_chat_verdict_20261003_restored_by_aislide.md	a4dde8eb0a42	11399
+handover/NEXT_ENV_HANDOVER_20261003_aislide.md	c4c25154adee	39737
+handover/NEXT_ENV_HANDOVER_20261003_director.md	0c01844959d2	26923
+handover/NEXT_ENV_HANDOVER_20261004_director.md	569a26b94d0d	6200
+# --- 2026-10-04 追加（v3.7 実装・検証・配布・実機目視）---
+handover/03_pptx_builder_v17_214_20261004.py	ba93847ffc25	280091
+handover/03_pptx_builder_v17_214r1_20261004.py	7993adba026c	280392
+handover/03_pptx_builder_v17_215_20261004.py	dd22f894a337	283740
+handover/03_pptx_builder_v17_216_20261004.py	332199ad7dc2	286637
+handover/claude_chat_consult_20261004_v37_3.md	f9d8073e7236	5120
+handover/claude_chat_plan_20261004_v37_1.md	7da72e6a3be7	4819
+handover/claude_chat_plan_20261004_v37_2.md	c6633951f64e	5251
+handover/claude_chat_report_20261004_v17_214.md	a97a3b6cdbf2	3821
+handover/claude_chat_report_20261004_v17_214r1.md	5833bc95ccb2	2895
+handover/claude_chat_report_20261004_v17_215.md	e3106fea8f2d	3091
+handover/claude_chat_report_20261004_v17_216.md	44376070798e	4512
+handover/claude_chat_report_20261004_v17_216_distribution.md	50744fd8b2c2	3605
+handover/claude_chat_verdict_20261004_restored_by_aislide.md	b7fb22d730ea	7840
+handover/v37/v37_1_render_v17215_20261004.txt	0e08011d4158	12160
+handover/v37/v37_1_tsv_diff_v17214r1_v17215_20261004.tsv	c8aa6a4f4de8	1038
+handover/v37/v37_2_render_v17216_20261004.txt	6b8e3d002d48	14729
+handover/v37/v37_2_tsv_diff_v17215_v17216_20261004.tsv	1d4cb1996d6e	1417
+handover/v37/v37_3_render_v17214_20261004.txt	4d5c63172b56	10532
+handover/v37/v37_3_render_v17214r1_20261004.txt	cdc4a9a4fd78	10532
+handover/v37/v37_3_tsv_diff_v17213_v17214_20261004.tsv	c0e19f40554b	894
+handover/v37/v37_3_tsv_diff_v17213_v17214r1_20261004.tsv	c0e19f40554b	894
+handover/v37/v37_baseline_render_v17213_20261004.txt	aaa58d441d9e	10524
+handover/v37/v37_device_check_record_20261004.md	2e3b4ecb958f	2808
+handover/v37/v37_device_check_v17216_20261004.pptx	6aab27f4f695	48265
+handover/v37/v37_dist_tsv_diff_v17213_v17216_20261004.tsv	64346431c9ca	903
+handover/v37/v37_fixtures_20261004.py	10877d91e224	4780
+handover/v37/v37_fixtures_20261004b.py	ba5276364c24	5826
+handover/v37/v37_fixtures_20261004c.py	dd800ceda271	6936
+handover/v37/v37_harness_20261004.py	7f0bcc84496d	1441
+handover/v37/v37_harness_20261004b.py	09f7a6785df8	1442
+handover/v37/v37_harness_20261004c.py	ca3b31d468bf	1442
+handover/v37/device_check_20261004/slide1.png	e5e4c3ffa0ff	76418
+handover/v37/device_check_20261004/slide2.png	fab145e695dd	115873
+handover/v37/device_check_20261004/slide3.png	ec6295d4d863	151986
+handover/v37/device_check_20261004/slide4.png	36e5058b3ddb	142849
+handover/v37/device_check_20261004/slide5.png	7d93f46bc8c5	152892
+handover/v37/device_check_20261004/slide6.png	cca43a853653	79920
+handover/v37/device_check_20261004/slide7.png	d3f27b9b7810	148149
+handover/v37/device_check_20261004/slide8.png	f7d7bc2ab7ef	134113
+handover/claude_chat_message_20261004_1800_eod.md	f34481c1098e	3590
+# --- 2026-10-05 追加 ---
+handover/claude_chat_consult_20261005_3items.md	cbfdd4b06c3d	5182
+handover/prep_20261005_for_director_initial_draft.md	b14d5db2c029	8568
+handover/claude_chat_verdict_20261005_restored_by_aislide.md	5d47fe224d83	5257
+handover/claude_chat_message_20261005_handover_to_aislide.md	95b55bb86158	3448
+handover/beta2_inventory_20261005.md	4c2925fc8a54	4381
+handover/claude_chat_message_20261005_1800_eod.md	27e6cf75983e	4052
+# --- 2026-10-06 追加 ---
+handover/beta2_inventory_20261006.md	025ff6810f29	6252
+handover/claude_chat_report_20261006_beta2_fact.md	6ba905450506	1876
+handover/claude_chat_verdict_20261006_restored_by_aislide.md	fd3cbaf69bff	2241
+handover/claude_chat_message_20261006_1800_eod.md	46e8207b90fa	2413
+# --- 2026-10-06 追加（21往復目｜環境移行の引継書）---
+handover/NEXT_ENV_HANDOVER_20261006_aislide.md	18607594f6f3	19224
+# --- 2026-10-07 追加 ---
+handover/beta2_plan_draft_20261007.md	04de30114c42	8304
+handover/claude_chat_message_20261007_initial_drafts_to_aislide.md	86f093e99070	4518
+handover/claude_chat_review_20261007_initial_drafts.md	f369c488de1e	11129
+handover/claude_chat_verdict_20261007_restored_by_aislide.md	1b1678d6606d	12690
+handover/claude_chat_report_20261007_b3_trial.md	5e4be72f14bf	4208
+handover/plain_rev2_article_draft_20261007.md	4bc1304c5139	9097
+handover/01_Instructions_v3.5_PLAIN_20261007.md	59ebb0757fde	77248
+handover/scripts/SCRIPTS_REGISTRY_20261007.md	d89e74b51ff6	9022
+handover/v37_candidates_20261007.md	9f05dbf7fc9c	9968
+handover/bottom_margin_watchlist_20261007.md	61ecef1ee82e	20586
+handover/claude_chat_plan_20261007_b3.md	91e58c22593d	4466
+handover/beta2_announcement_draft_20261007.md	c827d9fb755b	5631
+handover/claude_chat_plan_20261007_b3_rev1.md	d0ae81a4c60b	3451
+handover/beta2_plan_draft_20261007_rev1.md	19eaccf992c8	5670
+handover/NEXT_ENV_HANDOVER_20261007_director.md	09096aa47c24	5062
+handover/claude_chat_message_20261007_handover_to_aislide.md	6a07dbb904d4	2451
+handover/claude_chat_message_20261007_1800_eod.md	7fc60799fcf4	5374
+# --- 2026-10-08 追加 ---
+handover/manual_draft_20261008.md	83700aff1e4e	9797
+handover/claude_chat_consult_20261008_unknown_files.md	3699917a29e4	2553
+handover/claude_chat_report_20261008_manual_draft.md	e104392fa993	1018
+handover/claude_chat_report_20261008_unknown_files_compare.md	04c1d1a1742d	2748
+handover/NEXT_ENV_HANDOVER_20261008_director.md	60c1d357284d	10335
+handover/claude_chat_message_20261008_aislide_to_director.md	75e7b3dad3cc	9642
+handover/claude_chat_message_20261008_1800_eod.md	30291b2b608c	5983
+# --- 出所不明・参考（発行版ではない｜無変更を照合で確認｜10/8 伺い書②・第6便 追補）---
+handover/claude_chat_draft_20261007_plain_rev2.md	3d845e8adfdd	9661
+handover/plain_rev2_candidate_20261007.md	d1cd774b194e	76933
+handover/plain_rev2_draft_20261007.diff	b43fa0871e84	5650
+handover/claude_chat_message_20261008_to_director.md	987401eab50e	4819
+handover/scripts/manifest_20261008_unknown_cb121d1772df.tsv	cb121d1772df	9738
+# ⚠️ 注記（10/10｜第9便）：次の1行は正規版の manifest（AIスライドの出し直し版｜第6便 判定3-1）であり、出所不明ではない。行の移動・削除はしない
+handover/scripts/manifest_20261008.tsv	b63535eead84	10086
+# --- 2026-10-09 追加（AIスライド作成）---
+handover/claude_chat_message_20261008_1800_eod_director.md	87b1a760a551	4423
+handover/claude_chat_verdict_20261008_restored_by_aislide.md	ceb8011792e3	28580
+handover/claude_chat_report_20261009_to_director_compare.md	7f30e6a86686	3168
+handover/claude_chat_review_20261009_brain_composition.md	77bf07c63449	6244
+handover/claude_chat_plan_20261009_v17_217.md	5816ab7d71f5	3413
+handover/incident_20261009_unknown_writes.md	4506752928a2	4319
+handover/claude_chat_verdict_20261009_restored_by_aislide.md	9285b0c632f8	37495
+handover/claude_chat_message_20261009_aislide_to_director.md	134debc2dc28	6137
+handover/claude_chat_message_20261009_1800_eod.md	dc6a5d829824	3332
+handover/NEXT_ENV_HANDOVER_20261009_aislide.md	71f8fb08a35e	13369
+handover/NEXT_ENV_HANDOVER_20261009_director.md	11a7b99b9fbc	11760
+handover/claude_chat_message_20261009_1800_eod_director.md	3443f34c879b	5427
+# --- 出所不明・参考（10/9 17往復目に確認｜AIスライドは作成していない｜扱いは統括の判定待ち｜無変更を照合で確認）---
+handover/03_pptx_builder_v17_217_20261009.py	59e0ea978847	287382
+handover/claude_chat_report_20261009_r7_trial.md	18a97bb797d0	2724
+handover/claude_chat_report_20261009_v17_217.md	d76c28167869	3833
+handover/claude_chat_verdict_20261009_1600_b8_director.md	be77b2ce8093	8608
+handover/v37/v17_217_render_20261009.txt	3a44669fd39b	14727
+handover/v37/v17_216_render_baseline_20261009.txt	23b9cb25db07	14727
+# --- 2026-10-10 追加（AIスライド作成）---
+handover/scripts/manifest_20261009.tsv	519e06a5ab73	11531
+handover/NEXT_ENV_HANDOVER_20261009_aislide_addendum.md	9de2a3962e39	5399
+handover/03_pptx_builder_v17_217_20261010.py	47629772eaff	287389
+handover/claude_chat_report_20261010_v17_217.md	f046d8fa5916	5035
+handover/v37/v17_217_render_20261010.txt	afd8a3fd30c4	14720
+handover/v37/v17_216_render_baseline_20261010.txt	d62bc98d6f18	14720
+handover/incident_escalation_material_20261010.md	8d14786f57cb	8927
+handover/claude_chat_message_20261010_1800_eod.md	20431a5940dd	4680
+handover/claude_chat_message_20261010_aislide_to_director.md	ae4d18032767	2414
+# --- 証拠保全（10/9 インシデント｜第12便｜原本の複写・md5 は原本と同値）---
+handover/evidence_20261009/03_pptx_builder_v17_217_20261009.py	59e0ea978847	287382
+handover/evidence_20261009/claude_chat_report_20261009_r7_trial.md	18a97bb797d0	2724
+handover/evidence_20261009/claude_chat_report_20261009_v17_217.md	d76c28167869	3833
+handover/evidence_20261009/claude_chat_verdict_20261009_1600_b8_director.md	be77b2ce8093	8608
+handover/evidence_20261009/v17_217_render_20261009.txt	3a44669fd39b	14727
+handover/evidence_20261009/v17_216_render_baseline_20261009.txt	23b9cb25db07	14727
+# --- 2026-10-11 追加（AIスライド作成）---
+handover/scripts/manifest_20261010.tsv	a936f3d36a58	13075
+handover/manual_rev1_20261011.md	661391b40ae9	13418
+handover/plain_excerpt_purchaser_20261011.md	1fa211073c57	16865
+handover/claude_chat_message_20261011_aislide_to_director.md	fa666fa53f40	5416
+handover/v5_2_public_revision_plan_20261011.md	044cc9f3da6f	13650
+handover/claude_chat_verdict_20261011_restored_by_aislide.md	e0e484deafd4	17483
+handover/claude_chat_message_20261011_1800_eod.md	824251730010	6094
+# --- 出所不明・参考（10/11 節｜10往復目に確認｜AIスライドは作成していない｜第18便 判定1＝②比較のうえ保存｜無変更を照合で確認）---
+handover/title_proposal_20261011.md	03d5769d3d5b	2886
+handover/claude_chat_message_20261011_2_aislide_to_director.md	cc8fe4455b44	2360
+# ⚠️ 置き換わった manifest_20261011（13,746B・5492f0ade6aa）は、下の証拠保全節の handover/evidence_20261011/manifest_20261011.tsv が凍結複製。原位置は本版（正規）で置き換えた（第18便 判定3）
+# --- 証拠保全（10/11 インシデント｜第18便 判定2-2｜複写・md5 は原本と同値）---
+handover/evidence_20261011/claude_chat_message_20261011_1800_eod.md	e20b5b5672cd	6129
+handover/evidence_20261011/claude_chat_verdict_20261011_restored_by_aislide.md	c0de9433b9ea	16887
+handover/evidence_20261011/title_proposal_20261011.md	03d5769d3d5b	2886
+handover/evidence_20261011/claude_chat_message_20261011_2_aislide_to_director.md	cc8fe4455b44	2360
+handover/evidence_20261011/manifest_20261011.tsv	5492f0ade6aa	13746
+handover/evidence_20261011/vr_app_20261011.md	e43697b2dd08	5121
