@@ -6,8 +6,16 @@
 GPTs の Knowledge にアップロードして使用する PPTX 生成ライブラリ。
 ChatGPT の Code Interpreter から exec() で読み込み、関数を呼び出して .pptx を組み立てます。
 
-使い方:
+使い方（2経路）:
+    ■ GPTs 経路（ChatGPT の Code Interpreter｜Instructions J-7-3）
     exec(open('/mnt/data/03_pptx_builder.py').read())
+    ■ ローカル Python 経路（手順書 §3）
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('builder', '03_pptx_builder.py')
+    builder = importlib.util.module_from_spec(spec); spec.loader.exec_module(builder)
+    # 以降の関数は builder.create_presentation() のように呼ぶ
+    ⚠️ exec() で読み込むと（GPTs 経路）末尾のデモ（if __name__ == '__main__':）が動き、test_*.pptx が5件作られる。importlib（ローカル経路）では動かない。
+
     prs = create_presentation()
     add_cover(prs, title='Q2 販売戦略', date='2026年7月', author='○○株式会社 営業企画部')
     add_agenda(prs, items=['市場環境', '現状課題', '施策', '計画'])
@@ -17,6 +25,7 @@ ChatGPT の Code Interpreter から exec() で読み込み、関数を呼び出�
 必達13条項（Instructions参照）を厳格に遵守。
 
 バージョン履歴:
+    v17.2.17 (2026-10-10): __version__ を実際の版に更新・使い方を2経路に（F-1・F-2）。描画は v17.2.16 と同一。
     v17.1.0 (2026-08-24): v17 P2 図解パターン描画3種を統合。
         - draw_pyramid / draw_sequence / draw_framework。
         - draw_pattern を6種対応に拡張（P1 3種＋P2 3種）。
@@ -45,8 +54,8 @@ ChatGPT の Code Interpreter から exec() で読み込み、関数を呼び出�
     v11 (2026-07-06): 総評⇄Top3レイアウト崩れ根治（文字数上限厳格化）。
     v10 (2026-07-05): C-1/C-2/C-3 の120字統一・word_wrap=True で文字切れ根絶。
 """
-__version__ = '17.2.2'
-__version_date__ = '2026-08-25'
+__version__ = '17.2.17'
+__version_date__ = '2026-10-10'
 
 from pptx import Presentation
 from pptx.util import Inches, Pt, Emu
