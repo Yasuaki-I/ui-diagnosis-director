@@ -1,23 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""write5.py｜5段階書込（必達ルール9）
-
-2026-09-20 統括判定②（案A承認）に基づく常設スクリプト。
-毎セッション手書きしていた5段階書込コード（約20行）を置き換える。
+"""write5.py｜5段階書込（必達ルール9）｜改修案（2026-10-16・判定17・25）
 
 5段階:
-    ① 既存を削除
+    ① 既存の確認（既定：既存があれば書かずに停止）
     ② 書込
     ③ md5 照合（src ↔ dst）
     ④ 40秒待機
-    ⑤ ドライブAPI相当の再読込で内容一致を確認
+    ⑤ 再読込で内容一致を確認
 
 使い方:
     python3 write5.py /tmp/out/foo.md handover/foo.md
     python3 write5.py /tmp/out/foo.md handover/foo.md --wait 40
+    python3 write5.py /tmp/out/foo.md handover/foo.md --replace <旧md5先頭12桁> <旧バイト数>
+      … 上書きは --replace で旧値を明示した場合だけ。旧値が実測と一致したときに限り置き換える（事前照合の組込み）
 
-相対の宛先は AI ドライブのプロジェクト直下として解決する。
-終了コード: いずれかの段階で不一致なら 1
+終了コード: 0＝全通過／1＝照合不一致／2＝引数誤り／3＝既存ありで停止（書いていない）
 """
 import hashlib
 import os
@@ -47,6 +45,17 @@ def main(argv):
     wait = 40
     if '--wait' in argv:
         wait = int(argv[argv.index('--wait') + 1])
+    replace = None
+    if '--replace' in argv:
+        i = argv.index('--replace')
+        try:
+            replace = (argv[i + 1].lower(), int(argv[i + 2]))
+        except (IndexError, ValueError):
+            print('🚨 --replace には <旧md5先頭12桁> <旧バイト数> の2つが必要')
+            return 2
+        if len(replace[0]) < 12:
+            print('🚨 --replace の md5 は先頭12桁以上を指定する')
+            return 2
 
     if not os.path.isfile(src):
         print('🚨 src が存在しない: %s' % src)
@@ -57,12 +66,26 @@ def main(argv):
     print('dst: %s' % dst)
     print()
 
-    # ① 削除
+    # ① 既存の確認
     if os.path.exists(dst):
-        prev = md5_of(dst)
+        prev_md5 = md5_of(dst)
+        prev_size = os.path.getsize(dst)
+        if replace is None:
+            print('① 🛑 既存あり → 書かずに停止: %s（%dB / %s）' % (dst, prev_size, prev_md5[:12]))
+            print('   上書きが意図どおりなら --replace %s %d を付けて再実行する。'
+                  '意図しないファイルなら触れずに判定3-5（停止・保全・報告）' % (prev_md5[:12], prev_size))
+            return 3
+        if not (prev_md5.startswith(replace[0]) and prev_size == replace[1]):
+            print('① 🛑 事前照合 不一致 → 書かずに停止: 実測 %dB / %s ≠ 指定 %dB / %s'
+                  % (prev_size, prev_md5[:12], replace[1], replace[0][:12]))
+            print('   判定3-5（停止・保全・報告）')
+            return 3
         os.remove(dst)
-        print('① 既存を削除（旧 md5 %s）' % prev[:12])
+        print('① 事前照合 一致（%dB / %s）→ 既存を削除して置き換える' % (prev_size, prev_md5[:12]))
     else:
+        if replace is not None:
+            print('① 🛑 --replace 指定だが既存がない → 書かずに停止（宛先の誤りの可能性）')
+            return 3
         print('① 既存なし')
 
     # ② 書込
