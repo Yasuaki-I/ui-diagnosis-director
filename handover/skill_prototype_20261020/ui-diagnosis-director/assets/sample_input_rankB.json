@@ -1,0 +1,323 @@
+{
+ "site_slug": "sample_lp",
+ "diagnosis": {
+  "service_name": "サンプル英会話",
+  "input_type": "URL / LP",
+  "total_score": 32,
+  "rank": "B",
+  "rank_label": "標準的",
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 3,
+    "max": 5,
+    "comment": "清潔感はあるが体験価値が伝わりにくい"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 3,
+    "max": 5,
+    "comment": "開始喚起は明快だが選ばれる理由が弱い"
+   },
+   {
+    "category": "CTA設計",
+    "score": 2,
+    "max": 5,
+    "comment": "FV内に主要CTAがなく行動導線が弱い"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 3,
+    "max": 5,
+    "comment": "実績数値はあるが根拠の厚みが不足"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 2,
+    "max": 5,
+    "comment": "入力前の不安解消の説明が少ない"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 3,
+    "max": 5,
+    "comment": "SPでCTAの固定表示が必要"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 5,
+    "max": 5,
+    "comment": "余白・行間・色数が整理され読みやすい"
+   },
+   {
+    "category": "情報設計",
+    "score": 3,
+    "max": 5,
+    "comment": "比較・成果・不安解消の情報が不足"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 5,
+    "max": 5,
+    "comment": "青基調で教育サービスらしい安心感"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 3,
+    "max": 5,
+    "comment": "画像中心のため最適化の余地がある"
+   }
+  ],
+  "strengths": [
+   "余白の広いレイアウトで安心感を生んでいる",
+   "料金と特徴を整理し概要を素早く伝えている",
+   "青基調の配色で教育サービスの信頼感を出している"
+  ],
+  "priority_issues": [
+   "FV内に主要CTAがない",
+   "入力前の不安解消が不足",
+   "受講後の成果訴求が弱い"
+  ],
+  "conclusion": "FV内CTAと成果訴求・不安解消の3点を最優先で整えれば、無料体験への到達率を高められる。"
+ },
+ "proposals": {
+  "service_name": "サンプル英会話",
+  "proposals": [
+   {
+    "no": 1,
+    "title": "FVに無料体験CTAを追加する",
+    "priority": "高",
+    "effort": "小",
+    "target_area": "ファーストビュー",
+    "issue": "興味を持った直後に行動できない",
+    "before": "見出しと説明文のみで主要ボタンがない",
+    "after": "無料体験と料金確認の2ボタンをFV内に置く",
+    "target_score_item": "CTA設計"
+   },
+   {
+    "no": 2,
+    "title": "フォーム前に不安解消の説明を置く",
+    "priority": "高",
+    "effort": "小",
+    "target_area": "申込フォーム",
+    "issue": "入力前に費用や勧誘の不安が残る",
+    "before": "フォームだけが置かれている",
+    "after": "勧誘なし・所要2分の説明を直前に置く",
+    "target_score_item": "フォーム設計"
+   },
+   {
+    "no": 3,
+    "title": "成果が見えるコピーに変える",
+    "priority": "中",
+    "effort": "小",
+    "target_area": "メインコピー",
+    "issue": "学習後のメリットが伝わらない",
+    "before": "汎用的な呼びかけのコピー",
+    "after": "続けた先の成果が分かるコピーにする",
+    "target_score_item": "キャッチコピー"
+   },
+   {
+    "no": 4,
+    "title": "実績数値に根拠を添える",
+    "priority": "中",
+    "effort": "中",
+    "target_area": "実績帯",
+    "issue": "数値の裏付けが不足している",
+    "before": "数値のみを並べている",
+    "after": "集計方法と時期を小さく添える",
+    "target_score_item": "信頼性・権威性"
+   },
+   {
+    "no": 5,
+    "title": "画像を圧縮して表示を速める",
+    "priority": "低",
+    "effort": "中",
+    "target_area": "画像全般",
+    "issue": "初回表示に時間がかかる",
+    "before": "大きな画像をそのまま配信",
+    "after": "次世代形式と遅延読込に切り替える",
+    "target_score_item": "表示速度・技術"
+   }
+  ],
+  "summary": "最優先の一手：FVに無料体験CTAを置き、フォーム直前に不安解消の説明を添える。"
+ },
+ "visual_data": {
+  "service_name": "サンプル英会話",
+  "input_type": "URL / LP",
+  "total_score": 32,
+  "rank": "B",
+  "rank_label": "標準的",
+  "purpose": "無料体験CVを増やす",
+  "target": "LP全体",
+  "diagnosis_date": "2026年10月18日",
+  "summary": "FV内CTA追加で無料体験へ誘導",
+  "top_issue": "FV内に主要CTAがない",
+  "direction": "FV内に無料体験CTAを置き、フォーム直前で不安を解消し、成果の見えるコピーで選ばれる理由を補う。",
+  "sections": [
+   {
+    "no": 1,
+    "label": "ファーストビュー",
+    "desc": "主要CTAがない",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 2,
+    "label": "特徴",
+    "desc": "要点が整理されている",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 3,
+    "label": "料金",
+    "desc": "比較しやすい",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 4,
+    "label": "受講生の声",
+    "desc": "成果が伝わりにくい",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 5,
+    "label": "申込フォーム",
+    "desc": "不安解消が不足",
+    "has_issue": true,
+    "status": "issue"
+   }
+  ],
+  "flow_steps": [
+   {
+    "label": "流入",
+    "status": "✓",
+    "note": "広告から到達"
+   },
+   {
+    "label": "FV閲覧",
+    "status": "✕",
+    "note": "次の行動が不明"
+   },
+   {
+    "label": "特徴確認",
+    "status": "✓",
+    "note": "要点を把握"
+   },
+   {
+    "label": "料金確認",
+    "status": "✓",
+    "note": "比較できる"
+   },
+   {
+    "label": "フォーム",
+    "status": "✕",
+    "note": "不安で離脱"
+   },
+   {
+    "label": "申込完了",
+    "status": "✕",
+    "note": "到達率が低い"
+   }
+  ],
+  "highlights": [
+   {
+    "area": "ファーストビュー",
+    "title": "FVに主要CTAを置く",
+    "before": "見出しと説明文のみで主要ボタンがない",
+    "after": "無料体験と料金確認の2ボタンを置く"
+   },
+   {
+    "area": "申込フォーム",
+    "title": "入力前の不安を解消",
+    "before": "フォームだけが置かれている",
+    "after": "勧誘なし・所要2分の説明を添える"
+   },
+   {
+    "area": "メインコピー",
+    "title": "成果の見えるコピー",
+    "before": "汎用的な呼びかけのコピー",
+    "after": "続けた先の成果が分かるコピー"
+   }
+  ],
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 3,
+    "max": 5,
+    "comment": "清潔感はあるが体験価値が伝わりにくい"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 3,
+    "max": 5,
+    "comment": "開始喚起は明快だが選ばれる理由が弱い"
+   },
+   {
+    "category": "CTA設計",
+    "score": 2,
+    "max": 5,
+    "comment": "FV内に主要CTAがなく行動導線が弱い"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 3,
+    "max": 5,
+    "comment": "実績数値はあるが根拠の厚みが不足"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 2,
+    "max": 5,
+    "comment": "入力前の不安解消の説明が少ない"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 3,
+    "max": 5,
+    "comment": "SPでCTAの固定表示が必要"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 5,
+    "max": 5,
+    "comment": "余白・行間・色数が整理され読みやすい"
+   },
+   {
+    "category": "情報設計",
+    "score": 3,
+    "max": 5,
+    "comment": "比較・成果・不安解消の情報が不足"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 5,
+    "max": 5,
+    "comment": "青基調で教育サービスらしい安心感"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 3,
+    "max": 5,
+    "comment": "画像中心のため最適化の余地がある"
+   }
+  ],
+  "strengths": [
+   "余白の広いレイアウトで安心感を生んでいる",
+   "料金と特徴を整理し概要を素早く伝えている",
+   "青基調の配色で教育サービスの信頼感を出している"
+  ],
+  "priority_issues": [
+   "FV内に主要CTAがない",
+   "入力前の不安解消が不足",
+   "受講後の成果訴求が弱い"
+  ],
+  "top_issues": [
+   "FV内に主要CTAがない",
+   "入力前の不安解消が不足",
+   "受講後の成果訴求が弱い"
+  ]
+ }
+}
