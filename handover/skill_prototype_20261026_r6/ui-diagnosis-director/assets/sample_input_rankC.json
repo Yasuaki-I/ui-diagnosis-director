@@ -1,0 +1,335 @@
+{
+ "site_slug": "sample_ec",
+ "record": {
+  "service_name_official": "サンプル家具オンラインショップ本店",
+  "target_url": null,
+  "input_origin": "screenshot"
+ },
+ "diagnosis": {
+  "service_name": "サンプル家具店",
+  "input_type": "スクショ / EC",
+  "total_score": 25,
+  "rank": "C",
+  "rank_label": "要改善",
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 3,
+    "max": 5,
+    "comment": "商品写真は大きいが用途が伝わりにくい"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 2,
+    "max": 5,
+    "comment": "価格訴求のみで選ぶ理由が弱い"
+   },
+   {
+    "category": "CTA設計",
+    "score": 2,
+    "max": 5,
+    "comment": "カート導線が画面下部に隠れている"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 3,
+    "max": 5,
+    "comment": "レビュー件数が少なく根拠が薄い"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 3,
+    "max": 5,
+    "comment": "住所入力の補完があり負担は軽い"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 2,
+    "max": 5,
+    "comment": "スマホで画像が横にはみ出している"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 3,
+    "max": 5,
+    "comment": "文字は読めるが余白が詰まっている"
+   },
+   {
+    "category": "情報設計",
+    "score": 2,
+    "max": 5,
+    "comment": "送料と納期の情報が散らばっている"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 3,
+    "max": 5,
+    "comment": "色味は統一され家具店らしさがある"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 2,
+    "max": 5,
+    "comment": "画像が重く表示に時間がかかる"
+   }
+  ],
+  "strengths": [
+   "大きな商品写真で質感を伝えている",
+   "住所補完で入力の手間を減らしている",
+   "落ち着いた配色で店の印象を整えている"
+  ],
+  "priority_issues": [
+   "カート導線が見つけにくい",
+   "送料と納期が分かりにくい",
+   "スマホで画像がはみ出す"
+  ],
+  "conclusion": "カート導線を固定し送料と納期を商品近くに示せば、購入までの迷いを減らせる。"
+ },
+ "proposals": {
+  "service_name": "サンプル家具店",
+  "proposals": [
+   {
+    "no": 1,
+    "title": "カートボタンを常時表示する",
+    "priority": "高",
+    "effort": "小",
+    "target_area": "商品詳細",
+    "issue": "購入の操作が見つからない",
+    "before": "カートが画面下部にある",
+    "after": "カートを画面下に固定表示",
+    "target_score_item": "CTA設計"
+   },
+   {
+    "no": 2,
+    "title": "送料と納期を価格の横に出す",
+    "priority": "高",
+    "effort": "小",
+    "target_area": "価格欄",
+    "issue": "送料と納期を探す手間がある",
+    "before": "送料は別ページに記載",
+    "after": "価格の横に送料と納期を表示",
+    "target_score_item": "情報設計"
+   },
+   {
+    "no": 3,
+    "title": "スマホの画像幅を直す",
+    "priority": "中",
+    "effort": "中",
+    "target_area": "商品画像",
+    "issue": "スマホで画像が切れて見える",
+    "before": "画像が画面幅を超える",
+    "after": "画面幅に合わせて縮小表示",
+    "target_score_item": "レスポンシブ"
+   },
+   {
+    "no": 4,
+    "title": "用途別の写真を加える",
+    "priority": "中",
+    "effort": "中",
+    "target_area": "写真ギャラリー",
+    "issue": "部屋での使い方が想像しにくい",
+    "before": "単体の商品写真のみ",
+    "after": "設置例の写真を2枚加える",
+    "target_score_item": "ファーストビュー"
+   },
+   {
+    "no": 5,
+    "title": "画像を軽くして速くする",
+    "priority": "低",
+    "effort": "中",
+    "target_area": "画像全般",
+    "issue": "表示まで時間がかかる",
+    "before": "大きな画像をそのまま配信",
+    "after": "次世代形式と遅延読込にする",
+    "target_score_item": "表示速度・技術"
+   }
+  ],
+  "summary": "最優先の一手：カートボタンを画面下に固定し、価格の横に送料と納期を示して購入までの迷いを減らす。"
+ },
+ "visual_data": {
+  "service_name": "サンプル家具店",
+  "input_type": "スクショ / EC",
+  "total_score": 25,
+  "rank": "C",
+  "rank_label": "要改善",
+  "purpose": "購入CVを増やす",
+  "target": "商品詳細ページ",
+  "diagnosis_date": "2026年10月26日",
+  "summary": "カート固定と送料表示で購入へ",
+  "top_issue": "カート導線が見つけにくい",
+  "direction": "カートを常時表示し、送料と納期を価格の横に示し、スマホの画像幅を直して購入までの迷いを減らすべきだ。",
+  "sections": [
+   {
+    "no": 1,
+    "label": "商品写真",
+    "desc": "質感は伝わる",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 2,
+    "label": "価格欄",
+    "desc": "送料が別ページ",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 3,
+    "label": "商品説明",
+    "desc": "用途が伝わらない",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 4,
+    "label": "レビュー",
+    "desc": "件数が少ない",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 5,
+    "label": "カート",
+    "desc": "画面下に隠れる",
+    "has_issue": true,
+    "status": "issue"
+   }
+  ],
+  "flow_steps": [
+   {
+    "label": "流入",
+    "status": "✓",
+    "note": "検索から到達"
+   },
+   {
+    "label": "写真確認",
+    "status": "✓",
+    "note": "質感が伝わる"
+   },
+   {
+    "label": "価格確認",
+    "status": "✕",
+    "note": "送料が不明"
+   },
+   {
+    "label": "説明確認",
+    "status": "✕",
+    "note": "用途が不明"
+   },
+   {
+    "label": "カート",
+    "status": "✕",
+    "note": "場所が不明"
+   },
+   {
+    "label": "購入完了",
+    "status": "✕",
+    "note": "到達率が低い"
+   }
+  ],
+  "flow_summary": "送料とカートの場所で迷い購入に届かない",
+  "highlights": [
+   {
+    "title": "カートを常時表示する",
+    "target_area": "商品詳細",
+    "priority": "高",
+    "effort": "小",
+    "before": "カートが画面下部にある",
+    "after": "カートを画面下に固定表示"
+   },
+   {
+    "title": "送料と納期を価格横に",
+    "target_area": "価格欄",
+    "priority": "高",
+    "effort": "小",
+    "before": "送料は別ページに記載",
+    "after": "価格の横に送料と納期を表示"
+   },
+   {
+    "title": "スマホの画像幅を直す",
+    "target_area": "商品画像",
+    "priority": "中",
+    "effort": "中",
+    "before": "画像が画面幅を超える",
+    "after": "画面幅に合わせて縮小表示"
+   }
+  ],
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 3,
+    "max": 5,
+    "comment": "商品写真は大きいが用途が伝わりにくい"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 2,
+    "max": 5,
+    "comment": "価格訴求のみで選ぶ理由が弱い"
+   },
+   {
+    "category": "CTA設計",
+    "score": 2,
+    "max": 5,
+    "comment": "カート導線が画面下部に隠れている"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 3,
+    "max": 5,
+    "comment": "レビュー件数が少なく根拠が薄い"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 3,
+    "max": 5,
+    "comment": "住所入力の補完があり負担は軽い"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 2,
+    "max": 5,
+    "comment": "スマホで画像が横にはみ出している"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 3,
+    "max": 5,
+    "comment": "文字は読めるが余白が詰まっている"
+   },
+   {
+    "category": "情報設計",
+    "score": 2,
+    "max": 5,
+    "comment": "送料と納期の情報が散らばっている"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 3,
+    "max": 5,
+    "comment": "色味は統一され家具店らしさがある"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 2,
+    "max": 5,
+    "comment": "画像が重く表示に時間がかかる"
+   }
+  ],
+  "strengths": [
+   "大きな商品写真で質感を伝えている",
+   "住所補完で入力の手間を減らしている",
+   "落ち着いた配色で店の印象を整えている"
+  ],
+  "priority_issues": [
+   "カート導線が見つけにくい",
+   "送料と納期が分かりにくい",
+   "スマホで画像がはみ出す"
+  ],
+  "top_issues": [
+   "カート導線が見つけにくい",
+   "送料と納期が分かりにくい",
+   "スマホで画像がはみ出す"
+  ]
+ }
+}
