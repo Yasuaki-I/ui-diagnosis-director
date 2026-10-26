@@ -1,0 +1,49 @@
+=== SKILL.md
+5c5
+< <!-- 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6（2026-10-26｜設計 r2・判定113・117〜120） -->
+---
+> <!-- 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6.1（2026-10-27｜設計 r2・判定113・117〜124） -->
+35a36
+> - **C-2 の提案と C-3 の Before/After は、箇所（target_area）で1対1に対応させる**。対応する組は priority・effort・target_area・before・after を**同じ文字列**にする（title は別でよい）。箇所は提案ごとに変える（同じ箇所の提案を2つ作らない）
+=== README.md
+1c1
+< <!-- 【購入者限定】本商品に含まれるコード・文書の再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6（2026-10-26） -->
+---
+> <!-- 【購入者限定】本商品に含まれるコード・文書の再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6.1（2026-10-27） -->
+=== assets/sample_input_rankB.json
+238c238
+<     "after": "無料体験と料金確認の2ボタンを置く"
+---
+>     "after": "無料体験と料金確認の2ボタンをFV内に置く"
+246c246
+<     "after": "勧誘なし・所要2分の説明を添える"
+---
+>     "after": "勧誘なし・所要2分の説明を直前に置く"
+254c254
+<     "after": "続けた先の成果が分かるコピー"
+---
+>     "after": "続けた先の成果が分かるコピーにする"
+=== references/input_schema.md
+1c1
+< <!-- 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6（2026-10-26） -->
+---
+> <!-- 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6.1（2026-10-27） -->
+60c60
+< | highlights | Before/After 3組：{title, target_area, priority, effort, before, after}。**target_area・priority・effort は、C-2 の対応する改善提案と同じ値を使う**（priority＝高・中・低／effort＝小・中・大） | title len 30・27換算／target_area 10換算／before・after 24換算（**C-2 の対応する提案と同じ文字列**） |
+---
+> | highlights | Before/After 3組（**C-2 の提案と箇所で1対1に対応。対応する組は priority・effort・target_area・before・after を同じ文字列に**）：{title, target_area, priority, effort, before, after}。**target_area・priority・effort は、C-2 の対応する改善提案と同じ値を使う**（priority＝高・中・低／effort＝小・中・大） | title len 30・27換算／target_area 10換算／before・after 24換算（**C-2 の対応する提案と同じ文字列**） |
+=== references/scoring_rules.md
+1c1
+< <!-- 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6（2026-10-26） -->
+---
+> <!-- 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6.1（2026-10-27） -->
+=== references/diagram_patterns.md
+1c1
+< <!-- 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6（2026-10-26） -->
+---
+> <!-- 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6.1（2026-10-27） -->
+=== references/dialogue_templates.md
+1c1
+< <!-- 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6（2026-10-26） -->
+---
+> <!-- 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6.1（2026-10-27） -->

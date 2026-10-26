@@ -1,0 +1,19 @@
+⭕ t1 総評の末尾… | exit 1 | - 総評の末尾が省略記号：「FV内CTA追加で誘導…」→ 省略せず言い切る形に言い換える
+⭕ t2 総評が空 | exit 1 | - 総評が空 → 17字以内の総評を入れる
+⭕ t3 総評の項目なし | exit 1 | - 総評（visual_data.summary）の項目が無い → 17字以内の総評を入れる
+⭕ t4 JSONの総評だけ書換 | exit 1 | - C-3 の PPTX に総評「別の総評に差し替え」が見当たらない → 入力を直したら PPTX も作り直す
+⭕ t5 rank_label 長い | exit 1 | - C-1 のランクの説明が「標準的（改善余地あり）」→ ランクBは「標準的」をそのまま使う
+⭕ t6 rank_label 優良（B） | exit 1 | - C-1 のランクの説明が「優良」→ ランクBは「標準的」をそのまま使う
+⭕ t7 rank_label なし | exit 1 | - C-1 のランクの説明（rank_label）が無い → 「標準的」を入れる
+⭕ t8 総評18字 | exit 1 | - 総評が18字（上限17字）：「ああああああああああああああああああ」→ 意味を保って17字以内に言い換える
+⭕ t9 rank_label を直したが C-1 を作り直さない | exit 1 | - C-1 の PPTX のランク欄が入力（「B  標準的」）と一致しない → 入力を直したら PPTX も作り直す
+⭕ t10 課題の文だけ書換 | exit 1 | - C-1 課題『別の課題A』が PPTX に見当たらない → 入力を直したら PPTX も作り直す
+⭕ t11 2件で生成・JSONは3件 | exit 1 | - C-1 強み『青基調の配色で教育サービスの信頼感を出している』が PPTX に見当たらない → 入力を直したら PPTX も作り直す
+⭕ u1 area のまま・flow_summary なし | exit 1 | - C-3 Before/After #1：箇所が area になっている → area ではなく target_area と書く（C-2 の対応する提案と同じ値）
+⭕ u3 PPTX は r3 型・JSON だけ足す | exit 1 | - C-3 Before/After #1：PPTX に「箇所：ファーストビュー」が見当たらない → 入力を直したら PPTX も作り直す
+⭕ 追加 priority＝最優先 | exit 1 | - C-3 Before/After #1：優先度（priority）が「最優先」→ 高・中・低のどれか（C-2 と同じ値）
+⭕ 追加 flow_summary なし | exit 1 | - C-3 行動の流れのまとめ（flow_summary）が無い・空 → 40字以内の1文を入れる
+⭕ 追加 flow_summary 41字 | exit 1 | - C-3 行動の流れのまとめが41字（上限40字）→ 言い換える
+⭕ 追加 target_area なし | exit 1 | - C-3 Before/After #1：箇所（target_area）が無い → C-2 の対応する提案の target_area を入れる
+⭕ test_*.pptx の混入 | exit 1 | - test_*.pptx がある：['test_demo.pptx']（builder の読み込み方を確認。デモが動いている）
+--- 18 / 18

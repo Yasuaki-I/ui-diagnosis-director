@@ -1,0 +1,342 @@
+{
+ "site_slug": "sample_corp",
+ "record": {
+  "service_name_official": "サンプル法律事務所 公式サイト",
+  "target_url": "https://example.org/",
+  "input_origin": "url"
+ },
+ "diagnosis": {
+  "service_name": "サンプル法律事務所",
+  "input_type": "URL / コーポレート",
+  "total_score": 15,
+  "rank": "D",
+  "rank_label": "致命的",
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 1,
+    "max": 5,
+    "comment": "画像だけで事務所の役割が分からない"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 2,
+    "max": 5,
+    "comment": "専門分野が見出しから読み取れない"
+   },
+   {
+    "category": "CTA設計",
+    "score": 1,
+    "max": 5,
+    "comment": "相談の申込み導線が見当たらない"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 2,
+    "max": 5,
+    "comment": "実績の記載がなく根拠がない"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 1,
+    "max": 5,
+    "comment": "問い合わせフォームが動作しない"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 2,
+    "max": 5,
+    "comment": "スマホで文字が小さく読めない"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 2,
+    "max": 5,
+    "comment": "行間が狭く長文が読みにくい"
+   },
+   {
+    "category": "情報設計",
+    "score": 1,
+    "max": 5,
+    "comment": "料金と相談の流れが載っていない"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 2,
+    "max": 5,
+    "comment": "ロゴと配色がページごとに違う"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 1,
+    "max": 5,
+    "comment": "読込みに10秒以上かかる"
+   }
+  ],
+  "strengths": [
+   "所在地と地図を明記して安心させている",
+   "代表の経歴を載せ人柄を伝えている",
+   "相談分野を一覧で整理しようとしている"
+  ],
+  "priority_issues": [
+   "相談の申込み導線がない",
+   "問い合わせが送れない",
+   "料金と流れが不明"
+  ],
+  "conclusion": "問い合わせフォームを直し相談の導線と料金の目安を示せば、相談の申込みを生み出せる。"
+ },
+ "proposals": {
+  "service_name": "サンプル法律事務所",
+  "proposals": [
+   {
+    "no": 1,
+    "title": "問い合わせフォームを直す",
+    "priority": "高",
+    "effort": "中",
+    "target_area": "問い合わせ",
+    "issue": "送信できず相談を逃している",
+    "before": "送信ボタンが反応しない",
+    "after": "送信後に受付完了を表示",
+    "target_score_item": "フォーム設計"
+   },
+   {
+    "no": 2,
+    "title": "相談ボタンを各ページに置く",
+    "priority": "高",
+    "effort": "小",
+    "target_area": "ヘッダー",
+    "issue": "相談したくても入口がない",
+    "before": "申込みの入口がない",
+    "after": "無料相談のボタンを常設",
+    "target_score_item": "CTA設計"
+   },
+   {
+    "no": 3,
+    "title": "料金と相談の流れを載せる",
+    "priority": "中",
+    "effort": "小",
+    "target_area": "料金ページ",
+    "issue": "費用の不安で相談をためらう",
+    "before": "料金の記載がない",
+    "after": "料金の目安と流れを図で示す",
+    "target_score_item": "情報設計"
+   },
+   {
+    "no": 4,
+    "title": "スマホの文字を大きくする",
+    "priority": "中",
+    "effort": "中",
+    "target_area": "本文全般",
+    "issue": "スマホで文字が読めない",
+    "before": "文字が小さく行間が狭い",
+    "after": "16px以上と広い行間にする",
+    "target_score_item": "読みやすさ"
+   },
+   {
+    "no": 5,
+    "title": "ロゴと配色を統一する",
+    "priority": "低",
+    "effort": "中",
+    "target_area": "全ページ",
+    "issue": "ページごとに印象が違う",
+    "before": "ロゴと色がページで異なる",
+    "after": "ロゴと2色の配色に揃える",
+    "target_score_item": "ブランド一貫性"
+   }
+  ],
+  "summary": "最優先の一手：問い合わせフォームを直し、全ページに無料相談のボタンを置いて相談の入口を作る。"
+ },
+ "visual_data": {
+  "service_name": "サンプル法律事務所",
+  "input_type": "URL / コーポレート",
+  "total_score": 15,
+  "rank": "D",
+  "rank_label": "致命的",
+  "purpose": "相談申込みを増やす",
+  "target": "サイト全体",
+  "diagnosis_date": "2026年10月26日",
+  "summary": "フォーム修理で相談の入口を作る",
+  "top_issue": "相談の申込み導線がない",
+  "direction": "問い合わせフォームを直し、全ページに相談の入口を置き、料金の目安と流れを示して相談への不安を減らすべきだ。",
+  "sections": [
+   {
+    "no": 1,
+    "label": "トップ画像",
+    "desc": "役割が不明",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 2,
+    "label": "専門分野",
+    "desc": "見出しが曖昧",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 3,
+    "label": "代表あいさつ",
+    "desc": "人柄が伝わる",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 4,
+    "label": "料金",
+    "desc": "記載がない",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 5,
+    "label": "問い合わせ",
+    "desc": "送信できない",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 6,
+    "label": "アクセス",
+    "desc": "地図が明快",
+    "has_issue": false,
+    "status": "good"
+   }
+  ],
+  "flow_steps": [
+   {
+    "label": "流入",
+    "status": "✓",
+    "note": "検索から到達"
+   },
+   {
+    "label": "トップ",
+    "status": "✕",
+    "note": "役割が不明"
+   },
+   {
+    "label": "分野確認",
+    "status": "✕",
+    "note": "専門が曖昧"
+   },
+   {
+    "label": "料金確認",
+    "status": "✕",
+    "note": "記載がない"
+   },
+   {
+    "label": "問合せ",
+    "status": "✕",
+    "note": "送信できない"
+   },
+   {
+    "label": "相談予約",
+    "status": "✕",
+    "note": "到達できない"
+   }
+  ],
+  "flow_summary": "料金とフォームで止まり相談に届かない",
+  "highlights": [
+   {
+    "title": "フォームを直す",
+    "target_area": "問い合わせ",
+    "priority": "高",
+    "effort": "中",
+    "before": "送信ボタンが反応しない",
+    "after": "送信後に受付完了を表示"
+   },
+   {
+    "title": "相談ボタンを常設する",
+    "target_area": "ヘッダー",
+    "priority": "高",
+    "effort": "小",
+    "before": "申込みの入口がない",
+    "after": "無料相談のボタンを常設"
+   },
+   {
+    "title": "料金と流れを載せる",
+    "target_area": "料金ページ",
+    "priority": "中",
+    "effort": "小",
+    "before": "料金の記載がない",
+    "after": "料金の目安と流れを図で示す"
+   }
+  ],
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 1,
+    "max": 5,
+    "comment": "画像だけで事務所の役割が分からない"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 2,
+    "max": 5,
+    "comment": "専門分野が見出しから読み取れない"
+   },
+   {
+    "category": "CTA設計",
+    "score": 1,
+    "max": 5,
+    "comment": "相談の申込み導線が見当たらない"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 2,
+    "max": 5,
+    "comment": "実績の記載がなく根拠がない"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 1,
+    "max": 5,
+    "comment": "問い合わせフォームが動作しない"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 2,
+    "max": 5,
+    "comment": "スマホで文字が小さく読めない"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 2,
+    "max": 5,
+    "comment": "行間が狭く長文が読みにくい"
+   },
+   {
+    "category": "情報設計",
+    "score": 1,
+    "max": 5,
+    "comment": "料金と相談の流れが載っていない"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 2,
+    "max": 5,
+    "comment": "ロゴと配色がページごとに違う"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 1,
+    "max": 5,
+    "comment": "読込みに10秒以上かかる"
+   }
+  ],
+  "strengths": [
+   "所在地と地図を明記して安心させている",
+   "代表の経歴を載せ人柄を伝えている",
+   "相談分野を一覧で整理しようとしている"
+  ],
+  "priority_issues": [
+   "相談の申込み導線がない",
+   "問い合わせが送れない",
+   "料金と流れが不明"
+  ],
+  "top_issues": [
+   "相談の申込み導線がない",
+   "問い合わせが送れない",
+   "料金と流れが不明"
+  ]
+ }
+}

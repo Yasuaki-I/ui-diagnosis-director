@@ -1,0 +1,18 @@
+点検対象： 01_UI_Scorecard_sample_lp.pptx, 02_Proposals_sample_lp.pptx, 03_Visual_Board_sample_lp.pptx
+  表示名の報告： 表示名「サンプル英会話」（正式名称：サンプル英会話スクール）
+内容・構成点検：⭕ 合格（総評17字・ランクの説明・件数・ファイル名・test_*.pptx 無し・リンク無し・メイリオ14pt以上・PPTX と入力の一致・Before/After の箇所と優先度・行動の流れのまとめ・字数 A/B/C・文字種・record・C-2/C-3 の対応）
+表示の簡易推定：基準内（229欄）／要実機確認（6欄）／NG（0枠＋追加理由0件）／未検査（0件）／参考（5件）
+  [要実機確認] 01_UI_Scorecard_sample_lp.pptx 1枚目 1-1-総合スコア：固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [要実機確認] 01_UI_Scorecard_sample_lp.pptx 1枚目 1-1-ランク：固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [要実機確認] 01_UI_Scorecard_sample_lp.pptx 2枚目 1-2-総合スコア：固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [要実機確認] 01_UI_Scorecard_sample_lp.pptx 2枚目 1-2-ランク：固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [要実機確認] 03_Visual_Board_sample_lp.pptx 1枚目 3-1-総合スコア：固定カード／高さ推定64.0px・枠50px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [要実機確認] 03_Visual_Board_sample_lp.pptx 2枚目 3-2-総合スコア：固定カード／高さ推定64.0px・枠50px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [参考] 03_Visual_Board_sample_lp.pptx 1枚目 3-1-矢印1：例外表 #1（幅 26.7px／枠 12px）・実機確認
+  [参考] 03_Visual_Board_sample_lp.pptx 1枚目 3-1-矢印2：例外表 #1（幅 26.7px／枠 12px）・実機確認
+  [参考] 03_Visual_Board_sample_lp.pptx 1枚目 3-1-矢印3：例外表 #1（幅 26.7px／枠 12px）・実機確認
+  [参考] 03_Visual_Board_sample_lp.pptx 1枚目 3-1-矢印4：例外表 #1（幅 26.7px／枠 12px）・実機確認
+  [参考] 03_Visual_Board_sample_lp.pptx 1枚目 3-1-矢印5：例外表 #1（幅 26.7px／枠 12px）・実機確認
+Windows PowerPoint 目視：未実施
+※「基準内」は実際の描画の合格を意味しない。最終の判定は Windows の PowerPoint での目視。
+⭕ 点検合格（表示は簡易推定・実機の目視は別途）

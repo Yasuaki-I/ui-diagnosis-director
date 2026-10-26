@@ -1,0 +1,4570 @@
+{
+ "content_ng": [],
+ "rows": [
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    20,
+    1140,
+    34
+   ],
+   "text": "【1】UI診断スコアカード",
+   "field": "1-1-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    58,
+    1140,
+    22
+   ],
+   "text": "サマリ：診断対象・スコア・強み・最優先課題・結論",
+   "field": "1-1-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    100,
+    265,
+    66
+   ],
+   "text": "診断対象\nサンプル家具店",
+   "field": "1-1-診断対象",
+   "kind": "card",
+   "cls": "input",
+   "height": 56.96,
+   "cap": 66.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    361,
+    100,
+    265,
+    66
+   ],
+   "text": "入力種別\nスクショ / EC",
+   "field": "1-1-入力種別",
+   "kind": "card",
+   "cls": "input",
+   "height": 53.12,
+   "cap": 66.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    664,
+    100,
+    265,
+    66
+   ],
+   "text": "総合スコア\n25  / 50",
+   "field": "1-1-総合スコア",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 73.6,
+   "cap": 66.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    967,
+    100,
+    265,
+    66
+   ],
+   "text": "ランク\nC  要改善",
+   "field": "1-1-ランク",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 73.6,
+   "cap": 66.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    190,
+    556,
+    36
+   ],
+   "text": "◎ 強み（活かすべき点）",
+   "field": "1-1-強み見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 36.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    244,
+    552,
+    328
+   ],
+   "text": "● 大きな商品写真で質感を伝えている\n● 住所補完で入力の手間を減らしている\n● 落ち着いた配色で店の印象を整えている",
+   "field": "1-1-強み",
+   "kind": "multi",
+   "cls": "input",
+   "height": 113.49,
+   "cap": 328.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    666,
+    190,
+    556,
+    36
+   ],
+   "text": "⚠ 最優先で直すべき点",
+   "field": "1-1-課題見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 36.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    668,
+    244,
+    552,
+    328
+   ],
+   "text": "1. カート導線が見つけにくい\n2. 送料と納期が分かりにくい\n3. スマホで画像がはみ出す",
+   "field": "1-1-課題",
+   "kind": "multi_line",
+   "cls": "input",
+   "height": 113.49,
+   "cap": 328.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    40,
+    594,
+    88,
+    62
+   ],
+   "text": "結論",
+   "field": "1-1-結論ラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    168,
+    594,
+    1072,
+    62
+   ],
+   "text": "カート導線を固定し送料と納期を商品近くに示せば、購入までの迷いを減らせる。",
+   "field": "1-1-結論",
+   "kind": "multi",
+   "cls": "input",
+   "height": 30.24,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI診断ディレクター",
+   "field": "1-1-フッター",
+   "kind": "footer",
+   "cls": "footer",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "1 / 2",
+   "field": "1-1-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    20,
+    1140,
+    34
+   ],
+   "text": "【1】UI診断スコアカード",
+   "field": "1-2-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    58,
+    1140,
+    22
+   ],
+   "text": "10項目評価：各項目のスコアと一言所見（全文表示）",
+   "field": "1-2-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    58,
+    100,
+    265,
+    66
+   ],
+   "text": "診断対象\nサンプル家具店",
+   "field": "1-2-診断対象",
+   "kind": "card",
+   "cls": "input",
+   "height": 56.96,
+   "cap": 66.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    361,
+    100,
+    265,
+    66
+   ],
+   "text": "入力種別\nスクショ / EC",
+   "field": "1-2-入力種別",
+   "kind": "card",
+   "cls": "input",
+   "height": 53.12,
+   "cap": 66.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    664,
+    100,
+    265,
+    66
+   ],
+   "text": "総合スコア\n25  / 50",
+   "field": "1-2-総合スコア",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 73.6,
+   "cap": 66.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    967,
+    100,
+    265,
+    66
+   ],
+   "text": "ランク\nC  要改善",
+   "field": "1-2-ランク",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 73.6,
+   "cap": 66.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    180,
+    60,
+    28
+   ],
+   "text": "No",
+   "field": "1-2-表-見出し1",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 22.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    180,
+    204,
+    28
+   ],
+   "text": "項目",
+   "field": "1-2-表-見出し2",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 22.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    180,
+    84,
+    28
+   ],
+   "text": "スコア",
+   "field": "1-2-表-見出し3",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 22.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    180,
+    852,
+    28
+   ],
+   "text": "一言所見",
+   "field": "1-2-表-見出し4",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 22.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    208,
+    60,
+    30
+   ],
+   "text": "1",
+   "field": "1-2-表-1-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    208,
+    204,
+    30
+   ],
+   "text": "ファーストビュー",
+   "field": "1-2-表-1-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    208,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-1-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    208,
+    852,
+    30
+   ],
+   "text": "商品写真は大きいが用途が伝わりにくい",
+   "field": "1-2-表-1-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    238,
+    60,
+    30
+   ],
+   "text": "2",
+   "field": "1-2-表-2-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    238,
+    204,
+    30
+   ],
+   "text": "キャッチコピー",
+   "field": "1-2-表-2-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    238,
+    84,
+    30
+   ],
+   "text": "2/5",
+   "field": "1-2-表-2-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    238,
+    852,
+    30
+   ],
+   "text": "価格訴求のみで選ぶ理由が弱い",
+   "field": "1-2-表-2-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    268,
+    60,
+    30
+   ],
+   "text": "3",
+   "field": "1-2-表-3-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    268,
+    204,
+    30
+   ],
+   "text": "CTA設計",
+   "field": "1-2-表-3-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    268,
+    84,
+    30
+   ],
+   "text": "2/5",
+   "field": "1-2-表-3-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    268,
+    852,
+    30
+   ],
+   "text": "カート導線が画面下部に隠れている",
+   "field": "1-2-表-3-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    298,
+    60,
+    30
+   ],
+   "text": "4",
+   "field": "1-2-表-4-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    298,
+    204,
+    30
+   ],
+   "text": "信頼性・権威性",
+   "field": "1-2-表-4-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    298,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-4-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    298,
+    852,
+    30
+   ],
+   "text": "レビュー件数が少なく根拠が薄い",
+   "field": "1-2-表-4-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    328,
+    60,
+    30
+   ],
+   "text": "5",
+   "field": "1-2-表-5-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    328,
+    204,
+    30
+   ],
+   "text": "フォーム設計",
+   "field": "1-2-表-5-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    328,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-5-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    328,
+    852,
+    30
+   ],
+   "text": "住所入力の補完があり負担は軽い",
+   "field": "1-2-表-5-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    358,
+    60,
+    30
+   ],
+   "text": "6",
+   "field": "1-2-表-6-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    358,
+    204,
+    30
+   ],
+   "text": "レスポンシブ",
+   "field": "1-2-表-6-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    358,
+    84,
+    30
+   ],
+   "text": "2/5",
+   "field": "1-2-表-6-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    358,
+    852,
+    30
+   ],
+   "text": "スマホで画像が横にはみ出している",
+   "field": "1-2-表-6-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    388,
+    60,
+    30
+   ],
+   "text": "7",
+   "field": "1-2-表-7-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    388,
+    204,
+    30
+   ],
+   "text": "読みやすさ",
+   "field": "1-2-表-7-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    388,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-7-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    388,
+    852,
+    30
+   ],
+   "text": "文字は読めるが余白が詰まっている",
+   "field": "1-2-表-7-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    418,
+    60,
+    30
+   ],
+   "text": "8",
+   "field": "1-2-表-8-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    418,
+    204,
+    30
+   ],
+   "text": "情報設計",
+   "field": "1-2-表-8-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    418,
+    84,
+    30
+   ],
+   "text": "2/5",
+   "field": "1-2-表-8-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    418,
+    852,
+    30
+   ],
+   "text": "送料と納期の情報が散らばっている",
+   "field": "1-2-表-8-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    448,
+    60,
+    30
+   ],
+   "text": "9",
+   "field": "1-2-表-9-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    448,
+    204,
+    30
+   ],
+   "text": "ブランド一貫性",
+   "field": "1-2-表-9-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    448,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-9-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    448,
+    852,
+    30
+   ],
+   "text": "色味は統一され家具店らしさがある",
+   "field": "1-2-表-9-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    478,
+    60,
+    30
+   ],
+   "text": "10",
+   "field": "1-2-表-10-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    478,
+    204,
+    30
+   ],
+   "text": "表示速度・技術",
+   "field": "1-2-表-10-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    478,
+    84,
+    30
+   ],
+   "text": "2/5",
+   "field": "1-2-表-10-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    478,
+    852,
+    30
+   ],
+   "text": "画像が重く表示に時間がかかる",
+   "field": "1-2-表-10-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI診断ディレクター",
+   "field": "1-2-フッター",
+   "kind": "footer",
+   "cls": "footer",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "2 / 2",
+   "field": "1-2-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    20,
+    820,
+    34
+   ],
+   "text": "【2】改善提案リスト",
+   "field": "2-1-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    58,
+    820,
+    22
+   ],
+   "text": "優先度の高い改善アクションを整理（1/2 前半 3件）",
+   "field": "2-1-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    880,
+    30,
+    80,
+    22
+   ],
+   "text": "優先度",
+   "field": "2-1-凡例",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    970,
+    33,
+    70,
+    22
+   ],
+   "text": "高",
+   "field": "2-1-凡例高",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1050,
+    33,
+    70,
+    22
+   ],
+   "text": "中",
+   "field": "2-1-凡例中",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1130,
+    33,
+    70,
+    22
+   ],
+   "text": "低",
+   "field": "2-1-凡例低",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    114,
+    34,
+    26
+   ],
+   "text": "1",
+   "field": "2-提案1-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 26.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    102,
+    112,
+    770,
+    32
+   ],
+   "text": "カートボタンを常時表示する",
+   "field": "2-提案1-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 32.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    980,
+    111,
+    70,
+    30
+   ],
+   "text": "高",
+   "field": "2-提案1-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 30.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1060,
+    115,
+    170,
+    22
+   ],
+   "text": "工数：小",
+   "field": "2-提案1-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    56,
+    154,
+    568,
+    48
+   ],
+   "text": "改善箇所　商品詳細",
+   "field": "2-提案1-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    640,
+    154,
+    584,
+    48
+   ],
+   "text": "課題　購入の操作が見つからない",
+   "field": "2-提案1-課題",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    64,
+    210,
+    552,
+    40
+   ],
+   "text": "現状　カートが画面下部にある",
+   "field": "2-提案1-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    648,
+    210,
+    568,
+    40
+   ],
+   "text": "改善後　カートを画面下に固定表示",
+   "field": "2-提案1-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    303,
+    34,
+    26
+   ],
+   "text": "2",
+   "field": "2-提案2-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 26.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    102,
+    301,
+    770,
+    32
+   ],
+   "text": "送料と納期を価格の横に出す",
+   "field": "2-提案2-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 32.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    980,
+    300,
+    70,
+    30
+   ],
+   "text": "高",
+   "field": "2-提案2-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 30.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1060,
+    304,
+    170,
+    22
+   ],
+   "text": "工数：小",
+   "field": "2-提案2-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    56,
+    343,
+    568,
+    48
+   ],
+   "text": "改善箇所　価格欄",
+   "field": "2-提案2-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    640,
+    343,
+    584,
+    48
+   ],
+   "text": "課題　送料と納期を探す手間がある",
+   "field": "2-提案2-課題",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    64,
+    399,
+    552,
+    40
+   ],
+   "text": "現状　送料は別ページに記載",
+   "field": "2-提案2-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    648,
+    399,
+    568,
+    40
+   ],
+   "text": "改善後　価格の横に送料と納期を表示",
+   "field": "2-提案2-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    492,
+    34,
+    26
+   ],
+   "text": "3",
+   "field": "2-提案3-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 26.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    102,
+    490,
+    770,
+    32
+   ],
+   "text": "スマホの画像幅を直す",
+   "field": "2-提案3-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 32.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    980,
+    489,
+    70,
+    30
+   ],
+   "text": "中",
+   "field": "2-提案3-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 30.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1060,
+    493,
+    170,
+    22
+   ],
+   "text": "工数：中",
+   "field": "2-提案3-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    56,
+    532,
+    568,
+    48
+   ],
+   "text": "改善箇所　商品画像",
+   "field": "2-提案3-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    640,
+    532,
+    584,
+    48
+   ],
+   "text": "課題　スマホで画像が切れて見える",
+   "field": "2-提案3-課題",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    64,
+    588,
+    552,
+    40
+   ],
+   "text": "現状　画像が画面幅を超える",
+   "field": "2-提案3-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    648,
+    588,
+    568,
+    40
+   ],
+   "text": "改善後　画面幅に合わせて縮小表示",
+   "field": "2-提案3-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI診断ディレクター",
+   "field": "2-1-フッター",
+   "kind": "footer",
+   "cls": "footer",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "1 / 2",
+   "field": "2-1-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    20,
+    820,
+    34
+   ],
+   "text": "【2】改善提案リスト",
+   "field": "2-2-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    58,
+    820,
+    22
+   ],
+   "text": "優先度の高い改善アクションを整理（2/2 後半 2件・POINT）",
+   "field": "2-2-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    880,
+    30,
+    80,
+    22
+   ],
+   "text": "優先度",
+   "field": "2-2-凡例",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    970,
+    33,
+    70,
+    22
+   ],
+   "text": "高",
+   "field": "2-2-凡例高",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    1050,
+    33,
+    70,
+    22
+   ],
+   "text": "中",
+   "field": "2-2-凡例中",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    1130,
+    33,
+    70,
+    22
+   ],
+   "text": "低",
+   "field": "2-2-凡例低",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    58,
+    114,
+    34,
+    26
+   ],
+   "text": "4",
+   "field": "2-提案4-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 26.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    102,
+    112,
+    770,
+    32
+   ],
+   "text": "用途別の写真を加える",
+   "field": "2-提案4-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 32.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    980,
+    111,
+    70,
+    30
+   ],
+   "text": "中",
+   "field": "2-提案4-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 30.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    1060,
+    115,
+    170,
+    22
+   ],
+   "text": "工数：中",
+   "field": "2-提案4-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    154,
+    568,
+    48
+   ],
+   "text": "改善箇所　写真ギャラリー",
+   "field": "2-提案4-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    640,
+    154,
+    584,
+    48
+   ],
+   "text": "課題　部屋での使い方が想像しにくい",
+   "field": "2-提案4-課題",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    64,
+    210,
+    552,
+    40
+   ],
+   "text": "現状　単体の商品写真のみ",
+   "field": "2-提案4-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    648,
+    210,
+    568,
+    40
+   ],
+   "text": "改善後　設置例の写真を2枚加える",
+   "field": "2-提案4-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    58,
+    303,
+    34,
+    26
+   ],
+   "text": "5",
+   "field": "2-提案5-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 26.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    102,
+    301,
+    770,
+    32
+   ],
+   "text": "画像を軽くして速くする",
+   "field": "2-提案5-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 32.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    980,
+    300,
+    70,
+    30
+   ],
+   "text": "低",
+   "field": "2-提案5-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 30.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    1060,
+    304,
+    170,
+    22
+   ],
+   "text": "工数：中",
+   "field": "2-提案5-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    343,
+    568,
+    48
+   ],
+   "text": "改善箇所　画像全般",
+   "field": "2-提案5-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    640,
+    343,
+    584,
+    48
+   ],
+   "text": "課題　表示まで時間がかかる",
+   "field": "2-提案5-課題",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    64,
+    399,
+    552,
+    40
+   ],
+   "text": "現状　大きな画像をそのまま配信",
+   "field": "2-提案5-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    648,
+    399,
+    568,
+    40
+   ],
+   "text": "改善後　次世代形式と遅延読込にする",
+   "field": "2-提案5-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    594,
+    90,
+    62
+   ],
+   "text": "POINT",
+   "field": "2-POINTラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    170,
+    594,
+    1070,
+    62
+   ],
+   "text": "最優先の一手：カートボタンを画面下に固定し、価格の横に送料と納期を示して購入までの迷いを減らす⁠。",
+   "field": "2-POINT",
+   "kind": "multi",
+   "cls": "input",
+   "height": 30.24,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI診断ディレクター",
+   "field": "2-2-フッター",
+   "kind": "footer",
+   "cls": "footer",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "2 / 2",
+   "field": "2-2-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    20,
+    1140,
+    34
+   ],
+   "text": "【3】ビジュアル診断ボード",
+   "field": "3-1-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    58,
+    1140,
+    22
+   ],
+   "text": "構造マップ・総評・最重要課題・ユーザー行動フロー",
+   "field": "3-1-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    98,
+    265,
+    50
+   ],
+   "text": "目的\n購入CVを増やす",
+   "field": "3-1-目的",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    361,
+    98,
+    265,
+    50
+   ],
+   "text": "対象\n商品詳細ページ",
+   "field": "3-1-対象",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    664,
+    98,
+    265,
+    50
+   ],
+   "text": "診断日\n2026年10月26日",
+   "field": "3-1-診断日",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    967,
+    98,
+    265,
+    50
+   ],
+   "text": "総合スコア\n25  / 50    C",
+   "field": "3-1-総合スコア",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 64.0,
+   "cap": 50.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定64.0px・枠50px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    56,
+    158,
+    220,
+    28
+   ],
+   "text": "◤ LP構造マップ",
+   "field": "3-1-構造マップ見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    288,
+    164,
+    40,
+    16
+   ],
+   "text": "良好",
+   "field": "3-1-凡例良好",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 16.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    358,
+    164,
+    60,
+    16
+   ],
+   "text": "要改善",
+   "field": "3-1-凡例要改善",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 16.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    190,
+    22,
+    22
+   ],
+   "text": "1",
+   "field": "3-1-構造マップ1-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    190,
+    332,
+    47
+   ],
+   "text": "商品写真  質感は伝わる",
+   "field": "3-1-構造マップ1",
+   "kind": "map",
+   "cls": "input",
+   "height": 24.64,
+   "cap": 47.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    239,
+    22,
+    22
+   ],
+   "text": "2",
+   "field": "3-1-構造マップ2-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    239,
+    332,
+    47
+   ],
+   "text": "価格欄  送料が別ページ",
+   "field": "3-1-構造マップ2",
+   "kind": "map",
+   "cls": "input",
+   "height": 24.64,
+   "cap": 47.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    288,
+    22,
+    22
+   ],
+   "text": "3",
+   "field": "3-1-構造マップ3-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    288,
+    332,
+    47
+   ],
+   "text": "商品説明  用途が伝わらない",
+   "field": "3-1-構造マップ3",
+   "kind": "map",
+   "cls": "input",
+   "height": 24.64,
+   "cap": 47.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    337,
+    22,
+    22
+   ],
+   "text": "4",
+   "field": "3-1-構造マップ4-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    337,
+    332,
+    47
+   ],
+   "text": "レビュー  件数が少ない",
+   "field": "3-1-構造マップ4",
+   "kind": "map",
+   "cls": "input",
+   "height": 24.64,
+   "cap": 47.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    386,
+    22,
+    22
+   ],
+   "text": "5",
+   "field": "3-1-構造マップ5-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    386,
+    332,
+    47
+   ],
+   "text": "カート  画面下に隠れる",
+   "field": "3-1-構造マップ5",
+   "kind": "map",
+   "cls": "input",
+   "height": 24.64,
+   "cap": 47.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    448,
+    158,
+    428,
+    28
+   ],
+   "text": "◤ 総評",
+   "field": "3-1-総評見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    446,
+    186,
+    432,
+    40
+   ],
+   "text": "カート固定と送料表示で購入へ",
+   "field": "3-1-総評",
+   "kind": "line",
+   "cls": "input",
+   "height": 30.24,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    448,
+    238,
+    428,
+    28
+   ],
+   "text": "⚠ 最重要課題（Top3）",
+   "field": "3-1-課題見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    446,
+    272,
+    432,
+    158
+   ],
+   "text": "1. カート導線が見つけにくい\n2. 送料と納期が分かりにくい\n3. スマホで画像がはみ出す",
+   "field": "3-1-最重要課題",
+   "kind": "multi_line",
+   "cls": "input",
+   "height": 101.97,
+   "cap": 158.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    920,
+    158,
+    304,
+    28
+   ],
+   "text": "◎ 強み（活かすべき点）",
+   "field": "3-1-強み見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    920,
+    194,
+    304,
+    232
+   ],
+   "text": "● 大きな商品写真で質感を伝えている\n● 住所補完で入力の手間を減らしている\n● 落ち着いた配色で店の印象を整えている",
+   "field": "3-1-強み",
+   "kind": "multi",
+   "cls": "input",
+   "height": 182.61,
+   "cap": 232.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    56,
+    444,
+    500,
+    28
+   ],
+   "text": "◤ ユーザー行動フローと課題",
+   "field": "3-1-フロー見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    560,
+    444,
+    624,
+    28
+   ],
+   "text": "→ 送料とカートの場所で迷い購入に届かない",
+   "field": "3-1-フローまとめ",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    118,
+    480,
+    44,
+    44
+   ],
+   "text": "✓",
+   "field": "3-1-フロー1-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    50,
+    528,
+    180,
+    56
+   ],
+   "text": "流入\n検索から到達",
+   "field": "3-1-フロー1",
+   "kind": "flow",
+   "cls": "input",
+   "height": 51.52,
+   "cap": 56.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    238,
+    488,
+    12,
+    44
+   ],
+   "text": "→",
+   "field": "3-1-矢印1",
+   "status": "参考",
+   "kind": "arrow",
+   "why": "例外表 #1（幅 26.7px／枠 12px）・実機確認"
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    318,
+    480,
+    44,
+    44
+   ],
+   "text": "✓",
+   "field": "3-1-フロー2-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    250,
+    528,
+    180,
+    56
+   ],
+   "text": "写真確認\n質感が伝わる",
+   "field": "3-1-フロー2",
+   "kind": "flow",
+   "cls": "input",
+   "height": 51.52,
+   "cap": 56.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    438,
+    488,
+    12,
+    44
+   ],
+   "text": "→",
+   "field": "3-1-矢印2",
+   "status": "参考",
+   "kind": "arrow",
+   "why": "例外表 #1（幅 26.7px／枠 12px）・実機確認"
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    518,
+    480,
+    44,
+    44
+   ],
+   "text": "✕",
+   "field": "3-1-フロー3-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    450,
+    528,
+    180,
+    56
+   ],
+   "text": "価格確認\n送料が不明",
+   "field": "3-1-フロー3",
+   "kind": "flow",
+   "cls": "input",
+   "height": 51.52,
+   "cap": 56.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    638,
+    488,
+    12,
+    44
+   ],
+   "text": "→",
+   "field": "3-1-矢印3",
+   "status": "参考",
+   "kind": "arrow",
+   "why": "例外表 #1（幅 26.7px／枠 12px）・実機確認"
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    718,
+    480,
+    44,
+    44
+   ],
+   "text": "✕",
+   "field": "3-1-フロー4-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    650,
+    528,
+    180,
+    56
+   ],
+   "text": "説明確認\n用途が不明",
+   "field": "3-1-フロー4",
+   "kind": "flow",
+   "cls": "input",
+   "height": 51.52,
+   "cap": 56.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    838,
+    488,
+    12,
+    44
+   ],
+   "text": "→",
+   "field": "3-1-矢印4",
+   "status": "参考",
+   "kind": "arrow",
+   "why": "例外表 #1（幅 26.7px／枠 12px）・実機確認"
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    918,
+    480,
+    44,
+    44
+   ],
+   "text": "✕",
+   "field": "3-1-フロー5-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    850,
+    528,
+    180,
+    56
+   ],
+   "text": "カート\n場所が不明",
+   "field": "3-1-フロー5",
+   "kind": "flow",
+   "cls": "input",
+   "height": 51.52,
+   "cap": 56.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1038,
+    488,
+    12,
+    44
+   ],
+   "text": "→",
+   "field": "3-1-矢印5",
+   "status": "参考",
+   "kind": "arrow",
+   "why": "例外表 #1（幅 26.7px／枠 12px）・実機確認"
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1118,
+    480,
+    44,
+    44
+   ],
+   "text": "✕",
+   "field": "3-1-フロー6-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1050,
+    528,
+    180,
+    56
+   ],
+   "text": "購入完了\n到達率が低い",
+   "field": "3-1-フロー6",
+   "kind": "flow",
+   "cls": "input",
+   "height": 51.52,
+   "cap": 56.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    40,
+    594,
+    110,
+    62
+   ],
+   "text": "改善方向",
+   "field": "3-1-改善方向ラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    190,
+    594,
+    1050,
+    62
+   ],
+   "text": "カートを常時表示し、送料と納期を価格の横に示し、スマホの画像幅を直して購入までの迷いを減らすべきだ。",
+   "field": "3-1-改善方向",
+   "kind": "multi",
+   "cls": "input",
+   "height": 30.24,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI診断ディレクター",
+   "field": "3-1-フッター",
+   "kind": "footer",
+   "cls": "footer",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 1,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "1 / 3",
+   "field": "3-1-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    20,
+    1140,
+    34
+   ],
+   "text": "【3】ビジュアル診断ボード",
+   "field": "3-2-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    58,
+    1140,
+    22
+   ],
+   "text": "スコア視覚化：10項目評価と強み・最優先課題の俯瞰",
+   "field": "3-2-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    58,
+    98,
+    265,
+    50
+   ],
+   "text": "目的\n購入CVを増やす",
+   "field": "3-2-目的",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    361,
+    98,
+    265,
+    50
+   ],
+   "text": "対象\n商品詳細ページ",
+   "field": "3-2-対象",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    664,
+    98,
+    265,
+    50
+   ],
+   "text": "診断日\n2026年10月26日",
+   "field": "3-2-診断日",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    967,
+    98,
+    265,
+    50
+   ],
+   "text": "総合スコア\n25  / 50    C",
+   "field": "3-2-総合スコア",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 64.0,
+   "cap": 50.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定64.0px・枠50px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    158,
+    548,
+    28
+   ],
+   "text": "◤ 10項目スコア（満点5・ギャップ可視化）",
+   "field": "3-2-スコア見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    200,
+    180,
+    22
+   ],
+   "text": "ファーストビュー",
+   "field": "3-2-項目1",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    200,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点1",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    240,
+    180,
+    22
+   ],
+   "text": "キャッチコピー",
+   "field": "3-2-項目2",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    240,
+    62,
+    22
+   ],
+   "text": "2/5",
+   "field": "3-2-点2",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    280,
+    180,
+    22
+   ],
+   "text": "CTA設計",
+   "field": "3-2-項目3",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    280,
+    62,
+    22
+   ],
+   "text": "2/5",
+   "field": "3-2-点3",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    320,
+    180,
+    22
+   ],
+   "text": "信頼性・権威性",
+   "field": "3-2-項目4",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    320,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点4",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    360,
+    180,
+    22
+   ],
+   "text": "フォーム設計",
+   "field": "3-2-項目5",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    360,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点5",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    400,
+    180,
+    22
+   ],
+   "text": "レスポンシブ",
+   "field": "3-2-項目6",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    400,
+    62,
+    22
+   ],
+   "text": "2/5",
+   "field": "3-2-点6",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    440,
+    180,
+    22
+   ],
+   "text": "読みやすさ",
+   "field": "3-2-項目7",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    440,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点7",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    480,
+    180,
+    22
+   ],
+   "text": "情報設計",
+   "field": "3-2-項目8",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    480,
+    62,
+    22
+   ],
+   "text": "2/5",
+   "field": "3-2-点8",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    520,
+    180,
+    22
+   ],
+   "text": "ブランド一貫性",
+   "field": "3-2-項目9",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    520,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点9",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    560,
+    180,
+    22
+   ],
+   "text": "表示速度・技術",
+   "field": "3-2-項目10",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    560,
+    62,
+    22
+   ],
+   "text": "2/5",
+   "field": "3-2-点10",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    656,
+    158,
+    568,
+    28
+   ],
+   "text": "◎ 強み（活かすべき点）",
+   "field": "3-2-強み見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    656,
+    194,
+    568,
+    174
+   ],
+   "text": "● 大きな商品写真で質感を伝えている\n● 住所補完で入力の手間を減らしている\n● 落ち着いた配色で店の印象を整えている",
+   "field": "3-2-強み",
+   "kind": "multi",
+   "cls": "input",
+   "height": 101.97,
+   "cap": 174.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    656,
+    388,
+    568,
+    28
+   ],
+   "text": "⚠ 最優先で直すべき点",
+   "field": "3-2-課題見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    656,
+    424,
+    568,
+    154
+   ],
+   "text": "1. カート導線が見つけにくい\n2. 送料と納期が分かりにくい\n3. スマホで画像がはみ出す",
+   "field": "3-2-課題",
+   "kind": "multi_line",
+   "cls": "input",
+   "height": 101.97,
+   "cap": 154.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    594,
+    110,
+    62
+   ],
+   "text": "改善方向",
+   "field": "3-2-改善方向ラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    190,
+    594,
+    1050,
+    62
+   ],
+   "text": "カートを常時表示し、送料と納期を価格の横に示し、スマホの画像幅を直して購入までの迷いを減らすべきだ。",
+   "field": "3-2-改善方向",
+   "kind": "multi",
+   "cls": "input",
+   "height": 30.24,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI診断ディレクター",
+   "field": "3-2-フッター",
+   "kind": "footer",
+   "cls": "footer",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 2,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "2 / 3",
+   "field": "3-2-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    20,
+    1140,
+    34
+   ],
+   "text": "【3】ビジュアル診断ボード",
+   "field": "3-3-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    58,
+    1140,
+    22
+   ],
+   "text": "Before/After ハイライト：優先度の高い改善Top3",
+   "field": "3-3-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    106,
+    32,
+    24
+   ],
+   "text": "1",
+   "field": "3-3-HL1-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    102,
+    106,
+    660,
+    28
+   ],
+   "text": "カートを常時表示する",
+   "field": "3-3-HL1-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    780,
+    107,
+    70,
+    22
+   ],
+   "text": "高",
+   "field": "3-3-HL1-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    860,
+    107,
+    90,
+    22
+   ],
+   "text": "工数：小",
+   "field": "3-3-HL1-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    960,
+    107,
+    260,
+    22
+   ],
+   "text": "箇所：商品詳細",
+   "field": "3-3-HL1-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    152,
+    90,
+    28
+   ],
+   "text": "BEFORE",
+   "field": "3-3-HL1-BEFOREラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    158,
+    152,
+    462,
+    28
+   ],
+   "text": "カートが画面下部にある",
+   "field": "3-3-HL1-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    644,
+    152,
+    90,
+    28
+   ],
+   "text": "AFTER",
+   "field": "3-3-HL1-AFTERラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    742,
+    152,
+    462,
+    28
+   ],
+   "text": "カートを画面下に固定表示",
+   "field": "3-3-HL1-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    274,
+    32,
+    24
+   ],
+   "text": "2",
+   "field": "3-3-HL2-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    102,
+    274,
+    660,
+    28
+   ],
+   "text": "送料と納期を価格横に",
+   "field": "3-3-HL2-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    780,
+    275,
+    70,
+    22
+   ],
+   "text": "高",
+   "field": "3-3-HL2-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    860,
+    275,
+    90,
+    22
+   ],
+   "text": "工数：小",
+   "field": "3-3-HL2-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    960,
+    275,
+    260,
+    22
+   ],
+   "text": "箇所：価格欄",
+   "field": "3-3-HL2-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    320,
+    90,
+    28
+   ],
+   "text": "BEFORE",
+   "field": "3-3-HL2-BEFOREラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    158,
+    320,
+    462,
+    28
+   ],
+   "text": "送料は別ページに記載",
+   "field": "3-3-HL2-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    644,
+    320,
+    90,
+    28
+   ],
+   "text": "AFTER",
+   "field": "3-3-HL2-AFTERラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    742,
+    320,
+    462,
+    28
+   ],
+   "text": "価格の横に送料と納期を表示",
+   "field": "3-3-HL2-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    442,
+    32,
+    24
+   ],
+   "text": "3",
+   "field": "3-3-HL3-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    102,
+    442,
+    660,
+    28
+   ],
+   "text": "スマホの画像幅を直す",
+   "field": "3-3-HL3-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    780,
+    443,
+    70,
+    22
+   ],
+   "text": "中",
+   "field": "3-3-HL3-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    860,
+    443,
+    90,
+    22
+   ],
+   "text": "工数：中",
+   "field": "3-3-HL3-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    960,
+    443,
+    260,
+    22
+   ],
+   "text": "箇所：商品画像",
+   "field": "3-3-HL3-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    488,
+    90,
+    28
+   ],
+   "text": "BEFORE",
+   "field": "3-3-HL3-BEFOREラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    158,
+    488,
+    462,
+    28
+   ],
+   "text": "画像が画面幅を超える",
+   "field": "3-3-HL3-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    644,
+    488,
+    90,
+    28
+   ],
+   "text": "AFTER",
+   "field": "3-3-HL3-AFTERラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    742,
+    488,
+    462,
+    28
+   ],
+   "text": "画面幅に合わせて縮小表示",
+   "field": "3-3-HL3-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    40,
+    594,
+    110,
+    62
+   ],
+   "text": "改善方向",
+   "field": "3-3-改善方向ラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    190,
+    594,
+    1050,
+    62
+   ],
+   "text": "カートを常時表示し、送料と納期を価格の横に示し、スマホの画像幅を直して購入までの迷いを減らすべきだ。",
+   "field": "3-3-改善方向",
+   "kind": "multi",
+   "cls": "input",
+   "height": 30.24,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI診断ディレクター",
+   "field": "3-3-フッター",
+   "kind": "footer",
+   "cls": "footer",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_sample_ec.pptx",
+   "slide": 3,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "3 / 3",
+   "field": "3-3-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  }
+ ],
+ "extra_ng": []
+}

@@ -1,0 +1,63 @@
+2c2
+< # 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6.1（2026-10-27｜設計 r2・判定113・117〜124）
+---
+> # 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6.2（2026-10-27｜設計 r2・判定113・117〜128）
+546c546
+< # ---- §3・§4 表示の簡易推定（r6.1｜判定122-1・122-2・122-4）----
+---
+> # ---- §3・§4 表示の簡易推定（r6.1〜r6.2｜判定122-1・122-2・122-4）----
+679a680,699
+> def _hl_no(h, index, top_issues):
+>     """判定126-1：builder 17.2.17 の _c3_resolve_issue_no と同じ規則で期待番号を作る
+>     ①no の明示を優先 ②未指定なら 1/3 の最重要課題の文と照合した連番 ③照合できなければ出現順"""
+>     explicit = h.get('no')
+>     if explicit not in (None, ''):
+>         return str(explicit)
+>     def _norm(v):
+>         return ''.join(ch for ch in str(v)
+>                        if not ch.isspace() and ch not in '。、．，,.:：;；・/／-ー―（）()「」【】')
+>     key = _norm(h.get('issue_ref') or h.get('title') or '')
+>     if key:
+>         for n, issue in enumerate(top_issues or [], start=1):
+>             ikey = _norm(issue)
+>             if not ikey:
+>                 continue
+>             if key == ikey or key in ikey or ikey in key:
+>                 return str(n)
+>     return str(index + 1)
+> 
+> 
+773c793,798
+<         X += [E(f'3-3-HL{i + 1}-番号', 3, (60, ht + 4, 32, 24), 'fixed', 'line', _re(r'\d')),
+---
+>         if h is not None:
+>             _ti = (v.get('top_issues') or ([v.get('top_issue')] if v.get('top_issue') else []) or v.get('priority_issues', []))
+>             hn = _eq(_hl_no(h, i, list(_ti)))
+>         else:
+>             hn = _re(r'\d{1,2}')     # 旧PPTX（入力なし）：形だけ確認。入力由来の番号との一致は未実施
+>         X += [E(f'3-3-HL{i + 1}-番号', 3, (60, ht + 4, 32, 24), 'fixed', 'line', hn),
+1103,1105c1128,1137
+<                     st = '基準内' if fr['text'] == AUTHOR else 'NG'
+<                     rows.append(dict(base, field=e['fid'], status=st, kind='footer',
+<                                      why='' if st == '基準内' else f'フッター：表記の不一致「{fr["text"]}」（正：{AUTHOR}）'))
+---
+>                     # 判定126-2：文言一致に加え、通常の1行必須欄として幅・改行・文字間隔・文字情報を検査する
+>                     r = estimate(fr, 'line')
+>                     whys = [r['why']] if r.get('why') else []
+>                     st = r['status']
+>                     if fr['text'] != AUTHOR:
+>                         whys.insert(0, f'フッター：表記の不一致「{fr["text"]}」（正：{AUTHOR}）')
+>                         if st != '未検査':
+>                             st = 'NG'
+>                     rows.append(dict(base, field=e['fid'], kind='footer', cls='footer',
+>                                      **dict({k: v for k, v in r.items() if k not in ('status', 'why')}, status=st, why='／'.join(whys))))
+1176a1209
+>     clean = lambda t: re.sub(r'[\n\r\x0b\x0c]', '⏎', str(t))   # 改行・垂直タブを1行の表示に（報告の行が割れないように）
+1179c1212
+<             print(f'  [{k}] {r["file"]} {r["slide"]}枚目 {r["field"]}：{r.get("why", "")}')
+---
+>             print(f'  [{k}] {r["file"]} {r["slide"]}枚目 {r["field"]}：{clean(r.get("why", ""))}')
+1181c1214
+<         print(f'  [NG] {m}')
+---
+>         print(f'  [NG] {clean(m)}')

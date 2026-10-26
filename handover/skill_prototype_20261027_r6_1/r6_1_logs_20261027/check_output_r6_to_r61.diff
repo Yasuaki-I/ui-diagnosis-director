@@ -1,0 +1,848 @@
+2c2
+< # 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6（2026-10-26｜設計 r2・判定113）
+---
+> # 【購入者限定】本ファイルの再配布・転載・転売は固く禁じます。｜UI診断ディレクター スキル版 prototype r6.1（2026-10-27｜設計 r2・判定113・117〜124）
+181c181
+< import unicodedata
+---
+> import math, unicodedata
+351a352,373
+>     # ---- 判定122-3：C-2 の提案と C-3 のハイライトの対応（箇所で一意に特定）----
+>     props = [x for x in (p.get('proposals') or []) if isinstance(x, dict)]
+>     used = {}
+>     for i, h in enumerate((v.get('highlights') or [])[:3], 1):
+>         if not isinstance(h, dict):
+>             continue
+>         cand = [q for q in props if q.get('target_area') == h.get('target_area')]
+>         if not cand:
+>             ng.append(f'C-3 ハイライト#{i}：対応する C-2 の提案が無い（target_area「{h.get("target_area")}」が一致する提案が無い）')
+>             continue
+>         if len(cand) > 1:
+>             ng.append(f'C-3 ハイライト#{i}：対応する C-2 の提案が複数ある（target_area「{h.get("target_area")}」）→ 箇所を提案ごとに分ける')
+>             continue
+>         q = cand[0]
+>         qn = q.get('no')
+>         if qn in used:
+>             ng.append(f'C-3 ハイライト#{i}：ハイライト#{used[qn]} と同じ提案（no {qn}）に対応している')
+>         used[qn] = i
+>         for k, jp in (('priority', '優先度'), ('effort', '工数'), ('before', '現状（before）'), ('after', '改善後（after）')):
+>             if h.get(k) != q.get(k):
+>                 ng.append(f'C-3 ハイライト#{i} と C-2 提案 no {qn}：{jp}が一致しない（C-2「{q.get(k)}」／C-3「{h.get(k)}」）→ 同じ文字列にする')
+> 
+422c444,445
+<     """段落ごとに runs[(text, size_pt or None, bold)]・行間・前後間隔・改行の有無"""
+---
+>     """段落ごとに runs[(text, size_pt or None, bold, spc)]・改行で区切った segs・行間・前後間隔
+>     spc＝文字間隔（1/100 pt・各文字の後ろに加える）。継承元に文字間隔があれば spc_unknown"""
+423a447,448
+>     lst = body.find(NSA + 'lstStyle')
+>     inh = lst is not None and any(el.get('spc') not in (None, '0') for el in lst.iter())
+425c450,455
+<         runs, has_br = [], False
+---
+>         runs, segs, has_br, spc_unknown = [], [[]], False, inh
+>         ppr = p.find(NSA + 'pPr')
+>         if ppr is not None:
+>             dr = ppr.find(NSA + 'defRPr')
+>             if dr is not None and dr.get('spc') not in (None, '0'):
+>                 spc_unknown = True
+429a460
+>                 sp = rpr.get('spc') if rpr is not None else None
+431,432c462,464
+<                 runs.append((t.text or '' if t is not None else '', int(sz) / 100 if sz else None,
+<                              rpr is not None and rpr.get('b') == '1'))
+---
+>                 run = ((t.text or '') if t is not None else '', int(sz) / 100 if sz else None,
+>                        rpr is not None and rpr.get('b') == '1', int(sp) if sp else 0)
+>                 runs.append(run); segs[-1].append(run)
+435c467
+<         ppr = p.find(NSA + 'pPr')
+---
+>                 segs.append([])
+453,454c485,486
+<         out.append(dict(runs=runs, ln=ln, sa=sa, sb=sb, br=has_br, end_sz=end_sz,
+<                         text=''.join(r[0] for r in runs)))
+---
+>         out.append(dict(runs=runs, segs=segs, ln=ln, sa=sa, sb=sb, br=has_br, end_sz=end_sz,
+>                         spc_unknown=spc_unknown, text=''.join(r[0] for r in runs)))
+466,467c498,499
+< def para_width(par):
+<     """段落の幅（px）。(幅, 定義外の文字, 大きさ不明, 最大の大きさ pt, 大きさ混在)"""
+---
+> def _runs_width(runs):
+>     """文字区分の並びの幅（px）。文字間隔 spc（1/100 pt）を各文字の後ろに加える"""
+469c501
+<     for t, sz, b in par['runs']:
+---
+>     for t, sz, b, spc in runs:
+480c512,518
+<                 w += sz * 4 / 3 * cw
+---
+>                 w += sz * 4 / 3 * cw + spc / 100 * 4 / 3
+>     return w, undefined, nosize, sizes
+> 
+> 
+> def para_width(par):
+>     """段落の幅（px・改行を無視した合計）。(幅, 定義外の文字, 大きさ不明, 最大の大きさ pt, 大きさ混在)"""
+>     w, undefined, nosize, sizes = _runs_width(par['runs'])
+484a523,531
+> def seg_widths(par, default_pt):
+>     """明示改行で区切った行ごとの (幅px, 行の最大の大きさ pt)。空の行は幅0・段落の大きさ"""
+>     out = []
+>     for seg in par['segs']:
+>         w, _, _, sizes = _runs_width(seg)
+>         out.append((w, max(sizes) if sizes else default_pt))
+>     return out
+> 
+> 
+499c546,548
+< # ---- §3・§4 表示の簡易推定 ----
+---
+> # ---- §3・§4 表示の簡易推定（r6.1｜判定122-1・122-2・122-4）----
+> # 期待する枠の表（builder 17.2.17 の座標と描画規則から作る）と、実際の枠を照合する。
+> # 欠落・重複・多重一致・想定外の枠・固定文言の変更を、それぞれ理由を示して止める
+500a550,575
+> TEN_ITEMS = ('ファーストビュー', 'キャッチコピー', 'CTA設計', '信頼性・権威性', 'フォーム設計',
+>              'レスポンシブ', '読みやすさ', '情報設計', 'ブランド一貫性', '表示速度・技術')
+> RANK_WORDS = '卓越|優良|標準的|要改善|致命的'
+> 
+> 
+> def _tf(s, w):
+>     """builder の _truncate_full と同じ切り方（期待する文字を作るため）"""
+>     t = 0.0
+>     for i, ch in enumerate(s):
+>         t += 0.5 if ord(ch) < 128 else 1.0
+>         if t > w:
+>             return s[:i].rstrip() + '…'
+>     return s
+> 
+> 
+> def E(fid, slide, box, cls, kind, exp, **kw):
+>     """期待する枠1つ。exp＝('eq', 文字) か ('re', 正規表現)"""
+>     return dict(fid=fid, slide=slide, box=box, cls=cls, kind=kind, exp=exp, **kw)
+> 
+> 
+> def _eq(s):
+>     return ('eq', s)
+> 
+> 
+> def _re(p):
+>     return ('re', p)
+502,625c577,785
+< # 1行必須の欄（入力の欄）の位置。(ファイル, スライド番号 or None=全, left, top, width, 欄名, 種類)
+< # 種類：'line'＝1行必須／'multi'＝複数行（高さで点検）／'card'＝見出し＋値の2段落（値は1行・高さも）
+< #       'flow'＝見出し＋説明の2段落（各1行・合計の高さ）／'map'＝同じ段落内の見出し＋説明（1行）
+< def frame_role(key, sno, fr, nsl):
+<     x, y, w, h = [round(v) for v in fr['box']]
+<     t = fr['text']
+<     near = lambda a, b: abs(a - b) <= TOL
+<     if fr['kind'] == 'cell':
+<         if key == 'C-1' and sno == 2:
+<             if fr['row'] == 0:
+<                 return ('fixed', '表の見出し', 'line')
+<             return (('input', f'所見#{fr["row"]}', 'multi_cell') if fr['col'] == 3
+<                     else ('fixed' if fr['col'] != 2 else 'fixed', f'表 {fr["row"]}行{fr["col"]+1}列', 'line'))
+<         return None
+<     if near(x, 40) and near(y, 682) and near(w, 400):
+<         return ('footer', 'フッター', 'line')
+<     if near(x, 1140) and near(y, 685) and near(w, 120):
+<         return ('fixed', 'ページ番号', 'line')
+<     if near(y, 20) and near(x, 60):
+<         return ('fixed', '題名', 'line')
+<     if near(y, 58) and near(x, 60):
+<         return ('fixed', '副題', 'line')
+<     if key == 'C-1':
+<         if near(y, 100) and h >= 60:
+<             lab = {58: '診断対象', 361: '入力種別', 664: '総合スコア', 967: 'ランク'}
+<             for k, v in lab.items():
+<                 if near(x, k):
+<                     return ('input' if v in ('診断対象', '入力種別') else 'fixed', v, 'card')
+<         if sno == 1:
+<             if near(y, 190):
+<                 return ('fixed', '欄の見出し', 'line')
+<             if near(y, 244) and near(x, 60):
+<                 return ('input', '強み（C-1）', 'multi')
+<             if near(y, 244) and near(x, 668):
+<                 return ('input', '課題（C-1）', 'multi_line')
+<             if near(y, 594) and near(x, 40):
+<                 return ('fixed', '「結論」', 'line')
+<             if near(y, 594) and near(x, 168):
+<                 return ('input', '結論', 'multi2')
+<     if key == 'C-2':
+<         if near(y, 30) and near(x, 880) or (near(y, 33) and x in range(968, 1133)):
+<             return ('fixed', '優先度の凡例', 'line')
+<         if near(x, 58) and near(w, 34):
+<             return ('fixed', '提案番号', 'line')
+<         if near(x, 102) and near(w, 770):
+<             return ('input', '提案 title', 'line')
+<         if near(x, 980) and near(w, 70):
+<             return ('fixed', '優先度', 'line')
+<         if near(x, 1060) and near(w, 170):
+<             return ('fixed', '工数', 'line')
+<         if near(x, 56) and near(w, 568):
+<             return ('input', '改善箇所', 'line')
+<         if near(x, 640) and near(w, 584):
+<             return ('input', '課題', 'line')
+<         if near(x, 64) and near(w, 552):
+<             return ('input', '現状', 'line')
+<         if near(x, 648) and near(w, 568):
+<             return ('input', '改善後', 'line')
+<         if near(y, 594) and near(x, 40):
+<             return ('fixed', '「POINT」', 'line')
+<         if near(y, 594) and near(x, 170):
+<             return ('input', 'POINT', 'multi2')
+<     if key == 'C-3':
+<         if near(y, 98) and h >= 45:
+<             lab = {58: '目的', 361: '対象', 664: '診断日', 967: '総合スコア'}
+<             for k, v in lab.items():
+<                 if near(x, k):
+<                     return ('input' if v != '総合スコア' else 'fixed', v, 'card')
+<         if near(y, 594) and near(x, 40):
+<             return ('fixed', '「改善方向」', 'line')
+<         if near(y, 594) and near(x, 190):
+<             return ('input', '改善方向', 'multi2')
+<         if sno == 1:
+<             if near(y, 158) or (near(y, 164) and w <= 60) or near(y, 238) or near(y, 444) and near(x, 56):
+<                 return ('fixed', '欄の見出し', 'line')
+<             if near(x, 48) and near(w, 22):
+<                 return ('fixed', '構造マップ番号', 'line')
+<             if near(x, 78) and near(w, 332):
+<                 return ('input', '構造マップ', 'map')
+<             if near(x, 446) and near(y, 186):
+<                 return ('input', '総評', 'line')
+<             if near(x, 446) and near(y, 272):
+<                 return ('input', '最重要課題', 'multi_line')
+<             if near(x, 920) and near(y, 194):
+<                 return ('input', '強み（C-3 1枚目）', 'multi')
+<             if near(y, 444) and near(x, 560):
+<                 return ('input', '行動の流れのまとめ', 'line')
+<             if near(y, 480) and near(w, 44):
+<                 return ('fixed', 'フローの記号', 'line')
+<             if near(y, 488) and near(w, 12) and t == '→':
+<                 return ('exception', 'フローの矢印', 'arrow')
+<             if near(y, 528) and near(w, 180):
+<                 return ('input', 'フロー', 'flow')
+<         if sno == 2:
+<             if near(y, 158):
+<                 return ('fixed', '欄の見出し', 'line')
+<             if near(x, 56) and near(w, 180):
+<                 return ('fixed', '10項目の名前', 'line')
+<             if near(x, 408) and near(w, 62):
+<                 return ('fixed', 'スコア', 'line')
+<             if near(y, 388):
+<                 return ('fixed', '欄の見出し', 'line')
+<             if near(x, 656) and near(y, 194):
+<                 return ('input', '強み（C-3 2枚目）', 'multi')
+<             if near(x, 656) and near(y, 424):
+<                 return ('input', '課題（C-3 2枚目）', 'multi_line')
+<         if sno == 3:
+<             if near(x, 60) and near(w, 32):
+<                 return ('fixed', 'ハイライト番号', 'line')
+<             if near(x, 102) and near(w, 660):
+<                 return ('input', 'ハイライト title', 'line')
+<             if near(x, 780) and near(w, 70):
+<                 return ('fixed', '優先度', 'line')
+<             if near(x, 860) and near(w, 90):
+<                 return ('fixed', '工数', 'line')
+<             if near(x, 960) and near(w, 260):
+<                 return ('input', '箇所', 'line')
+<             if near(w, 90) and (near(x, 60) or near(x, 644)) and t in ('BEFORE', 'AFTER', '次の一手'):
+<                 return ('fixed', t, 'line')
+<             if near(x, 158) and near(w, 462):
+<                 return ('input', 'BEFORE', 'line')
+<             if near(x, 742) and near(w, 462):
+<                 return ('input', 'AFTER', 'line')
+<     return None
+---
+> 
+> def _common(key, slide, total, title, sub, title_w):
+>     t = key[-1]
+>     return [E(f'{t}-{slide}-題名', slide, (60, 20, title_w, 34), 'fixed', 'line', _eq(title)),
+>             E(f'{t}-{slide}-副題', slide, (60, 58, title_w, 22), 'fixed', 'line', sub),
+>             E(f'{t}-{slide}-フッター', slide, (40, 682, 400, 24), 'footer', 'line', _eq(AUTHOR)),
+>             E(f'{t}-{slide}-ページ番号', slide, (1140, 685, 120, 24), 'fixed', 'line', _eq(f'{slide} / {total}'))]
+> 
+> 
+> def expect_c1(d):
+>     """C-1：2枚。d＝diagnosis（None なら PPTX だけの点検用に、値は形で照合）"""
+>     X = []
+>     subs = {1: 'サマリ：診断対象・スコア・強み・最優先課題・結論', 2: '10項目評価：各項目のスコアと一言所見（全文表示）'}
+>     for s in (1, 2):
+>         X += _common('C-1', s, 2, '【1】UI診断スコアカード', _eq(subs[s]), 1140)
+>         if d:
+>             c = [_eq('診断対象\n' + str(d.get('service_name', ''))), _eq('入力種別\n' + str(d.get('input_type', ''))),
+>                  _eq(f'総合スコア\n{d.get("total_score")}  / 50'), _eq(f'ランク\n{d.get("rank")}  {d.get("rank_label") or ""}')]
+>         else:
+>             c = [_re(r'診断対象\n[^\n]+'), _re(r'入力種別\n[^\n]+'), _re(r'総合スコア\n\d{1,2}  / 50'),
+>                  _re(rf'ランク\n[SABCD]  ({RANK_WORDS})')]
+>         X += [E(f'1-{s}-診断対象', s, (58, 100, 265, 66), 'input', 'card', c[0]),
+>               E(f'1-{s}-入力種別', s, (361, 100, 265, 66), 'input', 'card', c[1]),
+>               E(f'1-{s}-総合スコア', s, (664, 100, 265, 66), 'fixed', 'card', c[2], card=('C-1', '総合スコア')),
+>               E(f'1-{s}-ランク', s, (967, 100, 265, 66), 'fixed', 'card', c[3], card=('C-1', 'ランク'))]
+>     if d:
+>         st = _eq('\n'.join('● ' + x for x in (d.get('strengths') or [])[:3]))
+>         iss = _eq('\n'.join(f'{i + 1}. ' + x for i, x in enumerate((d.get('priority_issues') or [])[:3])))
+>         con = _eq(_tf(str(d.get('conclusion', '')).replace('\n', ' '), 120))
+>     else:
+>         st, iss, con = _re(r'(● [^\n]+)(\n● [^\n]+){0,2}'), _re(r'(1\. [^\n]+)(\n\d\. [^\n]+){0,2}'), _re(r'[^\n]+')
+>     X += [E('1-1-強み見出し', 1, (58, 190, 556, 36), 'fixed', 'line', _eq('◎ 強み（活かすべき点）')),
+>           E('1-1-強み', 1, (60, 244, 552, 328), 'input', 'multi', st),
+>           E('1-1-課題見出し', 1, (666, 190, 556, 36), 'fixed', 'line', _eq('⚠ 最優先で直すべき点')),
+>           E('1-1-課題', 1, (668, 244, 552, 328), 'input', 'multi_line', iss),
+>           E('1-1-結論ラベル', 1, (40, 594, 88, 62), 'fixed', 'line', _eq('結論')),
+>           E('1-1-結論', 1, (168, 594, 1072, 62), 'input', 'multi', con)]
+>     # 2枚目の表（11行×4列）。表そのものの位置も照合する
+>     rows = (d.get('scores') or [])[:10] if d else None
+>     n = len(rows) if rows is not None else 10
+>     X.append(E('1-2-表', 2, (40, 180, 1200, None), 'table', 'table', None, rows=n + 1, cols=4))
+>     for c, h in enumerate(('No', '項目', 'スコア', '一言所見')):
+>         X.append(E(f'1-2-表-見出し{c + 1}', 2, None, 'fixed', 'line', _eq(h), cell=(0, c)))
+>     for r in range(1, n + 1):
+>         it = rows[r - 1] if rows else None
+>         X += [E(f'1-2-表-{r}-No', 2, None, 'fixed', 'line', _eq(str(r)), cell=(r, 0)),
+>               E(f'1-2-表-{r}-項目', 2, None, 'fixed', 'line',
+>                 _eq(_tf(it.get('name') or it.get('category', ''), 10)) if it else _re('|'.join(map(re.escape, TEN_ITEMS))), cell=(r, 1)),
+>               E(f'1-2-表-{r}-スコア', 2, None, 'fixed', 'line',
+>                 _eq(f'{it.get("score", 0)}/{it.get("max", 5)}') if it else _re(r'(\d|－)/5'), cell=(r, 2)),
+>               E(f'1-2-表-{r}-所見', 2, None, 'input', 'multi',
+>                 _eq(str(it.get('comment', ''))) if it else _re(r'[^\n]*'), cell=(r, 3))]
+>     return X
+> 
+> 
+> PL = {'S': '高', 'A': '高', 'B': '中', 'C': '低', '高': '高', '中': '中', '低': '低'}
+> 
+> 
+> def expect_c2(p, n):
+>     """C-2：提案3件以下なら1枚、4〜5件なら2枚（builder の add_proposal_onepager の規則）"""
+>     props = (p.get('proposals') or []) if p else None
+>     split = n >= 4
+>     total = 2 if split else 1
+>     pages = [(1, list(range(3))), (2, list(range(3, n)))] if split else [(1, list(range(n)))]
+>     card_h = (558 - 20) // 3 if split else (486 - 10 * (n - 1)) // max(1, n)
+>     X = []
+>     for s, idx in pages:
+>         if split:
+>             sub = '優先度の高い改善アクションを整理（1/2 前半 3件）' if s == 1 else f'優先度の高い改善アクションを整理（2/2 後半 {n - 3}件・POINT）'
+>         else:
+>             sub = f'優先度の高い改善アクションを整理（全{n}件）'
+>         X += _common('C-2', s, total, '【2】改善提案リスト', _eq(sub), 820)
+>         X += [E(f'2-{s}-凡例', s, (880, 30, 80, 22), 'fixed', 'line', _eq('優先度')),
+>               E(f'2-{s}-凡例高', s, (970, 33, 70, 22), 'fixed', 'line', _eq('高')),
+>               E(f'2-{s}-凡例中', s, (1050, 33, 70, 22), 'fixed', 'line', _eq('中')),
+>               E(f'2-{s}-凡例低', s, (1130, 33, 70, 22), 'fixed', 'line', _eq('低'))]
+>         for j, k in enumerate(idx):
+>             y = 100 + j * (card_h + 10); ht = y + 10; bt = ht + 44; bb = bt + 52
+>             q = props[k] if props else None
+>             g = lambda f, pre='': _eq(pre + str(q.get(f, ''))) if q else _re(re.escape(pre) + r'[^\n]*')
+>             X += [E(f'2-提案{k + 1}-番号', s, (58, ht + 4, 34, 26), 'fixed', 'line', _eq(str(q.get('no', ''))) if q else _re(r'\d')),
+>                   E(f'2-提案{k + 1}-title', s, (102, ht + 2, 770, 32), 'input', 'line',
+>                     _eq(_tf(q.get('title', ''), 36)) if q else _re(r'[^\n]+')),
+>                   E(f'2-提案{k + 1}-優先度', s, (980, ht + 1, 70, 30), 'fixed', 'line',
+>                     _eq(PL.get(q.get('priority', 'B'), '中')) if q else _re(r'[高中低]'), pid=k),
+>                   E(f'2-提案{k + 1}-工数', s, (1060, ht + 5, 170, 22), 'fixed', 'line',
+>                     _eq('工数：' + str(q.get('effort', '中'))) if q else _re(r'工数：[小中大]'), pid=k),
+>                   E(f'2-提案{k + 1}-箇所', s, (56, bt, 568, 48), 'input', 'line', g('target_area', '改善箇所\u3000'), pid=k),
+>                   E(f'2-提案{k + 1}-課題', s, (640, bt, 584, 48), 'input', 'line', g('issue', '課題\u3000')),
+>                   E(f'2-提案{k + 1}-現状', s, (64, bb + 4, 552, 40), 'input', 'line', g('before', '現状\u3000'), pid=k),
+>                   E(f'2-提案{k + 1}-改善後', s, (648, bb + 4, 568, 40), 'input', 'line', g('after', '改善後\u3000'), pid=k)]
+>     if p:
+>         sm = _tf(str(p.get('summary', '')).replace('\n', ' '), 120)
+>         if sm.endswith('。'):
+>             sm = sm[:-1] + '\u2060。'
+>         es = _eq(sm)
+>     else:
+>         es = _re(r'[^\n]+')
+>     X += [E('2-POINTラベル', total, (40, 594, 90, 62), 'fixed', 'line', _eq('POINT')),
+>           E('2-POINT', total, (170, 594, 1070, 62), 'input', 'multi', es)]
+>     return X, total
+> 
+> 
+> def expect_c3(v, n_sec, n_flow, n_issues, n_h, n_sc):
+>     X = []
+>     subs = {1: '構造マップ・総評・最重要課題・ユーザー行動フロー', 2: 'スコア視覚化：10項目評価と強み・最優先課題の俯瞰',
+>             3: 'Before/After ハイライト：優先度の高い改善Top3'}
+>     for s in (1, 2, 3):
+>         X += _common('C-3', s, 3, '【3】ビジュアル診断ボード', _eq(subs[s]), 1140)
+>         if s in (1, 2):
+>             if v:
+>                 m = [_eq('目的\n' + str(v.get('purpose', '-'))), _eq('対象\n' + str(v.get('target', '-'))),
+>                      _eq('診断日\n' + str(v.get('diagnosis_date', '-'))),
+>                      _eq(f'総合スコア\n{v.get("total_score", 0)}  / 50    {v.get("rank", "-")}')]
+>             else:
+>                 m = [_re(r'目的\n[^\n]+'), _re(r'対象\n[^\n]+'), _re(r'診断日\n[^\n]+'), _re(r'総合スコア\n\d{1,2}  / 50    [SABCD]')]
+>             X += [E(f'3-{s}-目的', s, (58, 98, 265, 50), 'input', 'card', m[0]),
+>                   E(f'3-{s}-対象', s, (361, 98, 265, 50), 'input', 'card', m[1]),
+>                   E(f'3-{s}-診断日', s, (664, 98, 265, 50), 'input', 'card', m[2]),
+>                   E(f'3-{s}-総合スコア', s, (967, 98, 265, 50), 'fixed', 'card', m[3], card=('C-3', '総合スコア'))]
+>         dr = _eq(_tf(str(v.get('direction', '')).replace('\n', ' '), 120)) if v else _re(r'[^\n]+')
+>         X += [E(f'3-{s}-改善方向ラベル', s, (40, 594, 110, 62), 'fixed', 'line', _eq('改善方向')),
+>               E(f'3-{s}-改善方向', s, (190, 594, 1050, 62), 'input', 'multi', dr)]
+>     # 1枚目
+>     X += [E('3-1-構造マップ見出し', 1, (56, 158, 220, 28), 'fixed', 'line', _eq('◤ LP構造マップ')),
+>           E('3-1-凡例良好', 1, (288, 164, 40, 16), 'fixed', 'line', _eq('良好')),
+>           E('3-1-凡例要改善', 1, (358, 164, 60, 16), 'fixed', 'line', _eq('要改善'))]
+>     row_h = max(26, 248 // max(1, n_sec))
+>     secs = (v.get('sections') or []) if v else None
+>     for i in range(n_sec):
+>         y = 190 + i * row_h
+>         sec = secs[i] if secs else None
+>         if sec is not None:
+>             nm = _tf(sec.get('label') or sec.get('name', ''), 12); ds = _tf(sec.get('desc', ''), 16)
+>             e, en = _eq(nm + (f'  {ds}' if ds else '')), _eq(str(sec.get('no', i + 1)))
+>         else:
+>             e, en = _re(r'[^\n]+'), _re(r'\d')
+>         X += [E(f'3-1-構造マップ{i + 1}-番号', 1, (48, y, 22, 22), 'fixed', 'line', en),
+>               E(f'3-1-構造マップ{i + 1}', 1, (78, y, 332, row_h - 2), 'input', 'map', e)]
+>     if v:
+>         ti = (v.get('top_issues') or ([v.get('top_issue')] if v.get('top_issue') else []) or v.get('priority_issues', []))[:4]
+>         ei = _eq('\n'.join(f'{i + 1}. ' + _tf(x, 20) for i, x in enumerate(ti)))
+>         es = _eq('\n'.join('● ' + _tf(x, 28) for x in (v.get('strengths') or [])[:3]))
+>         es2 = _eq('\n'.join('● ' + _tf(x, 40) for x in (v.get('strengths') or [])[:3]))
+>         ei2 = _eq('\n'.join(f'{i + 1}. ' + _tf(x, 50) for i, x in enumerate((v.get('priority_issues') or [])[:3])))
+>         ef = _eq('→ ' + _tf(v.get('flow_summary', ''), 40))
+>         sm = _eq(_tf(v.get('summary', ''), 17))
+>     else:
+>         ei = ei2 = _re(r'(1\. [^\n]+)(\n\d\. [^\n]+){0,3}'); es = es2 = _re(r'(● [^\n]+)(\n● [^\n]+){0,2}')
+>         ef, sm = _re(r'→ [^\n]+'), _re(r'[^\n]+')
+>     X += [E('3-1-総評見出し', 1, (448, 158, 428, 28), 'fixed', 'line', _eq('◤ 総評')),
+>           E('3-1-総評', 1, (446, 186, 432, 40), 'input', 'line', sm),
+>           E('3-1-課題見出し', 1, (448, 238, 428, 28), 'fixed', 'line', _eq(f'⚠ 最重要課題（Top{n_issues}）')),
+>           E('3-1-最重要課題', 1, (446, 272, 432, 158), 'input', 'multi_line', ei),
+>           E('3-1-強み見出し', 1, (920, 158, 304, 28), 'fixed', 'line', _eq('◎ 強み（活かすべき点）')),
+>           E('3-1-強み', 1, (920, 194, 304, 232), 'input', 'multi', es),
+>           E('3-1-フロー見出し', 1, (56, 444, 500, 28), 'fixed', 'line', _eq('◤ ユーザー行動フローと課題')),
+>           E('3-1-フローまとめ', 1, (560, 444, 624, 28), 'input', 'line', ef)]
+>     if n_flow:
+>         step_w = (1200 - 20 - 8 * (n_flow - 1) - 60) // n_flow
+>         arrow_w = 60 // max(1, n_flow - 1) if n_flow > 1 else 0
+>         steps = (v.get('flow_steps') or [])[:6] if v else None
+>         for i in range(n_flow):
+>             x = 50 + i * (step_w + 8 + arrow_w)
+>             stp = steps[i] if steps else None
+>             if stp:
+>                 st = stp.get('status', '✓')
+>                 st = '✓' if st in ('✓', 'OK', True, 'success', '成功') else ('✕' if st in ('✕', '×', 'NG', False, 'fail', '離脱') else '？')
+>                 e, est = _eq(_tf(stp.get('label', ''), 6) + '\n' + _tf(stp.get('note', ''), 14)), _eq(st)
+>             else:
+>                 e, est = _re(r'[^\n]+\n[^\n]+'), _re(r'[✓✕？]')
+>             X += [E(f'3-1-フロー{i + 1}-記号', 1, (x + step_w // 2 - 22, 480, 44, 44), 'fixed', 'line', est),
+>                   E(f'3-1-フロー{i + 1}', 1, (x, 528, step_w, 56), 'input', 'flow', e)]
+>             if i < n_flow - 1:
+>                 X.append(E(f'3-1-矢印{i + 1}', 1, (x + step_w + 8, 488, arrow_w, 44), 'exception', 'arrow', _eq('→')))
+>     # 2枚目
+>     X.append(E('3-2-スコア見出し', 2, (56, 158, 548, 28), 'fixed', 'line', _eq('◤ 10項目スコア（満点5・ギャップ可視化）')))
+>     scs = (v.get('scores') or [])[:10] if v else None
+>     rh = min(42, 400 // max(1, n_sc))
+>     for i in range(n_sc):
+>         y = 192 + i * rh
+>         it = scs[i] if scs else None
+>         X += [E(f'3-2-項目{i + 1}', 2, (56, y + 8, 180, 22), 'fixed', 'line',
+>                 _eq(it.get('name') or it.get('category', '')) if it else _re('|'.join(map(re.escape, TEN_ITEMS)))),
+>               E(f'3-2-点{i + 1}', 2, (408, y + 8, 62, 22), 'fixed', 'line',
+>                 _eq('－/5' if it.get('score', '－') in ('－', '－/5') else f'{it.get("score")}/5') if it else _re(r'(\d|－)/5'))]
+>     X += [E('3-2-強み見出し', 2, (656, 158, 568, 28), 'fixed', 'line', _eq('◎ 強み（活かすべき点）')),
+>           E('3-2-強み', 2, (656, 194, 568, 174), 'input', 'multi', es2),
+>           E('3-2-課題見出し', 2, (656, 388, 568, 28), 'fixed', 'line', _eq('⚠ 最優先で直すべき点')),
+>           E('3-2-課題', 2, (656, 424, 568, 154), 'input', 'multi_line', ei2)]
+>     # 3枚目
+>     hls = (v.get('highlights') or [])[:3] if v else None
+>     hl_h = (494 - 12 * max(0, n_h - 1)) // max(1, n_h)
+>     for i in range(n_h):
+>         y = 92 + i * (hl_h + 12); ht = y + 10; bt = ht + 50
+>         h = hls[i] if hls else None
+>         X += [E(f'3-3-HL{i + 1}-番号', 3, (60, ht + 4, 32, 24), 'fixed', 'line', _re(r'\d')),
+>               E(f'3-3-HL{i + 1}-title', 3, (102, ht + 4, 660, 28), 'input', 'line', _eq(_tf(h.get('title', ''), 30)) if h else _re(r'[^\n]+')),
+>               E(f'3-3-HL{i + 1}-優先度', 3, (780, ht + 5, 70, 22), 'fixed', 'line', _eq(str(h.get('priority', '中'))) if h else _re(r'[高中低]'), hid=i),
+>               E(f'3-3-HL{i + 1}-工数', 3, (860, ht + 5, 90, 22), 'fixed', 'line', _eq('工数：' + str(h.get('effort', '中'))) if h else _re(r'工数：[小中大]'), hid=i),
+>               E(f'3-3-HL{i + 1}-箇所', 3, (960, ht + 5, 260, 22), 'input', 'line', _eq('箇所：' + _tf(h.get('target_area', ''), 20)) if h else _re(r'箇所：[^\n]+'), hid=i),
+>               E(f'3-3-HL{i + 1}-BEFOREラベル', 3, (60, bt, 90, 28), 'fixed', 'line', _eq('BEFORE')),
+>               E(f'3-3-HL{i + 1}-現状', 3, (158, bt, 462, 28), 'input', 'line', _eq(_tf(h.get('before', ''), 38)) if h else _re(r'[^\n]+'), hid=i),
+>               E(f'3-3-HL{i + 1}-AFTERラベル', 3, (644, bt, 90, 28), 'fixed', 'line', _eq('AFTER')),
+>               E(f'3-3-HL{i + 1}-改善後', 3, (742, bt, 462, 28), 'input', 'line', _eq(_tf(h.get('after', ''), 38)) if h else _re(r'[^\n]+'), hid=i)]
+>         if h is not None and str(h.get('next_action', '') or '').strip():
+>             X.append(E(f'3-3-HL{i + 1}-次の一手ラベル', 3, (60, bt + 38, 90, 28), 'fixed', 'line', _eq('次の一手')))
+>             X.append(E(f'3-3-HL{i + 1}-次の一手', 3, (158, bt + 38, 1072, 28), 'input', 'line', _eq(_tf(str(h.get('next_action')).strip(), 38))))
+>     return X
+643c803
+< def fixed_card_match(key, sno, field, fr, data=None):
+---
+> def fixed_card_match(key, field, sno, fr, data=None):
+653a814,815
+>     if tuple(round(v, 3) for v in insets(fr)) != (0.0, 0.0, 0.0, 0.0):
+>         return False, '枠の内側の余白が builder（0）と違う'
+658c820
+<     if [(r[0], r[1], r[2]) for r in p1['runs']] != [(label, 14.0, True)]:
+---
+>     if [(r[0], r[1], r[2], r[3]) for r in p1['runs']] != [(label, 14.0, True, 0)] or p1['spc_unknown'] or p2['spc_unknown']:
+662,663c824,825
+<     for (t, sz, b), (esz, eb, rx) in zip(p2['runs'], segs):
+<         if sz != esz or bool(b) != eb or not re.fullmatch(rx, t):
+---
+>     for (t, sz, b, spc), (esz, eb, rx) in zip(p2['runs'], segs):
+>         if sz != esz or bool(b) != eb or spc or not re.fullmatch(rx, t):
+756a919,1045
+> def _box_ok(fbox, ebox):
+>     return all(b is None or abs(round(a) - b) <= TOL for a, b in zip(fbox, ebox))
+> 
+> 
+> def _text_ok(text, exp):
+>     kind, val = exp
+>     return text == val if kind == 'eq' else re.fullmatch(val, text) is not None
+> 
+> 
+> # ---- 判定122-2：矢印の例外は条件をすべて満たすときだけ ----
+> def arrow_match(fr, e):
+>     """例外表 #1 の全条件：対象スライド・期待の位置（フローの段の間）・幅12・高さ44（±TOL）・
+>     1段落・1文字区分・文字「→」・20pt・太字・改行なし・文字間隔なし"""
+>     if not _box_ok(fr['box'], e['box']):
+>         return False, '位置・寸法が期待（フローの段の間・幅12・高さ44）と違う'
+>     pars = paragraphs(fr['body'])
+>     if len(pars) != 1:
+>         return False, f'段落数が {len(pars)}（1であるべき）'
+>     p0 = pars[0]
+>     if len(p0['runs']) != 1 or p0['br']:
+>         return False, '文字区分が1つでない・改行がある'
+>     t, sz, b, spc = p0['runs'][0]
+>     if t != '→':
+>         return False, f'文字が「{t}」（「→」1字であるべき）'
+>     if sz != 20.0 or not b:
+>         return False, f'文字の大きさ・太字が違う（{sz}pt・太字{b}）'
+>     if spc or p0['spc_unknown']:
+>         return False, '文字間隔が指定されている'
+>     return True, ''
+> 
+> 
+> def estimate(fr, kind):
+>     """1枠の推定（設計 r2 §3）。明示改行は行ごとに数え、文字間隔は幅に加える"""
+>     l, r, t, b = insets(fr)
+>     x, y, w, h = fr['box']
+>     if not w or not h:
+>         return dict(status='未検査', why='枠の幅・高さが取れない')
+>     cw = w - l - r
+>     ch = h - t - b
+>     if cw <= 0 or ch <= 0:
+>         return dict(status='未検査', why='枠の有効な幅・高さが0以下')
+>     pars = paragraphs(fr['body'])
+>     total, total_aux, assumed, notes, width_ng = 0.0, 0.0, False, [], []
+>     for i, par in enumerate(pars):
+>         pw, undefined, nosize, mx, mixed = para_width(par)
+>         if nosize:
+>             return dict(status='未検査', why=f'段落{i + 1}の文字の大きさが分からない')
+>         if undefined:
+>             return dict(status='未検査', why=f'定義されていない文字種：{"".join(sorted(set(undefined)))}')
+>         if par['spc_unknown']:
+>             return dict(status='未検査', why=f'段落{i + 1}：継承された文字間隔があり、幅を計算できない')
+>         if mx is None:
+>             mx = 14.0
+>         if mixed:
+>             notes.append('大きさ混在')
+>         one_line = kind in ('line', 'map', 'multi_line') or (kind == 'card' and i == 1) or kind == 'flow'
+>         if par['br']:
+>             if one_line:
+>                 width_ng.append(f'段落{i + 1}に明示の改行（1行必須の欄）')
+>             notes.append(f'明示改行 {len(par["segs"]) - 1}回')
+>         sp = _spacing_px(par['sb'], mx) + (_spacing_px(par['sa'], mx) if i < len(pars) - 1 else 0)
+>         segs = seg_widths(par, mx)
+>         for j, (sw, smx) in enumerate(segs):
+>             lh, asm = _line_h(par, smx)
+>             assumed |= asm
+>             lines = max(1, -(-sw // cw)) if sw > 0 else 1
+>             aux = max(1, -(-sw // max(1.0, cw - smx * 4 / 3))) if sw > 0 else 1
+>             if one_line and sw > cw + 1e-6:
+>                 seg_txt = ''.join(rr[0] for rr in par['segs'][j])
+>                 width_ng.append(f'段落{i + 1}の幅 {sw:.1f}px > 枠 {cw:.1f}px「{seg_txt}」')
+>             total += lines * lh
+>             total_aux += aux * lh
+>         total += sp
+>         total_aux += sp
+>         lw = long_ascii_word(par['text'], cw / (mx * 4 / 3))
+>         if lw and not one_line:
+>             notes.append(f'長い ASCII 単語「{lw}」')
+>     res = dict(height=round(total, 2), cap=round(ch, 2), notes=notes)
+>     height_scope = kind in ('multi', 'multi_line', 'card', 'flow') or len(pars) >= 2 or any(p['br'] for p in pars)
+>     if width_ng:
+>         res.update(status='NG', why='幅 NG：' + '／'.join(width_ng))
+>         if total > ch + 1e-6:
+>             res['why'] += f'／同じ枠の高さ超過 {total:.1f}px > {ch:.1f}px'
+>             res['height_ng'] = True
+>         return res
+>     if height_scope and total > ch + 1e-6:
+>         res.update(status='NG', why=f'高さ超過 {total:.1f}px > 枠 {ch:.1f}px', height_ng=True)
+>         return res
+>     if not height_scope:
+>         total_aux = 0.0
+>     reasons = []
+>     if total_aux > ch + 1e-6:
+>         reasons.append(f'折り返しの余裕不足（補助の判定 {total_aux:.1f}px > {ch:.1f}px）')
+>     if assumed and height_scope:
+>         notes.append('行間：仮定1.0')
+>         if (ch - total) / ch < 0.10:
+>             reasons.append('行間を仮定し高さの余裕10%未満')
+>     if any(n.startswith('長い ASCII') for n in notes):
+>         reasons.append('長い ASCII 単語')
+>     res.update(status='要実機確認' if reasons else '基準内', why='／'.join(reasons))
+>     return res
+> 
+> 
+> def _counts(data, slides, key):
+>     """値や件数で変わる構造の数。入力があれば入力から、無ければ PPTX から数える（旧PPTX用）"""
+>     if key == 'C-2':
+>         if data:
+>             return len((data.get('proposals') or {}).get('proposals') or [])
+>         return sum(1 for frs in slides for fr in frs if fr['kind'] == 'text' and fr['text'].startswith('改善箇所\u3000'))
+>     v = (data or {}).get('visual_data') if data else None
+>     s1 = slides[0] if slides else []
+>     if v is not None:
+>         ti = (v.get('top_issues') or ([v.get('top_issue')] if v.get('top_issue') else []) or v.get('priority_issues', []))
+>         return dict(n_sec=len(v.get('sections') or []) or 1, n_flow=len((v.get('flow_steps') or [])[:6]),
+>                     n_issues=min(len(ti), 4), n_h=len((v.get('highlights') or [])[:3]), n_sc=len((v.get('scores') or [])[:10]))
+>     n_sec = sum(1 for fr in s1 if fr['kind'] == 'text' and abs(round(fr['box'][0]) - 78) <= TOL
+>                 and abs(round(fr['box'][2]) - 332) <= TOL and fr['text'].strip())
+>     n_flow = sum(1 for fr in s1 if fr['kind'] == 'text' and abs(round(fr['box'][1]) - 528) <= TOL and fr['text'].strip())
+>     mm = [re.search(r'Top(\d)', fr['text']) for fr in s1 if fr['text'].startswith('⚠ 最重要課題')]
+>     n_issues = int(mm[0].group(1)) if mm and mm[0] else 3
+>     s3 = slides[2] if len(slides) > 2 else []
+>     n_h = sum(1 for fr in s3 if fr['text'] == 'BEFORE')
+>     s2 = slides[1] if len(slides) > 1 else []
+>     n_sc = sum(1 for fr in s2 if fr['kind'] == 'text' and abs(round(fr['box'][0]) - 408) <= TOL and abs(round(fr['box'][2]) - 62) <= TOL)
+>     return dict(n_sec=n_sec, n_flow=n_flow, n_issues=n_issues, n_h=n_h, n_sc=n_sc)
+> 
+> 
+758,759c1047,1048
+<     """found={'C-1':path,...}。欄ごとの結果リストと、フッター・枚数の NG"""
+<     rows, ng = [], []
+---
+>     """期待する枠の表と実際の枠を照合して推定する。戻り値：欄ごとの結果・追加の NG 理由・対応の記録"""
+>     rows, ng, match = [], [], {}
+766c1055
+<         except Exception as e:
+---
+>         except Exception as e:  # noqa
+769c1058,1066
+<         if len(slides) not in FILE_SLIDES[key]:
+---
+>         if key == 'C-1':
+>             X = expect_c1((data or {}).get('diagnosis') if data else None); want = (2,)
+>         elif key == 'C-2':
+>             n = _counts(data, slides, key)
+>             X, tot = expect_c2((data or {}).get('proposals') if data else None, n); want = (tot,)
+>         else:
+>             c = _counts(data, slides, key)
+>             X = expect_c3((data or {}).get('visual_data') if data else None, **c); want = (3,)
+>         if len(slides) not in want:
+771c1068
+<                              why=f'{len(slides)}枚（想定 {"・".join(map(str, FILE_SLIDES[key]))}枚）'))
+---
+>                              why=f'{len(slides)}枚（想定 {"・".join(map(str, want))}枚）'))
+772a1070
+>         found_ct = {e['fid']: 0 for e in X}
+774c1072
+<             footer_n = 0
+---
+>             tables = [fr for fr in frames if fr['kind'] == 'cell']
+776,777c1074,1075
+<                 if not fr['text'].strip():
+<                     continue
+---
+>                 if fr['kind'] == 'text' and not fr['text'].strip():
+>                     continue            # 文字の無い枠（図形の地）は対象外
+780d1077
+<                 role = frame_role(key, sno, fr, len(slides))
+782,784c1079,1094
+<                 if role is None:
+<                     rows.append(dict(base, field='（未知の枠）', status='未検査',
+<                                      why='入力の欄・固定文言・例外のどれにも結び付かない'))
+---
+>                 if fr['kind'] == 'cell':
+>                     tb = [e for e in X if e['kind'] == 'table' and e['slide'] == sno]
+>                     if len(tb) != 1 or not _box_ok(fr['table_box'], tb[0]['box']):
+>                         rows.append(dict(base, field='（想定外の表）', status='未検査', why='期待する表の位置・スライドに無い'))
+>                         continue
+>                     cand = [e for e in X if e.get('cell') == (fr['row'], fr['col']) and e['slide'] == sno]
+>                 else:
+>                     cand = [e for e in X if e['slide'] == sno and e['box'] is not None and e['kind'] != 'table'
+>                             and _box_ok(fr['box'], e['box'])]
+>                 if not cand:
+>                     rows.append(dict(base, field='（想定外の枠）', status='未検査',
+>                                      why='期待する枠の表のどれにも位置が合わない'))
+>                     continue
+>                 if len(cand) > 1:
+>                     rows.append(dict(base, field='（多重一致）', status='未検査',
+>                                      why='2つ以上の期待枠に位置が合う：' + '・'.join(e['fid'] for e in cand)))
+786,788c1096,1102
+<                 cls, field, kind = role
+<                 if cls == 'footer':
+<                     footer_n += 1
+---
+>                 e = cand[0]
+>                 found_ct[e['fid']] += 1
+>                 if found_ct[e['fid']] > 1:
+>                     rows.append(dict(base, field=e['fid'], status='NG', why='同じ期待枠が重複している（2つ目以降）'))
+>                     continue
+>                 match[(key, e['fid'])] = fr
+>                 if e['cls'] == 'footer':
+790,791c1104,1105
+<                     rows.append(dict(base, field=field, status=st, kind='footer',
+<                                      why='' if st == '基準内' else f'表記の不一致「{fr["text"]}」（正：{AUTHOR}）'))
+---
+>                     rows.append(dict(base, field=e['fid'], status=st, kind='footer',
+>                                      why='' if st == '基準内' else f'フッター：表記の不一致「{fr["text"]}」（正：{AUTHOR}）'))
+793,796c1107,1116
+<                 if cls == 'exception':
+<                     pw = para_width(paragraphs(fr['body'])[0])[0]
+<                     rows.append(dict(base, field=field, status='参考', kind='arrow',
+<                                      why=f'例外表 #1（幅 {pw:.1f}px／枠 {fr["box"][2]:.0f}px）・実機確認'))
+---
+>                 if e['cls'] == 'exception':
+>                     ok, why = arrow_match(fr, e)
+>                     if ok:
+>                         pw = para_width(paragraphs(fr['body'])[0])[0]
+>                         rows.append(dict(base, field=e['fid'], status='参考', kind='arrow',
+>                                          why=f'例外表 #1（幅 {pw:.1f}px／枠 {fr["box"][2]:.0f}px）・実機確認'))
+>                     else:
+>                         r = estimate(fr, 'line')
+>                         rows.append(dict(base, field=e['fid'], status='NG' if r['status'] != '未検査' else '未検査',
+>                                          why=f'矢印の例外の条件を満たさない：{why}' + (f'／{r["why"]}' if r.get('why') else '')))
+798,803c1118,1126
+<                 kk = {'multi_cell': 'multi', 'multi_line': 'multi_line', 'multi2': 'multi'}.get(kind, kind)
+<                 if kind == 'multi_line':
+<                     kk = 'multi_line'
+<                 r = estimate(fr, kk)
+<                 if (key, field) in FIXED_CARD:
+<                     okc, whyc = fixed_card_match(key, sno, field, fr, data)
+---
+>                 r = estimate(fr, e['kind'])
+>                 if not _text_ok(fr['text'], e['exp']):
+>                     lab = '固定文言' if e['cls'] == 'fixed' else '入力の欄'
+>                     r = dict(r, status='NG', why=(r.get('why') + '／' if r.get('why') else '')
+>                              + f'{lab}の文字が期待と一致しない「{fr["text"][:40]}」')
+>                 if e['cls'] == 'input' and '…' in fr['text'] and r['status'] != 'NG':
+>                     r = dict(r, status='NG', why='末尾が「…」＝builder の切り詰め（B の制約に抵触）')
+>                 if e.get('card'):
+>                     okc, whyc = fixed_card_match(*e['card'], sno, fr, data)
+807c1130,1131
+<                     elif r.get('status') == 'NG' and r.get('height_ng') and not str(r.get('why', '')).startswith('幅 NG'):
+---
+>                     elif r.get('status') == 'NG' and r.get('height_ng') and not str(r.get('why', '')).startswith(('幅 NG', '固定文言', '入力の欄')) \
+>                             and '一致しない' not in str(r.get('why', '')):
+809,816c1133,1165
+<                                  why=f'固定カード／高さ推定{r["height"]}px・枠{r["cap"]:g}px／高さ判定は限定例外（判定118）'
+<                                      f'／Windows PowerPoint未確認')
+<                     elif r.get('status') == '基準内':
+<                         r = dict(r, why='固定カード（構造一致）')
+<                 rows.append(dict(base, field=field, kind=kind, cls=cls, **{k: v for k, v in r.items() if k != 'text'}))
+<             if footer_n != 1:
+<                 ng.append(f'{fn} {sno}枚目：フッターが{footer_n}件（1件であるべき）')
+<     return rows, ng
+---
+>                                  why=f'固定カード／高さ推定{r["height"]}px・枠{r["cap"]:g}px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認')
+>                 rows.append(dict(base, field=e['fid'], kind=e['kind'], cls=e['cls'], **r))
+>         for e in X:
+>             if e['kind'] == 'table':
+>                 continue
+>             if found_ct[e['fid']] == 0:
+>                 rows.append(dict(file=fn, slide=e['slide'], field=e['fid'], status='NG', why='期待する枠が見つからない（欠落・移動）'))
+>     return rows, ng, match
+> 
+> 
+> def check_cross_pptx(data, found, match):
+>     """判定122-3：C-2 の提案と C-3 のハイライトの対応を、生成後の枠単位で完全一致まで確かめる"""
+>     ng = []
+>     p = (data.get('proposals') or {}).get('proposals') or []
+>     hls = ((data.get('visual_data') or {}).get('highlights') or [])[:3]
+>     for i, h in enumerate(hls):
+>         cand = [k for k, q in enumerate(p) if isinstance(q, dict) and isinstance(h, dict) and q.get('target_area') == h.get('target_area')]
+>         if len(cand) != 1:
+>             continue                    # 入力の点検で止まる
+>         k = cand[0]
+>         pairs = [('箇所', f'2-提案{k + 1}-箇所', '改善箇所\u3000', f'3-3-HL{i + 1}-箇所', '箇所：'),
+>                  ('優先度', f'2-提案{k + 1}-優先度', '', f'3-3-HL{i + 1}-優先度', ''),
+>                  ('工数', f'2-提案{k + 1}-工数', '工数：', f'3-3-HL{i + 1}-工数', '工数：'),
+>                  ('現状', f'2-提案{k + 1}-現状', '現状\u3000', f'3-3-HL{i + 1}-現状', ''),
+>                  ('改善後', f'2-提案{k + 1}-改善後', '改善後\u3000', f'3-3-HL{i + 1}-改善後', '')]
+>         for jp, f2, pre2, f3, pre3 in pairs:
+>             a, b = match.get(('C-2', f2)), match.get(('C-3', f3))
+>             if a is None or b is None:
+>                 ng.append(f'C-2 提案{k + 1}／C-3 ハイライト{i + 1}：{jp}の枠が見つからない'); continue
+>             ta, tb = a['text'], b['text']
+>             if not (ta.startswith(pre2) and tb.startswith(pre3)) or ta[len(pre2):] != tb[len(pre3):]:
+>                 ng.append(f'C-2 提案{k + 1}／C-3 ハイライト{i + 1}：PPTX の{jp}が一致しない（C-2「{ta}」／C-3「{tb}」）')
+>     return ng
+820,821c1169
+<     cnt = {k: [r for r in rows if r['status'] == k] for k in ('基準内', '要実機確認', 'NG', '未検査', '参考')}
+<     return cnt
+---
+>     return {k: [r for r in rows if r['status'] == k] for k in ('基準内', '要実機確認', 'NG', '未検査', '参考')}
+825a1174
+>     bad_frames = len(cnt['NG'])
+827c1176
+<           f'／NG（{len(cnt["NG"]) + len(extra_ng)}件）／未検査（{len(cnt["未検査"])}欄）／参考（{len(cnt["参考"])}件）')
+---
+>           f'／NG（{bad_frames}枠＋追加理由{len(extra_ng)}件）／未検査（{len(cnt["未検査"])}件）／参考（{len(cnt["参考"])}件）')
+833,871c1182
+<     return len(cnt['NG']) + len(extra_ng), len(cnt['未検査'])
+< 
+< 
+< def check_pptx_vs_input(data, found):
+<     """§3-4：入力の文字列が切り詰めなしで PPTX にあるか（末尾「…」の検出を含む）"""
+<     ng = []
+<     d, p, v = data.get('diagnosis') or {}, data.get('proposals') or {}, data.get('visual_data') or {}
+<     def texts(key):
+<         if key not in found:
+<             return []
+<         return [fr['text'] for sl in read_frames(found[key]) for fr in sl]
+<     t1, t2, t3 = texts('C-1'), texts('C-2'), texts('C-3')
+<     for key, tx in (('C-1', t1), ('C-2', t2), ('C-3', t3)):
+<         for t in tx:
+<             if t.rstrip().endswith('…'):
+<                 ng.append(f'{key}：末尾が「…」の枠がある（builder が切り詰めた）「{t}」')
+<     def has(tx, s):
+<         return any(s in t for t in tx)
+<     want = []
+<     want += [('C-1', t1, x) for x in [d.get('service_name'), d.get('input_type'), d.get('conclusion')]]
+<     want += [('C-1', t1, '● ' + s) for s in d.get('strengths') or []]
+<     for pr in p.get('proposals') or []:
+<         want += [('C-2', t2, pr.get('title')), ('C-2', t2, '改善箇所　' + str(pr.get('target_area'))),
+<                  ('C-2', t2, '課題　' + str(pr.get('issue'))), ('C-2', t2, '現状　' + str(pr.get('before'))),
+<                  ('C-2', t2, '改善後　' + str(pr.get('after')))]
+<     want += [('C-3', t3, x) for x in [v.get('purpose'), v.get('target'), v.get('diagnosis_date')]]
+<     want += [('C-3', t3, '● ' + s) for s in v.get('strengths') or []]
+<     for sec in v.get('sections') or []:
+<         want.append(('C-3', t3, f'{sec.get("label")}  {sec.get("desc")}'))
+<     for st in (v.get('flow_steps') or [])[:6]:
+<         want.append(('C-3', t3, f'{st.get("label")}\n{st.get("note")}'))
+<     for h in (v.get('highlights') or [])[:3]:
+<         want += [('C-3', t3, h.get('title')), ('C-3', t3, '箇所：' + str(h.get('target_area'))),
+<                  ('C-3', t3, h.get('before')), ('C-3', t3, h.get('after'))]
+<     want.append(('C-3', t3, (v.get('direction') or '').replace('\n', ' ')))
+<     for key, tx, s in want:
+<         if s and tx and not has(tx, s):
+<             ng.append(f'{key}：入力の文字「{s}」が PPTX にそのまま無い（切り詰め・作り直し漏れ）')
+<     return ng
+---
+>     return bad_frames + len(extra_ng), len(cnt['未検査'])
+890c1201
+<         rows, extra = check_display(found)
+---
+>         rows, extra, _ = check_display(found)
+892c1203
+<         print('内容・構成点検：未実施（入力なし・--pptx-only）')
+---
+>         print('内容・構成点検：未実施（入力なし・--pptx-only。入力との照合・record・C-2/C-3 の対応は未実施）')
+903c1214
+<     ng_in, notes = check_input_r6(data)               # r6：入力の A・B・C・文字種・record
+---
+>     ng_in, notes = check_input_r6(data)               # 入力の A・B・C・文字種・record・C-2/C-3 の対応
+905,909c1216,1217
+<     try:
+<         ng_px = check_pptx_vs_input(data, found)      # r6：切り詰め・入力との一致
+<     except Exception as e:
+<         ng_px = [f'PPTX の読み出しに失敗：{e}']
+<     rows, extra = check_display(found, data)          # r6：表示の簡易推定（入力の結果に関わらず実行）
+---
+>     rows, extra, match = check_display(found, data)   # 表示の簡易推定（入力の結果に関わらず実行）
+>     ng_px = check_cross_pptx(data, found, match)      # 生成後の C-2/C-3 の対応（枠単位の完全一致）
+921c1229
+<               '字数 A/B/C・文字種・record）')
+---
+>               '字数 A/B/C・文字種・record・C-2/C-3 の対応）')

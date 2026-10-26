@@ -1,0 +1,36 @@
+点検対象： 01_UI_Scorecard_uniqlo.pptx, 02_Proposals_uniqlo.pptx, 03_Visual_Board_uniqlo.pptx
+内容・構成点検：未実施（入力なし・--pptx-only。入力との照合・record・C-2/C-3 の対応は未実施）
+表示の簡易推定：基準内（220欄）／要実機確認（6欄）／NG（13枠＋追加理由7件）／未検査（0件）／参考（5件）
+  [NG] 01_UI_Scorecard_uniqlo.pptx 1枚目 1-1-診断対象：幅 NG：段落2の幅 336.0px > 枠 265.0px「ユニクロ公式オンラインストア」／同じ枠の高さ超過 91.5px > 66.0px
+  [NG] 01_UI_Scorecard_uniqlo.pptx 1枚目 1-1-フッター：フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）
+  [NG] 01_UI_Scorecard_uniqlo.pptx 2枚目 1-2-診断対象：幅 NG：段落2の幅 336.0px > 枠 265.0px「ユニクロ公式オンラインストア」／同じ枠の高さ超過 91.5px > 66.0px
+  [NG] 01_UI_Scorecard_uniqlo.pptx 2枚目 1-2-フッター：フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）
+  [NG] 02_Proposals_uniqlo.pptx 1枚目 2-1-フッター：フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）
+  [NG] 02_Proposals_uniqlo.pptx 2枚目 2-2-フッター：フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）
+  [NG] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-構造マップ1：幅 NG：段落1の幅 354.7px > 枠 332.0px「ヘッダー・検索  検索窓と性別タブが明快」／同じ枠の高さ超過 49.3px > 33.0px
+  [NG] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-構造マップ3：幅 NG：段落1の幅 373.3px > 枠 332.0px「キャンペーンバナー  訴求が多く主役が不明」／同じ枠の高さ超過 49.3px > 33.0px
+  [NG] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-フロー1：幅 NG：段落2の幅 186.7px > 枠 180.0px「検索・アプリから到達」／同じ枠の高さ超過 78.4px > 56.0px
+  [NG] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-フロー3：幅 NG：段落2の幅 205.3px > 枠 180.0px「性別とカテゴリで探せる」／同じ枠の高さ超過 78.4px > 56.0px
+  [NG] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-フッター：フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）
+  [NG] 03_Visual_Board_uniqlo.pptx 2枚目 3-2-フッター：フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）
+  [NG] 03_Visual_Board_uniqlo.pptx 3枚目 3-3-フッター：フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）
+  [要実機確認] 01_UI_Scorecard_uniqlo.pptx 1枚目 1-1-総合スコア：固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [要実機確認] 01_UI_Scorecard_uniqlo.pptx 1枚目 1-1-ランク：固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [要実機確認] 01_UI_Scorecard_uniqlo.pptx 2枚目 1-2-総合スコア：固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [要実機確認] 01_UI_Scorecard_uniqlo.pptx 2枚目 1-2-ランク：固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [要実機確認] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-総合スコア：固定カード／高さ推定64.0px・枠50px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [要実機確認] 03_Visual_Board_uniqlo.pptx 2枚目 3-2-総合スコア：固定カード／高さ推定64.0px・枠50px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認
+  [参考] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-矢印1：例外表 #1（幅 26.7px／枠 12px）・実機確認
+  [参考] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-矢印2：例外表 #1（幅 26.7px／枠 12px）・実機確認
+  [参考] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-矢印3：例外表 #1（幅 26.7px／枠 12px）・実機確認
+  [参考] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-矢印4：例外表 #1（幅 26.7px／枠 12px）・実機確認
+  [参考] 03_Visual_Board_uniqlo.pptx 1枚目 3-1-矢印5：例外表 #1（幅 26.7px／枠 12px）・実機確認
+  [NG] 01_UI_Scorecard_uniqlo.pptx 1枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」
+  [NG] 01_UI_Scorecard_uniqlo.pptx 2枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」
+  [NG] 02_Proposals_uniqlo.pptx 1枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」
+  [NG] 02_Proposals_uniqlo.pptx 2枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」
+  [NG] 03_Visual_Board_uniqlo.pptx 1枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」
+  [NG] 03_Visual_Board_uniqlo.pptx 2枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」
+  [NG] 03_Visual_Board_uniqlo.pptx 3枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」
+Windows PowerPoint 目視：未実施
+※「基準内」は実際の描画の合格を意味しない。最終の判定は Windows の PowerPoint での目視。

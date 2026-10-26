@@ -1,0 +1,4631 @@
+{
+ "rows": [
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    20,
+    1140,
+    34
+   ],
+   "text": "【1】UI診断スコアカード",
+   "field": "1-1-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    58,
+    1140,
+    22
+   ],
+   "text": "サマリ：診断対象・スコア・強み・最優先課題・結論",
+   "field": "1-1-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    100,
+    265,
+    66
+   ],
+   "text": "診断対象\nユニクロ公式オンラインストア",
+   "field": "1-1-診断対象",
+   "kind": "card",
+   "cls": "input",
+   "height": 91.52,
+   "cap": 66.0,
+   "notes": [],
+   "status": "NG",
+   "why": "幅 NG：段落2の幅 336.0px > 枠 265.0px「ユニクロ公式オンラインストア」／同じ枠の高さ超過 91.5px > 66.0px",
+   "height_ng": true
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    361,
+    100,
+    265,
+    66
+   ],
+   "text": "入力種別\nURL / EC",
+   "field": "1-1-入力種別",
+   "kind": "card",
+   "cls": "input",
+   "height": 53.12,
+   "cap": 66.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    664,
+    100,
+    265,
+    66
+   ],
+   "text": "総合スコア\n35  / 50",
+   "field": "1-1-総合スコア",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 73.6,
+   "cap": 66.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    967,
+    100,
+    265,
+    66
+   ],
+   "text": "ランク\nB  標準的",
+   "field": "1-1-ランク",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 73.6,
+   "cap": 66.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    190,
+    556,
+    36
+   ],
+   "text": "◎ 強み（活かすべき点）",
+   "field": "1-1-強み見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 36.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    244,
+    552,
+    328
+   ],
+   "text": "● 商品ごとに便益と価格を短く添え購買判断を早めている\n● 一覧に評価と件数を出し選ぶ根拠を示している\n● 白基調と簡潔な語調でブランドの統一感を保っている",
+   "field": "1-1-強み",
+   "kind": "multi",
+   "cls": "input",
+   "height": 144.21,
+   "cap": 328.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    666,
+    190,
+    556,
+    36
+   ],
+   "text": "⚠ 最優先で直すべき点",
+   "field": "1-1-課題見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 36.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    668,
+    244,
+    552,
+    328
+   ],
+   "text": "1. トップの訴求が多く主役が不明\n2. 明示的な購入導線ボタンが少ない\n3. 一覧に配送・返品情報がない",
+   "field": "1-1-課題",
+   "kind": "multi_line",
+   "cls": "input",
+   "height": 113.49,
+   "cap": 328.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    40,
+    594,
+    88,
+    62
+   ],
+   "text": "結論",
+   "field": "1-1-結論ラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    168,
+    594,
+    1072,
+    62
+   ],
+   "text": "トップの訴求を絞り明示ボタンと配送情報を添えれば、商品詳細への到達と購入率の向上が見込める。",
+   "field": "1-1-結論",
+   "kind": "multi",
+   "cls": "input",
+   "height": 30.24,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI/UX診断 by GPTs",
+   "field": "1-1-フッター",
+   "status": "NG",
+   "kind": "footer",
+   "why": "フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）"
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "1 / 2",
+   "field": "1-1-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    20,
+    1140,
+    34
+   ],
+   "text": "【1】UI診断スコアカード",
+   "field": "1-2-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    58,
+    1140,
+    22
+   ],
+   "text": "10項目評価：各項目のスコアと一言所見（全文表示）",
+   "field": "1-2-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    58,
+    100,
+    265,
+    66
+   ],
+   "text": "診断対象\nユニクロ公式オンラインストア",
+   "field": "1-2-診断対象",
+   "kind": "card",
+   "cls": "input",
+   "height": 91.52,
+   "cap": 66.0,
+   "notes": [],
+   "status": "NG",
+   "why": "幅 NG：段落2の幅 336.0px > 枠 265.0px「ユニクロ公式オンラインストア」／同じ枠の高さ超過 91.5px > 66.0px",
+   "height_ng": true
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    361,
+    100,
+    265,
+    66
+   ],
+   "text": "入力種別\nURL / EC",
+   "field": "1-2-入力種別",
+   "kind": "card",
+   "cls": "input",
+   "height": 53.12,
+   "cap": 66.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    664,
+    100,
+    265,
+    66
+   ],
+   "text": "総合スコア\n35  / 50",
+   "field": "1-2-総合スコア",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 73.6,
+   "cap": 66.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    967,
+    100,
+    265,
+    66
+   ],
+   "text": "ランク\nB  標準的",
+   "field": "1-2-ランク",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 73.6,
+   "cap": 66.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定73.6px・枠66px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    180,
+    60,
+    28
+   ],
+   "text": "No",
+   "field": "1-2-表-見出し1",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 22.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    180,
+    204,
+    28
+   ],
+   "text": "項目",
+   "field": "1-2-表-見出し2",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 22.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    180,
+    84,
+    28
+   ],
+   "text": "スコア",
+   "field": "1-2-表-見出し3",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 22.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    180,
+    852,
+    28
+   ],
+   "text": "一言所見",
+   "field": "1-2-表-見出し4",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 22.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    208,
+    60,
+    30
+   ],
+   "text": "1",
+   "field": "1-2-表-1-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    208,
+    204,
+    30
+   ],
+   "text": "ファーストビュー",
+   "field": "1-2-表-1-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    208,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-1-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    208,
+    852,
+    30
+   ],
+   "text": "キャンペーンが同列に並び主役が伝わりにくい",
+   "field": "1-2-表-1-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    238,
+    60,
+    30
+   ],
+   "text": "2",
+   "field": "1-2-表-2-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    238,
+    204,
+    30
+   ],
+   "text": "キャッチコピー",
+   "field": "1-2-表-2-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    238,
+    84,
+    30
+   ],
+   "text": "4/5",
+   "field": "1-2-表-2-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    238,
+    852,
+    30
+   ],
+   "text": "商品ごとに短い便益と価格が添えられ明快",
+   "field": "1-2-表-2-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    268,
+    60,
+    30
+   ],
+   "text": "3",
+   "field": "1-2-表-3-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    268,
+    204,
+    30
+   ],
+   "text": "CTA設計",
+   "field": "1-2-表-3-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    268,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-3-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    268,
+    852,
+    30
+   ],
+   "text": "バナー全体がリンクで明示的なボタンが少ない",
+   "field": "1-2-表-3-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    298,
+    60,
+    30
+   ],
+   "text": "4",
+   "field": "1-2-表-4-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    298,
+    204,
+    30
+   ],
+   "text": "信頼性・権威性",
+   "field": "1-2-表-4-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    298,
+    84,
+    30
+   ],
+   "text": "4/5",
+   "field": "1-2-表-4-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    298,
+    852,
+    30
+   ],
+   "text": "一覧に評価と件数が表示され選ぶ根拠がある",
+   "field": "1-2-表-4-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    328,
+    60,
+    30
+   ],
+   "text": "5",
+   "field": "1-2-表-5-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    328,
+    204,
+    30
+   ],
+   "text": "フォーム設計",
+   "field": "1-2-表-5-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    328,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-5-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    328,
+    852,
+    30
+   ],
+   "text": "検索窓は明快だが絞り込み項目が初期非表示",
+   "field": "1-2-表-5-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    358,
+    60,
+    30
+   ],
+   "text": "6",
+   "field": "1-2-表-6-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    358,
+    204,
+    30
+   ],
+   "text": "レスポンシブ",
+   "field": "1-2-表-6-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    358,
+    84,
+    30
+   ],
+   "text": "4/5",
+   "field": "1-2-表-6-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    358,
+    852,
+    30
+   ],
+   "text": "スマホ表示に対応しアプリ導線も用意",
+   "field": "1-2-表-6-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    388,
+    60,
+    30
+   ],
+   "text": "7",
+   "field": "1-2-表-7-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    388,
+    204,
+    30
+   ],
+   "text": "読みやすさ",
+   "field": "1-2-表-7-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    388,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-7-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    388,
+    852,
+    30
+   ],
+   "text": "バナー内の文言が長く情報が詰まっている",
+   "field": "1-2-表-7-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    418,
+    60,
+    30
+   ],
+   "text": "8",
+   "field": "1-2-表-8-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    418,
+    204,
+    30
+   ],
+   "text": "情報設計",
+   "field": "1-2-表-8-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    418,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-8-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    418,
+    852,
+    30
+   ],
+   "text": "カテゴリ18項目が並列で配送情報も一覧にない",
+   "field": "1-2-表-8-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    448,
+    60,
+    30
+   ],
+   "text": "9",
+   "field": "1-2-表-9-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    448,
+    204,
+    30
+   ],
+   "text": "ブランド一貫性",
+   "field": "1-2-表-9-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    448,
+    84,
+    30
+   ],
+   "text": "5/5",
+   "field": "1-2-表-9-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    448,
+    852,
+    30
+   ],
+   "text": "白基調と簡潔な語調でユニクロらしさが一貫",
+   "field": "1-2-表-9-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    478,
+    60,
+    30
+   ],
+   "text": "10",
+   "field": "1-2-表-10-No",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    100,
+    478,
+    204,
+    30
+   ],
+   "text": "表示速度・技術",
+   "field": "1-2-表-10-項目",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    304,
+    478,
+    84,
+    30
+   ],
+   "text": "3/5",
+   "field": "1-2-表-10-スコア",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    388,
+    478,
+    852,
+    30
+   ],
+   "text": "画像バナーが多く軽量化の余地がある",
+   "field": "1-2-表-10-所見",
+   "kind": "multi",
+   "cls": "input",
+   "height": 21.33,
+   "cap": 24.67,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI/UX診断 by GPTs",
+   "field": "1-2-フッター",
+   "status": "NG",
+   "kind": "footer",
+   "why": "フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）"
+  },
+  {
+   "file": "01_UI_Scorecard_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "2 / 2",
+   "field": "1-2-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    20,
+    820,
+    34
+   ],
+   "text": "【2】改善提案リスト",
+   "field": "2-1-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    58,
+    820,
+    22
+   ],
+   "text": "優先度の高い改善アクションを整理（1/2 前半 3件）",
+   "field": "2-1-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    880,
+    30,
+    80,
+    22
+   ],
+   "text": "優先度",
+   "field": "2-1-凡例",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    970,
+    33,
+    70,
+    22
+   ],
+   "text": "高",
+   "field": "2-1-凡例高",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1050,
+    33,
+    70,
+    22
+   ],
+   "text": "中",
+   "field": "2-1-凡例中",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1130,
+    33,
+    70,
+    22
+   ],
+   "text": "低",
+   "field": "2-1-凡例低",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    114,
+    34,
+    26
+   ],
+   "text": "1",
+   "field": "2-提案1-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 26.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    102,
+    112,
+    770,
+    32
+   ],
+   "text": "トップの主役訴求を1つに絞る",
+   "field": "2-提案1-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 32.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    980,
+    111,
+    70,
+    30
+   ],
+   "text": "高",
+   "field": "2-提案1-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 30.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1060,
+    115,
+    170,
+    22
+   ],
+   "text": "工数：中",
+   "field": "2-提案1-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    56,
+    154,
+    568,
+    48
+   ],
+   "text": "改善箇所　ファーストビュー",
+   "field": "2-提案1-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    640,
+    154,
+    584,
+    48
+   ],
+   "text": "課題　訴求が並び何を見るべきか迷う",
+   "field": "2-提案1-課題",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    64,
+    210,
+    552,
+    40
+   ],
+   "text": "現状　複数のキャンペーンが同列に並んでいる",
+   "field": "2-提案1-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    648,
+    210,
+    568,
+    40
+   ],
+   "text": "改善後　今週の主役1件を大きく見せ他は下段に整理",
+   "field": "2-提案1-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    303,
+    34,
+    26
+   ],
+   "text": "2",
+   "field": "2-提案2-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 26.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    102,
+    301,
+    770,
+    32
+   ],
+   "text": "バナーに商品を見るボタンを添える",
+   "field": "2-提案2-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 32.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    980,
+    300,
+    70,
+    30
+   ],
+   "text": "高",
+   "field": "2-提案2-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 30.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1060,
+    304,
+    170,
+    22
+   ],
+   "text": "工数：小",
+   "field": "2-提案2-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    56,
+    343,
+    568,
+    48
+   ],
+   "text": "改善箇所　キャンペーンバナー",
+   "field": "2-提案2-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    640,
+    343,
+    584,
+    48
+   ],
+   "text": "課題　押せる場所と行き先が分かりにくい",
+   "field": "2-提案2-課題",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    64,
+    399,
+    552,
+    40
+   ],
+   "text": "現状　バナー全体がリンクで明示ボタンが少ない",
+   "field": "2-提案2-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    648,
+    399,
+    568,
+    40
+   ],
+   "text": "改善後　各バナーに商品を見るボタンを明示する",
+   "field": "2-提案2-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    492,
+    34,
+    26
+   ],
+   "text": "3",
+   "field": "2-提案3-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 26.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    102,
+    490,
+    770,
+    32
+   ],
+   "text": "一覧に配送・返品の要点を表示する",
+   "field": "2-提案3-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 32.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    980,
+    489,
+    70,
+    30
+   ],
+   "text": "中",
+   "field": "2-提案3-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 30.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1060,
+    493,
+    170,
+    22
+   ],
+   "text": "工数：小",
+   "field": "2-提案3-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    56,
+    532,
+    568,
+    48
+   ],
+   "text": "改善箇所　商品一覧",
+   "field": "2-提案3-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    640,
+    532,
+    584,
+    48
+   ],
+   "text": "課題　購入前の不安が一覧で解消されない",
+   "field": "2-提案3-課題",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    64,
+    588,
+    552,
+    40
+   ],
+   "text": "現状　配送・返品の情報が一覧にない",
+   "field": "2-提案3-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    648,
+    588,
+    568,
+    40
+   ],
+   "text": "改善後　送料条件と返品方法を一覧上部に1行で示す",
+   "field": "2-提案3-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI/UX診断 by GPTs",
+   "field": "2-1-フッター",
+   "status": "NG",
+   "kind": "footer",
+   "why": "フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）"
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "1 / 2",
+   "field": "2-1-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    20,
+    820,
+    34
+   ],
+   "text": "【2】改善提案リスト",
+   "field": "2-2-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    58,
+    820,
+    22
+   ],
+   "text": "優先度の高い改善アクションを整理（2/2 後半 2件・POINT）",
+   "field": "2-2-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    880,
+    30,
+    80,
+    22
+   ],
+   "text": "優先度",
+   "field": "2-2-凡例",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    970,
+    33,
+    70,
+    22
+   ],
+   "text": "高",
+   "field": "2-2-凡例高",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    1050,
+    33,
+    70,
+    22
+   ],
+   "text": "中",
+   "field": "2-2-凡例中",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    1130,
+    33,
+    70,
+    22
+   ],
+   "text": "低",
+   "field": "2-2-凡例低",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    58,
+    114,
+    34,
+    26
+   ],
+   "text": "4",
+   "field": "2-提案4-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 26.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    102,
+    112,
+    770,
+    32
+   ],
+   "text": "絞り込みの主要項目を初期表示する",
+   "field": "2-提案4-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 32.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    980,
+    111,
+    70,
+    30
+   ],
+   "text": "中",
+   "field": "2-提案4-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 30.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    1060,
+    115,
+    170,
+    22
+   ],
+   "text": "工数：中",
+   "field": "2-提案4-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    154,
+    568,
+    48
+   ],
+   "text": "改善箇所　絞り込みバー",
+   "field": "2-提案4-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    640,
+    154,
+    584,
+    48
+   ],
+   "text": "課題　条件を開くまで選択肢が見えない",
+   "field": "2-提案4-課題",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    64,
+    210,
+    552,
+    40
+   ],
+   "text": "現状　絞り込みボタンのみが表示されている",
+   "field": "2-提案4-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    648,
+    210,
+    568,
+    40
+   ],
+   "text": "改善後　サイズ・色・価格をチップで常時表示する",
+   "field": "2-提案4-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    58,
+    303,
+    34,
+    26
+   ],
+   "text": "5",
+   "field": "2-提案5-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 26.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    102,
+    301,
+    770,
+    32
+   ],
+   "text": "バナー画像を軽量化する",
+   "field": "2-提案5-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 32.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    980,
+    300,
+    70,
+    30
+   ],
+   "text": "低",
+   "field": "2-提案5-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 30.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    1060,
+    304,
+    170,
+    22
+   ],
+   "text": "工数：中",
+   "field": "2-提案5-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    343,
+    568,
+    48
+   ],
+   "text": "改善箇所　画像バナー全般",
+   "field": "2-提案5-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    640,
+    343,
+    584,
+    48
+   ],
+   "text": "課題　画像が多く初回表示に負荷がある",
+   "field": "2-提案5-課題",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 48.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    64,
+    399,
+    552,
+    40
+   ],
+   "text": "現状　大きな画像バナーが多数並んでいる",
+   "field": "2-提案5-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    648,
+    399,
+    568,
+    40
+   ],
+   "text": "改善後　次世代形式と遅延読込で配信する",
+   "field": "2-提案5-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 33.6,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    594,
+    90,
+    62
+   ],
+   "text": "POINT",
+   "field": "2-POINTラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    170,
+    594,
+    1070,
+    62
+   ],
+   "text": "最優先の一手：トップの訴求を今週の主役1件に絞り、各バナーに商品を見るボタンを添えて商品詳細への到達を増やす⁠。",
+   "field": "2-POINT",
+   "kind": "multi",
+   "cls": "input",
+   "height": 30.24,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI/UX診断 by GPTs",
+   "field": "2-2-フッター",
+   "status": "NG",
+   "kind": "footer",
+   "why": "フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）"
+  },
+  {
+   "file": "02_Proposals_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "2 / 2",
+   "field": "2-2-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    20,
+    1140,
+    34
+   ],
+   "text": "【3】ビジュアル診断ボード",
+   "field": "3-1-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    60,
+    58,
+    1140,
+    22
+   ],
+   "text": "構造マップ・総評・最重要課題・ユーザー行動フロー",
+   "field": "3-1-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    58,
+    98,
+    265,
+    50
+   ],
+   "text": "目的\n購入CVを増やす",
+   "field": "3-1-目的",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    361,
+    98,
+    265,
+    50
+   ],
+   "text": "対象\nトップと商品一覧",
+   "field": "3-1-対象",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    664,
+    98,
+    265,
+    50
+   ],
+   "text": "診断日\n2026年10月22日",
+   "field": "3-1-診断日",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    967,
+    98,
+    265,
+    50
+   ],
+   "text": "総合スコア\n35  / 50    B",
+   "field": "3-1-総合スコア",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 64.0,
+   "cap": 50.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定64.0px・枠50px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    56,
+    158,
+    220,
+    28
+   ],
+   "text": "◤ LP構造マップ",
+   "field": "3-1-構造マップ見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    288,
+    164,
+    40,
+    16
+   ],
+   "text": "良好",
+   "field": "3-1-凡例良好",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 16.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    358,
+    164,
+    60,
+    16
+   ],
+   "text": "要改善",
+   "field": "3-1-凡例要改善",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 16.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    190,
+    22,
+    22
+   ],
+   "text": "1",
+   "field": "3-1-構造マップ1-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    190,
+    332,
+    33
+   ],
+   "text": "ヘッダー・検索  検索窓と性別タブが明快",
+   "field": "3-1-構造マップ1",
+   "kind": "map",
+   "cls": "input",
+   "height": 49.28,
+   "cap": 33.0,
+   "notes": [],
+   "status": "NG",
+   "why": "幅 NG：段落1の幅 354.7px > 枠 332.0px「ヘッダー・検索  検索窓と性別タブが明快」／同じ枠の高さ超過 49.3px > 33.0px",
+   "height_ng": true
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    225,
+    22,
+    22
+   ],
+   "text": "2",
+   "field": "3-1-構造マップ2-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    225,
+    332,
+    33
+   ],
+   "text": "カテゴリ一覧  18項目が並列で迷う",
+   "field": "3-1-構造マップ2",
+   "kind": "map",
+   "cls": "input",
+   "height": 24.64,
+   "cap": 33.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    260,
+    22,
+    22
+   ],
+   "text": "3",
+   "field": "3-1-構造マップ3-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    260,
+    332,
+    33
+   ],
+   "text": "キャンペーンバナー  訴求が多く主役が不明",
+   "field": "3-1-構造マップ3",
+   "kind": "map",
+   "cls": "input",
+   "height": 49.28,
+   "cap": 33.0,
+   "notes": [],
+   "status": "NG",
+   "why": "幅 NG：段落1の幅 373.3px > 枠 332.0px「キャンペーンバナー  訴求が多く主役が不明」／同じ枠の高さ超過 49.3px > 33.0px",
+   "height_ng": true
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    295,
+    22,
+    22
+   ],
+   "text": "4",
+   "field": "3-1-構造マップ4-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    295,
+    332,
+    33
+   ],
+   "text": "アプリ案内  アプリへの導線を用意",
+   "field": "3-1-構造マップ4",
+   "kind": "map",
+   "cls": "input",
+   "height": 24.64,
+   "cap": 33.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    330,
+    22,
+    22
+   ],
+   "text": "5",
+   "field": "3-1-構造マップ5-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    330,
+    332,
+    33
+   ],
+   "text": "商品一覧  評価と価格が明快",
+   "field": "3-1-構造マップ5",
+   "kind": "map",
+   "cls": "input",
+   "height": 24.64,
+   "cap": 33.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    365,
+    22,
+    22
+   ],
+   "text": "6",
+   "field": "3-1-構造マップ6-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    365,
+    332,
+    33
+   ],
+   "text": "絞り込み  項目が初期非表示",
+   "field": "3-1-構造マップ6",
+   "kind": "map",
+   "cls": "input",
+   "height": 24.64,
+   "cap": 33.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    48,
+    400,
+    22,
+    22
+   ],
+   "text": "7",
+   "field": "3-1-構造マップ7-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    78,
+    400,
+    332,
+    33
+   ],
+   "text": "配送・返品情報  一覧に情報がない",
+   "field": "3-1-構造マップ7",
+   "kind": "map",
+   "cls": "input",
+   "height": 24.64,
+   "cap": 33.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    448,
+    158,
+    428,
+    28
+   ],
+   "text": "◤ 総評",
+   "field": "3-1-総評見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    446,
+    186,
+    432,
+    40
+   ],
+   "text": "主役訴求を絞り購入導線を明快に",
+   "field": "3-1-総評",
+   "kind": "line",
+   "cls": "input",
+   "height": 30.24,
+   "cap": 40.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    448,
+    238,
+    428,
+    28
+   ],
+   "text": "⚠ 最重要課題（Top3）",
+   "field": "3-1-課題見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    446,
+    272,
+    432,
+    158
+   ],
+   "text": "1. トップの訴求が多く主役が不明\n2. 明示的な購入導線ボタンが少ない\n3. 一覧に配送・返品情報がない",
+   "field": "3-1-最重要課題",
+   "kind": "multi_line",
+   "cls": "input",
+   "height": 101.97,
+   "cap": 158.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    920,
+    158,
+    304,
+    28
+   ],
+   "text": "◎ 強み（活かすべき点）",
+   "field": "3-1-強み見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    920,
+    194,
+    304,
+    232
+   ],
+   "text": "● 商品ごとに便益と価格を短く添え購買判断を早めている\n● 一覧に評価と件数を出し選ぶ根拠を示している\n● 白基調と簡潔な語調でブランドの統一感を保っている",
+   "field": "3-1-強み",
+   "kind": "multi",
+   "cls": "input",
+   "height": 182.61,
+   "cap": 232.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    56,
+    444,
+    500,
+    28
+   ],
+   "text": "◤ ユーザー行動フローと課題",
+   "field": "3-1-フロー見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    560,
+    444,
+    624,
+    28
+   ],
+   "text": "→ トップと絞り込みで迷いが生じ購入判断が遅れる",
+   "field": "3-1-フローまとめ",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    118,
+    480,
+    44,
+    44
+   ],
+   "text": "✓",
+   "field": "3-1-フロー1-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    50,
+    528,
+    180,
+    56
+   ],
+   "text": "流入\n検索・アプリから到達",
+   "field": "3-1-フロー1",
+   "kind": "flow",
+   "cls": "input",
+   "height": 78.4,
+   "cap": 56.0,
+   "notes": [],
+   "status": "NG",
+   "why": "幅 NG：段落2の幅 186.7px > 枠 180.0px「検索・アプリから到達」／同じ枠の高さ超過 78.4px > 56.0px",
+   "height_ng": true
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    238,
+    488,
+    12,
+    44
+   ],
+   "text": "→",
+   "field": "3-1-矢印1",
+   "status": "参考",
+   "kind": "arrow",
+   "why": "例外表 #1（幅 26.7px／枠 12px）・実機確認"
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    318,
+    480,
+    44,
+    44
+   ],
+   "text": "✕",
+   "field": "3-1-フロー2-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    250,
+    528,
+    180,
+    56
+   ],
+   "text": "トップ閲覧\n主役が分からない",
+   "field": "3-1-フロー2",
+   "kind": "flow",
+   "cls": "input",
+   "height": 51.52,
+   "cap": 56.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    438,
+    488,
+    12,
+    44
+   ],
+   "text": "→",
+   "field": "3-1-矢印2",
+   "status": "参考",
+   "kind": "arrow",
+   "why": "例外表 #1（幅 26.7px／枠 12px）・実機確認"
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    518,
+    480,
+    44,
+    44
+   ],
+   "text": "✓",
+   "field": "3-1-フロー3-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    450,
+    528,
+    180,
+    56
+   ],
+   "text": "カテゴリ選択\n性別とカテゴリで探せる",
+   "field": "3-1-フロー3",
+   "kind": "flow",
+   "cls": "input",
+   "height": 78.4,
+   "cap": 56.0,
+   "notes": [],
+   "status": "NG",
+   "why": "幅 NG：段落2の幅 205.3px > 枠 180.0px「性別とカテゴリで探せる」／同じ枠の高さ超過 78.4px > 56.0px",
+   "height_ng": true
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    638,
+    488,
+    12,
+    44
+   ],
+   "text": "→",
+   "field": "3-1-矢印3",
+   "status": "参考",
+   "kind": "arrow",
+   "why": "例外表 #1（幅 26.7px／枠 12px）・実機確認"
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    718,
+    480,
+    44,
+    44
+   ],
+   "text": "✓",
+   "field": "3-1-フロー4-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    650,
+    528,
+    180,
+    56
+   ],
+   "text": "一覧比較\n評価と価格で比較",
+   "field": "3-1-フロー4",
+   "kind": "flow",
+   "cls": "input",
+   "height": 51.52,
+   "cap": 56.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    838,
+    488,
+    12,
+    44
+   ],
+   "text": "→",
+   "field": "3-1-矢印4",
+   "status": "参考",
+   "kind": "arrow",
+   "why": "例外表 #1（幅 26.7px／枠 12px）・実機確認"
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    918,
+    480,
+    44,
+    44
+   ],
+   "text": "✕",
+   "field": "3-1-フロー5-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    850,
+    528,
+    180,
+    56
+   ],
+   "text": "絞り込み\n条件が見えにくい",
+   "field": "3-1-フロー5",
+   "kind": "flow",
+   "cls": "input",
+   "height": 51.52,
+   "cap": 56.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1038,
+    488,
+    12,
+    44
+   ],
+   "text": "→",
+   "field": "3-1-矢印5",
+   "status": "参考",
+   "kind": "arrow",
+   "why": "例外表 #1（幅 26.7px／枠 12px）・実機確認"
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1118,
+    480,
+    44,
+    44
+   ],
+   "text": "✕",
+   "field": "3-1-フロー6-記号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 28.8,
+   "cap": 44.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1050,
+    528,
+    180,
+    56
+   ],
+   "text": "購入判断\n配送条件が不明",
+   "field": "3-1-フロー6",
+   "kind": "flow",
+   "cls": "input",
+   "height": 51.52,
+   "cap": 56.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    40,
+    594,
+    110,
+    62
+   ],
+   "text": "改善方向",
+   "field": "3-1-改善方向ラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    190,
+    594,
+    1050,
+    62
+   ],
+   "text": "トップの訴求を1件に絞って明示ボタンで商品詳細へ導き、一覧では配送・返品の要点と主要な絞り込みを見せて購入前の迷いを減らすべきだ。",
+   "field": "3-1-改善方向",
+   "kind": "multi",
+   "cls": "input",
+   "height": 60.48,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI/UX診断 by GPTs",
+   "field": "3-1-フッター",
+   "status": "NG",
+   "kind": "footer",
+   "why": "フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）"
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 1,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "1 / 3",
+   "field": "3-1-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    20,
+    1140,
+    34
+   ],
+   "text": "【3】ビジュアル診断ボード",
+   "field": "3-2-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    60,
+    58,
+    1140,
+    22
+   ],
+   "text": "スコア視覚化：10項目評価と強み・最優先課題の俯瞰",
+   "field": "3-2-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    58,
+    98,
+    265,
+    50
+   ],
+   "text": "目的\n購入CVを増やす",
+   "field": "3-2-目的",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    361,
+    98,
+    265,
+    50
+   ],
+   "text": "対象\nトップと商品一覧",
+   "field": "3-2-対象",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    664,
+    98,
+    265,
+    50
+   ],
+   "text": "診断日\n2026年10月22日",
+   "field": "3-2-診断日",
+   "kind": "card",
+   "cls": "input",
+   "height": 47.04,
+   "cap": 50.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    967,
+    98,
+    265,
+    50
+   ],
+   "text": "総合スコア\n35  / 50    B",
+   "field": "3-2-総合スコア",
+   "kind": "card",
+   "cls": "fixed",
+   "height": 64.0,
+   "cap": 50.0,
+   "notes": [
+    "大きさ混在"
+   ],
+   "status": "要実機確認",
+   "why": "固定カード／高さ推定64.0px・枠50px／高さ判定は限定例外（判定118）／Windows PowerPoint未確認",
+   "height_ng": true,
+   "exception": "固定カード"
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    158,
+    548,
+    28
+   ],
+   "text": "◤ 10項目スコア（満点5・ギャップ可視化）",
+   "field": "3-2-スコア見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    200,
+    180,
+    22
+   ],
+   "text": "ファーストビュー",
+   "field": "3-2-項目1",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    200,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点1",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    240,
+    180,
+    22
+   ],
+   "text": "キャッチコピー",
+   "field": "3-2-項目2",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    240,
+    62,
+    22
+   ],
+   "text": "4/5",
+   "field": "3-2-点2",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    280,
+    180,
+    22
+   ],
+   "text": "CTA設計",
+   "field": "3-2-項目3",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    280,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点3",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    320,
+    180,
+    22
+   ],
+   "text": "信頼性・権威性",
+   "field": "3-2-項目4",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    320,
+    62,
+    22
+   ],
+   "text": "4/5",
+   "field": "3-2-点4",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    360,
+    180,
+    22
+   ],
+   "text": "フォーム設計",
+   "field": "3-2-項目5",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    360,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点5",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    400,
+    180,
+    22
+   ],
+   "text": "レスポンシブ",
+   "field": "3-2-項目6",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    400,
+    62,
+    22
+   ],
+   "text": "4/5",
+   "field": "3-2-点6",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    440,
+    180,
+    22
+   ],
+   "text": "読みやすさ",
+   "field": "3-2-項目7",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    440,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点7",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    480,
+    180,
+    22
+   ],
+   "text": "情報設計",
+   "field": "3-2-項目8",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    480,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点8",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    520,
+    180,
+    22
+   ],
+   "text": "ブランド一貫性",
+   "field": "3-2-項目9",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    520,
+    62,
+    22
+   ],
+   "text": "5/5",
+   "field": "3-2-点9",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    56,
+    560,
+    180,
+    22
+   ],
+   "text": "表示速度・技術",
+   "field": "3-2-項目10",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    408,
+    560,
+    62,
+    22
+   ],
+   "text": "3/5",
+   "field": "3-2-点10",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    656,
+    158,
+    568,
+    28
+   ],
+   "text": "◎ 強み（活かすべき点）",
+   "field": "3-2-強み見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    656,
+    194,
+    568,
+    174
+   ],
+   "text": "● 商品ごとに便益と価格を短く添え購買判断を早めている\n● 一覧に評価と件数を出し選ぶ根拠を示している\n● 白基調と簡潔な語調でブランドの統一感を保っている",
+   "field": "3-2-強み",
+   "kind": "multi",
+   "cls": "input",
+   "height": 101.97,
+   "cap": 174.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    656,
+    388,
+    568,
+    28
+   ],
+   "text": "⚠ 最優先で直すべき点",
+   "field": "3-2-課題見出し",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    656,
+    424,
+    568,
+    154
+   ],
+   "text": "1. トップの訴求が多く主役が不明\n2. 明示的な購入導線ボタンが少ない\n3. 一覧に配送・返品情報がない",
+   "field": "3-2-課題",
+   "kind": "multi_line",
+   "cls": "input",
+   "height": 101.97,
+   "cap": 154.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    594,
+    110,
+    62
+   ],
+   "text": "改善方向",
+   "field": "3-2-改善方向ラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    190,
+    594,
+    1050,
+    62
+   ],
+   "text": "トップの訴求を1件に絞って明示ボタンで商品詳細へ導き、一覧では配送・返品の要点と主要な絞り込みを見せて購入前の迷いを減らすべきだ。",
+   "field": "3-2-改善方向",
+   "kind": "multi",
+   "cls": "input",
+   "height": 60.48,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI/UX診断 by GPTs",
+   "field": "3-2-フッター",
+   "status": "NG",
+   "kind": "footer",
+   "why": "フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）"
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 2,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "2 / 3",
+   "field": "3-2-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    20,
+    1140,
+    34
+   ],
+   "text": "【3】ビジュアル診断ボード",
+   "field": "3-3-題名",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 38.4,
+   "cap": 34.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    58,
+    1140,
+    22
+   ],
+   "text": "Before/After ハイライト：優先度の高い改善Top3",
+   "field": "3-3-副題",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    106,
+    32,
+    24
+   ],
+   "text": "1",
+   "field": "3-3-HL1-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    102,
+    106,
+    660,
+    28
+   ],
+   "text": "トップの主役訴求を絞る",
+   "field": "3-3-HL1-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    780,
+    107,
+    70,
+    22
+   ],
+   "text": "高",
+   "field": "3-3-HL1-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    860,
+    107,
+    90,
+    22
+   ],
+   "text": "工数：中",
+   "field": "3-3-HL1-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    960,
+    107,
+    260,
+    22
+   ],
+   "text": "箇所：ファーストビュー",
+   "field": "3-3-HL1-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    152,
+    90,
+    28
+   ],
+   "text": "BEFORE",
+   "field": "3-3-HL1-BEFOREラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    158,
+    152,
+    462,
+    28
+   ],
+   "text": "複数のキャンペーンが同列に並んでいる",
+   "field": "3-3-HL1-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    644,
+    152,
+    90,
+    28
+   ],
+   "text": "AFTER",
+   "field": "3-3-HL1-AFTERラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    742,
+    152,
+    462,
+    28
+   ],
+   "text": "今週の主役1件を大きく見せ他は下段に整理",
+   "field": "3-3-HL1-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    274,
+    32,
+    24
+   ],
+   "text": "2",
+   "field": "3-3-HL2-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    102,
+    274,
+    660,
+    28
+   ],
+   "text": "バナーに明示ボタンを置く",
+   "field": "3-3-HL2-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    780,
+    275,
+    70,
+    22
+   ],
+   "text": "高",
+   "field": "3-3-HL2-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    860,
+    275,
+    90,
+    22
+   ],
+   "text": "工数：小",
+   "field": "3-3-HL2-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    960,
+    275,
+    260,
+    22
+   ],
+   "text": "箇所：キャンペーンバナー",
+   "field": "3-3-HL2-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    320,
+    90,
+    28
+   ],
+   "text": "BEFORE",
+   "field": "3-3-HL2-BEFOREラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    158,
+    320,
+    462,
+    28
+   ],
+   "text": "バナー全体がリンクで明示ボタンが少ない",
+   "field": "3-3-HL2-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    644,
+    320,
+    90,
+    28
+   ],
+   "text": "AFTER",
+   "field": "3-3-HL2-AFTERラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    742,
+    320,
+    462,
+    28
+   ],
+   "text": "各バナーに商品を見るボタンを明示する",
+   "field": "3-3-HL2-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    442,
+    32,
+    24
+   ],
+   "text": "3",
+   "field": "3-3-HL3-番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 25.6,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    102,
+    442,
+    660,
+    28
+   ],
+   "text": "一覧で配送・返品を示す",
+   "field": "3-3-HL3-title",
+   "kind": "line",
+   "cls": "input",
+   "height": 28.8,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    780,
+    443,
+    70,
+    22
+   ],
+   "text": "中",
+   "field": "3-3-HL3-優先度",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    860,
+    443,
+    90,
+    22
+   ],
+   "text": "工数：小",
+   "field": "3-3-HL3-工数",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    960,
+    443,
+    260,
+    22
+   ],
+   "text": "箇所：商品一覧",
+   "field": "3-3-HL3-箇所",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 22.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    60,
+    488,
+    90,
+    28
+   ],
+   "text": "BEFORE",
+   "field": "3-3-HL3-BEFOREラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    158,
+    488,
+    462,
+    28
+   ],
+   "text": "配送・返品の情報が一覧にない",
+   "field": "3-3-HL3-現状",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    644,
+    488,
+    90,
+    28
+   ],
+   "text": "AFTER",
+   "field": "3-3-HL3-AFTERラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    742,
+    488,
+    462,
+    28
+   ],
+   "text": "送料条件と返品方法を一覧上部に1行で示す",
+   "field": "3-3-HL3-改善後",
+   "kind": "line",
+   "cls": "input",
+   "height": 22.4,
+   "cap": 28.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    40,
+    594,
+    110,
+    62
+   ],
+   "text": "改善方向",
+   "field": "3-3-改善方向ラベル",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    190,
+    594,
+    1050,
+    62
+   ],
+   "text": "トップの訴求を1件に絞って明示ボタンで商品詳細へ導き、一覧では配送・返品の要点と主要な絞り込みを見せて購入前の迷いを減らすべきだ。",
+   "field": "3-3-改善方向",
+   "kind": "multi",
+   "cls": "input",
+   "height": 60.48,
+   "cap": 62.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    40,
+    682,
+    400,
+    24
+   ],
+   "text": "UI/UX診断 by GPTs",
+   "field": "3-3-フッター",
+   "status": "NG",
+   "kind": "footer",
+   "why": "フッター：表記の不一致「UI/UX診断 by GPTs」（正：UI診断ディレクター）"
+  },
+  {
+   "file": "03_Visual_Board_uniqlo.pptx",
+   "slide": 3,
+   "box": [
+    1140,
+    685,
+    120,
+    24
+   ],
+   "text": "3 / 3",
+   "field": "3-3-ページ番号",
+   "kind": "line",
+   "cls": "fixed",
+   "height": 22.4,
+   "cap": 24.0,
+   "notes": [],
+   "status": "基準内",
+   "why": ""
+  }
+ ],
+ "extra_ng": [
+  "01_UI_Scorecard_uniqlo.pptx 1枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」",
+  "01_UI_Scorecard_uniqlo.pptx 2枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」",
+  "02_Proposals_uniqlo.pptx 1枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」",
+  "02_Proposals_uniqlo.pptx 2枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」",
+  "03_Visual_Board_uniqlo.pptx 1枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」",
+  "03_Visual_Board_uniqlo.pptx 2枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」",
+  "03_Visual_Board_uniqlo.pptx 3枚目：「by GPTs」を含む枠がある「UI/UX診断 by GPTs」"
+ ]
+}
