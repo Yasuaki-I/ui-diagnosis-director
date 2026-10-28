@@ -1,0 +1,22 @@
+# write5_v4 最初の1件 出力全文｜2026-10-29 AIスライド16往復目｜判定159
+# 実行開始 2026-10-28 01:26:21 UTC
+# コマンド: python3 write5_v4_20261029.py /tmp/stage/handover/director_ruling_20261028_b01.md handover/director_ruling_20261028_b01.md --wait 40
+
+⓪ gsk の版: 1.15.0
+src: /tmp/stage/handover/director_ruling_20261028_b01.md / 10313B / d5d6eb92bcbf
+dst（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261028_b01.md
+① 既存なし（宛先フォルダ 702 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/director_ruling_20261028_b01.md", "item": {"id": "1c3fa75b-3934-4b7a-b3da-4f894d286366", "name": "director_ruling_20261028_b01.md", "path": "/ui-diagnosis-director/handover/director_ruling_20261028_b01.md", "type": "file", "mime_type": "text/markdown", "modi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/director_ruling_20261028_b01.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261028_b01.md
+③ md5 照合: src d5d6eb92bcbf / drive d5d6eb92bcbf（10313B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261028_b01.md
+⑤ 再取得: 10313B / d5d6eb92bcbf → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 703 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+
+# 終了コード: 0
+# 実行終了 2026-10-28 01:27:06 UTC

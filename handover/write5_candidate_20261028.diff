@@ -1,0 +1,67 @@
+--- /tmp/ro/mirror/handover/scripts/write5.py	2026-10-27 00:57:04.825372405 +0000
++++ write5_candidate_20261028.py	2026-10-27 01:03:34.845976210 +0000
+@@ -1,6 +1,6 @@
+ #!/usr/bin/env python3
+ # -*- coding: utf-8 -*-
+-"""write5.py｜5段階書込（必達ルール9）｜改修案（2026-10-16・判定17・25）
++"""write5.py｜5段階書込（必達ルール9）｜改修案（2026-10-16・判定17・25）＋接続確認の追加案（2026-10-28・候補）
+ 
+ 5段階:
+     ① 既存の確認（既定：既存があれば書かずに停止）
+@@ -16,6 +16,12 @@
+       … 上書きは --replace で旧値を明示した場合だけ。旧値が実測と一致したときに限り置き換える（事前照合の組込み）
+ 
+ 終了コード: 0＝全通過／1＝照合不一致／2＝引数誤り／3＝既存ありで停止（書いていない）
++           4＝AIドライブが接続されていないため停止（書いていない）｜2026-10-28 追加案
++
++⓪ 接続確認（2026-10-28 追加案）:
++    /mnt/aidrive が実際にドライブとして接続されていることを、書込の前に確かめる。
++    接続されていないまま書くと、コンピューター内にだけフォルダとファイルができ、
++    ③⑤の照合も同じ場所を見るため「全通過」に見えてしまう（10/28 に確認した危険）。
+ """
+ import hashlib
+ import os
+@@ -24,6 +30,16 @@
+ import time
+ 
+ ROOT = '/mnt/aidrive/ui-diagnosis-director'
++MOUNT = '/mnt/aidrive'
++
++
++def drive_connected():
++    """⓪ /mnt/aidrive が接続済み（マウント）で、プロジェクトの直下が見えるかを返す。"""
++    if not os.path.ismount(MOUNT):
++        return False, '%s が接続（マウント）されていない' % MOUNT
++    if not os.path.isdir(os.path.join(ROOT, 'handover')):
++        return False, '%s/handover が見えない' % ROOT
++    return True, ''
+ 
+ 
+ def md5_of(path):
+@@ -40,6 +56,14 @@
+         return 2
+     src = argv[0]
+     dst = argv[1]
++
++    # ⓪ 接続確認（2026-10-28 追加案）
++    ok0, why = drive_connected()
++    if not ok0:
++        print('⓪ 🛑 AIドライブ未接続 → 書かずに停止: %s' % why)
++        print('   待って再実行してもよいが、直らなければ処理を中断して報告する（引継書 §0-10）')
++        return 4
++    print('⓪ AIドライブ接続 確認 ⭕')
+     if not os.path.isabs(dst):
+         dst = os.path.join(ROOT, dst)
+     wait = 40
+@@ -88,7 +112,10 @@
+             return 3
+         print('① 既存なし')
+ 
+-    # ② 書込
++    # ② 書込（直前にもう一度接続を確かめる）
++    if not drive_connected()[0]:
++        print('② 🛑 書込直前にAIドライブ未接続 → 書かずに停止')
++        return 4
+     os.makedirs(os.path.dirname(dst), exist_ok=True)
+     shutil.copyfile(src, dst)
+     print('② 書込完了')

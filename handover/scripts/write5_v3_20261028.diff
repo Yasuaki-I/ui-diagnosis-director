@@ -1,0 +1,91 @@
+--- /tmp/ro/mirror/handover/scripts/write5.py	2026-10-27 00:57:04.825372405 +0000
++++ write5_v3_20261028.py	2026-10-27 01:20:24.885413482 +0000
+@@ -1,6 +1,6 @@
+ #!/usr/bin/env python3
+ # -*- coding: utf-8 -*-
+-"""write5.py｜5段階書込（必達ルール9）｜改修案（2026-10-16・判定17・25）
++"""write5.py｜5段階書込（必達ルール9）｜改修案（2026-10-16・判定17・25）＋接続確認 v3（2026-10-28・判定139｜接続環境での1件確認までは試用）
+ 
+ 5段階:
+     ① 既存の確認（既定：既存があれば書かずに停止）
+@@ -16,6 +16,14 @@
+       … 上書きは --replace で旧値を明示した場合だけ。旧値が実測と一致したときに限り置き換える（事前照合の組込み）
+ 
+ 終了コード: 0＝全通過／1＝照合不一致／2＝引数誤り／3＝既存ありで停止（書いていない）
++           4＝AIドライブ未接続で停止（⓪②で止まった場合は書いていない／⑤で止まった場合は書込済みの可能性あり）｜2026-10-28
++
++⓪ 接続確認（2026-10-28 追加案）:
++    /mnt/aidrive が実際にドライブとして接続されていることを、書込の前に確かめる。
++    接続されていないまま書くと、コンピューター内にだけフォルダとファイルができ、
++    ③⑤の照合も同じ場所を見るため「全通過」に見えてしまう（10/28 に確認した危険）。
++    接続の確認は ⓪書込前・②書込直前・⑤再読込の直前 の3回行う（判定139-3）。
++    照合した場所の実際のパスを表示する（判定139-3）。
+ """
+ import hashlib
+ import os
+@@ -24,6 +32,16 @@
+ import time
+ 
+ ROOT = '/mnt/aidrive/ui-diagnosis-director'
++MOUNT = '/mnt/aidrive'
++
++
++def drive_connected():
++    """⓪ /mnt/aidrive が接続済み（マウント）で、プロジェクトの直下が見えるかを返す。"""
++    if not os.path.ismount(MOUNT):
++        return False, '%s が接続（マウント）されていない' % MOUNT
++    if not os.path.isdir(os.path.join(ROOT, 'handover')):
++        return False, '%s/handover が見えない' % ROOT
++    return True, ''
+ 
+ 
+ def md5_of(path):
+@@ -40,6 +58,14 @@
+         return 2
+     src = argv[0]
+     dst = argv[1]
++
++    # ⓪ 接続確認（2026-10-28 追加案）
++    ok0, why = drive_connected()
++    if not ok0:
++        print('⓪ 🛑 AIドライブ未接続 → 書かずに停止: %s' % why)
++        print('   待って再実行してもよいが、直らなければ処理を中断して報告する（引継書 §0-10）')
++        return 4
++    print('⓪ AIドライブ接続 確認 ⭕')
+     if not os.path.isabs(dst):
+         dst = os.path.join(ROOT, dst)
+     wait = 40
+@@ -88,7 +114,10 @@
+             return 3
+         print('① 既存なし')
+ 
+-    # ② 書込
++    # ② 書込（直前にもう一度接続を確かめる）
++    if not drive_connected()[0]:
++        print('② 🛑 書込直前にAIドライブ未接続 → 書かずに停止')
++        return 4
+     os.makedirs(os.path.dirname(dst), exist_ok=True)
+     shutil.copyfile(src, dst)
+     print('② 書込完了')
+@@ -96,6 +125,7 @@
+     # ③ md5 照合
+     dst_md5 = md5_of(dst)
+     ok3 = (dst_md5 == src_md5) and (os.path.getsize(dst) == src_size)
++    print('③ 照合した場所の実際のパス: %s' % os.path.realpath(dst))
+     print('③ md5 照合: src %s / dst %s → %s'
+           % (src_md5[:12], dst_md5[:12], '一致 ⭕' if ok3 else '🚨 不一致'))
+     if not ok3:
+@@ -105,7 +135,12 @@
+     print('④ %d 秒待機…' % wait)
+     time.sleep(wait)
+ 
+-    # ⑤ 再読込で確認
++    # ⑤ 再読込で確認（直前にもう一度接続を確かめる｜判定139-3）
++    if not drive_connected()[0]:
++        print('⑤ 🛑 再読込の直前にAIドライブ未接続 → 照合できないため停止（書込済みの可能性あり。'
++              '消失と断定せず、接続が戻ってから確認・報告する）')
++        return 4
++    print('⑤ 照合した場所の実際のパス: %s' % os.path.realpath(dst))
+     if not os.path.isfile(dst):
+         print('⑤ 🚨 待機後に dst が消失')
+         return 1
