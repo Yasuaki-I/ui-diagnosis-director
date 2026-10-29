@@ -1,0 +1,64 @@
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261030/manifest_20261030.tsv / 41679B / 1d43d9c173d8
+dst（AIドライブ）: /ui-diagnosis-director/handover/scripts/manifest_20261030.tsv
+① 既存なし（宛先フォルダ 62 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/scripts/manifest_20261030.tsv", "item": {"tags": [], "id": "e19e14f1-4a09-4bcb-9fdb-9c69ffe99f63", "name": "manifest_20261030.tsv", "path": "/ui-diagnosis-director/handover/scripts/manifest_20261030.tsv", "type": "file", "mime_type": "application/octet-strea）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/scripts/manifest_20261030.tsv
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/scripts/manifest_20261030.tsv
+③ md5 照合: src 1d43d9c173d8 / drive 1d43d9c173d8（41679B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/scripts/manifest_20261030.tsv
+⑤ 再取得: 41679B / 1d43d9c173d8 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 63 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261030/verify_result_63day_20261030.txt / 46621B / 4fadb75a7a9c
+dst（AIドライブ）: /ui-diagnosis-director/handover/verify_result_63day_20261030.txt
+① 既存なし（宛先フォルダ 733 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/verify_result_63day_20261030.txt", "item": {"tags": [], "id": "ad798659-5b8c-4631-a1e1-ce57cddc47ab", "name": "verify_result_63day_20261030.txt", "path": "/ui-diagnosis-director/handover/verify_result_63day_20261030.txt", "type": "file", "mime_type": "text/p）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/verify_result_63day_20261030.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/verify_result_63day_20261030.txt
+③ md5 照合: src 4fadb75a7a9c / drive 4fadb75a7a9c（46621B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/verify_result_63day_20261030.txt
+⑤ 再取得: 46621B / 4fadb75a7a9c → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 734 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261030/root_diff_63day_20261030.txt / 82B / bafe77c290ee
+dst（AIドライブ）: /ui-diagnosis-director/handover/root_diff_63day_20261030.txt
+① 既存なし（宛先フォルダ 734 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/root_diff_63day_20261030.txt", "item": {"tags": [], "id": "f05aa922-439d-4439-8b94-4eb019ecb56d", "name": "root_diff_63day_20261030.txt", "path": "/ui-diagnosis-director/handover/root_diff_63day_20261030.txt", "type": "file", "mime_type": "text/plain", "modi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/root_diff_63day_20261030.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/root_diff_63day_20261030.txt
+③ md5 照合: src bafe77c290ee / drive bafe77c290ee（82B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/root_diff_63day_20261030.txt
+⑤ 再取得: 82B / bafe77c290ee → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 735 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261030/gsk_verify_oneline_63day_20261030.md / 306B / 4897b4f05c27
+dst（AIドライブ）: /ui-diagnosis-director/handover/gsk_verify_oneline_63day_20261030.md
+① 既存なし（宛先フォルダ 735 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/gsk_verify_oneline_63day_20261030.md", "item": {"tags": [], "id": "2b2064ad-7008-430b-9e67-11389d46b894", "name": "gsk_verify_oneline_63day_20261030.md", "path": "/ui-diagnosis-director/handover/gsk_verify_oneline_63day_20261030.md", "type": "file", "mime_ty）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/gsk_verify_oneline_63day_20261030.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/gsk_verify_oneline_63day_20261030.md
+③ md5 照合: src 4897b4f05c27 / drive 4897b4f05c27（306B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/gsk_verify_oneline_63day_20261030.md
+⑤ 再取得: 306B / 4897b4f05c27 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 736 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0
