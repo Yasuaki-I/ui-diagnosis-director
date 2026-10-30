@@ -1,0 +1,8 @@
+{
+ "source": "session transcript ad38e9d4-6235-5ccd-a007-d27c11ef1cbe.jsonl",
+ "tool_use_id": "toolu_01FDhLuApDiRaTEonjb9p48u",
+ "timestamp": "2026-10-30T03:30:18.600Z",
+ "interrupted": false,
+ "exit_status": null,
+ "exit_status_note": "記録に終了コードの項目なし"
+}
