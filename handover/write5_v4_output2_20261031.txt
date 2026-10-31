@@ -1,0 +1,536 @@
+2026-10-30T04:06:29Z
+## #0 mkdir /ui-diagnosis-director/handover/jikki_r6_2_20261031
+{"version":1,"status":"ok","message":"success","data":{"result":"Successfully created directory: /ui-diagnosis-director/handover/jikki_r6_2_20261031"},"session_state":{"aidrive_status":"success","aidrive_action":"mkdir","aidrive_path":"/ui-diagnosis-director/handover/jikki_r6_2_20261031","aidrive_result":{"status":"success","message":"Directory created: /ui-diagnosis-director/handover/jikki_r6_2_20261031","path":"/ui-diagnosis-director/handover/jikki_r6_2_20261031","action_type":"mkdir"}}}
+
+# exit=0 mkdir
+ok Directory listing for /ui-diagnosis-director/handover/jikki_r6_2_20261031: No files found.
+Directory listing for /ui-diagnosis-director/handover: 749 items (20 directories, 729 files).
+['jikki_r6_2_20261031']
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/01_UI_Scorecard_uniqlo_jp.pptx / 33853B / 645049b38083
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/01_UI_Scorecard_uniqlo_jp.pptx
+① 既存なし（宛先フォルダ 0 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/01_UI_Scorecard_uniqlo_jp.pptx", "item": {"tags": [], "id": "856869b3-11a0-4373-9ca2-7916bc498b25", "name": "01_UI_Scorecard_uniqlo_jp.pptx", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/01_UI_Scorecard_uniqlo_jp.pptx", "t）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/01_UI_Scorecard_uniqlo_jp.pptx
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/01_UI_Scorecard_uniqlo_jp.pptx
+③ md5 照合: src 645049b38083 / drive 645049b38083（33853B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/01_UI_Scorecard_uniqlo_jp.pptx
+⑤ 再取得: 33853B / 645049b38083 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 1 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 01_UI_Scorecard_uniqlo_jp.pptx
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/02_Proposals_uniqlo_jp.pptx / 34310B / 004917a94164
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/02_Proposals_uniqlo_jp.pptx
+① 既存なし（宛先フォルダ 1 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/02_Proposals_uniqlo_jp.pptx", "item": {"tags": [], "id": "80dfced0-b122-41a0-b8a9-2c54bf42cd3f", "name": "02_Proposals_uniqlo_jp.pptx", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/02_Proposals_uniqlo_jp.pptx", "type": "fi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/02_Proposals_uniqlo_jp.pptx
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/02_Proposals_uniqlo_jp.pptx
+③ md5 照合: src 004917a94164 / drive 004917a94164（34310B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/02_Proposals_uniqlo_jp.pptx
+⑤ 再取得: 34310B / 004917a94164 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 2 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 02_Proposals_uniqlo_jp.pptx
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/03_Visual_Board_uniqlo_jp.pptx / 40215B / 674a0f99e63f
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/03_Visual_Board_uniqlo_jp.pptx
+① 既存なし（宛先フォルダ 2 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/03_Visual_Board_uniqlo_jp.pptx", "item": {"tags": [], "id": "b147c98e-e487-4dab-80e5-8916781ccf74", "name": "03_Visual_Board_uniqlo_jp.pptx", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/03_Visual_Board_uniqlo_jp.pptx", "t）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/03_Visual_Board_uniqlo_jp.pptx
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/03_Visual_Board_uniqlo_jp.pptx
+③ md5 照合: src 674a0f99e63f / drive 674a0f99e63f（40215B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/03_Visual_Board_uniqlo_jp.pptx
+⑤ 再取得: 40215B / 674a0f99e63f → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 3 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 03_Visual_Board_uniqlo_jp.pptx
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/v6_01-1.png / 135655B / 026fe75c219c
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-1.png
+① 既存なし（宛先フォルダ 3 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-1.png", "item": {"tags": [], "id": "927cc250-4c2c-4f4e-99a0-abb46cb11b7c", "name": "v6_01-1.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-1.png", "type": "file", "mime_type": "image/png", "modified_time": ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-1.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-1.png
+③ md5 照合: src 026fe75c219c / drive 026fe75c219c（135655B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-1.png
+⑤ 再取得: 135655B / 026fe75c219c → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 4 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 v6_01-1.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/v6_01-2.png / 153807B / 6b992cd11325
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-2.png
+① 既存なし（宛先フォルダ 4 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-2.png", "item": {"tags": [], "id": "26020156-5416-4d33-b623-1da9dccf985a", "name": "v6_01-2.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-2.png", "type": "file", "mime_type": "image/png", "modified_time": ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-2.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-2.png
+③ md5 照合: src 6b992cd11325 / drive 6b992cd11325（153807B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_01-2.png
+⑤ 再取得: 153807B / 6b992cd11325 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 5 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 v6_01-2.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/v6_02-1.png / 154637B / 704e7298018b
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-1.png
+① 既存なし（宛先フォルダ 5 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-1.png", "item": {"tags": [], "id": "19b37c54-cf39-4814-b918-6b0b9fb6d876", "name": "v6_02-1.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-1.png", "type": "file", "mime_type": "image/png", "modified_time": ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-1.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-1.png
+③ md5 照合: src 704e7298018b / drive 704e7298018b（154637B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-1.png
+⑤ 再取得: 154637B / 704e7298018b → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 6 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 v6_02-1.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/v6_02-2.png / 142628B / 39a6e472dc66
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-2.png
+① 既存なし（宛先フォルダ 6 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-2.png", "item": {"tags": [], "id": "517b7c62-80cc-47a4-bde5-fad77f7cd560", "name": "v6_02-2.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-2.png", "type": "file", "mime_type": "image/png", "modified_time": ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-2.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-2.png
+③ md5 照合: src 39a6e472dc66 / drive 39a6e472dc66（142628B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_02-2.png
+⑤ 再取得: 142628B / 39a6e472dc66 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 7 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 v6_02-2.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/v6_03-1.png / 221427B / 1049bafda88f
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-1.png
+① 既存なし（宛先フォルダ 7 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-1.png", "item": {"tags": [], "id": "9148649c-a82b-42c5-8d6a-558565746eb0", "name": "v6_03-1.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-1.png", "type": "file", "mime_type": "image/png", "modified_time": ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-1.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-1.png
+③ md5 照合: src 1049bafda88f / drive 1049bafda88f（221427B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-1.png
+⑤ 再取得: 221427B / 1049bafda88f → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 8 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 v6_03-1.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/v6_03-2.png / 170424B / 82a266c6816c
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-2.png
+① 既存なし（宛先フォルダ 8 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-2.png", "item": {"tags": [], "id": "ea3d69b2-ad03-4da9-b217-500ea8726b6e", "name": "v6_03-2.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-2.png", "type": "file", "mime_type": "image/png", "modified_time": ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-2.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-2.png
+③ md5 照合: src 82a266c6816c / drive 82a266c6816c（170424B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-2.png
+⑤ 再取得: 170424B / 82a266c6816c → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 9 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 v6_03-2.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/v6_03-3.png / 148030B / 8ea14c0acbb6
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-3.png
+① 既存なし（宛先フォルダ 9 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-3.png", "item": {"tags": [], "id": "3c35fd0f-9154-4062-bf9e-f362195c351b", "name": "v6_03-3.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-3.png", "type": "file", "mime_type": "image/png", "modified_time": ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-3.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-3.png
+③ md5 照合: src 8ea14c0acbb6 / drive 8ea14c0acbb6（148030B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/v6_03-3.png
+⑤ 再取得: 148030B / 8ea14c0acbb6 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 10 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 v6_03-3.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/input.json.txt / 10024B / 9ad4564ecfa0
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/input.json.txt
+① 既存なし（宛先フォルダ 10 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/input.json.txt", "item": {"tags": [], "id": "41103aed-871f-4e86-9d72-e6fbf3debc58", "name": "input.json.txt", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/input.json.txt", "type": "file", "mime_type": "text/plain", "modifi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/input.json.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/input.json.txt
+③ md5 照合: src 9ad4564ecfa0 / drive 9ad4564ecfa0（10024B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/input.json.txt
+⑤ 再取得: 10024B / 9ad4564ecfa0 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 11 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 input.json.txt
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/check_run_stdout.txt / 3036B / cfa54b32fcdc
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stdout.txt
+① 既存なし（宛先フォルダ 11 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stdout.txt", "item": {"tags": [], "id": "dc374ec8-c754-46f9-a92e-d8147a1fa59d", "name": "check_run_stdout.txt", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stdout.txt", "type": "file", "mime_type": "te）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stdout.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stdout.txt
+③ md5 照合: src cfa54b32fcdc / drive cfa54b32fcdc（3036B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stdout.txt
+⑤ 再取得: 3036B / cfa54b32fcdc → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 12 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 check_run_stdout.txt
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/check_run_stderr.txt / 0B / d41d8cd98f00
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stderr.txt
+① 既存なし（宛先フォルダ 12 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stderr.txt", "item": {"tags": [], "id": "54119560-4dcb-464f-bc8c-f3594812b344", "name": "check_run_stderr.txt", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stderr.txt", "type": "file", "mime_type": "te）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stderr.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stderr.txt
+③ md5 照合: src d41d8cd98f00 / drive d41d8cd98f00（0B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_stderr.txt
+⑤ 再取得: 0B / d41d8cd98f00 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 13 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 check_run_stderr.txt
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/check_run_command.sh / 6728B / 6a4cf73cc1b7
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_command.sh
+① 既存なし（宛先フォルダ 13 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_command.sh", "item": {"tags": [], "id": "527d2c46-1b49-4989-a09a-b840f7e4da91", "name": "check_run_command.sh", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_command.sh", "type": "file", "mime_type": "ap）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_command.sh
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_command.sh
+③ md5 照合: src 6a4cf73cc1b7 / drive 6a4cf73cc1b7（6728B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_command.sh
+⑤ 再取得: 6728B / 6a4cf73cc1b7 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 14 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 check_run_command.sh
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/check_run_meta.json.txt / 279B / 21c455f3e46c
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_meta.json.txt
+① 既存なし（宛先フォルダ 14 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_meta.json.txt", "item": {"tags": [], "id": "8f828edb-90ca-4dd1-9768-2f115e67e9ed", "name": "check_run_meta.json.txt", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_meta.json.txt", "type": "file", "mime_t）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_meta.json.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_meta.json.txt
+③ md5 照合: src 21c455f3e46c / drive 21c455f3e46c（279B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/check_run_meta.json.txt
+⑤ 再取得: 279B / 21c455f3e46c → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 15 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 check_run_meta.json.txt
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_01_step1-1_drive_zip.png / 64444B / 9e7597387e10
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_01_step1-1_drive_zip.png
+① 既存なし（宛先フォルダ 15 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_01_step1-1_drive_zip.png", "item": {"tags": [], "id": "ccf7cfe8-ddd7-4f16-9bc6-6c376c91a317", "name": "screen_01_step1-1_drive_zip.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_01_step1-1_drive_zip.png",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_01_step1-1_drive_zip.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_01_step1-1_drive_zip.png
+③ md5 照合: src 9e7597387e10 / drive 9e7597387e10（64444B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_01_step1-1_drive_zip.png
+⑤ 再取得: 64444B / 9e7597387e10 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 16 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_01_step1-1_drive_zip.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_02_step1_settings.png / 208980B / 555cfcc6e2e4
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_02_step1_settings.png
+① 既存なし（宛先フォルダ 16 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_02_step1_settings.png", "item": {"tags": [], "id": "ed395ad7-e2f6-43c8-ae72-d3a0571dcb66", "name": "screen_02_step1_settings.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_02_step1_settings.png", "type": ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_02_step1_settings.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_02_step1_settings.png
+③ md5 照合: src 555cfcc6e2e4 / drive 555cfcc6e2e4（208980B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_02_step1_settings.png
+⑤ 再取得: 208980B / 555cfcc6e2e4 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 17 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_02_step1_settings.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_03_step2_before_remove.png / 281731B / fd0041541b77
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_03_step2_before_remove.png
+① 既存なし（宛先フォルダ 17 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_03_step2_before_remove.png", "item": {"tags": [], "id": "121dadbd-100e-437d-aa68-f06d3184fd05", "name": "screen_03_step2_before_remove.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_03_step2_before_remove）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_03_step2_before_remove.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_03_step2_before_remove.png
+③ md5 照合: src fd0041541b77 / drive fd0041541b77（281731B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_03_step2_before_remove.png
+⑤ 再取得: 281731B / fd0041541b77 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 18 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_03_step2_before_remove.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_04_step2_after_remove.png / 283420B / a0319c4fc178
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_04_step2_after_remove.png
+① 既存なし（宛先フォルダ 18 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_04_step2_after_remove.png", "item": {"tags": [], "id": "d3286c3a-68ac-4491-8cfe-800af5d39e87", "name": "screen_04_step2_after_remove.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_04_step2_after_remove.pn）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_04_step2_after_remove.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_04_step2_after_remove.png
+③ md5 照合: src a0319c4fc178 / drive a0319c4fc178（283420B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_04_step2_after_remove.png
+⑤ 再取得: 283420B / a0319c4fc178 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 19 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_04_step2_after_remove.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_05_step2_after_install.png / 279310B / 395791769dbe
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_05_step2_after_install.png
+① 既存なし（宛先フォルダ 19 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_05_step2_after_install.png", "item": {"tags": [], "id": "6d6a069a-6852-42ef-a6bb-cd17776f933c", "name": "screen_05_step2_after_install.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_05_step2_after_install）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_05_step2_after_install.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_05_step2_after_install.png
+③ md5 照合: src 395791769dbe / drive 395791769dbe（279310B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_05_step2_after_install.png
+⑤ 再取得: 279310B / 395791769dbe → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 20 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_05_step2_after_install.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_06_step5-6_hearing.png / 159730B / efcb98faad29
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_06_step5-6_hearing.png
+① 既存なし（宛先フォルダ 20 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_06_step5-6_hearing.png", "item": {"tags": [], "id": "1122b570-8c1b-4686-bf71-ad670a0866a8", "name": "screen_06_step5-6_hearing.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_06_step5-6_hearing.png", "type）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_06_step5-6_hearing.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_06_step5-6_hearing.png
+③ md5 照合: src efcb98faad29 / drive efcb98faad29（159730B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_06_step5-6_hearing.png
+⑤ 再取得: 159730B / efcb98faad29 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 21 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_06_step5-6_hearing.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_07_step6_confirmB.png / 146884B / 23681a1227bd
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_07_step6_confirmB.png
+① 既存なし（宛先フォルダ 21 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_07_step6_confirmB.png", "item": {"tags": [], "id": "c20bb0fe-bf54-4de2-b473-0fd04ffa2fcc", "name": "screen_07_step6_confirmB.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_07_step6_confirmB.png", "type": ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_07_step6_confirmB.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_07_step6_confirmB.png
+③ md5 照合: src 23681a1227bd / drive 23681a1227bd（146884B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_07_step6_confirmB.png
+⑤ 再取得: 146884B / 23681a1227bd → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 22 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_07_step6_confirmB.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_08_step7_result.png / 199429B / ad879d607085
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_08_step7_result.png
+① 既存なし（宛先フォルダ 22 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_08_step7_result.png", "item": {"tags": [], "id": "3f1f6a43-1ff3-4f40-a8b9-cb3c48a4ed16", "name": "screen_08_step7_result.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_08_step7_result.png", "type": "file"）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_08_step7_result.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_08_step7_result.png
+③ md5 照合: src ad879d607085 / drive ad879d607085（199429B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_08_step7_result.png
+⑤ 再取得: 199429B / ad879d607085 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 23 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_08_step7_result.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_09_step7_downloads.png / 56553B / 2ce656f21257
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_09_step7_downloads.png
+① 既存なし（宛先フォルダ 23 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_09_step7_downloads.png", "item": {"tags": [], "id": "88a78785-39fa-4a5f-bf03-2b1b724c61af", "name": "screen_09_step7_downloads.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_09_step7_downloads.png", "type）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_09_step7_downloads.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_09_step7_downloads.png
+③ md5 照合: src 2ce656f21257 / drive 2ce656f21257（56553B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_09_step7_downloads.png
+⑤ 再取得: 56553B / 2ce656f21257 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 24 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_09_step7_downloads.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_17_step4_version_check_posthoc.png / 146184B / 133a65315a02
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_17_step4_version_check_posthoc.png
+① 既存なし（宛先フォルダ 24 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_17_step4_version_check_posthoc.png", "item": {"tags": [], "id": "d3285a07-6738-4870-b570-7940f641fab6", "name": "screen_17_step4_version_check_posthoc.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_17_ste）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_17_step4_version_check_posthoc.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_17_step4_version_check_posthoc.png
+③ md5 照合: src 133a65315a02 / drive 133a65315a02（146184B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_17_step4_version_check_posthoc.png
+⑤ 再取得: 146184B / 133a65315a02 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 25 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_17_step4_version_check_posthoc.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_18_step8_reply.png / 193520B / f3bda8688b72
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_18_step8_reply.png
+① 既存なし（宛先フォルダ 25 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_18_step8_reply.png", "item": {"tags": [], "id": "1c6f8572-e8a6-48b0-bcfe-ddb0ac01ca83", "name": "screen_18_step8_reply.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_18_step8_reply.png", "type": "file", "）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_18_step8_reply.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_18_step8_reply.png
+③ md5 照合: src f3bda8688b72 / drive f3bda8688b72（193520B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_18_step8_reply.png
+⑤ 再取得: 193520B / f3bda8688b72 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 26 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_18_step8_reply.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/screen_19_step8_downloads.png / 65594B / 4de2c2ce206d
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_19_step8_downloads.png
+① 既存なし（宛先フォルダ 26 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_19_step8_downloads.png", "item": {"tags": [], "id": "40634fcc-9a3f-4304-8ecc-44cfe4c41313", "name": "screen_19_step8_downloads.png", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_19_step8_downloads.png", "type）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_19_step8_downloads.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_19_step8_downloads.png
+③ md5 照合: src 4de2c2ce206d / drive 4de2c2ce206d（65594B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/screen_19_step8_downloads.png
+⑤ 再取得: 65594B / 4de2c2ce206d → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 27 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 screen_19_step8_downloads.png
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/r6_2_jikki_report_20261031_draft.md / 5489B / beecc26e246b
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031_draft.md
+① 既存なし（宛先フォルダ 27 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031_draft.md", "item": {"tags": [], "id": "aa3e6124-d8d0-456f-9ff4-4f50caadf767", "name": "r6_2_jikki_report_20261031_draft.md", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_2026103）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031_draft.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031_draft.md
+③ md5 照合: src beecc26e246b / drive beecc26e246b（5489B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031_draft.md
+⑤ 再取得: 5489B / beecc26e246b → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 28 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 r6_2_jikki_report_20261031_draft.md
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/stage_jikki_r6_2_20261031/r6_2_jikki_report_20261031.md / 5277B / 325c427367a1
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031.md
+① 既存なし（宛先フォルダ 28 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031.md", "item": {"tags": [], "id": "5c8cb5da-64c2-4067-ad64-181bbd36ff39", "name": "r6_2_jikki_report_20261031.md", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031.md", "type）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031.md
+③ md5 照合: src 325c427367a1 / drive 325c427367a1（5277B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261031/r6_2_jikki_report_20261031.md
+⑤ 再取得: 5277B / 325c427367a1 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 29 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 r6_2_jikki_report_20261031.md
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/write5_v4_output_20261031.txt / 7493B / f24b824eacb2
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output_20261031.txt
+① 既存なし（宛先フォルダ 749 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output_20261031.txt", "item": {"tags": [], "id": "36517365-ff05-4064-8cba-14e2845021af", "name": "write5_v4_output_20261031.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output_20261031.txt", "type": "file", "mime_type": "text/plain", "m）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output_20261031.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output_20261031.txt
+③ md5 照合: src f24b824eacb2 / drive f24b824eacb2（7493B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output_20261031.txt
+⑤ 再取得: 7493B / f24b824eacb2 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 750 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 write5_v4_output_20261031.txt
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/director_ruling_20261031_b02.md / 4279B / 1b8962e55f27
+dst（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261031_b02.md
+① 既存なし（宛先フォルダ 750 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/director_ruling_20261031_b02.md", "item": {"tags": [], "id": "8af0982e-5b4a-4905-b4d5-65b519b7221f", "name": "director_ruling_20261031_b02.md", "path": "/ui-diagnosis-director/handover/director_ruling_20261031_b02.md", "type": "file", "mime_type": "text/mark）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/director_ruling_20261031_b02.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261031_b02.md
+③ md5 照合: src 1b8962e55f27 / drive 1b8962e55f27（4279B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261031_b02.md
+⑤ 再取得: 4279B / 1b8962e55f27 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 751 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 director_ruling_20261031_b02.md
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/director_ruling_20261031_b03.md / 3254B / 550646f40912
+dst（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261031_b03.md
+① 既存なし（宛先フォルダ 751 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/director_ruling_20261031_b03.md", "item": {"tags": [], "id": "92cac3d8-1b03-4952-9580-1fa3e05e883d", "name": "director_ruling_20261031_b03.md", "path": "/ui-diagnosis-director/handover/director_ruling_20261031_b03.md", "type": "file", "mime_type": "text/mark）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/director_ruling_20261031_b03.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261031_b03.md
+③ md5 照合: src 550646f40912 / drive 550646f40912（3254B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261031_b03.md
+⑤ 再取得: 3254B / 550646f40912 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 752 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 director_ruling_20261031_b03.md
+⓪ gsk の版: 1.15.0
+src: /home/user/workspace/slides/scratch/20261031/director_ruling_20261031_b04.md / 9503B / e95674927683
+dst（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261031_b04.md
+① 既存なし（宛先フォルダ 752 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/director_ruling_20261031_b04.md", "item": {"tags": [], "id": "3054653c-6704-42ff-b319-77d97b4ba9c9", "name": "director_ruling_20261031_b04.md", "path": "/ui-diagnosis-director/handover/director_ruling_20261031_b04.md", "type": "file", "mime_type": "text/mark）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/director_ruling_20261031_b04.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261031_b04.md
+③ md5 照合: src e95674927683 / drive e95674927683（9503B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261031_b04.md
+⑤ 再取得: 9503B / e95674927683 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 753 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+# exit=0 director_ruling_20261031_b04.md
