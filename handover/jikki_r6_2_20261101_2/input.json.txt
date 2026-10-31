@@ -1,0 +1,349 @@
+{
+ "site_slug": "uniqlo_jp",
+ "record": {
+  "service_name_official": "ユニクロ公式オンラインストア",
+  "target_url": "https://www.uniqlo.com/jp/ja/",
+  "input_origin": "url"
+ },
+ "diagnosis": {
+  "service_name": "ユニクロ公式オンライン",
+  "input_type": "URL / EC",
+  "total_score": 34,
+  "rank": "B",
+  "rank_label": "標準的",
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 3,
+    "max": 5,
+    "comment": "期間告知は目立つが商品と価格の入口がない"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 3,
+    "max": 5,
+    "comment": "満載号の訴求は汎用的で選ぶ理由が弱い"
+   },
+   {
+    "category": "CTA設計",
+    "score": 3,
+    "max": 5,
+    "comment": "詳細のカート投入は明快だがトップに誘導ボタンが少ない"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 4,
+    "max": 5,
+    "comment": "レビュー数や店舗受取の送料無料で安心できる"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 3,
+    "max": 5,
+    "comment": "購入欄は簡潔だが案内が価格に重なる。決済は未確認"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 3,
+    "max": 5,
+    "comment": "スマホはアプリ帯と見出しで上部が狭くなる"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 3,
+    "max": 5,
+    "comment": "明るい写真上の白文字が読みにくい箇所がある"
+   },
+   {
+    "category": "情報設計",
+    "score": 4,
+    "max": 5,
+    "comment": "性別ナビとカテゴリのアイコンで探しやすい"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 5,
+    "max": 5,
+    "comment": "赤白のロゴと余白の多い構成が全体でそろう"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 3,
+    "max": 5,
+    "comment": "スクロール後に読込中の灰色枠が続く"
+   }
+  ],
+  "strengths": [
+   "赤白のロゴと余白で一目でユニクロと分かる",
+   "性別とカテゴリのアイコンで商品へ迷わず進める",
+   "レビュー数と店舗受取の送料無料で安心させる"
+  ],
+  "priority_issues": [
+   "FVに商品と購入への入口がない",
+   "写真上の白文字が読みにくい",
+   "読込中の灰色枠が回遊を妨げる"
+  ],
+  "conclusion": "FVの商品入口と商品枠の読込速度を整えれば、トップから商品詳細への到達率を高められる。"
+ },
+ "proposals": {
+  "service_name": "ユニクロ公式オンライン",
+  "proposals": [
+   {
+    "no": 1,
+    "title": "FVに注目商品と価格の入口を置く",
+    "priority": "高",
+    "effort": "小",
+    "target_area": "ファーストビュー",
+    "issue": "来訪直後に買いたい商品へ進めない",
+    "before": "写真と期間告知だけで商品の入口がない",
+    "after": "注目商品3点と価格・一覧ボタンを置く",
+    "target_score_item": "ファーストビュー"
+   },
+   {
+    "no": 2,
+    "title": "商品枠を先に読み込んで待ちを減らす",
+    "priority": "高",
+    "effort": "中",
+    "target_area": "トップの商品枠",
+    "issue": "商品が出る前に離脱しやすい",
+    "before": "スクロール後に灰色の枠が続く",
+    "after": "先頭の商品を先に読み込み枠を減らす",
+    "target_score_item": "表示速度・技術"
+   },
+   {
+    "no": 3,
+    "title": "写真上の文字に下地を敷く",
+    "priority": "中",
+    "effort": "小",
+    "target_area": "特集の見出し",
+    "issue": "訴求文が写真に埋もれて読めない",
+    "before": "明るい写真に白文字を直接置く",
+    "after": "文字の下に暗い帯を敷き読みやすくする",
+    "target_score_item": "読みやすさ"
+   },
+   {
+    "no": 4,
+    "title": "価格に重なる案内表示を移す",
+    "priority": "中",
+    "effort": "小",
+    "target_area": "サイズ選択欄",
+    "issue": "価格とレビューが案内で隠れる",
+    "before": "案内の吹き出しが価格に重なる",
+    "after": "案内をサイズ欄の下に小さく置く",
+    "target_score_item": "フォーム設計"
+   },
+   {
+    "no": 5,
+    "title": "スマホ上部のアプリ帯を小さくする",
+    "priority": "低",
+    "effort": "小",
+    "target_area": "スマホ上部",
+    "issue": "最初の画面で商品が見える範囲が狭い",
+    "before": "アプリ帯と見出しで画面上部が埋まる",
+    "after": "アプリ帯を初回だけ画面下部に出す",
+    "target_score_item": "レスポンシブ"
+   }
+  ],
+  "summary": "最優先の一手：FVに注目商品と価格の入口を置き、続く商品枠を先に読み込んで待ち時間を減らす。"
+ },
+ "visual_data": {
+  "service_name": "ユニクロ公式オンライン",
+  "input_type": "URL / EC",
+  "total_score": 34,
+  "rank": "B",
+  "rank_label": "標準的",
+  "purpose": "EC購入CVを増やす",
+  "target": "トップと商品詳細",
+  "diagnosis_date": "2026年10月31日",
+  "summary": "FVに商品の入口を置き購入へ",
+  "top_issue": "FVに商品と購入への入口がない",
+  "direction": "FVに注目商品と価格の入口を置き、商品枠の読込を速め、写真上の文字を読みやすくすれば、購入までの回遊が途切れにくくなる。",
+  "sections": [
+   {
+    "no": 1,
+    "label": "ヘッダー",
+    "desc": "検索とカートが明確",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 2,
+    "label": "ファーストビュー",
+    "desc": "商品の入口がない",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 3,
+    "label": "カテゴリ",
+    "desc": "アイコンで探しやすい",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 4,
+    "label": "特集",
+    "desc": "白文字が読みにくい",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 5,
+    "label": "商品一覧",
+    "desc": "灰色枠が続く",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 6,
+    "label": "商品詳細",
+    "desc": "案内が価格に重なる",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 7,
+    "label": "フッター",
+    "desc": "返品案内がそろう",
+    "has_issue": false,
+    "status": "good"
+   }
+  ],
+  "flow_steps": [
+   {
+    "label": "流入",
+    "status": "✓",
+    "note": "検索から到達"
+   },
+   {
+    "label": "FV閲覧",
+    "status": "✕",
+    "note": "商品の入口がない"
+   },
+   {
+    "label": "カテゴリ",
+    "status": "✓",
+    "note": "アイコンで選べる"
+   },
+   {
+    "label": "商品一覧",
+    "status": "✕",
+    "note": "灰色枠で待つ"
+   },
+   {
+    "label": "商品詳細",
+    "status": "✓",
+    "note": "サイズが選べる"
+   },
+   {
+    "label": "カート投入",
+    "status": "✓",
+    "note": "ボタンが目立つ"
+   }
+  ],
+  "flow_summary": "FVと商品一覧の読込で回遊が止まりやすい",
+  "highlights": [
+   {
+    "title": "FVに商品の入口を置く",
+    "target_area": "ファーストビュー",
+    "priority": "高",
+    "effort": "小",
+    "before": "写真と期間告知だけで商品の入口がない",
+    "after": "注目商品3点と価格・一覧ボタンを置く"
+   },
+   {
+    "title": "商品枠の待ちを減らす",
+    "target_area": "トップの商品枠",
+    "priority": "高",
+    "effort": "中",
+    "before": "スクロール後に灰色の枠が続く",
+    "after": "先頭の商品を先に読み込み枠を減らす"
+   },
+   {
+    "title": "写真上の文字に下地",
+    "target_area": "特集の見出し",
+    "priority": "中",
+    "effort": "小",
+    "before": "明るい写真に白文字を直接置く",
+    "after": "文字の下に暗い帯を敷き読みやすくする"
+   }
+  ],
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 3,
+    "max": 5,
+    "comment": "期間告知は目立つが商品と価格の入口がない"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 3,
+    "max": 5,
+    "comment": "満載号の訴求は汎用的で選ぶ理由が弱い"
+   },
+   {
+    "category": "CTA設計",
+    "score": 3,
+    "max": 5,
+    "comment": "詳細のカート投入は明快だがトップに誘導ボタンが少ない"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 4,
+    "max": 5,
+    "comment": "レビュー数や店舗受取の送料無料で安心できる"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 3,
+    "max": 5,
+    "comment": "購入欄は簡潔だが案内が価格に重なる。決済は未確認"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 3,
+    "max": 5,
+    "comment": "スマホはアプリ帯と見出しで上部が狭くなる"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 3,
+    "max": 5,
+    "comment": "明るい写真上の白文字が読みにくい箇所がある"
+   },
+   {
+    "category": "情報設計",
+    "score": 4,
+    "max": 5,
+    "comment": "性別ナビとカテゴリのアイコンで探しやすい"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 5,
+    "max": 5,
+    "comment": "赤白のロゴと余白の多い構成が全体でそろう"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 3,
+    "max": 5,
+    "comment": "スクロール後に読込中の灰色枠が続く"
+   }
+  ],
+  "strengths": [
+   "赤白のロゴと余白で一目でユニクロと分かる",
+   "性別とカテゴリのアイコンで商品へ迷わず進める",
+   "レビュー数と店舗受取の送料無料で安心させる"
+  ],
+  "priority_issues": [
+   "FVに商品と購入への入口がない",
+   "写真上の白文字が読みにくい",
+   "読込中の灰色枠が回遊を妨げる"
+  ],
+  "top_issues": [
+   "FVに商品と購入への入口がない",
+   "写真上の白文字が読みにくい",
+   "読込中の灰色枠が回遊を妨げる"
+  ]
+ }
+}
