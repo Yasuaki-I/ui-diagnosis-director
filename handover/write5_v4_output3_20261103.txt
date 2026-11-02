@@ -1,0 +1,52 @@
+=== #1 handover/write5_v4_output2_20261103.txt 2026-11-01T23:25:17Z
+⓪ gsk の版: 1.15.3
+src: write5_v4_output2_20261103.txt / 7767B / 336b6cd68c23
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261103.txt
+① 既存なし（宛先フォルダ 783 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output2_20261103.txt", "item": {"tags": [], "id": "65ce46bb-3622-4814-b38a-ca13a247b739", "name": "write5_v4_output2_20261103.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output2_20261103.txt", "type": "file", "mime_type": "text/plain",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output2_20261103.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261103.txt
+③ md5 照合: src 336b6cd68c23 / drive 336b6cd68c23（7767B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261103.txt
+⑤ 再取得: 7767B / 336b6cd68c23 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 784 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #1 exit=0
+=== #2 handover/director_ruling_20261103_b16.md 2026-11-01T23:26:01Z
+⓪ gsk の版: 1.15.3
+src: handover/director_ruling_20261103_b16.md / 12992B / 7e9c1e1996bc
+dst（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261103_b16.md
+① 既存なし（宛先フォルダ 784 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/director_ruling_20261103_b16.md", "item": {"tags": [], "id": "0c8d82f1-6f5c-4ef4-bf43-03da8c840547", "name": "director_ruling_20261103_b16.md", "path": "/ui-diagnosis-director/handover/director_ruling_20261103_b16.md", "type": "file", "mime_type": "text/mark）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/director_ruling_20261103_b16.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261103_b16.md
+③ md5 照合: src 7e9c1e1996bc / drive 7e9c1e1996bc（12992B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/director_ruling_20261103_b16.md
+⑤ 再取得: 12992B / 7e9c1e1996bc → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 785 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #2 exit=0
+=== #3 handover/jikki_r6_2_20261102_3/r6_2_jikki3_report_20261102.md 2026-11-01T23:26:44Z
+⓪ gsk の版: 1.15.3
+src: jikki_r6_2_20261102_3/r6_2_jikki3_report_20261102.md / 13399B / d001b970d131
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261102_3/r6_2_jikki3_report_20261102.md
+① 既存なし（宛先フォルダ 23 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261102_3/r6_2_jikki3_report_20261102.md", "item": {"tags": [], "id": "8d101fc5-0d4f-46e5-982d-8ce3d53ff190", "name": "r6_2_jikki3_report_20261102.md", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261102_3/r6_2_jikki3_report_20261102.md"）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261102_3/r6_2_jikki3_report_20261102.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261102_3/r6_2_jikki3_report_20261102.md
+③ md5 照合: src d001b970d131 / drive d001b970d131（13399B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261102_3/r6_2_jikki3_report_20261102.md
+⑤ 再取得: 13399B / d001b970d131 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 24 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #3 exit=0
+ALL DONE 2026-11-01T23:27:28Z

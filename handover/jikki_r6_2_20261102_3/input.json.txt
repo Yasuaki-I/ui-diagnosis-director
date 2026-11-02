@@ -1,0 +1,349 @@
+{
+ "site_slug": "psfa",
+ "record": {
+  "service_name_official": "P.S.FA（パーフェクトスーツファクトリー）公式オンラインストア",
+  "target_url": "https://perfect-s.com/",
+  "input_origin": "url"
+ },
+ "diagnosis": {
+  "service_name": "P.S.FA公式通販",
+  "input_type": "URL / EC",
+  "total_score": 30,
+  "rank": "B",
+  "rank_label": "標準的",
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 3,
+    "max": 5,
+    "comment": "キャンペーン8枚の切替で選ぶ理由が伝わりにくい"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 3,
+    "max": 5,
+    "comment": "公式通販と価格訴求は明快だが差別化が弱い"
+   },
+   {
+    "category": "CTA設計",
+    "score": 2,
+    "max": 5,
+    "comment": "シーン選択の遷移先が同じ一覧で文言も汎用的"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 2,
+    "max": 5,
+    "comment": "レビュー欄が空で商品ページにも件数がない"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 4,
+    "max": 5,
+    "comment": "体型と号数のサイズ表とガイド導線がある"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 3,
+    "max": 5,
+    "comment": "viewport設定あり・固定CTAは実機確認が必要"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 3,
+    "max": 5,
+    "comment": "商品ページの情報量が多く要点が埋もれやすい"
+   },
+   {
+    "category": "情報設計",
+    "score": 4,
+    "max": 5,
+    "comment": "送料・返品・補正・ポイントの特長を明示"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 3,
+    "max": 5,
+    "comment": "語調は統一されているがセール訴求が前面"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 3,
+    "max": 5,
+    "comment": "遅延読込を採用しているが画像点数が多い"
+   }
+  ],
+  "strengths": [
+   "送料・返品・補正の条件を示し不安を減らしている",
+   "元価格と割引率を併記しお得感を伝えている",
+   "体型別のサイズ表でサイズ選びを支えている"
+  ],
+  "priority_issues": [
+   "トップのレビュー欄が空のまま",
+   "シーン選択の遷移先が同じ",
+   "商品ページに評価件数がない"
+  ],
+  "conclusion": "レビューの可視化とシーン別の導線整備を優先すれば、若手社会人の購入率向上が見込める。"
+ },
+ "proposals": {
+  "service_name": "P.S.FA公式通販",
+  "proposals": [
+   {
+    "no": 1,
+    "title": "トップのレビュー欄に評価を表示する",
+    "priority": "高",
+    "effort": "小",
+    "target_area": "レビュー欄",
+    "issue": "見出しだけで中身が表示されない",
+    "before": "見出しのみで中身が表示されない",
+    "after": "星評価と購入者の声を3件表示する",
+    "target_score_item": "信頼性・権威性"
+   },
+   {
+    "no": 2,
+    "title": "シーン別に遷移先を分ける",
+    "priority": "高",
+    "effort": "中",
+    "target_area": "シーン選択",
+    "issue": "目的別に商品を絞り込めない",
+    "before": "ビジネスもカジュアルも同じ一覧へ",
+    "after": "シーンごとの絞り込み一覧へ遷移する",
+    "target_score_item": "CTA設計"
+   },
+   {
+    "no": 3,
+    "title": "商品ページに評価件数を出す",
+    "priority": "中",
+    "effort": "中",
+    "target_area": "商品詳細",
+    "issue": "購入前に他者の評価が見えない",
+    "before": "レビューはリンクのみで件数がない",
+    "after": "商品名の下に星評価と件数を表示する",
+    "target_score_item": "信頼性・権威性"
+   },
+   {
+    "no": 4,
+    "title": "FVの先頭に選ぶ理由を示す",
+    "priority": "中",
+    "effort": "小",
+    "target_area": "メインバナー",
+    "issue": "セール以外の強みが伝わらない",
+    "before": "セール訴求のバナーが8枚切り替わる",
+    "after": "先頭に価格と機能の強みを示す1枚を置く",
+    "target_score_item": "ファーストビュー"
+   },
+   {
+    "no": 5,
+    "title": "関連商品の表示数を絞る",
+    "priority": "低",
+    "effort": "中",
+    "target_area": "関連商品",
+    "issue": "情報量が多く要点が埋もれる",
+    "before": "ランキングとおすすめを多数表示",
+    "after": "関連商品を4〜6件に絞って表示する",
+    "target_score_item": "読みやすさ"
+   }
+  ],
+  "summary": "最優先の一手：トップと商品詳細にレビューと評価件数を表示し、購入前の判断材料を補うべきだ。"
+ },
+ "visual_data": {
+  "service_name": "P.S.FA公式通販",
+  "input_type": "URL / EC",
+  "total_score": 30,
+  "rank": "B",
+  "rank_label": "標準的",
+  "purpose": "購入CVを増やす",
+  "target": "トップと商品詳細",
+  "diagnosis_date": "2026年11月1日",
+  "summary": "評価の可視化で購入の後押しを",
+  "top_issue": "トップのレビュー欄が空のまま",
+  "direction": "レビューと評価件数を表示して購入前の不安を減らし、シーン別の遷移先で目的の商品まで迷わず進めるようにすべきだ。",
+  "sections": [
+   {
+    "no": 1,
+    "label": "ヘッダー",
+    "desc": "カテゴリと検索あり",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 2,
+    "label": "メインバナー",
+    "desc": "セール訴求が中心",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 3,
+    "label": "シーン選択",
+    "desc": "遷移先が同一",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 4,
+    "label": "特集・新商品",
+    "desc": "商品が豊富",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 5,
+    "label": "レビュー",
+    "desc": "中身が空",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 6,
+    "label": "ランキング",
+    "desc": "割引率を併記",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 7,
+    "label": "ストアの特長",
+    "desc": "送料・返品を明示",
+    "has_issue": false,
+    "status": "good"
+   }
+  ],
+  "flow_steps": [
+   {
+    "label": "流入",
+    "status": "✓",
+    "note": "検索や広告から"
+   },
+   {
+    "label": "トップ",
+    "status": "✓",
+    "note": "カテゴリを把握"
+   },
+   {
+    "label": "シーン選択",
+    "status": "✕",
+    "note": "同じ一覧に戻る"
+   },
+   {
+    "label": "商品比較",
+    "status": "✕",
+    "note": "評価が見えない"
+   },
+   {
+    "label": "サイズ選択",
+    "status": "✓",
+    "note": "表とガイドあり"
+   },
+   {
+    "label": "購入完了",
+    "status": "✕",
+    "note": "判断材料が不足"
+   }
+  ],
+  "flow_summary": "シーン選択と評価確認で迷い購入の決め手を欠く",
+  "highlights": [
+   {
+    "title": "レビュー欄に評価を表示",
+    "target_area": "レビュー欄",
+    "priority": "高",
+    "effort": "小",
+    "before": "見出しのみで中身が表示されない",
+    "after": "星評価と購入者の声を3件表示する"
+   },
+   {
+    "title": "シーン別に遷移先を分ける",
+    "target_area": "シーン選択",
+    "priority": "高",
+    "effort": "中",
+    "before": "ビジネスもカジュアルも同じ一覧へ",
+    "after": "シーンごとの絞り込み一覧へ遷移する"
+   },
+   {
+    "title": "商品ページに評価件数を出す",
+    "target_area": "商品詳細",
+    "priority": "中",
+    "effort": "中",
+    "before": "レビューはリンクのみで件数がない",
+    "after": "商品名の下に星評価と件数を表示する"
+   }
+  ],
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 3,
+    "max": 5,
+    "comment": "キャンペーン8枚の切替で選ぶ理由が伝わりにくい"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 3,
+    "max": 5,
+    "comment": "公式通販と価格訴求は明快だが差別化が弱い"
+   },
+   {
+    "category": "CTA設計",
+    "score": 2,
+    "max": 5,
+    "comment": "シーン選択の遷移先が同じ一覧で文言も汎用的"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 2,
+    "max": 5,
+    "comment": "レビュー欄が空で商品ページにも件数がない"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 4,
+    "max": 5,
+    "comment": "体型と号数のサイズ表とガイド導線がある"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 3,
+    "max": 5,
+    "comment": "viewport設定あり・固定CTAは実機確認が必要"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 3,
+    "max": 5,
+    "comment": "商品ページの情報量が多く要点が埋もれやすい"
+   },
+   {
+    "category": "情報設計",
+    "score": 4,
+    "max": 5,
+    "comment": "送料・返品・補正・ポイントの特長を明示"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 3,
+    "max": 5,
+    "comment": "語調は統一されているがセール訴求が前面"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 3,
+    "max": 5,
+    "comment": "遅延読込を採用しているが画像点数が多い"
+   }
+  ],
+  "strengths": [
+   "送料・返品・補正の条件を示し不安を減らしている",
+   "元価格と割引率を併記しお得感を伝えている",
+   "体型別のサイズ表でサイズ選びを支えている"
+  ],
+  "priority_issues": [
+   "トップのレビュー欄が空のまま",
+   "シーン選択の遷移先が同じ",
+   "商品ページに評価件数がない"
+  ],
+  "top_issues": [
+   "トップのレビュー欄が空のまま",
+   "シーン選択の遷移先が同じ",
+   "商品ページに評価件数がない"
+  ]
+ }
+}

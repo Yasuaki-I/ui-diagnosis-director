@@ -1,0 +1,632 @@
+判定   ファイル                                                 実測md5                 実測B  備考
+⭕    gpts-package/03_pptx_builder.py                      47629772eaff       287389  
+⭕    gpts-package/01_Instructions_v3.5_PLAIN_20261007.md  59ebb0757fde        77248  
+⭕    gpts-package/01_Instructions_v3.5.2_lite_20260902.md 61b5f4e7b928        16223  
+⭕    gpts-package/01_Instructions_v3.5_PLAIN_20260925.md  93095a862614        73043  
+⭕    handover/claude_chat_consult_20260925_2items.md      90c8a12e38c4        15160  
+⭕    handover/OPERATIONAL_RULES_MASTER_20260925.md        1818516da60b       119457  
+⭕    handover/01_Instructions_v3.5_PLAIN_20260925.md      93095a862614        73043  
+⭕    /claude_chat_verdict_20260925_restored_by_aislide.md c6b257467995         5148  
+⭕    handover/claude_chat_message_20260925_1800_eod.md    0d9fd34023aa         7234  
+⭕    handover/NEXT_ENV_HANDOVER_20260925_aislide.md       b69c96255d58        16637  
+⭕    handover/NEXT_ENV_HANDOVER_20260925_director.md      56389c6534e1        17010  
+⭕    handover/OPERATIONAL_RULES_MASTER_20260924.md        e026367ca0f3       116146  
+⭕    handover/01_Instructions_v3.5_PLAIN_20260924.md      987b66d80c12        71391  
+⭕    gpts-package/01_Instructions_v3.5_PLAIN_20260924.md  987b66d80c12        71391  
+⭕    handover/NEXT_ENV_HANDOVER_20260924_aislide.md       cd9d3fdfc483        17773  
+⭕    handover/NEXT_ENV_HANDOVER_20260924_director.md      627c29e334f3        15160  
+⭕    handover/v37_candidates_20260914.md                  72caad078558         7827  
+⭕    handover/bottom_margin_watchlist_20260921.md         db7452ea5392        17883  
+⭕    handover/scripts/verify_md5.py                       f9607ba39692         3949  
+⭕    handover/scripts/verify_frozen.py                    a59c8c37c978         2810  
+⭕    handover/scripts/find_prefix.py                      a243bef30733         3513  
+⭕    handover/scripts/verify_render.py                    1cdcdc1f84db        11688  
+⭕    handover/scripts/verify_labels.py                    47683179818c         1828  
+⭕    handover/scripts/SCRIPTS_REGISTRY_20260924.md        51f53fe81d51         8671  
+⭕    hat_verdict_20260919_20260922_restored_by_aislide.md 5dbe68d89b0e        11321  
+⭕    hat_verdict_20260923_20260924_restored_by_aislide.md d05e38b18b6b        14177  
+⭕    handover/claude_chat_message_20260924_1800_eod.md    0f8d970da84d        16542  
+⭕    handover/claude_chat_consult_20260924_3items.md      d3e265a49cf4        15213  
+⭕    handover/03_pptx_builder_v17_213_20260922.py         c11ab9642b8e       278135  
+⭕    handover/claude_chat_message_20260926_1800_eod.md    8dfc50ffb40a         2268  
+⭕    handover/NEXT_ENV_HANDOVER_20260926_aislide.md       791dc3fa76d0        17325  
+⭕    handover/NEXT_ENV_HANDOVER_20260926_director.md      f334c669e8ad        17450  
+⭕    /claude_chat_verdict_20260926_restored_by_aislide.md 474a67c0f294         3515  
+⭕    handover/claude_chat_message_20260927_1800_eod.md    d9630fed9aa8         3754  
+⭕    handover/NEXT_ENV_HANDOVER_20260927_aislide.md       74a428726904        18345  
+⭕    handover/NEXT_ENV_HANDOVER_20260927_director.md      67967f51664c        18778  
+⭕    /claude_chat_verdict_20260927_restored_by_aislide.md 1cd519ba2b64         2549  
+⭕    handover/claude_chat_message_20260928_1800_eod.md    67d5c5762356         2200  
+⭕    handover/NEXT_ENV_HANDOVER_20260928_aislide.md       d5903721b1c7        19686  
+⭕    handover/NEXT_ENV_HANDOVER_20260928_director.md      52ba631ebc94        19692  
+⭕    handover/claude_chat_message_20260929_1800_eod.md    477290987810         3367  
+⭕    handover/claude_chat_message_20260930_1800_eod.md    0ecd628c2402         4096  
+⭕    handover/claude_chat_message_20261001_1800_eod.md    d8a92a9cd3f2         2542  
+⭕    /claude_chat_verdict_20261001_restored_by_aislide.md 5491807584b0         4182  
+⭕    handover/claude_chat_message_20261002_1800_eod.md    720c03f3cc83         2683  
+⭕    handover/claude_chat_message_20261003_1800_eod.md    31594139b7f2         8411  
+⭕    /claude_chat_verdict_20261003_restored_by_aislide.md a4dde8eb0a42        11399  
+⭕    handover/NEXT_ENV_HANDOVER_20261003_aislide.md       c4c25154adee        39737  
+⭕    handover/NEXT_ENV_HANDOVER_20261003_director.md      0c01844959d2        26923  
+⭕    handover/NEXT_ENV_HANDOVER_20261004_director.md      569a26b94d0d         6200  
+⭕    handover/03_pptx_builder_v17_214_20261004.py         ba93847ffc25       280091  
+⭕    handover/03_pptx_builder_v17_214r1_20261004.py       7993adba026c       280392  
+⭕    handover/03_pptx_builder_v17_215_20261004.py         dd22f894a337       283740  
+⭕    handover/03_pptx_builder_v17_216_20261004.py         332199ad7dc2       286637  
+⭕    handover/claude_chat_consult_20261004_v37_3.md       f9d8073e7236         5120  
+⭕    handover/claude_chat_plan_20261004_v37_1.md          7da72e6a3be7         4819  
+⭕    handover/claude_chat_plan_20261004_v37_2.md          c6633951f64e         5251  
+⭕    handover/claude_chat_report_20261004_v17_214.md      a97a3b6cdbf2         3821  
+⭕    handover/claude_chat_report_20261004_v17_214r1.md    5833bc95ccb2         2895  
+⭕    handover/claude_chat_report_20261004_v17_215.md      e3106fea8f2d         3091  
+⭕    handover/claude_chat_report_20261004_v17_216.md      44376070798e         4512  
+⭕    /claude_chat_report_20261004_v17_216_distribution.md 50744fd8b2c2         3605  
+⭕    /claude_chat_verdict_20261004_restored_by_aislide.md b7fb22d730ea         7840  
+⭕    handover/v37/v37_1_render_v17215_20261004.txt        0e08011d4158        12160  
+⭕    over/v37/v37_1_tsv_diff_v17214r1_v17215_20261004.tsv c8aa6a4f4de8         1038  
+⭕    handover/v37/v37_2_render_v17216_20261004.txt        6b8e3d002d48        14729  
+⭕    ndover/v37/v37_2_tsv_diff_v17215_v17216_20261004.tsv 1d4cb1996d6e         1417  
+⭕    handover/v37/v37_3_render_v17214_20261004.txt        4d5c63172b56        10532  
+⭕    handover/v37/v37_3_render_v17214r1_20261004.txt      cdc4a9a4fd78        10532  
+⭕    ndover/v37/v37_3_tsv_diff_v17213_v17214_20261004.tsv c0e19f40554b          894  
+⭕    over/v37/v37_3_tsv_diff_v17213_v17214r1_20261004.tsv c0e19f40554b          894  
+⭕    handover/v37/v37_baseline_render_v17213_20261004.txt aaa58d441d9e        10524  
+⭕    handover/v37/v37_device_check_record_20261004.md     2e3b4ecb958f         2808  
+⭕    handover/v37/v37_device_check_v17216_20261004.pptx   6aab27f4f695        48265  
+⭕    ver/v37/v37_dist_tsv_diff_v17213_v17216_20261004.tsv 64346431c9ca          903  
+⭕    handover/v37/v37_fixtures_20261004.py                10877d91e224         4780  
+⭕    handover/v37/v37_fixtures_20261004b.py               ba5276364c24         5826  
+⭕    handover/v37/v37_fixtures_20261004c.py               dd800ceda271         6936  
+⭕    handover/v37/v37_harness_20261004.py                 7f0bcc84496d         1441  
+⭕    handover/v37/v37_harness_20261004b.py                09f7a6785df8         1442  
+⭕    handover/v37/v37_harness_20261004c.py                ca3b31d468bf         1442  
+⭕    handover/v37/device_check_20261004/slide1.png        e5e4c3ffa0ff        76418  
+⭕    handover/v37/device_check_20261004/slide2.png        fab145e695dd       115873  
+⭕    handover/v37/device_check_20261004/slide3.png        ec6295d4d863       151986  
+⭕    handover/v37/device_check_20261004/slide4.png        36e5058b3ddb       142849  
+⭕    handover/v37/device_check_20261004/slide5.png        7d93f46bc8c5       152892  
+⭕    handover/v37/device_check_20261004/slide6.png        cca43a853653        79920  
+⭕    handover/v37/device_check_20261004/slide7.png        d3f27b9b7810       148149  
+⭕    handover/v37/device_check_20261004/slide8.png        f7d7bc2ab7ef       134113  
+⭕    handover/claude_chat_message_20261004_1800_eod.md    f34481c1098e         3590  
+🚨    handover/claude_chat_consult_20261005_3items.md      -                       -  ファイルが存在しない
+🚨    handover/prep_20261005_for_director_initial_draft.md -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261005_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    /claude_chat_message_20261005_handover_to_aislide.md -                       -  ファイルが存在しない
+🚨    handover/beta2_inventory_20261005.md                 -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261005_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/beta2_inventory_20261006.md                 -                       -  ファイルが存在しない
+🚨    handover/claude_chat_report_20261006_beta2_fact.md   -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261006_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261006_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261006_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/beta2_plan_draft_20261007.md                -                       -  ファイルが存在しない
+🚨    e_chat_message_20261007_initial_drafts_to_aislide.md -                       -  ファイルが存在しない
+🚨    ndover/claude_chat_review_20261007_initial_drafts.md -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261007_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_report_20261007_b3_trial.md     -                       -  ファイルが存在しない
+🚨    handover/plain_rev2_article_draft_20261007.md        -                       -  ファイルが存在しない
+🚨    handover/01_Instructions_v3.5_PLAIN_20261007.md      -                       -  ファイルが存在しない
+🚨    handover/scripts/SCRIPTS_REGISTRY_20261007.md        -                       -  ファイルが存在しない
+🚨    handover/v37_candidates_20261007.md                  -                       -  ファイルが存在しない
+🚨    handover/bottom_margin_watchlist_20261007.md         -                       -  ファイルが存在しない
+🚨    handover/claude_chat_plan_20261007_b3.md             -                       -  ファイルが存在しない
+🚨    handover/beta2_announcement_draft_20261007.md        -                       -  ファイルが存在しない
+🚨    handover/claude_chat_plan_20261007_b3_rev1.md        -                       -  ファイルが存在しない
+🚨    handover/beta2_plan_draft_20261007_rev1.md           -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261007_director.md      -                       -  ファイルが存在しない
+🚨    /claude_chat_message_20261007_handover_to_aislide.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261007_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/manual_draft_20261008.md                    -                       -  ファイルが存在しない
+🚨    ndover/claude_chat_consult_20261008_unknown_files.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_report_20261008_manual_draft.md -                       -  ファイルが存在しない
+🚨    claude_chat_report_20261008_unknown_files_compare.md -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261008_director.md      -                       -  ファイルが存在しない
+🚨    /claude_chat_message_20261008_aislide_to_director.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261008_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/claude_chat_draft_20261007_plain_rev2.md    -                       -  ファイルが存在しない
+🚨    handover/plain_rev2_candidate_20261007.md            -                       -  ファイルが存在しない
+🚨    handover/plain_rev2_draft_20261007.diff              -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261008_to_director.md -                       -  ファイルが存在しない
+🚨    r/scripts/manifest_20261008_unknown_cb121d1772df.tsv -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261008.tsv               -                       -  ファイルが存在しない
+🚨    er/claude_chat_message_20261008_1800_eod_director.md -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261008_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    r/claude_chat_report_20261009_to_director_compare.md -                       -  ファイルが存在しない
+🚨    ver/claude_chat_review_20261009_brain_composition.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_plan_20261009_v17_217.md        -                       -  ファイルが存在しない
+🚨    handover/incident_20261009_unknown_writes.md         -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261009_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    /claude_chat_message_20261009_aislide_to_director.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261009_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261009_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261009_director.md      -                       -  ファイルが存在しない
+🚨    er/claude_chat_message_20261009_1800_eod_director.md -                       -  ファイルが存在しない
+🚨    handover/03_pptx_builder_v17_217_20261009.py         -                       -  ファイルが存在しない
+🚨    handover/claude_chat_report_20261009_r7_trial.md     -                       -  ファイルが存在しない
+🚨    handover/claude_chat_report_20261009_v17_217.md      -                       -  ファイルが存在しない
+🚨    ver/claude_chat_verdict_20261009_1600_b8_director.md -                       -  ファイルが存在しない
+🚨    handover/v37/v17_217_render_20261009.txt             -                       -  ファイルが存在しない
+🚨    handover/v37/v17_216_render_baseline_20261009.txt    -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261009.tsv               -                       -  ファイルが存在しない
+🚨    dover/NEXT_ENV_HANDOVER_20261009_aislide_addendum.md -                       -  ファイルが存在しない
+🚨    handover/03_pptx_builder_v17_217_20261010.py         -                       -  ファイルが存在しない
+🚨    handover/claude_chat_report_20261010_v17_217.md      -                       -  ファイルが存在しない
+🚨    handover/v37/v17_217_render_20261010.txt             -                       -  ファイルが存在しない
+🚨    handover/v37/v17_216_render_baseline_20261010.txt    -                       -  ファイルが存在しない
+🚨    handover/incident_escalation_material_20261010.md    -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261010_1800_eod.md    -                       -  ファイルが存在しない
+🚨    /claude_chat_message_20261010_aislide_to_director.md -                       -  ファイルが存在しない
+🚨    vidence_20261009/03_pptx_builder_v17_217_20261009.py -                       -  ファイルが存在しない
+🚨    nce_20261009/claude_chat_report_20261009_r7_trial.md -                       -  ファイルが存在しない
+🚨    ence_20261009/claude_chat_report_20261009_v17_217.md -                       -  ファイルが存在しない
+🚨    009/claude_chat_verdict_20261009_1600_b8_director.md -                       -  ファイルが存在しない
+🚨    ndover/evidence_20261009/v17_217_render_20261009.txt -                       -  ファイルが存在しない
+🚨    idence_20261009/v17_216_render_baseline_20261009.txt -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261010.tsv               -                       -  ファイルが存在しない
+🚨    handover/manual_rev1_20261011.md                     -                       -  ファイルが存在しない
+🚨    handover/plain_excerpt_purchaser_20261011.md         -                       -  ファイルが存在しない
+🚨    /claude_chat_message_20261011_aislide_to_director.md -                       -  ファイルが存在しない
+🚨    handover/v5_2_public_revision_plan_20261011.md       -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261011_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261011_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/title_proposal_20261011.md                  -                       -  ファイルが存在しない
+🚨    laude_chat_message_20261011_2_aislide_to_director.md -                       -  ファイルが存在しない
+🚨    ce_20261011/claude_chat_message_20261011_1800_eod.md -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261011_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    andover/evidence_20261011/title_proposal_20261011.md -                       -  ファイルが存在しない
+🚨    laude_chat_message_20261011_2_aislide_to_director.md -                       -  ファイルが存在しない
+🚨    handover/evidence_20261011/manifest_20261011.tsv     -                       -  ファイルが存在しない
+🚨    handover/evidence_20261011/vr_app_20261011.md        -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261011.tsv               -                       -  ファイルが存在しない
+🚨    handover/title_proposal_20261012.md                  -                       -  ファイルが存在しない
+🚨    handover/v5_2_public_revision_full_20261012.md       -                       -  ファイルが存在しない
+🚨    handover/v5_2_public_revision_full_20261012.diff     -                       -  ファイルが存在しない
+🚨    handover/claude_chat_report_20261012_v5_2_rev2.md    -                       -  ファイルが存在しない
+🚨    handover/v5_2_public_revision_full_20261012_r1.md    -                       -  ファイルが存在しない
+🚨    handover/prereview_announcement_rev1_20261012.md     -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261012_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261012_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261012.tsv               -                       -  ファイルが存在しない
+🚨    handover/prereview_announcement_rev2_20261013.md     -                       -  ファイルが存在しない
+🚨    handover/reply_templates_prereview_20261013.md       -                       -  ファイルが存在しない
+🚨    dover/claude_chat_report_20261013_reply_templates.md -                       -  ファイルが存在しない
+🚨    handover/genspark_reply_20261013.md                  -                       -  ファイルが存在しない
+🚨    handover/change_history_draft_20261013.md            -                       -  ファイルが存在しない
+🚨    /claude_chat_message_20261013_aislide_to_director.md -                       -  ファイルが存在しない
+🚨    handover/reply_templates_prereview_20261013_r1.md    -                       -  ファイルが存在しない
+🚨    handover/plain_excerpt_purchaser_20261011_r1.md      -                       -  ファイルが存在しない
+🚨    handover/change_history_draft_20261013_r1.md         -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261013_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    /claude_chat_report_20261013_v17_217_distribution.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261013_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261013_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261013_director.md      -                       -  ファイルが存在しない
+🚨    handover/irie_task_manual_20261013.md                -                       -  ファイルが存在しない
+🚨    handover/r7_trial_20261014.md                        -                       -  ファイルが存在しない
+🚨    claude_chat_message_20261014_r7_revision_director.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_verdict_20261014_r7_director.md -                       -  ファイルが存在しない
+🚨    ude_chat_message_20261014_r7_revision_director_r1.md -                       -  ファイルが存在しない
+🚨    handover/rev2_proposal_20261014.md                   -                       -  ファイルが存在しない
+🚨    handover/rev2_proposal_20261014_r1.md                -                       -  ファイルが存在しない
+🚨    handover/rev2_deploy_plan_20261014.md                -                       -  ファイルが存在しない
+🚨    gpts-package/01_Instructions_v3.5_PLAIN_20261014.md  -                       -  ファイルが存在しない
+🚨    handover/01_Instructions_v3.5_PLAIN_20261014.md      -                       -  ファイルが存在しない
+🚨    gpts-package/01_Instructions_v3.5.4_lite_20261014.md -                       -  ファイルが存在しない
+🚨    handover/01_Instructions_v3.5.4_lite_20261014.md     -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261014_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261014_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261014_aislide.md       -                       -  ファイルが存在しない
+🚨    dover/NEXT_ENV_HANDOVER_20261014_aislide_addendum.md -                       -  ファイルが存在しない
+🚨    handover/public_rule_revision_draft_20261015.md      -                       -  ファイルが存在しない
+🚨    handover/v5_2_public_revision_full_20261015_r2.md    -                       -  ファイルが存在しない
+🚨    handover/change_history_draft_20261015_r2.md         -                       -  ファイルが存在しない
+🚨    handover/r2_proposal_20261015.md                     -                       -  ファイルが存在しない
+🚨    handover/irie_task_manual_20261015_r2.md             -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261015_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261015_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261015_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261013.tsv               -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261014.tsv               -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261015.tsv               -                       -  ファイルが存在しない
+🚨    handover/scripts/write5.py                           -                       -  ファイルが存在しない
+🚨    handover/scripts/write5_v1_backup.py                 -                       -  ファイルが存在しない
+🚨    handover/write5_revision_plan_20261016.md            -                       -  ファイルが存在しない
+🚨    handover/write5_candidate_20261016.py                -                       -  ファイルが存在しない
+🚨    handover/public_rules_20261015.md                    -                       -  ファイルが存在しない
+🚨    handover/publish_gate_stop_point_20261016.md         -                       -  ファイルが存在しない
+🚨    /claude_chat_verdict_20261016_restored_by_aislide.md -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261016_1800_eod.md    -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261016_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261016.tsv               -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261016_director.md      -                       -  ファイルが存在しない
+🚨    dover/NEXT_ENV_HANDOVER_20261016_aislide_addendum.md -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261016_newenv_b01.md      -                       -  ファイルが存在しない
+🚨    handover/gate1_test_spec_draft_20261016.md           -                       -  ファイルが存在しない
+🚨    handover/gate1_test_record_20261016.md               -                       -  ファイルが存在しない
+🚨    laude_chat_consult_20261016_gpts_plugin_migration.md -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261016_newenv_b02.md      -                       -  ファイルが存在しない
+🚨    handover/pre_migration_procedure_draft_20261016.md   -                       -  ファイルが存在しない
+🚨    handover/local_launcher_mitigation_draft_20261016.md -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261016_newenv_b03.md      -                       -  ファイルが存在しない
+🚨    andover/pre_migration_procedure_draft_20261016_r1.md -                       -  ファイルが存在しない
+🚨    andover/diagnosis_prompt_purchaser_draft_20261016.md -                       -  ファイルが存在しない
+🚨    over/claude_chat_message_20261016_2100_eod_newenv.md -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261017.tsv               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261018_b04_b05.md         -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261018_b06.md             -                       -  ファイルが存在しない
+🚨    ide_opinion_20261017_irie_relay_verbatim_20261018.md -                       -  ファイルが存在しない
+🚨    handover/aislide_opinion_20261018_delivery_model.md  -                       -  ファイルが存在しない
+🚨    handover/v2_v6_procedure_draft_20261018.md           -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261018/README.md          -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261018/SKILL.md           -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261018/V1_REPORT.md       -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261018/check_output.py    -                       -  ファイルが存在しない
+🚨    ndover/skill_prototype_20261018/references_README.md -                       -  ファイルが存在しない
+🚨    ver/skill_prototype_20261018/sample_input_rankB.json -                       -  ファイルが存在しない
+🚨    pe_20261018/v1_output/01_UI_Scorecard_sample_lp.pptx -                       -  ファイルが存在しない
+🚨    otype_20261018/v1_output/02_Proposals_sample_lp.pptx -                       -  ファイルが存在しない
+🚨    pe_20261018/v1_output/03_Visual_Board_sample_lp.pptx -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261018/v1_run_harness.py  -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261018_eod.md         -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261018.tsv               -                       -  ファイルが存在しない
+🚨    handover/rank_label_finding_20261019.md              -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261019_b07.md             -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261019_eod.md         -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261019.tsv               -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261020/V1_REPORT_r2.md    -                       -  ファイルが存在しない
+🚨    l_prototype_20261020/ui-diagnosis-director/README.md -                       -  ファイルが存在しない
+🚨    ll_prototype_20261020/ui-diagnosis-director/SKILL.md -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankB.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/references/diagram_patterns.md -                       -  ファイルが存在しない
+🚨    -diagnosis-director/references/dialogue_templates.md -                       -  ファイルが存在しない
+🚨    020/ui-diagnosis-director/references/input_schema.md -                       -  ファイルが存在しない
+🚨    20/ui-diagnosis-director/references/scoring_rules.md -                       -  ファイルが存在しない
+🚨    020/ui-diagnosis-director/scripts/03_pptx_builder.py -                       -  ファイルが存在しない
+🚨    261020/ui-diagnosis-director/scripts/check_output.py -                       -  ファイルが存在しない
+🚨    pe_20261020/v1_output/01_UI_Scorecard_sample_lp.pptx -                       -  ファイルが存在しない
+🚨    otype_20261020/v1_output/02_Proposals_sample_lp.pptx -                       -  ファイルが存在しない
+🚨    pe_20261020/v1_output/03_Visual_Board_sample_lp.pptx -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261020/v1_run_harness.py  -                       -  ファイルが存在しない
+🚨    handover/v2_v6_procedure_draft_20261020_r1.md        -                       -  ファイルが存在しない
+🚨    handover/scripts/SCRIPTS_REGISTRY_20261020.md        -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261020_report.md      -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261020_b08.md             -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261020_r3/R3_RECORD.md    -                       -  ファイルが存在しない
+🚨    rototype_20261020_r3/ui-diagnosis-director/README.md -                       -  ファイルが存在しない
+🚨    prototype_20261020_r3/ui-diagnosis-director/SKILL.md -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankB.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/references/diagram_patterns.md -                       -  ファイルが存在しない
+🚨    -diagnosis-director/references/dialogue_templates.md -                       -  ファイルが存在しない
+🚨    _r3/ui-diagnosis-director/references/input_schema.md -                       -  ファイルが存在しない
+🚨    r3/ui-diagnosis-director/references/scoring_rules.md -                       -  ファイルが存在しない
+🚨    _r3/ui-diagnosis-director/scripts/03_pptx_builder.py -                       -  ファイルが存在しない
+🚨    020_r3/ui-diagnosis-director/scripts/check_output.py -                       -  ファイルが存在しない
+🚨    i-diagnosis-director_skill_prototype_r3_20261020.zip -                       -  ファイルが存在しない
+🚨    handover/v2_v6_procedure_20261020_r2.md              -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261020_eod.md         -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261020.tsv               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261020_b09.md             -                       -  ファイルが存在しない
+🚨    handover/irie_slide_review_20261021.md               -                       -  ファイルが存在しない
+🚨    handover/c3_highlights_key_finding_20261021.md       -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261021_b10.md             -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261021_r4/R4_RECORD.md    -                       -  ファイルが存在しない
+🚨    rototype_20261021_r4/ui-diagnosis-director/README.md -                       -  ファイルが存在しない
+🚨    prototype_20261021_r4/ui-diagnosis-director/SKILL.md -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankB.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/references/diagram_patterns.md -                       -  ファイルが存在しない
+🚨    -diagnosis-director/references/dialogue_templates.md -                       -  ファイルが存在しない
+🚨    _r4/ui-diagnosis-director/references/input_schema.md -                       -  ファイルが存在しない
+🚨    r4/ui-diagnosis-director/references/scoring_rules.md -                       -  ファイルが存在しない
+🚨    _r4/ui-diagnosis-director/scripts/03_pptx_builder.py -                       -  ファイルが存在しない
+🚨    021_r4/ui-diagnosis-director/scripts/check_output.py -                       -  ファイルが存在しない
+🚨    i-diagnosis-director_skill_prototype_r4_20261021.zip -                       -  ファイルが存在しない
+🚨    20261021_r4/v1_output/01_UI_Scorecard_sample_lp.pptx -                       -  ファイルが存在しない
+🚨    pe_20261021_r4/v1_output/02_Proposals_sample_lp.pptx -                       -  ファイルが存在しない
+🚨    20261021_r4/v1_output/03_Visual_Board_sample_lp.pptx -                       -  ファイルが存在しない
+🚨    handover/v2_v6_procedure_20261021_r3.md              -                       -  ファイルが存在しない
+🚨    handover/scripts/SCRIPTS_REGISTRY_20261021.md        -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261021_eod.md         -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261021.tsv               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261021_b11.md             -                       -  ファイルが存在しない
+🚨    handover/v2_v6_procedure_20261022_r4_irie_env.md     -                       -  ファイルが存在しない
+🚨    handover/irie_claude_env_record_20261022.md          -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261022_eod.md         -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261022.tsv               -                       -  ファイルが存在しない
+🚨    handover/v2_record_partial_20261023.md               -                       -  ファイルが存在しない
+🚨    handover/skill_rankCD_count_finding_20261023.md      -                       -  ファイルが存在しない
+🚨    handover/claude_chat_consult_20261023_rankCD.md      -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261023_r5/R5_RECORD.md    -                       -  ファイルが存在しない
+🚨    rototype_20261023_r5/ui-diagnosis-director/README.md -                       -  ファイルが存在しない
+🚨    prototype_20261023_r5/ui-diagnosis-director/SKILL.md -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankB.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/references/diagram_patterns.md -                       -  ファイルが存在しない
+🚨    -diagnosis-director/references/dialogue_templates.md -                       -  ファイルが存在しない
+🚨    _r5/ui-diagnosis-director/references/input_schema.md -                       -  ファイルが存在しない
+🚨    r5/ui-diagnosis-director/references/scoring_rules.md -                       -  ファイルが存在しない
+🚨    _r5/ui-diagnosis-director/scripts/03_pptx_builder.py -                       -  ファイルが存在しない
+🚨    023_r5/ui-diagnosis-director/scripts/check_output.py -                       -  ファイルが存在しない
+🚨    i-diagnosis-director_skill_prototype_r5_20261023.zip -                       -  ファイルが存在しない
+🚨    ill_prototype_20261023_r5A_DRAFT/R5A_DRAFT_RECORD.md -                       -  ファイルが存在しない
+🚨    e_20261023_r5A_DRAFT/ui-diagnosis-director/README.md -                       -  ファイルが存在しない
+🚨    pe_20261023_r5A_DRAFT/ui-diagnosis-director/SKILL.md -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankB.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/references/diagram_patterns.md -                       -  ファイルが存在しない
+🚨    -diagnosis-director/references/dialogue_templates.md -                       -  ファイルが存在しない
+🚨    AFT/ui-diagnosis-director/references/input_schema.md -                       -  ファイルが存在しない
+🚨    FT/ui-diagnosis-director/references/scoring_rules.md -                       -  ファイルが存在しない
+🚨    AFT/ui-diagnosis-director/scripts/03_pptx_builder.py -                       -  ファイルが存在しない
+🚨    _DRAFT/ui-diagnosis-director/scripts/check_output.py -                       -  ファイルが存在しない
+🚨    osis-director_skill_prototype_r5A_20261023_DRAFT.zip -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261023_b13.md             -                       -  ファイルが存在しない
+🚨    handover/v2_v6_procedure_20261023_r4b.md             -                       -  ファイルが存在しない
+🚨    handover/scripts/SCRIPTS_REGISTRY_20261023.md        -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261022_b12.md             -                       -  ファイルが存在しない
+🚨    handover/v2_v6_procedure_20261022_r4a_irie_env.md    -                       -  ファイルが存在しない
+🚨    handover/v2_v6_procedure_20261023_r4c.md             -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261023_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/claude_chat_message_20261023_eod.md         -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261023.tsv               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261023_b14.md             -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261023_director.md      -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261024.tsv               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261024_b01.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261024_b02.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261024_b05.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261024_b06.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261024_b07.md             -                       -  ファイルが存在しない
+🚨    /claude_chat_message_20261024_aislide_to_director.md -                       -  ファイルが存在しない
+🚨    handover/r6_design_20261024.md                       -                       -  ファイルが存在しない
+🚨    handover/r6_design_20261024_r1.md                    -                       -  ファイルが存在しない
+🚨    handover/r6_design_20261024_r2.md                    -                       -  ファイルが存在しない
+🚨    handover/v2_v6_record_20261024.md                    -                       -  ファイルが存在しない
+🚨    handover/v2_v6_record_20261024_r1.md                 -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261024_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261025.tsv               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261025_b08.md             -                       -  ファイルが存在しない
+🚨    andover/incident_registry_and_rule_draft_20261025.md -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261025_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261026.tsv               -                       -  ファイルが存在しない
+🚨    handover/incident_registry_20261025.md               -                       -  ファイルが存在しない
+🚨    handover/OPERATIONAL_RULES_MASTER_20261026.md        -                       -  ファイルが存在しない
+🚨    over/r6_wip_20261026/check_output_r6_wip_20261026.py -                       -  ファイルが存在しない
+🚨    er/r6_wip_20261026/check_output_r6_wip_20261026_b.py -                       -  ファイルが存在しない
+🚨    er/r6_wip_20261026/check_output_r6_wip_20261026_c.py -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261026_b09.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261026_b10.md             -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261026_aislide.md       -                       -  ファイルが存在しない
+🚨    61026/wip_c_20261026/ui-diagnosis-director/README.md -                       -  ファイルが存在しない
+🚨    261026/wip_c_20261026/ui-diagnosis-director/SKILL.md -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankB.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankC.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankD.json -                       -  ファイルが存在しない
+🚨    026/ui-diagnosis-director/references/input_schema.md -                       -  ファイルが存在しない
+🚨    26/ui-diagnosis-director/references/scoring_rules.md -                       -  ファイルが存在しない
+🚨    handover/r6_wip_20261026/tests_20261026/boundary.py  -                       -  ファイルが存在しない
+🚨    handover/r6_wip_20261026/tests_20261026/extra.py     -                       -  ファイルが存在しない
+🚨    andover/r6_wip_20261026/tests_20261026/harness_r6.py -                       -  ファイルが存在しない
+🚨    handover/r6_wip_20261026/tests_20261026/r5regress.py -                       -  ファイルが存在しない
+🚨    handover/skill_prototype_20261026_r6/R6_RECORD.md    -                       -  ファイルが存在しない
+🚨    i-diagnosis-director_skill_prototype_r6_20261026.zip -                       -  ファイルが存在しない
+🚨    rototype_20261026_r6/ui-diagnosis-director/README.md -                       -  ファイルが存在しない
+🚨    prototype_20261026_r6/ui-diagnosis-director/SKILL.md -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankB.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankC.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankD.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/references/diagram_patterns.md -                       -  ファイルが存在しない
+🚨    -diagnosis-director/references/dialogue_templates.md -                       -  ファイルが存在しない
+🚨    _r6/ui-diagnosis-director/references/input_schema.md -                       -  ファイルが存在しない
+🚨    r6/ui-diagnosis-director/references/scoring_rules.md -                       -  ファイルが存在しない
+🚨    _r6/ui-diagnosis-director/scripts/03_pptx_builder.py -                       -  ファイルが存在しない
+🚨    026_r6/ui-diagnosis-director/scripts/check_output.py -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261027.tsv               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261027_b11.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261027_b12.md             -                       -  ファイルが存在しない
+🚨    handover/v2_v6_procedure_20261027_r6_2_DRAFT.md      -                       -  ファイルが存在しない
+🚨    andover/skill_prototype_20261027_r6_1/R6_1_RECORD.md -                       -  ファイルが存在しない
+🚨    diagnosis-director_skill_prototype_r6_1_20261027.zip -                       -  ファイルが存在しない
+🚨    7_r6_1/r6_1_logs_20261027/01_regression_old_pptx.log -                       -  ファイルが存在しない
+🚨    _20261027_r6_1/r6_1_logs_20261027/02_check_rankB.log -                       -  ファイルが存在しない
+🚨    _20261027_r6_1/r6_1_logs_20261027/02_check_rankC.log -                       -  ファイルが存在しない
+🚨    _20261027_r6_1/r6_1_logs_20261027/02_check_rankD.log -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_1/r6_1_logs_20261027/02_gen_B.log -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_1/r6_1_logs_20261027/02_gen_C.log -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_1/r6_1_logs_20261027/02_gen_D.log -                       -  ファイルが存在しない
+🚨    ype_20261027_r6_1/r6_1_logs_20261027/03_boundary.log -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_1/r6_1_logs_20261027/04_extra.log -                       -  ファイルが存在しない
+🚨    pe_20261027_r6_1/r6_1_logs_20261027/05_r5regress.log -                       -  ファイルが存在しない
+🚨    pe_20261027_r6_1/r6_1_logs_20261027/06_r61_break.log -                       -  ファイルが存在しない
+🚨    ype_20261027_r6_1/r6_1_logs_20261027/boundary_r61.py -                       -  ファイルが存在しない
+🚨    _r6_1/r6_1_logs_20261027/check_output_r6_to_r61.diff -                       -  ファイルが存在しない
+🚨    20261027_r6_1/r6_1_logs_20261027/docs_r6_to_r61.diff -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_1/r6_1_logs_20261027/extra_r61.py -                       -  ファイルが存在しない
+🚨    otype_20261027_r6_1/r6_1_logs_20261027/harness_r6.py -                       -  ファイルが存在しない
+🚨    pe_20261027_r6_1/r6_1_logs_20261027/r5regress_r61.py -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_1/r6_1_logs_20261027/r61_break.py -                       -  ファイルが存在しない
+🚨    e_20261027_r6_1/r6_1_logs_20261027/rankB_report.json -                       -  ファイルが存在しない
+🚨    e_20261027_r6_1/r6_1_logs_20261027/rankC_report.json -                       -  ファイルが存在しない
+🚨    e_20261027_r6_1/r6_1_logs_20261027/rankD_report.json -                       -  ファイルが存在しない
+🚨    ype_20261027_r6_1/r6_1_logs_20261027/reg_report.json -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_1/ui-diagnosis-director/README.md -                       -  ファイルが存在しない
+🚨    ototype_20261027_r6_1/ui-diagnosis-director/SKILL.md -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankB.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankC.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankD.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/references/diagram_patterns.md -                       -  ファイルが存在しない
+🚨    -diagnosis-director/references/dialogue_templates.md -                       -  ファイルが存在しない
+🚨    6_1/ui-diagnosis-director/references/input_schema.md -                       -  ファイルが存在しない
+🚨    _1/ui-diagnosis-director/references/scoring_rules.md -                       -  ファイルが存在しない
+🚨    6_1/ui-diagnosis-director/scripts/03_pptx_builder.py -                       -  ファイルが存在しない
+🚨    7_r6_1/ui-diagnosis-director/scripts/check_output.py -                       -  ファイルが存在しない
+🚨    andover/skill_prototype_20261027_r6_2/R6_2_RECORD.md -                       -  ファイルが存在しない
+🚨    diagnosis-director_skill_prototype_r6_2_20261027.zip -                       -  ファイルが存在しない
+🚨    7_r6_2/r6_2_logs_20261027/01_regression_old_pptx.log -                       -  ファイルが存在しない
+🚨    _20261027_r6_2/r6_2_logs_20261027/02_check_rankB.log -                       -  ファイルが存在しない
+🚨    _20261027_r6_2/r6_2_logs_20261027/02_check_rankC.log -                       -  ファイルが存在しない
+🚨    _20261027_r6_2/r6_2_logs_20261027/02_check_rankD.log -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_2/r6_2_logs_20261027/02_gen_B.log -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_2/r6_2_logs_20261027/02_gen_C.log -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_2/r6_2_logs_20261027/02_gen_D.log -                       -  ファイルが存在しない
+🚨    ype_20261027_r6_2/r6_2_logs_20261027/03_boundary.log -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_2/r6_2_logs_20261027/04_extra.log -                       -  ファイルが存在しない
+🚨    pe_20261027_r6_2/r6_2_logs_20261027/05_r5regress.log -                       -  ファイルが存在しない
+🚨    61027_r6_2/r6_2_logs_20261027/06_r61_break_rerun.log -                       -  ファイルが存在しない
+🚨    type_20261027_r6_2/r6_2_logs_20261027/07_r62_add.log -                       -  ファイルが存在しない
+🚨    ype_20261027_r6_2/r6_2_logs_20261027/boundary_r62.py -                       -  ファイルが存在しない
+🚨    r6_2/r6_2_logs_20261027/check_output_r61_to_r62.diff -                       -  ファイルが存在しない
+🚨    0261027_r6_2/r6_2_logs_20261027/docs_r61_to_r62.diff -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_2/r6_2_logs_20261027/extra_r62.py -                       -  ファイルが存在しない
+🚨    otype_20261027_r6_2/r6_2_logs_20261027/harness_r6.py -                       -  ファイルが存在しない
+🚨    pe_20261027_r6_2/r6_2_logs_20261027/r5regress_r62.py -                       -  ファイルが存在しない
+🚨    rototype_20261027_r6_2/r6_2_logs_20261027/r62_add.py -                       -  ファイルが存在しない
+🚨    27_r6_2/r6_2_logs_20261027/r62_break_from_r61_r62.py -                       -  ファイルが存在しない
+🚨    e_20261027_r6_2/r6_2_logs_20261027/rankB_report.json -                       -  ファイルが存在しない
+🚨    e_20261027_r6_2/r6_2_logs_20261027/rankC_report.json -                       -  ファイルが存在しない
+🚨    e_20261027_r6_2/r6_2_logs_20261027/rankD_report.json -                       -  ファイルが存在しない
+🚨    ype_20261027_r6_2/r6_2_logs_20261027/reg_report.json -                       -  ファイルが存在しない
+🚨    totype_20261027_r6_2/ui-diagnosis-director/README.md -                       -  ファイルが存在しない
+🚨    ototype_20261027_r6_2/ui-diagnosis-director/SKILL.md -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankB.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankC.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/assets/sample_input_rankD.json -                       -  ファイルが存在しない
+🚨    ui-diagnosis-director/references/diagram_patterns.md -                       -  ファイルが存在しない
+🚨    -diagnosis-director/references/dialogue_templates.md -                       -  ファイルが存在しない
+🚨    6_2/ui-diagnosis-director/references/input_schema.md -                       -  ファイルが存在しない
+🚨    _2/ui-diagnosis-director/references/scoring_rules.md -                       -  ファイルが存在しない
+🚨    6_2/ui-diagnosis-director/scripts/03_pptx_builder.py -                       -  ファイルが存在しない
+🚨    7_r6_2/ui-diagnosis-director/scripts/check_output.py -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261027_b13.md             -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261027_director.md      -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_START_20261027_director.md         -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261027_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_START_20261027_aislide.md          -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261028.tsv               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261028_b01.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261028_b02.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261028_b03.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261028_b04.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261028_b05.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261029_b06.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261029_b07.md             -                       -  ファイルが存在しない
+🚨    handover/v2_v6_procedure_20261028_r6_2_rev1.md       -                       -  ファイルが存在しない
+🚨    handover/comparison_table_rev1_20261028.md           -                       -  ファイルが存在しない
+🚨    handover/consult_director_20261028_drive_and_rev1.md -                       -  ファイルが存在しない
+🚨    handover/readonly_verify_procedure_20261028_DRAFT.md -                       -  ファイルが存在しない
+🚨    handover/drive_connect_error_log_20261028.md         -                       -  ファイルが存在しない
+🚨    ive_connect_error_log_20261028_pre_correction_8th.md -                       -  ファイルが存在しない
+🚨    handover/support_inquiry_draft_20261028.md           -                       -  ファイルが存在しない
+🚨    handover/verify_result_61day_20261028.txt            -                       -  ファイルが存在しない
+🚨    handover/write5_candidate_20261028.diff              -                       -  ファイルが存在しない
+🚨    handover/consult_director_20261029_gsk_migration.md  -                       -  ファイルが存在しない
+🚨    handover/support_reply_20261029.md                   -                       -  ファイルが存在しない
+🚨    handover/verify_result_62day_20261029.txt            -                       -  ファイルが存在しない
+🚨    handover/root_diff_62day_20261029.txt                -                       -  ファイルが存在しない
+🚨    handover/gsk_verify_oneline_20261029.md              -                       -  ファイルが存在しない
+🚨    handover/scripts/write5_v3_20261028.py               -                       -  ファイルが存在しない
+🚨    handover/scripts/write5_v3_20261028.diff             -                       -  ファイルが存在しない
+🚨    handover/scripts/fetch_ro_20261028.py                -                       -  ファイルが存在しない
+🚨    handover/scripts/write5_v4_20261029.py               -                       -  ファイルが存在しない
+🚨    handover/scripts/write5_v4_20261029.diff             -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261029.tsv               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261029_b08.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261029_b09.md             -                       -  ファイルが存在しない
+🚨    handover/write5_v4_first_b01_output_20261029.txt     -                       -  ファイルが存在しない
+🚨    handover/write5_v4_rest_output_20261029.txt          -                       -  ファイルが存在しない
+🚨    handover/placement_list_20261029.md                  -                       -  ファイルが存在しない
+🚨    handover/write5_v4_eod_output_20261029.txt           -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261029_b10.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261029_b11.md             -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261029_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_START_20261029_aislide.md          -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261030.tsv               -                       -  ファイルが存在しない
+🚨    handover/verify_result_63day_20261030.txt            -                       -  ファイルが存在しない
+🚨    handover/root_diff_63day_20261030.txt                -                       -  ファイルが存在しない
+🚨    handover/gsk_verify_oneline_63day_20261030.md        -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261030_b12.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261030_b13.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261030_b14.md             -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261030_director.md      -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_START_20261030_director.md         -                       -  ファイルが存在しない
+🚨    handover/write5_v4_output_20261030.txt               -                       -  ファイルが存在しない
+🚨    dover/claude_chat_message_20261030_aislide_report.md -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261031.tsv               -                       -  ファイルが存在しない
+🚨    handover/verify_result_64day_20261031.txt            -                       -  ファイルが存在しない
+🚨    handover/root_diff_64day_20261031.txt                -                       -  ファイルが存在しない
+🚨    handover/gsk_verify_oneline_64day_20261031.md        -                       -  ファイルが存在しない
+🚨    handover/write5_v4_output2_20261030.txt              -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261031_b01.md             -                       -  ファイルが存在しない
+🚨    r/jikki_r6_2_20261031/01_UI_Scorecard_uniqlo_jp.pptx -                       -  ファイルが存在しない
+🚨    over/jikki_r6_2_20261031/02_Proposals_uniqlo_jp.pptx -                       -  ファイルが存在しない
+🚨    r/jikki_r6_2_20261031/03_Visual_Board_uniqlo_jp.pptx -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/v6_01-1.png             -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/v6_01-2.png             -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/v6_02-1.png             -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/v6_02-2.png             -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/v6_03-1.png             -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/v6_03-2.png             -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/v6_03-3.png             -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/input.json.txt          -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/check_run_stdout.txt    -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/check_run_stderr.txt    -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/check_run_command.sh    -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261031/check_run_meta.json.txt -                       -  ファイルが存在しない
+🚨    /jikki_r6_2_20261031/screen_01_step1-1_drive_zip.png -                       -  ファイルが存在しない
+🚨    ver/jikki_r6_2_20261031/screen_02_step1_settings.png -                       -  ファイルが存在しない
+🚨    ikki_r6_2_20261031/screen_03_step2_before_remove.png -                       -  ファイルが存在しない
+🚨    jikki_r6_2_20261031/screen_04_step2_after_remove.png -                       -  ファイルが存在しない
+🚨    ikki_r6_2_20261031/screen_05_step2_after_install.png -                       -  ファイルが存在しない
+🚨    er/jikki_r6_2_20261031/screen_06_step5-6_hearing.png -                       -  ファイルが存在しない
+🚨    ver/jikki_r6_2_20261031/screen_07_step6_confirmB.png -                       -  ファイルが存在しない
+🚨    dover/jikki_r6_2_20261031/screen_08_step7_result.png -                       -  ファイルが存在しない
+🚨    er/jikki_r6_2_20261031/screen_09_step7_downloads.png -                       -  ファイルが存在しない
+🚨    2_20261031/screen_17_step4_version_check_posthoc.png -                       -  ファイルが存在しない
+🚨    ndover/jikki_r6_2_20261031/screen_18_step8_reply.png -                       -  ファイルが存在しない
+🚨    er/jikki_r6_2_20261031/screen_19_step8_downloads.png -                       -  ファイルが存在しない
+🚨    ki_r6_2_20261031/r6_2_jikki_report_20261031_draft.md -                       -  ファイルが存在しない
+🚨    er/jikki_r6_2_20261031/r6_2_jikki_report_20261031.md -                       -  ファイルが存在しない
+🚨    handover/write5_v4_output_20261031.txt               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261031_b02.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261031_b03.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261031_b04.md             -                       -  ファイルが存在しない
+🚨    handover/scripts/manifest_20261101.tsv               -                       -  ファイルが存在しない
+🚨    handover/verify_result_65day_20261101.txt            -                       -  ファイルが存在しない
+🚨    handover/root_diff_65day_20261101.txt                -                       -  ファイルが存在しない
+🚨    handover/gsk_verify_oneline_65day_20261101.md        -                       -  ファイルが存在しない
+🚨    handover/write5_v4_output2_20261031.txt              -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261031_b05.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261101_b06.md             -                       -  ファイルが存在しない
+🚨    handover/write5_v4_output_20261101.txt               -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261101_b07.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261101_b08.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261101_b09.md             -                       -  ファイルが存在しない
+🚨    handover/director_ruling_20261102_b10.md             -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_HANDOVER_20261101_aislide.md       -                       -  ファイルが存在しない
+🚨    handover/NEXT_ENV_START_20261101_aislide.md          -                       -  ファイルが存在しない
+🚨    handover/verify_result_66day_20261102.txt            -                       -  ファイルが存在しない
+🚨    handover/root_diff_66day_20261102.txt                -                       -  ファイルが存在しない
+🚨    handover/gsk_verify_oneline_66day_20261102.md        -                       -  ファイルが存在しない
+🚨    jikki_r6_2_20261101_2/01_UI_Scorecard_uniqlo_jp.pptx -                       -  ファイルが存在しない
+🚨    er/jikki_r6_2_20261101_2/02_Proposals_uniqlo_jp.pptx -                       -  ファイルが存在しない
+🚨    jikki_r6_2_20261101_2/03_Visual_Board_uniqlo_jp.pptx -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261101_2/v6_01-1.png           -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261101_2/v6_01-2.png           -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261101_2/v6_02-1.png           -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261101_2/v6_02-2.png           -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261101_2/v6_03-1.png           -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261101_2/v6_03-2.png           -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261101_2/v6_03-3.png           -                       -  ファイルが存在しない
+🚨    handover/jikki_r6_2_20261101_2/input.json.txt        -                       -  ファイルが存在しない
+🚨    kki_r6_2_20261101_2/screen_b_01_step3_pptx_check.png -                       -  ファイルが存在しない
+🚨    _r6_2_20261101_2/screen_b_02_step4_version_check.png -                       -  ファイルが存在しない
+🚨    over/jikki_r6_2_20261101_2/screen_b_03_step5_url.png -                       -  ファイルが存在しない
+🚨    kki_r6_2_20261101_2/screen_b_04_step6_confirmA_B.png -                       -  ファイルが存在しない
+🚨    jikki_r6_2_20261101_2/screen_b_05_step7_browsing.png -                       -  ファイルが存在しない
+🚨    r/jikki_r6_2_20261101_2/screen_b_06_step7_result.png -                       -  ファイルが存在しない
+🚨    2_20261101_2/screen_b_07_step7_downloads_preview.png -                       -  ファイルが存在しない
+🚨    2_20261101_2/screen_b_08_step5b_actual_page_full.png -                       -  ファイルが存在しない
+🚨    er/jikki_r6_2_20261101_2/screen_b_09_step8_reply.png -                       -  ファイルが存在しない
+🚨    ikki_r6_2_20261101_2/screen_b_10_step8_reply_end.png -                       -  ファイルが存在しない
+🚨    101_2/claude_chat_message_20261101_aislide_jikki2.md -                       -  ファイルが存在しない
+🚨    r6_2_20261101_2/r6_2_jikki2_report_20261101_draft.md -                       -  ファイルが存在しない
+
+照合 629 件 ／ NG 539 件 → 🚨 要確認
