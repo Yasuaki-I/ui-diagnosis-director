@@ -1,0 +1,349 @@
+{
+ "site_slug": "ota_tetsuzuki",
+ "record": {
+  "service_name_official": "大田区ホームページ：よくある手続き",
+  "target_url": "https://www.city.ota.tokyo.jp/tetsuzuki/index.html",
+  "input_origin": "url"
+ },
+ "diagnosis": {
+  "service_name": "大田区 よくある手続き",
+  "input_type": "URL",
+  "total_score": 31,
+  "rank": "B",
+  "rank_label": "標準的",
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 3,
+    "max": 5,
+    "comment": "見出しと分類は即見えるが探し方の案内が無い"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 2,
+    "max": 5,
+    "comment": "見出しだけで何がどこにあるか伝わらない"
+   },
+   {
+    "category": "CTA設計",
+    "score": 2,
+    "max": 5,
+    "comment": "オンライン申請や窓口予約への入口が無い"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 4,
+    "max": 5,
+    "comment": "公式サイトで住所と代表電話を明示している"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 3,
+    "max": 5,
+    "comment": "検索窓はあるが説明や入力例が無い"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 3,
+    "max": 5,
+    "comment": "スマホは良好だが幅800px前後で横にはみ出す"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 4,
+    "max": 5,
+    "comment": "本文16pxで余白も広く読みやすい"
+   },
+   {
+    "category": "情報設計",
+    "score": 2,
+    "max": 5,
+    "comment": "出来事別の分類のみで頻出手続きが見えない"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 4,
+    "max": 5,
+    "comment": "青基調と丁寧な語調が区のサイトで統一"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 4,
+    "max": 5,
+    "comment": "軽量なページで読み込みが速い"
+   }
+  ],
+  "strengths": [
+   "公式の住所と代表電話を示し安心感を与えている",
+   "本文16pxと広い余白で文字を読みやすくしている",
+   "軽量なページで一覧をすぐに表示している"
+  ],
+  "priority_issues": [
+   "よく使う手続きへの近道が無い",
+   "オンライン申請への導線が無い",
+   "分類の中身が見えず選べない"
+  ],
+  "conclusion": "よく使う手続きの近道と各分類の中身を見せれば、住民が迷わず手続きページに着ける割合を高められる。"
+ },
+ "proposals": {
+  "service_name": "大田区 よくある手続き",
+  "proposals": [
+   {
+    "no": 1,
+    "title": "よく使う手続きの近道を一覧の上に置く",
+    "priority": "高",
+    "effort": "中",
+    "target_area": "一覧の上",
+    "issue": "住民票や転入など頻出手続きを探せない",
+    "before": "出来事別7分類しか入口が無い",
+    "after": "住民票や転入など頻出手続きを直接表示",
+    "target_score_item": "情報設計"
+   },
+   {
+    "no": 2,
+    "title": "各分類に主な手続き名を添える",
+    "priority": "高",
+    "effort": "小",
+    "target_area": "各カテゴリ",
+    "issue": "分類名だけでは中身が分からない",
+    "before": "分類名だけで中身が分からない",
+    "after": "分類名の下に主な手続きを2〜3件表示",
+    "target_score_item": "キャッチコピー"
+   },
+   {
+    "no": 3,
+    "title": "オンライン申請の入口を冒頭に設ける",
+    "priority": "中",
+    "effort": "中",
+    "target_area": "ページ冒頭",
+    "issue": "来庁せずに済む方法が見つからない",
+    "before": "オンライン申請への導線が見当たらない",
+    "after": "電子申請できる手続きの一覧へ案内する",
+    "target_score_item": "CTA設計"
+   },
+   {
+    "no": 4,
+    "title": "検索窓に入力例と案内を添える",
+    "priority": "中",
+    "effort": "小",
+    "target_area": "検索窓",
+    "issue": "何を入れて探せばよいか分からない",
+    "before": "検索窓に説明も入力例も無い",
+    "after": "「住民票」など入力例を窓内に表示",
+    "target_score_item": "フォーム設計"
+   },
+   {
+    "no": 5,
+    "title": "中間幅で横にはみ出す表示を直す",
+    "priority": "低",
+    "effort": "小",
+    "target_area": "中間幅表示",
+    "issue": "小さめの画面で引越しが隠れる",
+    "before": "幅800px前後で引越しが画面外に出る",
+    "after": "画面幅に合わせて分類を折り返す",
+    "target_score_item": "レスポンシブ"
+   }
+  ],
+  "summary": "最優先の一手として、分類一覧の上によく使う手続きの近道を置き、出来事から考えなくても目的の手続きへ直接進めるようにすべきだ。"
+ },
+ "visual_data": {
+  "service_name": "大田区 よくある手続き",
+  "input_type": "URL",
+  "total_score": 31,
+  "rank": "B",
+  "rank_label": "標準的",
+  "purpose": "手続きページへの到達を増やす",
+  "target": "よくある手続きページ",
+  "diagnosis_date": "2026年11月3日",
+  "summary": "近道と中身表示で手続きへ直行",
+  "top_issue": "よく使う手続きへの近道が無い",
+  "direction": "出来事別の分類は残しつつ、よく使う手続きの近道と各分類の中身を見せて、迷わず手続きに進める入口を作るべきだ。",
+  "sections": [
+   {
+    "no": 1,
+    "label": "ヘッダー",
+    "desc": "検索窓に説明なし",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 2,
+    "label": "パンくず",
+    "desc": "現在地が分かる",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 3,
+    "label": "ページ見出し",
+    "desc": "説明文が無い",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 4,
+    "label": "カテゴリ一覧",
+    "desc": "中身が見えない",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 5,
+    "label": "関連情報",
+    "desc": "窓口の案内あり",
+    "has_issue": false,
+    "status": "good"
+   },
+   {
+    "no": 6,
+    "label": "広告枠",
+    "desc": "本文内に表示",
+    "has_issue": true,
+    "status": "issue"
+   },
+   {
+    "no": 7,
+    "label": "区役所情報",
+    "desc": "住所と電話を明示",
+    "has_issue": false,
+    "status": "good"
+   }
+  ],
+  "flow_steps": [
+   {
+    "label": "ページ到着",
+    "status": "✓",
+    "note": "見出しは明確"
+   },
+   {
+    "label": "入口を探す",
+    "status": "✕",
+    "note": "出来事別のみ"
+   },
+   {
+    "label": "分類を選ぶ",
+    "status": "✕",
+    "note": "中身が見えない"
+   },
+   {
+    "label": "分類ページ",
+    "status": "✓",
+    "note": "手続き名が並ぶ"
+   },
+   {
+    "label": "手続き表示",
+    "status": "✓",
+    "note": "2クリックで到達"
+   },
+   {
+    "label": "申請方法",
+    "status": "✕",
+    "note": "一覧に案内なし"
+   }
+  ],
+  "flow_summary": "入口と分類選びで迷い、申請方法も一覧では分からない",
+  "highlights": [
+   {
+    "title": "頻出手続きの近道を置く",
+    "target_area": "一覧の上",
+    "priority": "高",
+    "effort": "中",
+    "before": "出来事別7分類しか入口が無い",
+    "after": "住民票や転入など頻出手続きを直接表示"
+   },
+   {
+    "title": "分類に主な手続きを添える",
+    "target_area": "各カテゴリ",
+    "priority": "高",
+    "effort": "小",
+    "before": "分類名だけで中身が分からない",
+    "after": "分類名の下に主な手続きを2〜3件表示"
+   },
+   {
+    "title": "オンライン申請の入口",
+    "target_area": "ページ冒頭",
+    "priority": "中",
+    "effort": "中",
+    "before": "オンライン申請への導線が見当たらない",
+    "after": "電子申請できる手続きの一覧へ案内する"
+   }
+  ],
+  "scores": [
+   {
+    "category": "ファーストビュー",
+    "score": 3,
+    "max": 5,
+    "comment": "見出しと分類は即見えるが探し方の案内が無い"
+   },
+   {
+    "category": "キャッチコピー",
+    "score": 2,
+    "max": 5,
+    "comment": "見出しだけで何がどこにあるか伝わらない"
+   },
+   {
+    "category": "CTA設計",
+    "score": 2,
+    "max": 5,
+    "comment": "オンライン申請や窓口予約への入口が無い"
+   },
+   {
+    "category": "信頼性・権威性",
+    "score": 4,
+    "max": 5,
+    "comment": "公式サイトで住所と代表電話を明示している"
+   },
+   {
+    "category": "フォーム設計",
+    "score": 3,
+    "max": 5,
+    "comment": "検索窓はあるが説明や入力例が無い"
+   },
+   {
+    "category": "レスポンシブ",
+    "score": 3,
+    "max": 5,
+    "comment": "スマホは良好だが幅800px前後で横にはみ出す"
+   },
+   {
+    "category": "読みやすさ",
+    "score": 4,
+    "max": 5,
+    "comment": "本文16pxで余白も広く読みやすい"
+   },
+   {
+    "category": "情報設計",
+    "score": 2,
+    "max": 5,
+    "comment": "出来事別の分類のみで頻出手続きが見えない"
+   },
+   {
+    "category": "ブランド一貫性",
+    "score": 4,
+    "max": 5,
+    "comment": "青基調と丁寧な語調が区のサイトで統一"
+   },
+   {
+    "category": "表示速度・技術",
+    "score": 4,
+    "max": 5,
+    "comment": "軽量なページで読み込みが速い"
+   }
+  ],
+  "strengths": [
+   "公式の住所と代表電話を示し安心感を与えている",
+   "本文16pxと広い余白で文字を読みやすくしている",
+   "軽量なページで一覧をすぐに表示している"
+  ],
+  "priority_issues": [
+   "よく使う手続きへの近道が無い",
+   "オンライン申請への導線が無い",
+   "分類の中身が見えず選べない"
+  ],
+  "top_issues": [
+   "よく使う手続きへの近道が無い",
+   "オンライン申請への導線が無い",
+   "分類の中身が見えず選べない"
+  ]
+ }
+}
