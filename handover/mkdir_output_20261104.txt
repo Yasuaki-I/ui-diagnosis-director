@@ -1,0 +1,2 @@
+{"version":1,"status":"ok","message":"success","data":{"result":"Successfully created directory: /ui-diagnosis-director/handover/jikki_r6_2_20261104_4"},"session_state":{"aidrive_status":"success","aidrive_action":"mkdir","aidrive_path":"/ui-diagnosis-director/handover/jikki_r6_2_20261104_4","aidrive_result":{"status":"success","message":"Directory created: /ui-diagnosis-director/handover/jikki_r6_2_20261104_4","path":"/ui-diagnosis-director/handover/jikki_r6_2_20261104_4","action_type":"mkdir"}}}
+exit=0
