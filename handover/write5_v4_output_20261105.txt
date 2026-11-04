@@ -1,0 +1,52 @@
+=== #1 r6_2_jikki4_report_20261104.md -> handover/jikki_r6_2_20261104_4/r6_2_jikki4_report_20261104.md 2026-11-03T17:28:55Z
+⓪ gsk の版: 1.15.3
+src: r6_2_jikki4_report_20261104.md / 14622B / 64cb3ce31f9c
+dst（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261104_4/r6_2_jikki4_report_20261104.md
+① 既存なし（宛先フォルダ 33 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/jikki_r6_2_20261104_4/r6_2_jikki4_report_20261104.md", "item": {"tags": [], "id": "a27e9a5f-2400-4aef-b504-c942f97ebee8", "name": "r6_2_jikki4_report_20261104.md", "path": "/ui-diagnosis-director/handover/jikki_r6_2_20261104_4/r6_2_jikki4_report_20261104.md"）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/jikki_r6_2_20261104_4/r6_2_jikki4_report_20261104.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261104_4/r6_2_jikki4_report_20261104.md
+③ md5 照合: src 64cb3ce31f9c / drive 64cb3ce31f9c（14622B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/jikki_r6_2_20261104_4/r6_2_jikki4_report_20261104.md
+⑤ 再取得: 14622B / 64cb3ce31f9c → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 34 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #1 exit=0
+=== #2 write5_v4_output2_20261104.txt -> handover/write5_v4_output2_20261104.txt 2026-11-03T17:29:39Z
+⓪ gsk の版: 1.15.3
+src: write5_v4_output2_20261104.txt / 45044B / 82267936d60a
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261104.txt
+① 既存なし（宛先フォルダ 801 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output2_20261104.txt", "item": {"tags": [], "id": "4e0b7b87-d5ab-46f7-9dbb-1367429be619", "name": "write5_v4_output2_20261104.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output2_20261104.txt", "type": "file", "mime_type": "text/plain",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output2_20261104.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261104.txt
+③ md5 照合: src 82267936d60a / drive 82267936d60a（45044B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261104.txt
+⑤ 再取得: 45044B / 82267936d60a → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 802 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #2 exit=0
+=== #3 mkdir_output_20261104.txt -> handover/mkdir_output_20261104.txt 2026-11-03T17:30:23Z
+⓪ gsk の版: 1.15.3
+src: mkdir_output_20261104.txt / 510B / 05ce146b5690
+dst（AIドライブ）: /ui-diagnosis-director/handover/mkdir_output_20261104.txt
+① 既存なし（宛先フォルダ 802 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/mkdir_output_20261104.txt", "item": {"tags": [], "id": "c27f4c8d-dde8-44fa-a3e1-2078ca5e5e6c", "name": "mkdir_output_20261104.txt", "path": "/ui-diagnosis-director/handover/mkdir_output_20261104.txt", "type": "file", "mime_type": "text/plain", "modified_time）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/mkdir_output_20261104.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/mkdir_output_20261104.txt
+③ md5 照合: src 05ce146b5690 / drive 05ce146b5690（510B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/mkdir_output_20261104.txt
+⑤ 再取得: 510B / 05ce146b5690 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 803 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #3 exit=0
+ALL DONE 2026-11-03T17:31:07Z
