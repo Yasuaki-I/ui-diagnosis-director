@@ -1,0 +1,86 @@
+=== #1 verify_result_69day_20261105.txt -> handover/verify_result_69day_20261105.txt 2026-11-04T12:33:58Z
+⓪ gsk の版: 1.15.3
+src: verify_result_69day_20261105.txt / 58765B / 8baaf20147d6
+dst（AIドライブ）: /ui-diagnosis-director/handover/verify_result_69day_20261105.txt
+① 既存なし（宛先フォルダ 803 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/verify_result_69day_20261105.txt", "item": {"tags": [], "id": "1528aeff-29df-4bb4-b681-1a21b56455a2", "name": "verify_result_69day_20261105.txt", "path": "/ui-diagnosis-director/handover/verify_result_69day_20261105.txt", "type": "file", "mime_type": "text/p）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/verify_result_69day_20261105.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/verify_result_69day_20261105.txt
+③ md5 照合: src 8baaf20147d6 / drive 8baaf20147d6（58765B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/verify_result_69day_20261105.txt
+⑤ 再取得: 58765B / 8baaf20147d6 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 804 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #1 exit=0
+=== #2 root_diff_69day_20261105.txt -> handover/root_diff_69day_20261105.txt 2026-11-04T12:34:42Z
+⓪ gsk の版: 1.15.3
+src: root_diff_69day_20261105.txt / 82B / bafe77c290ee
+dst（AIドライブ）: /ui-diagnosis-director/handover/root_diff_69day_20261105.txt
+① 既存なし（宛先フォルダ 804 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/root_diff_69day_20261105.txt", "item": {"tags": [], "id": "aedb0e57-bbab-4028-9e61-3e6f99883ed8", "name": "root_diff_69day_20261105.txt", "path": "/ui-diagnosis-director/handover/root_diff_69day_20261105.txt", "type": "file", "mime_type": "text/plain", "modi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/root_diff_69day_20261105.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/root_diff_69day_20261105.txt
+③ md5 照合: src bafe77c290ee / drive bafe77c290ee（82B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/root_diff_69day_20261105.txt
+⑤ 再取得: 82B / bafe77c290ee → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 805 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #2 exit=0
+=== #3 gsk_verify_oneline_69day_20261105.md -> handover/gsk_verify_oneline_69day_20261105.md 2026-11-04T12:35:26Z
+⓪ gsk の版: 1.15.3
+src: gsk_verify_oneline_69day_20261105.md / 1213B / 307f4923dc19
+dst（AIドライブ）: /ui-diagnosis-director/handover/gsk_verify_oneline_69day_20261105.md
+① 既存なし（宛先フォルダ 805 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/gsk_verify_oneline_69day_20261105.md", "item": {"tags": [], "id": "9db6fa12-b679-48ac-b40f-7703d189a405", "name": "gsk_verify_oneline_69day_20261105.md", "path": "/ui-diagnosis-director/handover/gsk_verify_oneline_69day_20261105.md", "type": "file", "mime_ty）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/gsk_verify_oneline_69day_20261105.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/gsk_verify_oneline_69day_20261105.md
+③ md5 照合: src 307f4923dc19 / drive 307f4923dc19（1213B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/gsk_verify_oneline_69day_20261105.md
+⑤ 再取得: 1213B / 307f4923dc19 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 806 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #3 exit=0
+=== #4 interruption_69day_attempt1_20261105.md -> handover/interruption_69day_attempt1_20261105.md 2026-11-04T12:36:10Z
+⓪ gsk の版: 1.15.3
+src: interruption_69day_attempt1_20261105.md / 1105B / 413d70d2b6d0
+dst（AIドライブ）: /ui-diagnosis-director/handover/interruption_69day_attempt1_20261105.md
+① 既存なし（宛先フォルダ 806 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/interruption_69day_attempt1_20261105.md", "item": {"tags": [], "id": "5fb4721a-77be-4d89-9abd-83817495d5f2", "name": "interruption_69day_attempt1_20261105.md", "path": "/ui-diagnosis-director/handover/interruption_69day_attempt1_20261105.md", "type": "file",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/interruption_69day_attempt1_20261105.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/interruption_69day_attempt1_20261105.md
+③ md5 照合: src 413d70d2b6d0 / drive 413d70d2b6d0（1105B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/interruption_69day_attempt1_20261105.md
+⑤ 再取得: 1105B / 413d70d2b6d0 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 807 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #4 exit=0
+=== #5 write5_v4_output_20261105.txt -> handover/write5_v4_output_20261105.txt 2026-11-04T12:36:57Z
+⓪ gsk の版: 1.15.3
+src: write5_v4_output_20261105.txt / 3934B / 44b1f10e7223
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output_20261105.txt
+① 既存なし（宛先フォルダ 807 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output_20261105.txt", "item": {"tags": [], "id": "f10e8e8a-cd79-47e0-8d34-2ebeb29edc70", "name": "write5_v4_output_20261105.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output_20261105.txt", "type": "file", "mime_type": "text/plain", "m）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output_20261105.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output_20261105.txt
+③ md5 照合: src 44b1f10e7223 / drive 44b1f10e7223（3934B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output_20261105.txt
+⑤ 再取得: 3934B / 44b1f10e7223 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 808 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+=== #5 exit=0
+ALL DONE 2026-11-04T12:37:42Z
