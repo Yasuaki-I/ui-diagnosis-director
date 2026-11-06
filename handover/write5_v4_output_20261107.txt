@@ -1,0 +1,69 @@
+=== write5_v4_output2_20261106.txt 2026-11-05T23:52:17Z
+⓪ gsk の版: 1.15.3
+src: src/write5_v4_output2_20261106.txt / 33767B / 3b58ee3275cc
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261106.txt
+① 既存なし（宛先フォルダ 819 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output2_20261106.txt", "item": {"tags": [], "id": "f779280b-041b-4e3b-8230-a61304701ee2", "name": "write5_v4_output2_20261106.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output2_20261106.txt", "type": "file", "mime_type": "text/plain",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output2_20261106.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261106.txt
+③ md5 照合: src 3b58ee3275cc / drive 3b58ee3275cc（33767B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261106.txt
+⑤ 再取得: 33767B / 3b58ee3275cc → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 820 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 write5_v4_output2_20261106.txt
+=== mkdir_output_20261106.txt 2026-11-05T23:53:00Z
+⓪ gsk の版: 1.15.3
+src: src/mkdir_output_20261106.txt / 522B / 4598cb85e0fe
+dst（AIドライブ）: /ui-diagnosis-director/handover/mkdir_output_20261106.txt
+① 既存なし（宛先フォルダ 820 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/mkdir_output_20261106.txt", "item": {"tags": [], "id": "d1704119-870e-4a40-9516-3aa74e76e4b6", "name": "mkdir_output_20261106.txt", "path": "/ui-diagnosis-director/handover/mkdir_output_20261106.txt", "type": "file", "mime_type": "text/plain", "modified_time）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/mkdir_output_20261106.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/mkdir_output_20261106.txt
+③ md5 照合: src 4598cb85e0fe / drive 4598cb85e0fe（522B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/mkdir_output_20261106.txt
+⑤ 再取得: 522B / 4598cb85e0fe → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 821 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 mkdir_output_20261106.txt
+=== NEXT_ENV_HANDOVER_20261106_aislide.md 2026-11-05T23:53:44Z
+⓪ gsk の版: 1.15.3
+src: src/NEXT_ENV_HANDOVER_20261106_aislide.md / 16454B / 303ddc6ebb61
+dst（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261106_aislide.md
+① 既存なし（宛先フォルダ 821 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261106_aislide.md", "item": {"tags": [], "id": "844f5d97-308d-4120-aaee-2c8db379a8af", "name": "NEXT_ENV_HANDOVER_20261106_aislide.md", "path": "/ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261106_aislide.md", "type": "file", "mime）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261106_aislide.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261106_aislide.md
+③ md5 照合: src 303ddc6ebb61 / drive 303ddc6ebb61（16454B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261106_aislide.md
+⑤ 再取得: 16454B / 303ddc6ebb61 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 822 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 NEXT_ENV_HANDOVER_20261106_aislide.md
+=== NEXT_ENV_START_20261106_aislide.md 2026-11-05T23:54:28Z
+⓪ gsk の版: 1.15.3
+src: src/NEXT_ENV_START_20261106_aislide.md / 1983B / b1913e5fdf02
+dst（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_START_20261106_aislide.md
+① 既存なし（宛先フォルダ 822 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/NEXT_ENV_START_20261106_aislide.md", "item": {"tags": [], "id": "299db4f9-1540-4967-8323-fd90d504a512", "name": "NEXT_ENV_START_20261106_aislide.md", "path": "/ui-diagnosis-director/handover/NEXT_ENV_START_20261106_aislide.md", "type": "file", "mime_type": "）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/NEXT_ENV_START_20261106_aislide.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_START_20261106_aislide.md
+③ md5 照合: src b1913e5fdf02 / drive b1913e5fdf02（1983B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_START_20261106_aislide.md
+⑤ 再取得: 1983B / b1913e5fdf02 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 823 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 NEXT_ENV_START_20261106_aislide.md
+ALLDONE 2026-11-05T23:55:12Z

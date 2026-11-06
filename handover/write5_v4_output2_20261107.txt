@@ -1,0 +1,69 @@
+=== handover/trial_evidence1_20261106/t1_run1_record_20261107_final.md 2026-11-06T00:35:58Z
+⓪ gsk の版: 1.15.3
+src: src2/t1_run1_record_20261107_final.md / 5300B / 6367b3971616
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run1_record_20261107_final.md
+① 既存なし（宛先フォルダ 18 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run1_record_20261107_final.md", "item": {"tags": [], "id": "8234ade2-74c5-45f6-ac72-e6daaf70c08d", "name": "t1_run1_record_20261107_final.md", "path": "/ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run1_record_202611）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run1_record_20261107_final.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run1_record_20261107_final.md
+③ md5 照合: src 6367b3971616 / drive 6367b3971616（5300B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run1_record_20261107_final.md
+⑤ 再取得: 5300B / 6367b3971616 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 19 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 handover/trial_evidence1_20261106/t1_run1_record_20261107_final.md
+=== handover/trial_evidence1_20261106/t1_run2_record_20261107_final.md 2026-11-06T00:36:42Z
+⓪ gsk の版: 1.15.3
+src: src2/t1_run2_record_20261107_final.md / 5269B / b324828d00fb
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run2_record_20261107_final.md
+① 既存なし（宛先フォルダ 19 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run2_record_20261107_final.md", "item": {"tags": [], "id": "fc7cc0c2-31f0-4a81-b5e9-182d5c68528f", "name": "t1_run2_record_20261107_final.md", "path": "/ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run2_record_202611）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run2_record_20261107_final.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run2_record_20261107_final.md
+③ md5 照合: src b324828d00fb / drive b324828d00fb（5269B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_run2_record_20261107_final.md
+⑤ 再取得: 5269B / b324828d00fb → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 20 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 handover/trial_evidence1_20261106/t1_run2_record_20261107_final.md
+=== handover/write5_v4_output_20261107.txt 2026-11-06T00:37:25Z
+⓪ gsk の版: 1.15.3
+src: src2/write5_v4_output_20261107.txt / 5106B / 8e4e097bad18
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output_20261107.txt
+① 既存なし（宛先フォルダ 823 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output_20261107.txt", "item": {"tags": [], "id": "39bdff6f-129a-4c47-bbfe-8c38896934be", "name": "write5_v4_output_20261107.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output_20261107.txt", "type": "file", "mime_type": "text/plain", "m）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output_20261107.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output_20261107.txt
+③ md5 照合: src 8e4e097bad18 / drive 8e4e097bad18（5106B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output_20261107.txt
+⑤ 再取得: 5106B / 8e4e097bad18 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 824 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 handover/write5_v4_output_20261107.txt
+=== handover/verdict205_chat_copy_20261107.md 2026-11-06T00:38:09Z
+⓪ gsk の版: 1.15.3
+src: src2/verdict205_chat_copy_20261107.md / 4612B / 54752fde797d
+dst（AIドライブ）: /ui-diagnosis-director/handover/verdict205_chat_copy_20261107.md
+① 既存なし（宛先フォルダ 824 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/verdict205_chat_copy_20261107.md", "item": {"tags": [], "id": "f0476adc-5819-4102-8e3d-0eda5c39b8fc", "name": "verdict205_chat_copy_20261107.md", "path": "/ui-diagnosis-director/handover/verdict205_chat_copy_20261107.md", "type": "file", "mime_type": "text/m）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/verdict205_chat_copy_20261107.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/verdict205_chat_copy_20261107.md
+③ md5 照合: src 54752fde797d / drive 54752fde797d（4612B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/verdict205_chat_copy_20261107.md
+⑤ 再取得: 4612B / 54752fde797d → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 825 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 handover/verdict205_chat_copy_20261107.md
+ALLDONE 2026-11-06T00:38:52Z

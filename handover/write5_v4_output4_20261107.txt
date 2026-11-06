@@ -1,0 +1,17 @@
+=== 2026-11-06T01:24:05Z
+⓪ gsk の版: 1.15.3
+src: src4/write5_v4_output3_20261107.txt / 3855B / ade871785daf
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output3_20261107.txt
+① 既存なし（宛先フォルダ 828 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output3_20261107.txt", "item": {"tags": [], "id": "6435fc48-4a19-4129-906e-cec6e80c93bf", "name": "write5_v4_output3_20261107.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output3_20261107.txt", "type": "file", "mime_type": "text/plain",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output3_20261107.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output3_20261107.txt
+③ md5 照合: src ade871785daf / drive ade871785daf（3855B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output3_20261107.txt
+⑤ 再取得: 3855B / ade871785daf → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 829 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0

@@ -1,0 +1,52 @@
+=== competitor_memo_20261107_draft.md 2026-11-06T00:51:03Z
+⓪ gsk の版: 1.15.3
+src: src3/competitor_memo_20261107_draft.md / 5830B / 9098ae6d2429
+dst（AIドライブ）: /ui-diagnosis-director/handover/competitor_memo_20261107_draft.md
+① 既存なし（宛先フォルダ 825 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/competitor_memo_20261107_draft.md", "item": {"tags": [], "id": "8470e6f2-58a0-4b36-bb6c-5ead01b91e39", "name": "competitor_memo_20261107_draft.md", "path": "/ui-diagnosis-director/handover/competitor_memo_20261107_draft.md", "type": "file", "mime_type": "tex）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/competitor_memo_20261107_draft.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/competitor_memo_20261107_draft.md
+③ md5 照合: src 9098ae6d2429 / drive 9098ae6d2429（5830B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/competitor_memo_20261107_draft.md
+⑤ 再取得: 5830B / 9098ae6d2429 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 826 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 competitor_memo_20261107_draft.md
+=== competitor_memo_20261107_hosoku.md 2026-11-06T00:51:49Z
+⓪ gsk の版: 1.15.3
+src: src3/competitor_memo_20261107_hosoku.md / 9716B / d35588acfb53
+dst（AIドライブ）: /ui-diagnosis-director/handover/competitor_memo_20261107_hosoku.md
+① 既存なし（宛先フォルダ 826 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/competitor_memo_20261107_hosoku.md", "item": {"tags": [], "id": "9b0c3636-8a5b-4679-9f44-d43b4c3d65e7", "name": "competitor_memo_20261107_hosoku.md", "path": "/ui-diagnosis-director/handover/competitor_memo_20261107_hosoku.md", "type": "file", "mime_type": "）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/competitor_memo_20261107_hosoku.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/competitor_memo_20261107_hosoku.md
+③ md5 照合: src d35588acfb53 / drive d35588acfb53（9716B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/competitor_memo_20261107_hosoku.md
+⑤ 再取得: 9716B / d35588acfb53 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 827 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 competitor_memo_20261107_hosoku.md
+=== write5_v4_output2_20261107.txt 2026-11-06T00:52:32Z
+⓪ gsk の版: 1.15.3
+src: src3/write5_v4_output2_20261107.txt / 5468B / d2cf7e4ba18c
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261107.txt
+① 既存なし（宛先フォルダ 827 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output2_20261107.txt", "item": {"tags": [], "id": "5d00e31e-fe8a-4b83-ba0a-971da8958ba8", "name": "write5_v4_output2_20261107.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output2_20261107.txt", "type": "file", "mime_type": "text/plain",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output2_20261107.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261107.txt
+③ md5 照合: src d2cf7e4ba18c / drive d2cf7e4ba18c（5468B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261107.txt
+⑤ 再取得: 5468B / d2cf7e4ba18c → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 828 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 write5_v4_output2_20261107.txt
+ALLDONE 2026-11-06T00:53:16Z
