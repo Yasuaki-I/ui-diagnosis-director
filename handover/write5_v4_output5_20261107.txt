@@ -1,0 +1,35 @@
+=== handover/trial_evidence1_20261106/t1_final_hosoku_20261107.md 2026-11-06T01:42:23Z
+⓪ gsk の版: 1.15.3
+src: src5/t1_final_hosoku_20261107.md / 2504B / 2cef99ca41bd
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_final_hosoku_20261107.md
+① 既存なし（宛先フォルダ 20 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence1_20261106/t1_final_hosoku_20261107.md", "item": {"tags": [], "id": "86f1b1a4-ebc4-412e-9b01-d07a7c29d7ed", "name": "t1_final_hosoku_20261107.md", "path": "/ui-diagnosis-director/handover/trial_evidence1_20261106/t1_final_hosoku_20261107.md", "）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_final_hosoku_20261107.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_final_hosoku_20261107.md
+③ md5 照合: src 2cef99ca41bd / drive 2cef99ca41bd（2504B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence1_20261106/t1_final_hosoku_20261107.md
+⑤ 再取得: 2504B / 2cef99ca41bd → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 21 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 handover/trial_evidence1_20261106/t1_final_hosoku_20261107.md
+=== handover/write5_v4_output4_20261107.txt 2026-11-06T01:43:06Z
+⓪ gsk の版: 1.15.3
+src: src5/write5_v4_output4_20261107.txt / 1197B / 3498cc60c984
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output4_20261107.txt
+① 既存なし（宛先フォルダ 829 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output4_20261107.txt", "item": {"tags": [], "id": "b362e9fa-e157-4692-a0bd-2df122843e3d", "name": "write5_v4_output4_20261107.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output4_20261107.txt", "type": "file", "mime_type": "text/plain",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output4_20261107.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output4_20261107.txt
+③ md5 照合: src 3498cc60c984 / drive 3498cc60c984（1197B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output4_20261107.txt
+⑤ 再取得: 1197B / 3498cc60c984 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 830 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 handover/write5_v4_output4_20261107.txt
+ALLDONE 2026-11-06T01:43:51Z
