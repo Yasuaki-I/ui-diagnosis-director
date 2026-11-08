@@ -1,0 +1,69 @@
+=== write5_v4_output2_20261108.txt 2026-11-07T01:16:47Z
+⓪ gsk の版: 1.15.3
+src: src10/write5_v4_output2_20261108.txt / 11759B / 785545c10056
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261108.txt
+① 既存なし（宛先フォルダ 850 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output2_20261108.txt", "item": {"tags": [], "id": "87cf8c0c-e288-4bf2-9579-08fb63cf603f", "name": "write5_v4_output2_20261108.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output2_20261108.txt", "type": "file", "mime_type": "text/plain",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output2_20261108.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261108.txt
+③ md5 照合: src 785545c10056 / drive 785545c10056（11759B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output2_20261108.txt
+⑤ 再取得: 11759B / 785545c10056 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 851 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 write5_v4_output2_20261108.txt
+=== write5_v4_output3_20261108.txt 2026-11-07T01:17:31Z
+⓪ gsk の版: 1.15.3
+src: src10/write5_v4_output3_20261108.txt / 1195B / 8a598027ff44
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output3_20261108.txt
+① 既存なし（宛先フォルダ 851 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output3_20261108.txt", "item": {"tags": [], "id": "2b09587f-9dc8-4751-a38a-1cb2d6d82897", "name": "write5_v4_output3_20261108.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output3_20261108.txt", "type": "file", "mime_type": "text/plain",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output3_20261108.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output3_20261108.txt
+③ md5 照合: src 8a598027ff44 / drive 8a598027ff44（1195B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output3_20261108.txt
+⑤ 再取得: 1195B / 8a598027ff44 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 852 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 write5_v4_output3_20261108.txt
+=== NEXT_ENV_HANDOVER_20261108_aislide.md 2026-11-07T01:18:16Z
+⓪ gsk の版: 1.15.3
+src: src10/NEXT_ENV_HANDOVER_20261108_aislide.md / 18163B / a980a3b192e9
+dst（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261108_aislide.md
+① 既存なし（宛先フォルダ 852 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261108_aislide.md", "item": {"tags": [], "id": "2b7b3bd7-a063-4c4e-97a9-5ca9a63371e8", "name": "NEXT_ENV_HANDOVER_20261108_aislide.md", "path": "/ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261108_aislide.md", "type": "file", "mime）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261108_aislide.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261108_aislide.md
+③ md5 照合: src a980a3b192e9 / drive a980a3b192e9（18163B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_HANDOVER_20261108_aislide.md
+⑤ 再取得: 18163B / a980a3b192e9 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 853 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 NEXT_ENV_HANDOVER_20261108_aislide.md
+=== NEXT_ENV_START_20261108_aislide.md 2026-11-07T01:19:04Z
+⓪ gsk の版: 1.15.3
+src: src10/NEXT_ENV_START_20261108_aislide.md / 2176B / a10e6f596407
+dst（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_START_20261108_aislide.md
+① 既存なし（宛先フォルダ 853 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/NEXT_ENV_START_20261108_aislide.md", "item": {"tags": [], "id": "f40fe07e-3a8b-49a6-b855-658768d39740", "name": "NEXT_ENV_START_20261108_aislide.md", "path": "/ui-diagnosis-director/handover/NEXT_ENV_START_20261108_aislide.md", "type": "file", "mime_type": "）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/NEXT_ENV_START_20261108_aislide.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_START_20261108_aislide.md
+③ md5 照合: src a10e6f596407 / drive a10e6f596407（2176B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/NEXT_ENV_START_20261108_aislide.md
+⑤ 再取得: 2176B / a10e6f596407 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 854 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 NEXT_ENV_START_20261108_aislide.md
+ALLDONE 2026-11-07T01:19:48Z
