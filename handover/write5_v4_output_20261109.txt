@@ -1,0 +1,103 @@
+=== write5_v4_output4_20261108.txt 2026-11-08T00:42:28Z
+⓪ gsk の版: 1.15.3
+src: src11/write5_v4_output4_20261108.txt / 5152B / 8209e07f4ece
+dst（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output4_20261108.txt
+① 既存なし（宛先フォルダ 854 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/write5_v4_output4_20261108.txt", "item": {"tags": [], "id": "01547174-608b-49d7-875f-4dc240c47a8f", "name": "write5_v4_output4_20261108.txt", "path": "/ui-diagnosis-director/handover/write5_v4_output4_20261108.txt", "type": "file", "mime_type": "text/plain",）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/write5_v4_output4_20261108.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output4_20261108.txt
+③ md5 照合: src 8209e07f4ece / drive 8209e07f4ece（5152B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/write5_v4_output4_20261108.txt
+⑤ 再取得: 5152B / 8209e07f4ece → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 855 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 write5_v4_output4_20261108.txt
+=== gsk_verify_oneline_73day_20261109.md 2026-11-08T00:43:12Z
+⓪ gsk の版: 1.15.3
+src: src11/gsk_verify_oneline_73day_20261109.md / 317B / 4886604f3172
+dst（AIドライブ）: /ui-diagnosis-director/handover/gsk_verify_oneline_73day_20261109.md
+① 既存なし（宛先フォルダ 855 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/gsk_verify_oneline_73day_20261109.md", "item": {"tags": [], "id": "f621563e-0015-4e8e-b792-64968a5730f4", "name": "gsk_verify_oneline_73day_20261109.md", "path": "/ui-diagnosis-director/handover/gsk_verify_oneline_73day_20261109.md", "type": "file", "mime_ty）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/gsk_verify_oneline_73day_20261109.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/gsk_verify_oneline_73day_20261109.md
+③ md5 照合: src 4886604f3172 / drive 4886604f3172（317B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/gsk_verify_oneline_73day_20261109.md
+⑤ 再取得: 317B / 4886604f3172 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 856 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 gsk_verify_oneline_73day_20261109.md
+=== verify_result_73day_20261109.txt 2026-11-08T00:43:55Z
+⓪ gsk の版: 1.15.3
+src: src11/verify_result_73day_20261109.txt / 58765B / 8baaf20147d6
+dst（AIドライブ）: /ui-diagnosis-director/handover/verify_result_73day_20261109.txt
+① 既存なし（宛先フォルダ 856 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/verify_result_73day_20261109.txt", "item": {"tags": [], "id": "4d285928-f3c0-41cd-80a3-55e580c49d38", "name": "verify_result_73day_20261109.txt", "path": "/ui-diagnosis-director/handover/verify_result_73day_20261109.txt", "type": "file", "mime_type": "text/p）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/verify_result_73day_20261109.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/verify_result_73day_20261109.txt
+③ md5 照合: src 8baaf20147d6 / drive 8baaf20147d6（58765B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/verify_result_73day_20261109.txt
+⑤ 再取得: 58765B / 8baaf20147d6 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 857 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 verify_result_73day_20261109.txt
+=== root_diff_73day_20261109.txt 2026-11-08T00:44:39Z
+⓪ gsk の版: 1.15.3
+src: src11/root_diff_73day_20261109.txt / 82B / bafe77c290ee
+dst（AIドライブ）: /ui-diagnosis-director/handover/root_diff_73day_20261109.txt
+① 既存なし（宛先フォルダ 857 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/root_diff_73day_20261109.txt", "item": {"tags": [], "id": "e44358cf-1dd9-4a09-9e9a-3345e1caea56", "name": "root_diff_73day_20261109.txt", "path": "/ui-diagnosis-director/handover/root_diff_73day_20261109.txt", "type": "file", "mime_type": "text/plain", "modi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/root_diff_73day_20261109.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/root_diff_73day_20261109.txt
+③ md5 照合: src bafe77c290ee / drive bafe77c290ee（82B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/root_diff_73day_20261109.txt
+⑤ 再取得: 82B / bafe77c290ee → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 858 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 root_diff_73day_20261109.txt
+=== fetch_log_73day_20261109.txt 2026-11-08T00:45:22Z
+⓪ gsk の版: 1.15.3
+src: src11/fetch_log_73day_20261109.txt / 17B / d3a40e135c87
+dst（AIドライブ）: /ui-diagnosis-director/handover/fetch_log_73day_20261109.txt
+① 既存なし（宛先フォルダ 858 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/fetch_log_73day_20261109.txt", "item": {"tags": [], "id": "a497414d-7538-417d-90b4-d791ad186f09", "name": "fetch_log_73day_20261109.txt", "path": "/ui-diagnosis-director/handover/fetch_log_73day_20261109.txt", "type": "file", "mime_type": "text/plain", "modi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/fetch_log_73day_20261109.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/fetch_log_73day_20261109.txt
+③ md5 照合: src d3a40e135c87 / drive d3a40e135c87（17B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/fetch_log_73day_20261109.txt
+⑤ 再取得: 17B / d3a40e135c87 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 859 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 fetch_log_73day_20261109.txt
+=== m2_trial_plan_20261109_draft.md 2026-11-08T00:46:06Z
+⓪ gsk の版: 1.15.3
+src: src11/m2_trial_plan_20261109_draft.md / 7871B / fc0ce801f951
+dst（AIドライブ）: /ui-diagnosis-director/handover/m2_trial_plan_20261109_draft.md
+① 既存なし（宛先フォルダ 859 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/m2_trial_plan_20261109_draft.md", "item": {"tags": [], "id": "89db8806-549b-41ab-b37e-1f0d390d62ce", "name": "m2_trial_plan_20261109_draft.md", "path": "/ui-diagnosis-director/handover/m2_trial_plan_20261109_draft.md", "type": "file", "mime_type": "text/mark）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/m2_trial_plan_20261109_draft.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/m2_trial_plan_20261109_draft.md
+③ md5 照合: src fc0ce801f951 / drive fc0ce801f951（7871B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/m2_trial_plan_20261109_draft.md
+⑤ 再取得: 7871B / fc0ce801f951 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 860 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_trial_plan_20261109_draft.md
+ALLDONE 2026-11-08T00:46:50Z
