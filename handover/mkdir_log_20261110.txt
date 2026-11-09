@@ -1,0 +1,4 @@
+mkdir 2026-11-09T10:01:19Z
+{"version":1,"status":"ok","message":"success","data":{"result":"Successfully created directory: /ui-diagnosis-director/handover/trial_evidence2_20261109"},"session_state":{"aidrive_status":"success","aidrive_action":"mkdir","aidrive_path":"/ui-diagnosis-director/handover/trial_evidence2_20261109","aidrive_result":{"status":"success","message":"Directory created: /ui-diagnosis-director/handover/trial_evidence2_20261109","path":"/ui-diagnosis-director/handover/trial_evidence2_20261109","action_type":"mkdir"}}}
+rc=0
+確認 2026-11-09T10:01:28Z

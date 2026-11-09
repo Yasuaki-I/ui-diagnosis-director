@@ -1,0 +1,188 @@
+=== m2_run1_output.pptx 2026-11-09T10:01:38Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_run1_output.pptx / 911819B / d64d40d7bcae
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_output.pptx
+① 既存なし（宛先フォルダ 0 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_output.pptx", "item": {"tags": [], "id": "d472c6ee-ba3c-4a88-b262-6f9959b30100", "name": "m2_run1_output.pptx", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_output.pptx", "type": "file", "mime_typ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_output.pptx
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_output.pptx
+③ md5 照合: src d64d40d7bcae / drive d64d40d7bcae（911819B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_output.pptx
+⑤ 再取得: 911819B / d64d40d7bcae → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 1 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_run1_output.pptx
+=== m2_answer_sheet_run1_20261109_irie.txt 2026-11-09T10:02:22Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_answer_sheet_run1_20261109_irie.txt / 5878B / 81abba5a1dcf
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_answer_sheet_run1_20261109_irie.txt
+① 既存なし（宛先フォルダ 1 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_answer_sheet_run1_20261109_irie.txt", "item": {"tags": [], "id": "62808b87-dca2-4212-90b8-128561becba2", "name": "m2_answer_sheet_run1_20261109_irie.txt", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_answer）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_answer_sheet_run1_20261109_irie.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_answer_sheet_run1_20261109_irie.txt
+③ md5 照合: src 81abba5a1dcf / drive 81abba5a1dcf（5878B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_answer_sheet_run1_20261109_irie.txt
+⑤ 再取得: 5878B / 81abba5a1dcf → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 2 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_answer_sheet_run1_20261109_irie.txt
+=== m2_prompt_final_20261109.txt 2026-11-09T10:03:05Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_prompt_final_20261109.txt / 5379B / c57e2d2a29c6
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_prompt_final_20261109.txt
+① 既存なし（宛先フォルダ 2 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_prompt_final_20261109.txt", "item": {"tags": [], "id": "a80358a5-2274-4947-87c9-402da1e25ed1", "name": "m2_prompt_final_20261109.txt", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_prompt_final_20261109.txt"）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_prompt_final_20261109.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_prompt_final_20261109.txt
+③ md5 照合: src c57e2d2a29c6 / drive c57e2d2a29c6（5379B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_prompt_final_20261109.txt
+⑤ 再取得: 5379B / c57e2d2a29c6 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 3 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_prompt_final_20261109.txt
+=== m2_pre_measure_run1_20261109.txt 2026-11-09T10:03:49Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_pre_measure_run1_20261109.txt / 1288B / 8aa7979c500a
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_pre_measure_run1_20261109.txt
+① 既存なし（宛先フォルダ 3 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_pre_measure_run1_20261109.txt", "item": {"tags": [], "id": "ba604adb-8c47-4bc0-9a30-6172f24a76ff", "name": "m2_pre_measure_run1_20261109.txt", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_pre_measure_run1_2）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_pre_measure_run1_20261109.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_pre_measure_run1_20261109.txt
+③ md5 照合: src 8aa7979c500a / drive 8aa7979c500a（1288B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_pre_measure_run1_20261109.txt
+⑤ 再取得: 1288B / 8aa7979c500a → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 4 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_pre_measure_run1_20261109.txt
+=== m2_post_measure_run1_20261109.txt 2026-11-09T10:04:33Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_post_measure_run1_20261109.txt / 1307B / b4edb0954b43
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_post_measure_run1_20261109.txt
+① 既存なし（宛先フォルダ 4 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_post_measure_run1_20261109.txt", "item": {"tags": [], "id": "82363a9f-4d4a-4581-b5f3-d0f17ce2461e", "name": "m2_post_measure_run1_20261109.txt", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_post_measure_run）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_post_measure_run1_20261109.txt
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_post_measure_run1_20261109.txt
+③ md5 照合: src b4edb0954b43 / drive b4edb0954b43（1307B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_post_measure_run1_20261109.txt
+⑤ 再取得: 1307B / b4edb0954b43 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 5 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_post_measure_run1_20261109.txt
+=== m2_run1_stop_and_policy_20261109.md 2026-11-09T10:05:17Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_run1_stop_and_policy_20261109.md / 6719B / 17766623a909
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_stop_and_policy_20261109.md
+① 既存なし（宛先フォルダ 5 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_stop_and_policy_20261109.md", "item": {"tags": [], "id": "90d74f1c-ac98-4252-a308-4f5948b6929e", "name": "m2_run1_stop_and_policy_20261109.md", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_stop_an）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_stop_and_policy_20261109.md
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_stop_and_policy_20261109.md
+③ md5 照合: src 17766623a909 / drive 17766623a909（6719B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_stop_and_policy_20261109.md
+⑤ 再取得: 6719B / 17766623a909 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 6 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_run1_stop_and_policy_20261109.md
+=== m2_run1_01_chat_a.png 2026-11-09T10:06:00Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_run1_01_chat_a.png / 190780B / 9b93c902410b
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_01_chat_a.png
+① 既存なし（宛先フォルダ 6 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_01_chat_a.png", "item": {"tags": [], "id": "649813b6-5f54-42f2-9f6c-5beecbe9248b", "name": "m2_run1_01_chat_a.png", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_01_chat_a.png", "type": "file", "mi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_01_chat_a.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_01_chat_a.png
+③ md5 照合: src 9b93c902410b / drive 9b93c902410b（190780B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_01_chat_a.png
+⑤ 再取得: 190780B / 9b93c902410b → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 7 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_run1_01_chat_a.png
+=== m2_run1_02_chat_b.png 2026-11-09T10:06:43Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_run1_02_chat_b.png / 51549B / 3d3ba4eac7ab
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_02_chat_b.png
+① 既存なし（宛先フォルダ 7 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_02_chat_b.png", "item": {"tags": [], "id": "f000383e-9611-4e05-88d8-d9b5b0691ae9", "name": "m2_run1_02_chat_b.png", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_02_chat_b.png", "type": "file", "mi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_02_chat_b.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_02_chat_b.png
+③ md5 照合: src 3d3ba4eac7ab / drive 3d3ba4eac7ab（51549B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_02_chat_b.png
+⑤ 再取得: 51549B / 3d3ba4eac7ab → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 8 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_run1_02_chat_b.png
+=== m2_run1_03_preview.png 2026-11-09T10:07:28Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_run1_03_preview.png / 388347B / bab7b81018f7
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_03_preview.png
+① 既存なし（宛先フォルダ 8 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_03_preview.png", "item": {"tags": [], "id": "6646e9d5-9645-4f58-a60d-4743277c144e", "name": "m2_run1_03_preview.png", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_03_preview.png", "type": "file", ）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_03_preview.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_03_preview.png
+③ md5 照合: src bab7b81018f7 / drive bab7b81018f7（388347B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_03_preview.png
+⑤ 再取得: 388347B / bab7b81018f7 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 9 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_run1_03_preview.png
+=== m2_run1_04_slide1.png 2026-11-09T10:08:11Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_run1_04_slide1.png / 289400B / 99a64832fad3
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_04_slide1.png
+① 既存なし（宛先フォルダ 9 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_04_slide1.png", "item": {"tags": [], "id": "726239f5-190a-4917-ae20-1b8196fe78ee", "name": "m2_run1_04_slide1.png", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_04_slide1.png", "type": "file", "mi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_04_slide1.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_04_slide1.png
+③ md5 照合: src 99a64832fad3 / drive 99a64832fad3（289400B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_04_slide1.png
+⑤ 再取得: 289400B / 99a64832fad3 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 10 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_run1_04_slide1.png
+=== m2_run1_05_slide2.png 2026-11-09T10:08:55Z
+⓪ gsk の版: 1.15.3
+src: src12/te2/m2_run1_05_slide2.png / 260102B / 2f07efe1d4d7
+dst（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_05_slide2.png
+① 既存なし（宛先フォルダ 10 件を確認）
+② 書込完了（応答: {"path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_05_slide2.png", "item": {"tags": [], "id": "19684b39-b782-45de-84e1-4cf6be643fe3", "name": "m2_run1_05_slide2.png", "path": "/ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_05_slide2.png", "type": "file", "mi）
+② 実際の保存先（応答）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_05_slide2.png
+② 保存先 一致 ⭕
+③ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_05_slide2.png
+③ md5 照合: src 2f07efe1d4d7 / drive 2f07efe1d4d7（260102B）→ 一致 ⭕
+④ 40 秒待機…
+⑤ 照合した場所（AIドライブ）: /ui-diagnosis-director/handover/trial_evidence2_20261109/m2_run1_05_slide2.png
+⑤ 再取得: 260102B / 2f07efe1d4d7 → 一致 ⭕
+⑥ 宛先フォルダ再一覧: 11 件／宛先の名前 1 件／同名(n) 0 件 
+
+5段階書込 全通過 ⭕
+exit=0 m2_run1_05_slide2.png
+ALLDONE_B 2026-11-09T10:09:39Z
