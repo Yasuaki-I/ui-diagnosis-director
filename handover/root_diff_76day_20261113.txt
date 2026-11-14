@@ -1,0 +1,4 @@
+24c24
+< ROOT = '/mnt/aidrive/ui-diagnosis-director'
+---
+> ROOT = '/tmp/ro/mirror'

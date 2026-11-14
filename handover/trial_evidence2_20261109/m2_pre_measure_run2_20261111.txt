@@ -1,0 +1,11 @@
+試験前測定（通算2回目） 開始 2026-11-09T22:55:35Z
+r62_zip | handover/skill_prototype_20261027_r6_2/ui-diagnosis-director_skill_prototype_r6_2_20261027.zip | 期待 126843B 3fecf7945ad5 | 実測 126843B 3fecf7945ad5 | 一致
+checker | handover/skill_prototype_20261027_r6_2/ui-diagnosis-director/scripts/check_output.py | 期待 72232B c9f7a0ec1360 | 実測 72232B c9f7a0ec1360 | 一致
+rev1 | handover/v2_v6_procedure_20261028_r6_2_rev1.md | 期待 14581B a2bf8f3ed421 | 実測 14581B a2bf8f3ed421 | 一致
+builder | handover/skill_prototype_20261027_r6_2/ui-diagnosis-director/scripts/03_pptx_builder.py | 期待 287389B 47629772eaff | 実測 287389B 47629772eaff | 一致
+b4pdf | handover/jikki_r6_2_20261104_4/B4_ota_tetsuzuki_browser.pdf | 期待 473842B b9e879f06ab7 | 実測 473842B b9e879f06ab7 | 一致
+t1_src_full.png | handover/trial_evidence1_20261106/t1_src_full.png | 期待 308859B e3b3844f8e99 | 実測 308859B e3b3844f8e99 | 一致
+t2_src_crop_01n.png | handover/trial_evidence2_20261109/t2_src_crop_01n.png | 期待 115098B 101fc2f2840e | 実測 115098B 101fc2f2840e | 一致
+t2_src_crop_03n.png | handover/trial_evidence2_20261109/t2_src_crop_03n.png | 期待 68639B 4d5dea7117b0 | 実測 68639B 4d5dea7117b0 | 一致
+prompt | 作業プロジェクト scratch/20261111/m2_prompt_final_rev2_20261111.txt（未配置） | 期待 7207B 87578a44481d | 実測 7207B 87578a44481d | 一致
+試験前測定 終了 2026-11-09T22:55:41Z ／ 不一致 0

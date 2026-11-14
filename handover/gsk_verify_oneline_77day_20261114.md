@@ -1,0 +1,1 @@
+77日目（運用日 2026-11-14 土）冒頭照合｜gsk方式｜取得開始 2026-11-12T22:40:21Z（UTC）｜manifest_20261103.tsv 56,305B be438bcf191f｜fetch_ro 37daeb097e51｜write5_v4 495eb0d6acb5｜取得 666/666｜verify_md5.py f9607ba39692｜ROOT差分 82B bafe77c290ee｜照合 666件・NG 0｜handover直下 882件（フォルダ26＋ファイル856）＝比較元11/13の882件と同数｜子フォルダ scripts67・jikki 29/24/24/34・trial_evidence1 21・trial_evidence2 15・deriv_20261110 0｜識別値10件一致
