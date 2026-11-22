@@ -131,6 +131,26 @@
       "meta": false,
       "platform": "darwin",
       "shift": false
+    },
+    {
+      "action": "sendToObsidian",
+      "actionArg": null,
+      "alt": false,
+      "ctrl": true,
+      "key": "p",
+      "meta": false,
+      "platform": "win32",
+      "shift": false
+    },
+    {
+      "action": "sendToObsidian",
+      "actionArg": null,
+      "alt": false,
+      "ctrl": false,
+      "key": "p",
+      "meta": true,
+      "platform": "darwin",
+      "shift": false
     }
   ],
   "language": "",
@@ -300,5 +320,6 @@
   "defaultProfile": null,
   "terminalOptions": {
     "documentOverride": null
-  }
+  },
+  "keymappingDefaultsVersion": 1
 }
