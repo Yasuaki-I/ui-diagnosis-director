@@ -153,6 +153,7 @@
       "shift": false
     }
   ],
+  "keymappingDefaultsVersion": 1,
   "language": "",
   "macOSOptionKeyPassthrough": true,
   "rightClickAction": "copyPaste",
@@ -320,6 +321,5 @@
   "defaultProfile": null,
   "terminalOptions": {
     "documentOverride": null
-  },
-  "keymappingDefaultsVersion": 1
+  }
 }
